@@ -1,0 +1,3670 @@
+/* colors */
+/* line 6, css\less\grid.less */
+body.glossary #mcw .container,
+body.what-we-do.page-node-413 #mcw .container,
+.join.rent.node-type-webform #mcw .container,
+.page-node-414 #mcw .container,
+body.glossary #mcw .XLcontainer,
+body.what-we-do.page-node-413 #mcw .XLcontainer,
+.join.rent.node-type-webform #mcw .XLcontainer,
+.page-node-414 #mcw .XLcontainer {
+  width: 100%;
+  max-width: none;
+}
+/* line 12, css\less\grid.less */
+body.glossary #mcw section,
+body.what-we-do.page-node-413 #mcw section,
+.join.rent.node-type-webform #mcw section,
+.page-node-414 #mcw section,
+body.glossary #mcw .region.region-content,
+body.what-we-do.page-node-413 #mcw .region.region-content,
+.join.rent.node-type-webform #mcw .region.region-content,
+.page-node-414 #mcw .region.region-content,
+body.glossary #mcw .container,
+body.what-we-do.page-node-413 #mcw .container,
+.join.rent.node-type-webform #mcw .container,
+.page-node-414 #mcw .container,
+body.glossary #mcw .XLcontainer,
+body.what-we-do.page-node-413 #mcw .XLcontainer,
+.join.rent.node-type-webform #mcw .XLcontainer,
+.page-node-414 #mcw .XLcontainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 21, css\less\grid.less */
+body.glossary .c,
+body.what-we-do.page-node-413 .c,
+.join.rent.node-type-webform .c,
+.page-node-414 .c {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  /* line 14, css\less\mixins.less */
+  body.glossary .c,
+  body.what-we-do.page-node-413 .c,
+  .join.rent.node-type-webform .c,
+  .page-node-414 .c {
+    width: 750px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, css\less\mixins.less */
+  body.glossary .c,
+  body.what-we-do.page-node-413 .c,
+  .join.rent.node-type-webform .c,
+  .page-node-414 .c {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 24, css\less\mixins.less */
+  body.glossary .c,
+  body.what-we-do.page-node-413 .c,
+  .join.rent.node-type-webform .c,
+  .page-node-414 .c {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 28, css\less\mixins.less */
+  body.glossary .c,
+  body.what-we-do.page-node-413 .c,
+  .join.rent.node-type-webform .c,
+  .page-node-414 .c {
+    width: 1570px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 27, css\less\grid.less */
+  .join.rent.node-type-webform #mcw section.block-system {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* 5 column */
+/* line 36, css\less\grid.less */
+.col5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 43, css\less\grid.less */
+.col-xs-20 {
+  width: 20%;
+  float: left;
+}
+/* line 48, css\less\grid.less */
+.col-sm-20 {
+  width: 20%;
+  float: left;
+}
+/* line 53, css\less\grid.less */
+.col-md-20 {
+  width: 20%;
+  float: left;
+}
+/* line 58, css\less\grid.less */
+.col-lg-20 {
+  width: 20%;
+  float: left;
+}
+/* line 63, css\less\grid.less */
+.col-xl-20 {
+  width: 20%;
+  float: left;
+}
+/* line 68, css\less\grid.less */
+.col-xs-40 {
+  width: 40%;
+  float: left;
+}
+/* line 73, css\less\grid.less */
+.col-sm-40 {
+  width: 40%;
+  float: left;
+}
+/* line 78, css\less\grid.less */
+.col-md-40 {
+  width: 40%;
+  float: left;
+}
+/* line 83, css\less\grid.less */
+.col-lg-40 {
+  width: 40%;
+  float: left;
+}
+/* line 88, css\less\grid.less */
+.col-xl-40 {
+  width: 40%;
+  float: left;
+}
+/* line 93, css\less\grid.less */
+.col-xs-60 {
+  width: 60%;
+  float: left;
+}
+/* line 98, css\less\grid.less */
+.col-sm-60 {
+  width: 60%;
+  float: left;
+}
+/* line 103, css\less\grid.less */
+.col-md-60 {
+  width: 60%;
+  float: left;
+}
+/* line 108, css\less\grid.less */
+.col-lg-60 {
+  width: 60%;
+  float: left;
+}
+/* line 113, css\less\grid.less */
+.col-xl-60 {
+  width: 60%;
+  float: left;
+}
+/* line 118, css\less\grid.less */
+.col-xs-80 {
+  width: 80%;
+  float: left;
+}
+/* line 123, css\less\grid.less */
+.col-sm-80 {
+  width: 80%;
+  float: left;
+}
+/* line 128, css\less\grid.less */
+.col-md-80 {
+  width: 80%;
+  float: left;
+}
+/* line 133, css\less\grid.less */
+.col-lg-80 {
+  width: 80%;
+  float: left;
+}
+/* line 138, css\less\grid.less */
+.col-xl-80 {
+  width: 80%;
+  float: left;
+}
+/* line 143, css\less\grid.less */
+.col-xs-offset-20 {
+  margin-left: 20%;
+}
+/* line 147, css\less\grid.less */
+.col-sm-offset-20 {
+  margin-left: 20%;
+}
+/* line 151, css\less\grid.less */
+.col-md-offset-20 {
+  margin-left: 20%;
+}
+/* line 155, css\less\grid.less */
+.col-lg-offset-20 {
+  margin-left: 20%;
+}
+/* line 159, css\less\grid.less */
+.col-xl-offset-20 {
+  margin-left: 20%;
+}
+/* line 163, css\less\grid.less */
+.col-xs-offset-40 {
+  margin-left: 20%;
+}
+/* line 167, css\less\grid.less */
+.col-sm-offset-40 {
+  margin-left: 40%;
+}
+/* line 171, css\less\grid.less */
+.col-md-offset-40 {
+  margin-left: 40%;
+}
+/* line 175, css\less\grid.less */
+.col-lg-offset-40 {
+  margin-left: 40%;
+}
+/* line 179, css\less\grid.less */
+.col-xl-offset-40 {
+  margin-left: 40%;
+}
+/* line 183, css\less\grid.less */
+.col-xs-offset-60 {
+  margin-left: 60%;
+}
+/* line 187, css\less\grid.less */
+.col-sm-offset-60 {
+  margin-left: 60%;
+}
+/* line 191, css\less\grid.less */
+.col-md-offset-60 {
+  margin-left: 60%;
+}
+/* line 195, css\less\grid.less */
+.col-lg-offset-60 {
+  margin-left: 60%;
+}
+/* line 199, css\less\grid.less */
+.col-xl-offset-60 {
+  margin-left: 60%;
+}
+/* line 203, css\less\grid.less */
+.col-xs-offset-80 {
+  margin-left: 80%;
+}
+/* line 207, css\less\grid.less */
+.col-sm-offset-80 {
+  margin-left: 80%;
+}
+/* line 211, css\less\grid.less */
+.col-md-offset-80 {
+  margin-left: 80%;
+}
+/* line 215, css\less\grid.less */
+.col-lg-offset-80 {
+  margin-left: 80%;
+}
+/* line 219, css\less\grid.less */
+.col-xl-offset-80 {
+  margin-left: 80%;
+}
+@media (min-width: 768px) {
+  /* line 226, css\less\grid.less */
+  .col-sm-40 {
+    width: 40%;
+    float: left;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 34, css\less\mixins.less */
+  .XLcontainer {
+    width: 1570px;
+  }
+}
+/* line 3, css\less\header-nav.less */
+body .navbar-default .navbar-toggle {
+  border-color: white;
+}
+/* line 6, css\less\header-nav.less */
+body .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+/* line 14, css\less\header-nav.less */
+body.on-white .navbar-default .navbar-toggle {
+  border-color: black;
+}
+/* line 17, css\less\header-nav.less */
+body.on-white .navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+/* line 26, css\less\header-nav.less */
+body.menu-opened .navbar-default .navbar-toggle {
+  border-color: white;
+}
+/* line 35, css\less\header-nav.less */
+.not-front #navbar {
+  height: 250px;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  /* line 39, css\less\header-nav.less */
+  .not-front #navbar {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 43, css\less\header-nav.less */
+  .not-front #navbar {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 47, css\less\header-nav.less */
+  .not-front #navbar {
+    height: 400px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 51, css\less\header-nav.less */
+  .not-front #navbar {
+    height: 500px;
+  }
+}
+/* line 55, css\less\header-nav.less */
+.not-front #navbar .h1-container {
+  height: 100%;
+  position: relative;
+  display: table;
+  vertical-align: middle;
+  padding-bottom: 95px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* line 65, css\less\header-nav.less */
+.not-front #navbar .h1-container h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: 4px;
+}
+/* line 74, css\less\header-nav.less */
+.not-front #navbar .padding {
+  height: 100%;
+}
+/* line 79, css\less\header-nav.less */
+#navbar {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+/* line 84, css\less\header-nav.less */
+#navbar .logo {
+  margin: 0;
+  padding: 0;
+}
+/* line 88, css\less\header-nav.less */
+#navbar .logo img {
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  /* line 91, css\less\header-nav.less */
+  #navbar .logo img {
+    width: 180px;
+    height: auto;
+  }
+}
+/* line 98, css\less\header-nav.less */
+#navbar .addNav {
+  margin-top: -80px;
+}
+/* line 101, css\less\header-nav.less */
+#navbar .addNav ul {
+  text-align: right;
+  margin-bottom: 0;
+}
+/* line 105, css\less\header-nav.less */
+#navbar .addNav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  /* line 111, css\less\header-nav.less */
+  #navbar .addNav ul li:first-child {
+    display: block;
+  }
+}
+/* line 119, css\less\header-nav.less */
+#navbar .addNav a {
+  color: white;
+  font-size: 14px;
+}
+/* line 123, css\less\header-nav.less */
+#navbar .addNav a.language-link.active {
+  display: none;
+}
+/* line 128, css\less\header-nav.less */
+#navbar .addNav .ucart a {
+  font-size: 26px;
+}
+/* line 134, css\less\header-nav.less */
+#navbar .navbar-nav > li > a {
+  color: white;
+}
+/* line 139, css\less\header-nav.less */
+.navbar-header {
+  float: none;
+  text-align: center;
+  height: 95px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  /* line 145, css\less\header-nav.less */
+  .navbar-header {
+    height: 75px;
+  }
+}
+/* line 149, css\less\header-nav.less */
+.navbar-header .navbar-toggle {
+  display: block;
+  float: left;
+  width: 42px;
+  height: 45px;
+  top: 10px;
+  z-index: 1001;
+  position: fixed;
+}
+/* line 158, css\less\header-nav.less */
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:focus {
+  background: none;
+}
+/* line 162, css\less\header-nav.less */
+.navbar-header .navbar-toggle span {
+  display: block;
+}
+/* line 166, css\less\header-nav.less */
+.navbar-header .navbar-toggle i {
+  display: none;
+}
+/* line 172, css\less\header-nav.less */
+.navbar-collapse {
+  background: rgba(0, 0, 0, 0.75);
+  max-height: none !important;
+  position: absolute;
+  left: -100%;
+  width: 300px;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  display: block;
+  transition: 0.5s ease;
+}
+@media (max-width: 767px) {
+  /* line 184, css\less\header-nav.less */
+  .navbar-collapse {
+    width: 100%;
+  }
+}
+/* line 188, css\less\header-nav.less */
+.navbar-collapse a {
+  color: white;
+}
+/* line 192, css\less\header-nav.less */
+.navbar-collapse nav {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  /* line 195, css\less\header-nav.less */
+  .navbar-collapse nav {
+    margin-top: 75px;
+  }
+}
+/* line 199, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav {
+  float: none !important;
+  margin: 0;
+}
+/* line 203, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li {
+  float: none;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  /* line 207, css\less\header-nav.less */
+  .navbar-collapse nav .navbar-nav > li {
+    margin-bottom: 0;
+  }
+}
+/* line 211, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li .dropdown-menu {
+  position: static;
+  float: none;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 221, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li .dropdown-menu li {
+  margin-bottom: 5px;
+}
+/* line 224, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li .dropdown-menu li a {
+  color: white;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+/* line 229, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li .dropdown-menu li a:hover {
+  background: #000000;
+}
+/* line 238, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 242, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li > a:hover,
+.navbar-collapse nav .navbar-nav > li > a:focus {
+  background: rgba(0, 0, 0, 0.9);
+  color: white !important;
+}
+/* line 249, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li.active a {
+  background: rgba(0, 0, 0, 0.9);
+  color: black;
+}
+/* line 256, css\less\header-nav.less */
+.navbar-collapse nav .navbar-nav > li.open > a {
+  background: #000000;
+}
+/* line 266, css\less\header-nav.less */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background: #000000;
+}
+/* line 270, css\less\header-nav.less */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+/* line 277, css\less\header-nav.less */
+.menu-opened .navbar-header .navbar-toggle i {
+  display: block;
+  color: white;
+}
+/* line 282, css\less\header-nav.less */
+.menu-opened .navbar-header .navbar-toggle span {
+  display: none;
+}
+/* line 288, css\less\header-nav.less */
+.menu-opened .navbar-collapse {
+  left: 0;
+  transition: 0.5s ease;
+}
+/* line 1, css\less\general.less */
+.contextual-links-region {
+  margin-top: 60px;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl100_italic';
+  src: url('../fonts/museo_sans_cyrl_100_ita-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_100_ita-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_100_ita-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_100_ita-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_100_ita-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_100_ita-webfont.svg#museo_sans_cyrl100_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl100';
+  src: url('../fonts/museo_sans_cyrl_100-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_100-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_100-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_100-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_100-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_100-webfont.svg#museo_sans_cyrl100') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl300_italic';
+  src: url('../fonts/museo_sans_cyrl_300_ita-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_300_ita-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_300_ita-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_300_ita-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_300_ita-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_300_ita-webfont.svg#museo_sans_cyrl300_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl300';
+  src: url('../fonts/museo_sans_cyrl_300-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_300-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_300-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_300-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_300-webfont.svg#museo_sans_cyrl300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl500_italic';
+  src: url('../fonts/museo_sans_cyrl_500_ita-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_500_ita-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_500_ita-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_500_ita-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_500_ita-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_500_ita-webfont.svg#museo_sans_cyrl500_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl500';
+  src: url('../fonts/museo_sans_cyrl_500-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_500-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_500-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_500-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_500-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_500-webfont.svg#museo_sans_cyrl500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl700_italic';
+  src: url('../fonts/museo_sans_cyrl_700_ita-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_700_ita-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_700_ita-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_700_ita-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_700_ita-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_700_ita-webfont.svg#museo_sans_cyrl700_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl700';
+  src: url('../fonts/museo_sans_cyrl_700-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_700-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_700-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_700-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_700-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_700-webfont.svg#museo_sans_cyrl700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl900_italic';
+  src: url('../fonts/museo_sans_cyrl_900_ita-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_900_ita-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_900_ita-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_900_ita-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_900_ita-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_900_ita-webfont.svg#museo_sans_cyrl900_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_sans_cyrl900';
+  src: url('../fonts/museo_sans_cyrl_900-webfont.eot');
+  src: url('../fonts/museo_sans_cyrl_900-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo_sans_cyrl_900-webfont.woff2') format('woff2'), url('../fonts/museo_sans_cyrl_900-webfont.woff') format('woff'), url('../fonts/museo_sans_cyrl_900-webfont.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_900-webfont.svg#museo_sans_cyrl900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 133, css\less\general.less */
+.no-touch .front .video_overlay {
+  background: url(../images/video-overlay.png) repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+/* line 141, css\less\general.less */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #58595b;
+}
+/* line 149, css\less\general.less */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+/* line 155, css\less\general.less */
+.not-front #wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 159, css\less\general.less */
+.not-front #mcw {
+  background: #fafafa;
+  overflow-x: hidden;
+}
+/* line 165, css\less\general.less */
+.region-content {
+  padding: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .region-content {
+    padding: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .region-content {
+    padding: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .region-content {
+    padding: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .region-content {
+    padding: 60px;
+  }
+}
+/* line 169, css\less\general.less */
+.region.region-content-bottom {
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .region.region-content-bottom {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .region.region-content-bottom {
+    padding-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .region.region-content-bottom {
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .region.region-content-bottom {
+    padding-bottom: 60px;
+  }
+}
+/* line 173, css\less\general.less */
+#page {
+  padding-bottom: 80px;
+  /* Height of the footer*/
+}
+/* line 178, css\less\general.less */
+body {
+  font-family: 'museo_sans_cyrl300';
+  font-size: 18px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  /* line 183, css\less\general.less */
+  body {
+    font-size: 15px;
+  }
+}
+/* line 189, css\less\general.less */
+a:hover {
+  text-decoration: none;
+}
+/* line 194, css\less\general.less */
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 199, css\less\general.less */
+.hidden {
+  display: none;
+}
+/* line 203, css\less\general.less */
+h1.page-header {
+  border: none;
+  text-align: center;
+  font-family: 'museo_sans_cyrl100';
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+@media (min-width: 992px) {
+  /* line 43, css\less\mixins.less */
+  h1.page-header {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 47, css\less\mixins.less */
+  h1.page-header {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 51, css\less\mixins.less */
+  h1.page-header {
+    font-size: 100px;
+  }
+}
+/* line 211, css\less\general.less */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'museo_sans_cyrl700';
+  font-weight: normal;
+}
+/* line 216, css\less\general.less */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 222, css\less\general.less */
+ul.inlineList {
+  text-align: center;
+}
+/* line 225, css\less\general.less */
+ul.inlineList li {
+  list-style: none;
+  display: inline-block;
+  padding: 25px 20px;
+  text-align: center;
+}
+/* line 234, css\less\general.less */
+p {
+  text-align: justify;
+}
+/* line 238, css\less\general.less */
+.html .btn,
+.html .input,
+.html button,
+.html .form-control,
+.pager-load-more li > a {
+  border-radius: 0;
+}
+/* line 246, css\less\general.less */
+.pager-load-more li > a {
+  background: none;
+  color: #e35825;
+  border: #e35825 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+}
+/* line 65, css\less\mixins.less */
+.pager-load-more li > a:hover {
+  background: #e35825;
+  color: #fafafa;
+}
+/* line 250, css\less\general.less */
+.btn-danger {
+  background: none;
+  color: #cb2c3a;
+  border: #cb2c3a 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+}
+/* line 65, css\less\mixins.less */
+.btn-danger:hover {
+  background: #cb2c3a;
+  color: #fafafa;
+}
+/* line 254, css\less\general.less */
+.btn-info {
+  background: none;
+  color: #213f99;
+  border: #213f99 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+}
+/* line 65, css\less\mixins.less */
+.btn-info:hover {
+  background: #213f99;
+  color: #fafafa;
+}
+/* line 258, css\less\general.less */
+.masonry-item {
+  float: left;
+  width: 23%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 40px;
+}
+/* line 266, css\less\general.less */
+.masonry-item img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 271, css\less\general.less */
+.slow-popup {
+  cursor: pointer;
+}
+/* line 275, css\less\general.less */
+.popover_content_wrapper {
+  display: none;
+}
+/* line 279, css\less\general.less */
+.popover {
+  background: #191410;
+  border-radius: 0;
+  border: none;
+  color: white;
+  max-width: 700px;
+}
+/* line 286, css\less\general.less */
+.popover .popover-title {
+  display: none !important;
+}
+/* line 290, css\less\general.less */
+.popover .views-field-title,
+.popover .views-field-field-date,
+.popover .views-field-field-body,
+.popover .views-field-title a {
+  color: white;
+}
+/* line 297, css\less\general.less */
+.popover img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 303, css\less\general.less */
+.popover.top .arrow {
+  border-top-color: #191410;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+/* line 307, css\less\general.less */
+.popover.top .arrow:after {
+  border-top-color: #191410;
+}
+/* line 310, css\less\general.less */
+.popover.right .arrow {
+  border-right-color: #191410;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+/* line 314, css\less\general.less */
+.popover.right .arrow:after {
+  border-right-color: #191410;
+}
+/* line 317, css\less\general.less */
+.popover.bottom .arrow {
+  border-bottom-color: #191410;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+/* line 321, css\less\general.less */
+.popover.bottom .arrow:after {
+  border-bottom-color: #191410;
+}
+/* line 324, css\less\general.less */
+.popover.left .arrow {
+  border-left-color: #191410;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+/* line 328, css\less\general.less */
+.popover.left .arrow:after {
+  border-left-color: #191410;
+}
+/* line 332, css\less\general.less */
+.modal-content {
+  box-shadow: none;
+}
+/* line 336, css\less\general.less */
+.pagination > li > a,
+.pagination > li > span {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  float: left;
+}
+/* line 343, css\less\general.less */
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  background: black;
+  color: white;
+}
+/* line 349, css\less\general.less */
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #213f99;
+  border: none;
+  color: #fff;
+}
+/* line 356, css\less\general.less */
+ul li.translation_uk,
+ul li.translation_ru,
+ul li.translation_en {
+  display: none;
+}
+/* line 362, css\less\general.less */
+#map {
+  padding: 0;
+  font-size: 0;
+}
+/* line 366, css\less\general.less */
+#map .overlayGoogleMap {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  top: 350px;
+  margin-top: -350px;
+}
+/* line 376, css\less\general.less */
+#footer {
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+}
+/* line 384, css\less\general.less */
+#footer .footer {
+  color: white;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+}
+/* line 391, css\less\general.less */
+#footer .footer .col-1 {
+  text-align: left;
+}
+/* line 395, css\less\general.less */
+#footer .footer .col-2 {
+  text-align: center;
+}
+/* line 397, css\less\general.less */
+#footer .footer .col-2 a:first-child {
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  /* line 402, css\less\general.less */
+  #footer .footer .col-2 span {
+    display: none;
+  }
+}
+/* line 408, css\less\general.less */
+#footer .footer .col-3 {
+  text-align: right;
+  float: right;
+}
+/* line 411, css\less\general.less */
+#footer .footer .col-3 a {
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  /* line 415, css\less\general.less */
+  #footer .footer .col-3 {
+    float: none;
+    text-align: center;
+  }
+}
+/* line 421, css\less\general.less */
+#footer .footer i,
+#footer .footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 428, css\less\general.less */
+#footer .footer .btn {
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 50px;
+  padding: 10px 40px;
+}
+/* line 437, css\less\general.less */
+#azpLocation {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 441, css\less\general.less */
+#azpLocation .c {
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  #azpLocation .c {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  #azpLocation .c {
+    margin-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  #azpLocation .c {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  #azpLocation .c {
+    margin-bottom: 60px;
+  }
+}
+/* line 444, css\less\general.less */
+#azpLocation .c p {
+  text-align: center;
+}
+/* line 449, css\less\general.less */
+#azpLocation #mapImage {
+  text-align: center;
+}
+/* line 453, css\less\general.less */
+#azpLocation #mapImage .mapImage {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 458, css\less\general.less */
+#azpLocation #mapImage .imgContainer {
+  position: relative;
+}
+/* line 461, css\less\general.less */
+#azpLocation #mapImage .imgContainer .mapDot {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+/* line 466, css\less\general.less */
+#azpLocation #mapImage .imgContainer .mapDot.badge {
+  background-color: black;
+  font-size: 18px;
+  border-radius: 18px;
+  min-width: 18px;
+  padding: 3px 8px;
+}
+/* line 473, css\less\general.less */
+#azpLocation #mapImage .imgContainer .mapDot.badge:hover {
+  background-color: #e35825;
+}
+/* line 483, css\less\general.less */
+#mapLegend .modal-body {
+  color: black;
+  padding: 30px 30px 60px 30px;
+  overflow: auto;
+}
+/* line 489, css\less\general.less */
+#mapLegend .modal-body .place h3 {
+  color: black;
+  text-transform: uppercase;
+}
+/* line 494, css\less\general.less */
+#mapLegend .modal-body .place p {
+  text-align: left;
+}
+/* line 503, css\less\general.less */
+.block .block-title {
+  font-size: 26px;
+  color: #c7c8ca;
+  font-family: 'museo_sans_cyrl700';
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+/* line 510, css\less\general.less */
+.block .block-title:after {
+  content: '';
+  height: 2px;
+  width: 80px;
+  background: #c7c8ca;
+  display: block;
+}
+/* line 1, css\less\content.less */
+body {
+  background: url(../images/front.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 5, css\less\content.less */
+body.join.art-colaboration {
+  background: url(../images/art.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 10, css\less\content.less */
+body.page-agenda {
+  background: url(../images/events.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 15, css\less\content.less */
+body.what-we-do {
+  background: url(../images/we-do.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 20, css\less\content.less */
+body.page-taxonomy-term-31 {
+  background: url(../images/events-coworking.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 25, css\less\content.less */
+body.page-taxonomy-term-32 {
+  background: url(../images/events-art-gallery.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 30, css\less\content.less */
+body.page-taxonomy-term-33,
+body.page-events {
+  background: url(../images/events-concerts.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 36, css\less\content.less */
+body.page-taxonomy-term-34 {
+  background: url(../images/events-fest.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 41, css\less\content.less */
+body.page-taxonomy-term-35 {
+  background: url(../images/events-edutainment.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 46, css\less\content.less */
+body.page-taxonomy-term-36 {
+  background: url(../images/events-creative-workshops.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 51, css\less\content.less */
+body.page-taxonomy-term-37 {
+  background: url(../images/events-urban-fashion.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 56, css\less\content.less */
+body.page-taxonomy-term-38 {
+  background: url(../images/events-pool.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 61, css\less\content.less */
+body.page-news {
+  background: url(../images/news.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 66, css\less\content.less */
+body.contacts {
+  background: url(../images/contacts.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 71, css\less\content.less */
+body.page-shop,
+body.page-cart {
+  background: url(../images/shop.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 78, css\less\content.less */
+body.page-glossary {
+  background: url(../images/glossary.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 83, css\less\content.less */
+body.philosophy {
+  background: url(../images/ph.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 88, css\less\content.less */
+body.join,
+body.page-user {
+  background: url(../images/join.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 94, css\less\content.less */
+body.join.rent {
+  background: url(../images/rent.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 99, css\less\content.less */
+body.page-node-414,
+body.page-node-293 {
+  background: url(../images/mapcover.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 105, css\less\content.less */
+body.page-partners {
+  background: url(../images/kyiv.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  /* line 110, css\less\content.less */
+  body {
+    background: #213f99 !important;
+  }
+  /* line 113, css\less\content.less */
+  body.front {
+    background: url(../images/front.jpg) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* line 120, css\less\content.less */
+.product-image,
+.display-price {
+  clear: none;
+  float: none;
+  text-align: left;
+}
+/* line 128, css\less\content.less */
+.front h1 {
+  display: none;
+}
+/* line 132, css\less\content.less */
+.front .region-content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  opacity: 0;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/* line 146, css\less\content.less */
+.node-type-webform #mcw .XLcontainer {
+  max-width: 1170px;
+}
+/* line 151, css\less\content.less */
+.node-type-webform .field-name-body {
+  padding-top: 4px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-top: 8px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-top: 12.004801920768308px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-top: 16px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-bottom: 48.01920768307323px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-bottom: 64px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .field-name-body {
+    padding-bottom: 80px;
+  }
+}
+/* line 155, css\less\content.less */
+.node-type-webform .field-name-body p {
+  text-align: center;
+}
+/* line 159, css\less\content.less */
+.node-type-webform .field-name-body:after {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 -9999px;
+  padding: 0 9999px;
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 10000px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .field-name-body:after {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .field-name-body:after {
+    margin-top: 48.01920768307323px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .field-name-body:after {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .field-name-body:after {
+    margin-top: 80px;
+  }
+}
+/* line 164, css\less\content.less */
+.node-type-webform .webform-client-form {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 8px;
+  padding-top: 16px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-bottom: 24.009603841536617px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-top: 32px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-top: 48.01920768307323px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-top: 64px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .webform-client-form {
+    padding-top: 80px;
+  }
+}
+/* line 170, css\less\content.less */
+.node-type-webform .webform-client-form:after {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 -9999px;
+  padding: 0 9999px;
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 10000px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .node-type-webform .webform-client-form:after {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .node-type-webform .webform-client-form:after {
+    margin-top: 48.01920768307323px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .node-type-webform .webform-client-form:after {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .node-type-webform .webform-client-form:after {
+    margin-top: 80px;
+  }
+}
+/* line 174, css\less\content.less */
+.node-type-webform .webform-client-form > div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 179, css\less\content.less */
+  .node-type-webform .webform-client-form > div {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 183, css\less\content.less */
+  .node-type-webform .webform-client-form > div {
+    width: 50%;
+  }
+}
+/* line 187, css\less\content.less */
+.node-type-webform .webform-client-form > div .description {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 5px;
+}
+/* line 193, css\less\content.less */
+.node-type-webform .webform-client-form > div .form-item {
+  margin-bottom: 20px;
+}
+/* line 196, css\less\content.less */
+.node-type-webform .webform-client-form > div .form-item.hide-on-hover {
+  transition: 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  opacity: 0;
+  margin-bottom: 0;
+}
+/* line 202, css\less\content.less */
+.node-type-webform .webform-client-form > div .webform-submit,
+.node-type-webform .webform-client-form > div .bnt.hide {
+  transition: 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  opacity: 0;
+  margin-bottom: 0;
+}
+/* line 208, css\less\content.less */
+.node-type-webform .webform-client-form > div .webform-component--btn {
+  margin-bottom: 0;
+}
+/* line 212, css\less\content.less */
+.node-type-webform .webform-client-form > div .webform-submit,
+.node-type-webform .webform-client-form > div .btn.showform {
+  background: none;
+  color: #e35825;
+  border: #e35825 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+  display: inline-block;
+}
+/* line 65, css\less\mixins.less */
+.node-type-webform .webform-client-form > div .webform-submit:hover,
+.node-type-webform .webform-client-form > div .btn.showform:hover {
+  background: #e35825;
+  color: #fafafa;
+}
+/* line 218, css\less\content.less */
+.node-type-webform .webform-client-form > div .webform-component--btn,
+.node-type-webform .webform-client-form > div .webform-submit-container {
+  text-align: center;
+}
+/* line 223, css\less\content.less */
+.node-type-webform .webform-client-form > div .webform-submit.show {
+  opacity: 1;
+  max-height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 233, css\less\content.less */
+.node-type-webform .webform-client-form.showall > div .hide-on-hover {
+  max-height: 1000px;
+  opacity: 1;
+  transition: 1s ease;
+  margin-bottom: 20px;
+}
+/* line 237, css\less\content.less */
+.node-type-webform .webform-client-form.showall > div .hide-on-hover .form-managed-file button {
+  margin-top: 20px;
+}
+/* line 242, css\less\content.less */
+.node-type-webform .webform-client-form.showall > div .webform-submit {
+  margin-top: 20px;
+  max-height: 1000px;
+  opacity: 1;
+  transition: 1s ease;
+}
+/* line 254, css\less\content.less */
+.page-shop .form-item-attributes-1 label {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 259, css\less\content.less */
+.page-shop .form-item-attributes-1 select {
+  width: auto;
+  min-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 267, css\less\content.less */
+.page-shop .view .col {
+  text-align: center;
+  margin-bottom: 120px;
+}
+/* line 271, css\less\content.less */
+.page-shop .view .col img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 276, css\less\content.less */
+.page-shop .view .col .views-field-display-price {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 50px;
+  padding: 40px 0 20px 0;
+}
+/* line 281, css\less\content.less */
+.page-shop .view .col .views-field-display-price span > span {
+  font-size: 20px;
+}
+/* line 287, css\less\content.less */
+.page-shop .view .col .views-field-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'museo_sans_cyrl700';
+  text-transform: uppercase;
+}
+/* line 294, css\less\content.less */
+.page-shop .view .col .views-field-addtocartlink {
+  width: 274px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 299, css\less\content.less */
+.page-shop .view .col .views-field-addtocartlink button {
+  background: none;
+  color: #e35825;
+  border: #e35825 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 12px;
+  min-width: 180px;
+}
+/* line 65, css\less\mixins.less */
+.page-shop .view .col .views-field-addtocartlink button:hover {
+  background: #e35825;
+  color: #fafafa;
+}
+/* line 310, css\less\content.less */
+.page-cart #edit-update {
+  margin-left: 20px;
+}
+/* line 314, css\less\content.less */
+.page-cart .table-striped > tbody > tr:nth-child(2n+1) > td,
+.page-cart .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background: none;
+  border: none;
+}
+/* line 321, css\less\content.less */
+.page-cart .table > thead > tr > th {
+  font-weight: normal;
+}
+/* line 328, css\less\content.less */
+.page-cart-checkout .region-content {
+  color: black;
+}
+/* line 335, css\less\content.less */
+.page-cart-checkout-review .region-content,
+.page-cart-checkout-complete .region-content {
+  color: black;
+}
+/* line 341, css\less\content.less */
+.page-user-login #block-system-main,
+.page-user-login #block-block-2 {
+  width: 45%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+/* line 351, css\less\content.less */
+.page-user .profile .user-picture {
+  display: none;
+}
+/* line 358, css\less\content.less */
+.page-join .views-field-view-node {
+  margin: 30px auto auto;
+  text-align: center;
+}
+/* line 362, css\less\content.less */
+.page-join .views-field-view-node a {
+  background: none;
+  color: #e35825;
+  border: #e35825 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+}
+/* line 65, css\less\mixins.less */
+.page-join .views-field-view-node a:hover {
+  background: #e35825;
+  color: #fafafa;
+}
+/* line 367, css\less\content.less */
+.page-join .view-header {
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-join .view-header {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-join .view-header {
+    padding-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-join .view-header {
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-join .view-header {
+    padding-bottom: 60px;
+  }
+}
+/* line 370, css\less\content.less */
+.page-join .view-header:after {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 -9999px;
+  padding: 0 9999px;
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 10000px;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-join .view-header:after {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-join .view-header:after {
+    margin-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-join .view-header:after {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-join .view-header:after {
+    margin-top: 60px;
+  }
+}
+/* line 375, css\less\content.less */
+.page-join .view-content {
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-join .view-content {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-join .view-content {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-join .view-content {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-join .view-content {
+    padding-top: 60px;
+  }
+}
+/* line 379, css\less\content.less */
+.page-join .views-field-title {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'museo_sans_cyrl700';
+  margin-bottom: 20px;
+}
+/* line 385, css\less\content.less */
+.page-join .views-field-title a {
+  color: #4d4d4f;
+}
+/* line 390, css\less\content.less */
+.page-join .view-content .col {
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-join .view-content .col {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-join .view-content .col {
+    margin-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-join .view-content .col {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-join .view-content .col {
+    margin-bottom: 60px;
+  }
+}
+/* line 395, css\less\content.less */
+.join.as-media .field-name-body,
+.page-join .view-header,
+.page-partners .view-header {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 400, css\less\content.less */
+.join.as-media .field-name-body p,
+.page-join .view-header p,
+.page-partners .view-header p,
+.join.as-media .field-name-body li,
+.page-join .view-header li,
+.page-partners .view-header li,
+.join.as-media .field-name-body ul,
+.page-join .view-header ul,
+.page-partners .view-header ul {
+  text-align: left;
+}
+/* line 407, css\less\content.less */
+.page-partners #mcw {
+  background: white;
+}
+/* line 411, css\less\content.less */
+.page-partners .view-header {
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-partners .view-header {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-partners .view-header {
+    margin-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-partners .view-header {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-partners .view-header {
+    margin-bottom: 60px;
+  }
+}
+/* line 414, css\less\content.less */
+.page-partners .view-header:after {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 -9999px;
+  padding: 0 9999px;
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 10000px;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-partners .view-header:after {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-partners .view-header:after {
+    margin-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-partners .view-header:after {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-partners .view-header:after {
+    margin-top: 60px;
+  }
+}
+/* line 419, css\less\content.less */
+.page-partners .view-content {
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-partners .view-content {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-partners .view-content {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-partners .view-content {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-partners .view-content {
+    padding-top: 60px;
+  }
+}
+/* line 423, css\less\content.less */
+.page-partners .view {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  /* line 14, css\less\mixins.less */
+  .page-partners .view {
+    width: 750px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, css\less\mixins.less */
+  .page-partners .view {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 24, css\less\mixins.less */
+  .page-partners .view {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 28, css\less\mixins.less */
+  .page-partners .view {
+    width: 1570px;
+  }
+}
+/* line 427, css\less\content.less */
+.page-partners .view h3 {
+  clear: both;
+  float: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+/* line 435, css\less\content.less */
+.page-partners .view a {
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+}
+/* line 442, css\less\content.less */
+.page-partners .view a div {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+/* line 448, css\less\content.less */
+.page-partners .view a .partnerImage {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+/* line 456, css\less\content.less */
+.page-partners .view a .partnerTitle {
+  margin-top: 20px;
+}
+/* line 460, css\less\content.less */
+.page-partners .view a .partnerTitle,
+.page-partners .view a .partnerText {
+  visibility: hidden;
+  background: grey;
+  padding: 3px 6px;
+}
+/* line 465, css\less\content.less */
+.page-partners .view a .partnerTitle p,
+.page-partners .view a .partnerText p {
+  text-align: left;
+}
+/* line 471, css\less\content.less */
+.page-partners .view a:hover .partnerTitle,
+.page-partners .view a:hover .partnerText {
+  visibility: visible;
+}
+/* line 477, css\less\content.less */
+.page-partners .view .views-row {
+  padding-bottom: 20px;
+}
+/* line 480, css\less\content.less */
+.page-partners .view .views-row.rowNum-1 .partnerTitle,
+.page-partners .view .views-row.rowNum-1 .partnerText {
+  background: #e9a61d;
+}
+/* line 485, css\less\content.less */
+.page-partners .view .views-row.rowNum-2 .partnerTitle,
+.page-partners .view .views-row.rowNum-2 .partnerText {
+  background: #6d3c7d;
+}
+/* line 490, css\less\content.less */
+.page-partners .view .views-row.rowNum-3 .partnerTitle,
+.page-partners .view .views-row.rowNum-3 .partnerText {
+  background: #cb2c3a;
+}
+/* line 495, css\less\content.less */
+.page-partners .view .views-row.rowNum-4 .partnerTitle,
+.page-partners .view .views-row.rowNum-4 .partnerText {
+  background: #4f9094;
+}
+/* line 507, css\less\content.less */
+.page-agenda .region-content,
+.page-art .region-content {
+  background: none;
+  padding-top: 0;
+  overflow-y: visible;
+}
+/* line 513, css\less\content.less */
+.page-agenda h1,
+.page-art h1 {
+  padding-left: 60px;
+}
+/* line 517, css\less\content.less */
+.page-agenda h1,
+.page-art h1,
+.page-agenda h2,
+.page-art h2 {
+  clear: both;
+  float: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+/* line 525, css\less\content.less */
+.page-agenda h1:after,
+.page-art h1:after,
+.page-agenda h2:after,
+.page-art h2:after {
+  content: "";
+  background: white;
+  position: absolute;
+  left: 75px;
+  width: 75px;
+  height: 2px;
+  margin-top: 40px;
+}
+/* line 535, css\less\content.less */
+.page-agenda .view .col,
+.page-art .view .col {
+  margin-bottom: 30px;
+}
+/* line 538, css\less\content.less */
+.page-agenda .view .col a,
+.page-art .view .col a {
+  color: white;
+}
+/* line 541, css\less\content.less */
+.page-agenda .view .col a .views-field-title,
+.page-art .view .col a .views-field-title,
+.page-agenda .view .col a .views-field-field-date,
+.page-art .view .col a .views-field-field-date {
+  color: white;
+  background: #e35825;
+  padding: 2px 20px;
+  font-size: 20px;
+  font-family: 'museo_sans_cyrl700';
+}
+/* line 550, css\less\content.less */
+.page-agenda .view .col a .views-field-field-body,
+.page-art .view .col a .views-field-field-body {
+  background: #e35825;
+  font-size: 16px;
+  padding: 5px 20px;
+  display: none;
+}
+/* line 557, css\less\content.less */
+.page-agenda .view .col a .views-field-field-photo-anons,
+.page-art .view .col a .views-field-field-photo-anons {
+  display: none;
+}
+/* line 561, css\less\content.less */
+.page-agenda .view .col a:hover,
+.page-art .view .col a:hover {
+  text-decoration: none;
+  position: absolute;
+  z-index: 999;
+  margin-top: -20px;
+  -webkit-box-shadow: 0px 0px 30px 0px #323232;
+  -moz-box-shadow: 0px 0px 30px 0px #323232;
+  box-shadow: 0px 0px 30px 0px #323232;
+  border: black 10px solid;
+}
+/* line 572, css\less\content.less */
+.page-agenda .view .col a:hover .views-field-field-body,
+.page-art .view .col a:hover .views-field-field-body,
+.page-agenda .view .col a:hover .views-field-field-photo-anons,
+.page-art .view .col a:hover .views-field-field-photo-anons {
+  display: block;
+}
+/* line 578, css\less\content.less */
+.page-agenda .view .col a:hover .hide-on-hover,
+.page-art .view .col a:hover .hide-on-hover {
+  display: none;
+}
+/* line 590, css\less\content.less */
+.page-agenda #block-system-main,
+.page-art #block-system-main {
+  margin-top: 40px;
+}
+/* line 593, css\less\content.less */
+.page-agenda #block-system-main .views-field-title,
+.page-art #block-system-main .views-field-title,
+.page-agenda #block-system-main .views-field-field-date,
+.page-art #block-system-main .views-field-field-date,
+.page-agenda #block-system-main .views-field-field-body,
+.page-art #block-system-main .views-field-field-body {
+  background: #213f99;
+}
+/* ------------------------HOVER CARDS */
+/* line 607, css\less\content.less */
+.page-news .view .col,
+.page-taxonomy-term.events .view .col,
+.join.art-colaboration .view .col,
+.page-taxonomy-term.what-we-do .view .col,
+.page-news .view .views-row,
+.page-taxonomy-term.events .view .views-row,
+.join.art-colaboration .view .views-row,
+.page-taxonomy-term.what-we-do .view .views-row {
+  margin-bottom: 40px;
+}
+/* line 611, css\less\content.less */
+.page-news .view .col a,
+.page-taxonomy-term.events .view .col a,
+.join.art-colaboration .view .col a,
+.page-taxonomy-term.what-we-do .view .col a,
+.page-news .view .views-row a,
+.page-taxonomy-term.events .view .views-row a,
+.join.art-colaboration .view .views-row a,
+.page-taxonomy-term.what-we-do .view .views-row a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: block;
+}
+/* line 617, css\less\content.less */
+.page-news .view .col a .text-block,
+.page-taxonomy-term.events .view .col a .text-block,
+.join.art-colaboration .view .col a .text-block,
+.page-taxonomy-term.what-we-do .view .col a .text-block,
+.page-news .view .views-row a .text-block,
+.page-taxonomy-term.events .view .views-row a .text-block,
+.join.art-colaboration .view .views-row a .text-block,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block {
+  background: rgba(227, 88, 37, 0.9);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  min-height: 82px;
+  padding: 15px 20px;
+  width: 100%;
+}
+/* line 626, css\less\content.less */
+.page-news .view .col a .text-block .views-field-title,
+.page-taxonomy-term.events .view .col a .text-block .views-field-title,
+.join.art-colaboration .view .col a .text-block .views-field-title,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-title,
+.page-news .view .views-row a .text-block .views-field-title,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-title,
+.join.art-colaboration .view .views-row a .text-block .views-field-title,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-title {
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: 'museo_sans_cyrl900';
+}
+/* line 633, css\less\content.less */
+.page-news .view .col a .text-block .views-field-title,
+.page-taxonomy-term.events .view .col a .text-block .views-field-title,
+.join.art-colaboration .view .col a .text-block .views-field-title,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-title,
+.page-news .view .views-row a .text-block .views-field-title,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-title,
+.join.art-colaboration .view .views-row a .text-block .views-field-title,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-title,
+.page-news .view .col a .text-block .views-field-field-date,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-date,
+.join.art-colaboration .view .col a .text-block .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-date,
+.page-news .view .views-row a .text-block .views-field-field-date,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-date,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-date,
+.page-news .view .col a .text-block .views-field-field-body,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-body,
+.join.art-colaboration .view .col a .text-block .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-body,
+.page-news .view .views-row a .text-block .views-field-field-body,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-body,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-body {
+  /*font-family: 'museo_sans_cyrl700';*/
+}
+/* line 640, css\less\content.less */
+.page-news .view .col a .text-block .views-field-field-body,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-body,
+.join.art-colaboration .view .col a .text-block .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-body,
+.page-news .view .views-row a .text-block .views-field-field-body,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-body,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-body,
+.page-news .view .col a .text-block .views-field-field-date,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-date,
+.join.art-colaboration .view .col a .text-block .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-date,
+.page-news .view .views-row a .text-block .views-field-field-date,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-date,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-date {
+  transition: 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 10px;
+}
+/* line 648, css\less\content.less */
+.page-news .view .col a .text-block .views-field-field-body p,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-body p,
+.join.art-colaboration .view .col a .text-block .views-field-field-body p,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-body p,
+.page-news .view .views-row a .text-block .views-field-field-body p,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-body p,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-body p,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-body p,
+.page-news .view .col a .text-block .views-field-field-date p,
+.page-taxonomy-term.events .view .col a .text-block .views-field-field-date p,
+.join.art-colaboration .view .col a .text-block .views-field-field-date p,
+.page-taxonomy-term.what-we-do .view .col a .text-block .views-field-field-date p,
+.page-news .view .views-row a .text-block .views-field-field-date p,
+.page-taxonomy-term.events .view .views-row a .text-block .views-field-field-date p,
+.join.art-colaboration .view .views-row a .text-block .views-field-field-date p,
+.page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-date p {
+  text-align: left;
+}
+/* line 655, css\less\content.less */
+.page-news .view .col a:hover .views-field-field-body,
+.page-taxonomy-term.events .view .col a:hover .views-field-field-body,
+.join.art-colaboration .view .col a:hover .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .col a:hover .views-field-field-body,
+.page-news .view .views-row a:hover .views-field-field-body,
+.page-taxonomy-term.events .view .views-row a:hover .views-field-field-body,
+.join.art-colaboration .view .views-row a:hover .views-field-field-body,
+.page-taxonomy-term.what-we-do .view .views-row a:hover .views-field-field-body,
+.page-news .view .col a:hover .views-field-field-date,
+.page-taxonomy-term.events .view .col a:hover .views-field-field-date,
+.join.art-colaboration .view .col a:hover .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .col a:hover .views-field-field-date,
+.page-news .view .views-row a:hover .views-field-field-date,
+.page-taxonomy-term.events .view .views-row a:hover .views-field-field-date,
+.join.art-colaboration .view .views-row a:hover .views-field-field-date,
+.page-taxonomy-term.what-we-do .view .views-row a:hover .views-field-field-date {
+  max-height: 1000px;
+  opacity: 1;
+  transition: 1s ease;
+}
+/* line 665, css\less\content.less */
+.join.art-colaboration .region-content {
+  padding-bottom: 0;
+}
+/* line 671, css\less\content.less */
+.page-news h1 {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+/* line 679, css\less\content.less */
+.page-user .region-content {
+  overflow: auto;
+}
+/* line 685, css\less\content.less */
+body.philosophy .XLcontainer {
+  max-width: 1170px;
+}
+/* line 690, css\less\content.less */
+body.philosophy .field-name-body .field-item {
+  padding: 40px;
+}
+/* line 693, css\less\content.less */
+body.philosophy .field-name-body .field-item.odd {
+  text-align: right;
+}
+/* line 701, css\less\content.less */
+body.what-we-do.page-node-413 .region.region-content {
+  background: none;
+}
+/* line 705, css\less\content.less */
+body.what-we-do.page-node-413 h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+/* line 710, css\less\content.less */
+body.what-we-do.page-node-413 .node .field-name-body p {
+  text-align: center;
+}
+/* line 714, css\less\content.less */
+body.what-we-do.page-node-413 h2 {
+  text-align: center;
+  margin: 40px auto;
+}
+/* line 721, css\less\content.less */
+body.what-we-do.page-node-413 td {
+  border: none !important;
+}
+/* line 726, css\less\content.less */
+body.what-we-do.page-node-413 td.views-field-field-image {
+  padding-right: 40px;
+  padding-bottom: 60px;
+}
+/* line 731, css\less\content.less */
+body.what-we-do.page-node-413 td a {
+  color: white;
+}
+/* line 735, css\less\content.less */
+body.what-we-do.page-node-413 td h3 {
+  font-size: 20px;
+}
+/* line 743, css\less\content.less */
+.page-taxonomy-term.events h1 {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 750, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .view-content,
+.page-taxonomy-term.events .view-taxonomy-term .text-center,
+.page-taxonomy-term.events .view-taxonomy-term .view-header {
+  width: 70%;
+  float: left;
+}
+/* line 757, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .view-header h2 {
+  margin-left: 30px;
+}
+/* line 762, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .attachment {
+  width: 30%;
+  overflow: hidden;
+  padding-left: 40px;
+}
+/* line 767, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer {
+  clear: both;
+}
+/* line 769, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer a {
+  color: white;
+}
+/* line 774, css\less\content.less */
+.page-taxonomy-term.events .view-taxonomy-term .attachment .view-header h2 {
+  margin-left: 0;
+}
+/* line 784, css\less\content.less */
+.page-glossary .view .name,
+.what-we-do.page-node-413 .view .name,
+.join.rent .view .name,
+.page-glossary .view h3,
+.what-we-do.page-node-413 .view h3,
+.join.rent .view h3 {
+  font-size: 30px;
+  font-family: 'museo_sans_cyrl700';
+  padding-bottom: 10px;
+  color: #58595b;
+}
+/* line 792, css\less\content.less */
+.page-glossary .c,
+.what-we-do.page-node-413 .c,
+.join.rent .c {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .page-glossary .c,
+  .what-we-do.page-node-413 .c,
+  .join.rent .c {
+    padding-bottom: 60px;
+  }
+}
+/* line 797, css\less\content.less */
+.page-glossary .views-row,
+.what-we-do.page-node-413 .views-row,
+.join.rent .views-row {
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+/* line 802, css\less\content.less */
+.page-glossary .views-row.views-row-even,
+.what-we-do.page-node-413 .views-row.views-row-even,
+.join.rent .views-row.views-row-even {
+  background: url(../images/col.jpg) repeat-y;
+}
+/* line 806, css\less\content.less */
+.page-glossary .views-row .image,
+.what-we-do.page-node-413 .views-row .image,
+.join.rent .views-row .image {
+  float: left;
+  margin-right: 100px;
+  padding-bottom: 60px;
+}
+/* line 813, css\less\content.less */
+.page-glossary .views-row.views-row-odd .image,
+.what-we-do.page-node-413 .views-row.views-row-odd .image,
+.join.rent .views-row.views-row-odd .image {
+  float: right;
+  margin-left: 100px;
+}
+@media (max-width: 767px) {
+  /* line 823, css\less\content.less */
+  .page-glossary .views-row.views-row-odd .image,
+  .what-we-do.page-node-413 .views-row.views-row-odd .image,
+  .join.rent .views-row.views-row-odd .image,
+  .page-glossary .views-row.views-row-even .image,
+  .what-we-do.page-node-413 .views-row.views-row-even .image,
+  .join.rent .views-row.views-row-even .image {
+    float: none;
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+}
+/* line 836, css\less\content.less */
+.join.rent .views-row {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.rent .views-row {
+    padding-top: 60px;
+  }
+}
+/* line 840, css\less\content.less */
+.join.rent .views-row .node {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  /* line 14, css\less\mixins.less */
+  .join.rent .views-row .node {
+    width: 750px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, css\less\mixins.less */
+  .join.rent .views-row .node {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 24, css\less\mixins.less */
+  .join.rent .views-row .node {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 28, css\less\mixins.less */
+  .join.rent .views-row .node {
+    width: 1570px;
+  }
+}
+/* line 843, css\less\content.less */
+.join.rent .views-row .node h2 {
+  margin-top: 0;
+}
+/* line 847, css\less\content.less */
+.join.rent .views-row .node .field-name-body {
+  padding-bottom: 0;
+}
+/* line 850, css\less\content.less */
+.join.rent .views-row .node .field-name-body p,
+.join.rent .views-row .node .field-name-body ul,
+.join.rent .views-row .node .field-name-body li {
+  text-align: left;
+}
+/* line 854, css\less\content.less */
+.join.rent .views-row .node .field-name-body:after {
+  display: none;
+}
+/* line 861, css\less\content.less */
+.join.rent .region-content {
+  padding-bottom: 0;
+}
+/* line 865, css\less\content.less */
+.join.rent #block-views-arenda-block {
+  border-bottom: #c2c2c2 1px solid;
+}
+/* line 868, css\less\content.less */
+.join.rent #block-system-main {
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.rent #block-system-main {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.rent #block-system-main {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.rent #block-system-main {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.rent #block-system-main {
+    padding-top: 60px;
+  }
+}
+/* line 872, css\less\content.less */
+.join.rent #block-system-main .field-name-body {
+  padding-top: 0;
+}
+/* line 876, css\less\content.less */
+.join.rent #block-system-main ul.list-inline {
+  display: none;
+}
+/* line 880, css\less\content.less */
+.join.rent #block-system-main h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 24px;
+}
+/* line 886, css\less\content.less */
+.join.rent #block-system-main .webform-client-form {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 889, css\less\content.less */
+.join.rent #block-system-main .webform-client-form:after {
+  display: none;
+}
+/* line 898, css\less\content.less */
+.page-node-293 .imgContainer,
+.page-node-414 .imgContainer {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 905, css\less\content.less */
+body.events .view .views-row {
+  margin-bottom: 40px;
+}
+/* line 910, css\less\content.less */
+body.events .view .views-row .views-field-nothing a {
+  font-size: 14px;
+  font-family: 'museo_sans_cyrl300_italic';
+  text-decoration: underline;
+}
+/* line 917, css\less\content.less */
+body.events .view .views-row .views-field-nothing h3,
+body.events .view .views-row .views-field-nothing h3 a {
+  color: #4d4d4f;
+  margin-top: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'museo_sans_cyrl700';
+}
+/* line 926, css\less\content.less */
+body.events .view .views-row .views-field-nothing p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* line 931, css\less\content.less */
+body.events .view .views-row .views-field-nothing .col-sm-1 {
+  font-size: 11px;
+}
+/* line 934, css\less\content.less */
+body.events .view .views-row .views-field-nothing .col-sm-1 span {
+  font-size: 14px;
+  font-family: 'museo_sans_cyrl700';
+}
+@media (max-width: 1000px) {
+  /* line 948, css\less\content.less */
+  .page-events aside,
+  .page-events section.col-sm-8 {
+    width: 100%;
+  }
+}
+/* line 954, css\less\content.less */
+.page-events .region.region-content {
+  padding-left: 0;
+}
+/* line 958, css\less\content.less */
+.page-events .tabs--primary.nav.nav-tabs {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1600px) {
+  /* line 74, css\less\mixins.less */
+  .page-events .tabs--primary.nav.nav-tabs {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 74, css\less\mixins.less */
+  .page-events .tabs--primary.nav.nav-tabs {
+    padding-right: 30px;
+  }
+}
+/* line 965, css\less\content.less */
+.page-events .view .date-nav-wrapper .date-heading {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  /* line 970, css\less\content.less */
+  .page-events .view .event-date {
+    float: right;
+  }
+  /* line 971, css\less\content.less */
+  .page-events .view .event-image {
+    float: left;
+  }
+  /* line 972, css\less\content.less */
+  .page-events .view .event-text {
+    margin-top: 20px;
+  }
+}
+/* line 975, css\less\content.less */
+.page-events .view .event-date {
+  font-size: 14px;
+}
+/* line 978, css\less\content.less */
+.page-events .view .event-date .date-display-start,
+.page-events .view .event-date .date-display-end,
+.page-events .view .event-date .date-display-single {
+  font-weight: bold;
+  font-family: 'museo_sans_cyrl700' !important;
+}
+/* line 985, css\less\content.less */
+.page-events .view .event-date .date-display-start:after {
+  content: "\A";
+  white-space: pre;
+}
+/* line 992, css\less\content.less */
+.page-events .view .event-text p {
+  text-align: left;
+}
+/* line 997, css\less\content.less */
+.page-events .view .date-nav-wrapper .date-prev a {
+  margin-left: 0;
+}
+/* line 1001, css\less\content.less */
+.page-events .view .pager {
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 1006, css\less\content.less */
+.page-events .view .pager li {
+  background: none;
+}
+/* line 1009, css\less\content.less */
+.page-events .view .pager li.date-prev {
+  left: 0;
+  right: auto;
+}
+/* line 1014, css\less\content.less */
+.page-events .view .pager li.date-next {
+  left: 140px;
+  right: auto;
+}
+/* line 1019, css\less\content.less */
+.page-events .view .pager li a {
+  background: none;
+  color: #e1dfdf;
+  border: #e1dfdf 2px solid;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: 'museo_sans_cyrl300';
+  border-radius: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-width: 1px;
+  color: black;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 65, css\less\mixins.less */
+.page-events .view .pager li a:hover {
+  background: #e1dfdf;
+  color: #fafafa;
+}
+/* line 1036, css\less\content.less */
+#block-views-calendar-block-3 {
+  margin-top: 140px;
+}
+/* line 1039, css\less\content.less */
+#block-views-calendar-block-3 .view-footer {
+  padding: 20px 0;
+}
+/* line 1042, css\less\content.less */
+#block-views-calendar-block-3 .view-footer a {
+  text-decoration: underline;
+}
+/* line 1049, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td {
+  text-align: left;
+}
+/* line 1052, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item {
+  display: inline-block;
+  font-family: 'museo_sans_cyrl700' !important;
+}
+/* line 1056, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot {
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  border-radius: 100%;
+  vertical-align: top;
+  background-color: #4d4d4f;
+}
+/* line 1067, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.art {
+  background-color: #e9a61d;
+}
+/* line 1068, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.coworking {
+  background-color: #e35825;
+}
+/* line 1069, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.concerts {
+  background-color: #6d3c7d;
+}
+/* line 1070, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.creative-workshops {
+  background-color: #cb2c3a;
+}
+/* line 1071, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.pool {
+  background-color: #213f99;
+}
+/* line 1072, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.urban-fashion {
+  background-color: #4f9094;
+}
+/* line 1073, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.fest {
+  background-color: pink ;
+}
+/* line 1074, css\less\content.less */
+#block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.edutainment {
+  background-color: blue;
+}
+/* line 1082, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
+#block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
+#block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
+  background: none;
+}
+/* line 1088, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry,
+#block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
+  height: auto !important;
+  line-height: 1;
+}
+/* line 1094, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar div.calendar {
+  font-size: 18px;
+}
+/* line 1098, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
+#block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
+#block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
+  padding: 0;
+}
+/* line 1104, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar .month-view .full .inner .monthview,
+#block-views-calendar-block-3 .calendar-calendar .week-view .full .inner .weekview,
+#block-views-calendar-block-3 .calendar-calendar .day-view .full .inner .dayview {
+  margin: 0;
+}
+/* line 1110, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar td.empty {
+  color: #d7d5d5;
+}
+/* line 1114, css\less\content.less */
+#block-views-calendar-block-3 .calendar-calendar td {
+  border-color: #e1dfdf;
+}
+/* line 1119, css\less\content.less */
+#block-views-calendar-block-4 {
+  padding-bottom: 20px;
+}
+/* line 1122, css\less\content.less */
+#block-views-calendar-block-4 .view-header {
+  display: none;
+}
+/* line 1126, css\less\content.less */
+#block-views-calendar-block-4 .item-list {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+/* line 1130, css\less\content.less */
+#block-views-calendar-block-4 .item-list ul {
+  display: none;
+}
+/* line 1134, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3 {
+  display: none;
+  margin: 0;
+  font-family: 'museo_sans_cyrl700' !important;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 1141, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.our-event {
+  display: list-item;
+}
+/* line 1146, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.art a {
+  color: #e9a61d;
+}
+/* line 1147, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.coworking a {
+  color: #e35825;
+}
+/* line 1148, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.concerts a {
+  color: #6d3c7d;
+}
+/* line 1149, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.creative-workshops a {
+  color: #cb2c3a;
+}
+/* line 1150, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.pool a {
+  color: #213f99;
+}
+/* line 1151, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.urban-fashion a {
+  color: #4f9094;
+}
+/* line 1152, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.fest a {
+  color: pink ;
+}
+/* line 1153, css\less\content.less */
+#block-views-calendar-block-4 .item-list h3.edutainment a {
+  color: blue;
+}
+/* line 1160, css\less\content.less */
+.page-user- h1,
+.page-user-login h1 {
+  color: #4d4d4f;
+  text-align: left;
+  font-family: 'museo_sans_cyrl700' !important;
+  font-size: 24px;
+}
+/* line 1167, css\less\content.less */
+.page-user- .region-content.user,
+.page-user-login .region-content.user {
+  padding-bottom: 0;
+}
+/* line 1171, css\less\content.less */
+.page-user- #navbar,
+.page-user-login #navbar {
+  height: 200px;
+  min-height: 145px;
+}
+@media (max-width: 767px) {
+  /* line 1175, css\less\content.less */
+  .page-user- #navbar,
+  .page-user-login #navbar {
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1179, css\less\content.less */
+  .page-user- #navbar,
+  .page-user-login #navbar {
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1183, css\less\content.less */
+  .page-user- #navbar,
+  .page-user-login #navbar {
+    height: 250px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 1187, css\less\content.less */
+  .page-user- #navbar,
+  .page-user-login #navbar {
+    height: 300px;
+  }
+}
+/* line 6, css\less\modal.less */
+.page-node.node-type-news .node .field-name-body,
+.page-node.node-type-event .node .field-name-body,
+.page-node.node-type-news .field-type-taxonomy-term-reference,
+.page-node.node-type-event .field-type-taxonomy-term-reference,
+.page-node.node-type-news .submitted,
+.page-node.node-type-event .submitted,
+.page-node.node-type-news .field-name-field-fb-event,
+.page-node.node-type-event .field-name-field-fb-event,
+.page-node.node-type-news .node-title,
+.page-node.node-type-event .node-title,
+.page-node.node-type-news .ya-share2,
+.page-node.node-type-event .ya-share2,
+.page-node.node-type-news .img-tag,
+.page-node.node-type-event .img-tag,
+.page-node.node-type-news .carousel-container,
+.page-node.node-type-event .carousel-container {
+  padding: 20px 80px 0 80px;
+}
+/* line 17, css\less\modal.less */
+.page-node.node-type-news .views-field-field-youtube,
+.page-node.node-type-event .views-field-field-youtube,
+.page-node.node-type-news .views-field-field-vimeo,
+.page-node.node-type-event .views-field-field-vimeo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 23, css\less\modal.less */
+.page-node.node-type-news .ya-share2 ul,
+.page-node.node-type-event .ya-share2 ul {
+  margin-left: 0;
+}
+/* line 27, css\less\modal.less */
+.page-node.node-type-news .field-name-field-image .field-label,
+.page-node.node-type-event .field-name-field-image .field-label {
+  display: none;
+}
+/* line 31, css\less\modal.less */
+.page-node.node-type-news #overlay-content .field-name-field-image img,
+.page-node.node-type-event #overlay-content .field-name-field-image img {
+  border: none;
+}
+/* line 35, css\less\modal.less */
+.page-node.node-type-news .submitted,
+.page-node.node-type-event .submitted {
+  padding-bottom: 80px;
+}
+/* line 39, css\less\modal.less */
+.page-node.node-type-news field-name-field-date,
+.page-node.node-type-event field-name-field-date {
+  padding: 40px 80px 0 80px;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'museo_sans_cyrl700';
+  font-weight: normal;
+}
+/* line 47, css\less\modal.less */
+.page-node.node-type-news .field-name-field-date span,
+.page-node.node-type-event .field-name-field-date span {
+  color: #e35825;
+  font-size: 30px;
+  font-family: 'museo_sans_cyrl700';
+  font-weight: normal;
+}
+/* line 54, css\less\modal.less */
+.page-node.node-type-news .field-name-field-fb-event,
+.page-node.node-type-event .field-name-field-fb-event {
+  font-size: 18px;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  /* line 61, css\less\modal.less */
+  .page-node.node-type-news .field-type-taxonomy-term-reference,
+  .page-node.node-type-event .field-type-taxonomy-term-reference,
+  .page-node.node-type-news .submitted,
+  .page-node.node-type-event .submitted,
+  .page-node.node-type-news .field-name-field-fb-event,
+  .page-node.node-type-event .field-name-field-fb-event,
+  .page-node.node-type-news .node-title,
+  .page-node.node-type-event .node-title,
+  .page-node.node-type-news .ya-share2,
+  .page-node.node-type-event .ya-share2,
+  .page-node.node-type-news .img-tag,
+  .page-node.node-type-event .img-tag,
+  .page-node.node-type-news .field-name-field-date,
+  .page-node.node-type-event .field-name-field-date,
+  .page-node.node-type-news .node .field-name-body,
+  .page-node.node-type-event .node .field-name-body {
+    padding: 10px 20px 0 20px;
+  }
+  /* line 72, css\less\modal.less */
+  .page-node.node-type-news .node h1,
+  .page-node.node-type-event .node h1,
+  .page-node.node-type-news .node h2,
+  .page-node.node-type-event .node h2 {
+    font-size: 25px;
+  }
+  /* line 77, css\less\modal.less */
+  .page-node.node-type-news .carousel-indicators,
+  .page-node.node-type-event .carousel-indicators {
+    display: none;
+  }
+  /* line 81, css\less\modal.less */
+  .page-node.node-type-news .date-display-start,
+  .page-node.node-type-event .date-display-start {
+    padding-left: 10px;
+  }
+  /* line 82, css\less\modal.less */
+  .page-node.node-type-news .date-display-start:after,
+  .page-node.node-type-event .date-display-start:after {
+    content: "\A";
+    white-space: pre;
+  }
+}
+/* line 89, css\less\modal.less */
+.modal .modal-content {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+/* line 94, css\less\modal.less */
+.modal .modal-content .modal-header {
+  border: none;
+  padding: 0 0 30px 0;
+}
+/* line 97, css\less\modal.less */
+.modal .modal-content .modal-header h4 {
+  display: none;
+}
+/* line 100, css\less\modal.less */
+.modal .modal-content .modal-header button {
+  opacity: 1;
+}
+/* line 102, css\less\modal.less */
+.modal .modal-content .modal-header button i {
+  color: white;
+}
+/* line 108, css\less\modal.less */
+.modal .modal-content .modal-body {
+  padding: 0;
+  background: white;
+}
+/* line 115, css\less\modal.less */
+.modal-backdrop.in {
+  opacity: 0.75;
+}
+/* line 120, css\less\modal.less */
+.close .fa-remove:before,
+.close .fa-close:before,
+.close .fa-times:before {
+  text-shadow: 0px 0px 12px #000000;
+}
+@media (max-width: 767px) {
+  /* line 8, css\less\responsive.less */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+  /* line 12, css\less\responsive.less */
+  .page-user-login #block-system-main,
+  .page-user-login #block-block-2 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  /* line 19, css\less\responsive.less */
+  .not-front #navbar {
+    height: auto;
+  }
+  /* line 24, css\less\responsive.less */
+  #navbar .padding {
+    padding: 0;
+  }
+  /* line 27, css\less\responsive.less */
+  #navbar .padding .navbar-header {
+    background: black;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+  }
+  /* line 36, css\less\responsive.less */
+  #navbar .navbar-toggle {
+    left: 10px;
+    border: none !important;
+  }
+  /* line 44, css\less\responsive.less */
+  body.on-white .navbar-default .navbar-toggle {
+    border-color: white;
+  }
+  /* line 47, css\less\responsive.less */
+  body.on-white .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  /* line 54, css\less\responsive.less */
+  #navbar .addNav {
+    margin-top: 0;
+    position: fixed;
+    z-index: 1001;
+    right: 0;
+    top: 10px;
+  }
+  /* line 62, css\less\responsive.less */
+  .not-front #navbar .h1-container {
+    padding-top: 95px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+  /* line 68, css\less\responsive.less */
+  .not-front #navbar .padding {
+    height: auto;
+  }
+  /* line 72, css\less\responsive.less */
+  .front .region-content {
+    opacity: 1;
+    width: 100%;
+  }
+  /* line 76, css\less\responsive.less */
+  .front .region-content p {
+    text-align: left;
+  }
+  /* line 81, css\less\responsive.less */
+  body.philosophy .field-name-body .field-item {
+    padding: 10px;
+  }
+  /* line 87, css\less\responsive.less */
+  .what-we-do.page-node-413 .view img {
+    max-width: 220px;
+    height: auto;
+    width: 110px;
+  }
+  /* line 96, css\less\responsive.less */
+  .node-type-webform .field-name-body p {
+    text-align: left;
+    font-size: 14px;
+  }
+  /* line 101, css\less\responsive.less */
+  .node-type-webform .webform-client-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 105, css\less\responsive.less */
+  .node-type-webform .webform-client-form > div .webform-submit,
+  .node-type-webform .webform-client-form > div .btn.showform {
+    font-size: 18px;
+    padding: 7px 14px;
+  }
+  /* line 113, css\less\responsive.less */
+  .block .block-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  /* line 118, css\less\responsive.less */
+  .region.region-content-bottom {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  /* line 125, css\less\responsive.less */
+  .page-taxonomy.what-we-do .view .col a .text-block .views-field-field-date {
+    opacity: 1;
+    max-height: 200px;
+  }
+  /* line 132, css\less\responsive.less */
+  .date-display-start:after {
+    content: "\A";
+    white-space: pre;
+  }
+  /* line 133, css\less\responsive.less */
+  .date-display-start {
+    padding-left: 10px;
+  }
+  /* line 135, css\less\responsive.less */
+  .join.rent.node-type-webform #mcw section.block-system {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* line 140, css\less\responsive.less */
+  .page-partners .view {
+    padding: 0;
+  }
+  /* line 143, css\less\responsive.less */
+  .page-partners .view .views-row {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  /* line 149, css\less\responsive.less */
+  .page-partners .view img {
+    max-width: 100%;
+    width: auto;
+    height: 150px;
+  }
+  /* line 156, css\less\responsive.less */
+  .page-partners .view h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  /* line 163, css\less\responsive.less */
+  .page-partners .view a .partnerTitle {
+    display: none;
+  }
+  /* line 167, css\less\responsive.less */
+  .page-partners .view a .partnerText {
+    visibility: visible;
+    padding: 5px 10px;
+    color: white;
+    text-align: left;
+  }
+  /* line 174, css\less\responsive.less */
+  #azpLocation #mapImage .imgContainer .mapDot.badge {
+    font-size: 8px;
+    border-radius: 100%;
+    min-width: 0;
+    padding: 2px 4px;
+  }
+  /* line 183, css\less\responsive.less */
+  body.map .modal {
+    margin-top: 10px;
+  }
+  /* line 187, css\less\responsive.less */
+  body.map .modal-header .close {
+    position: static;
+    right: 0;
+    z-index: 900;
+  }
+  /* line 194, css\less\responsive.less */
+  body.map #mapLegend .modal-dialog.container {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 199, css\less\responsive.less */
+  body.map #mapLegend .modal-dialog.container .modal-body {
+    padding: 15px 15px 30px 15px;
+  }
+  /* line 206, css\less\responsive.less */
+  .carousel-indicators {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 213, css\less\responsive.less */
+  .myModal .modal-dialog {
+    width: 90%;
+  }
+  /* line 218, css\less\responsive.less */
+  .myModal.normal .modal-dialog {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 230, css\less\responsive.less */
+  .myModal.normal .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 236, css\less\responsive.less */
+  .myModal.normal .modal-dialog {
+    width: 1170px;
+  }
+}
+/* line 242, css\less\responsive.less */
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1600px) {
+  /* line 74, css\less\mixins.less */
+  .col-xs-1,
+  .col-sm-1,
+  .col-md-1,
+  .col-lg-1,
+  .col-xs-2,
+  .col-sm-2,
+  .col-md-2,
+  .col-lg-2,
+  .col-xs-3,
+  .col-sm-3,
+  .col-md-3,
+  .col-lg-3,
+  .col-xs-4,
+  .col-sm-4,
+  .col-md-4,
+  .col-lg-4,
+  .col-xs-5,
+  .col-sm-5,
+  .col-md-5,
+  .col-lg-5,
+  .col-xs-6,
+  .col-sm-6,
+  .col-md-6,
+  .col-lg-6,
+  .col-xs-7,
+  .col-sm-7,
+  .col-md-7,
+  .col-lg-7,
+  .col-xs-8,
+  .col-sm-8,
+  .col-md-8,
+  .col-lg-8,
+  .col-xs-9,
+  .col-sm-9,
+  .col-md-9,
+  .col-lg-9,
+  .col-xs-10,
+  .col-sm-10,
+  .col-md-10,
+  .col-lg-10,
+  .col-xs-11,
+  .col-sm-11,
+  .col-md-11,
+  .col-lg-11,
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12 {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 74, css\less\mixins.less */
+  .col-xs-1,
+  .col-sm-1,
+  .col-md-1,
+  .col-lg-1,
+  .col-xs-2,
+  .col-sm-2,
+  .col-md-2,
+  .col-lg-2,
+  .col-xs-3,
+  .col-sm-3,
+  .col-md-3,
+  .col-lg-3,
+  .col-xs-4,
+  .col-sm-4,
+  .col-md-4,
+  .col-lg-4,
+  .col-xs-5,
+  .col-sm-5,
+  .col-md-5,
+  .col-lg-5,
+  .col-xs-6,
+  .col-sm-6,
+  .col-md-6,
+  .col-lg-6,
+  .col-xs-7,
+  .col-sm-7,
+  .col-md-7,
+  .col-lg-7,
+  .col-xs-8,
+  .col-sm-8,
+  .col-md-8,
+  .col-lg-8,
+  .col-xs-9,
+  .col-sm-9,
+  .col-md-9,
+  .col-lg-9,
+  .col-xs-10,
+  .col-sm-10,
+  .col-md-10,
+  .col-lg-10,
+  .col-xs-11,
+  .col-sm-11,
+  .col-md-11,
+  .col-lg-11,
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12 {
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,125 @@
+.page-node {
+    
+    &.node-type-news,
+    &.node-type-event {
+        
+        .node .field-name-body,
+        .field-type-taxonomy-term-reference,
+        .submitted,
+        .field-name-field-fb-event,
+        .node-title,
+        .ya-share2,
+        .img-tag,
+        .carousel-container {
+            padding: 20px 80px 0 80px;
+        }
+        
+        .views-field-field-youtube,
+        .views-field-field-vimeo {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .ya-share2 ul {
+            margin-left: 0;
+        }
+
+        .field-name-field-image .field-label {
+            display: none;
+        }
+
+        #overlay-content .field-name-field-image img {  
+            border: none;
+        } 
+  
+        .submitted  {
+            padding-bottom: 80px;
+        }
+        
+        field-name-field-date {  
+            padding: 40px 80px 0 80px;  
+            font-size:16px;
+            text-align: left; 
+            font-family: 'museo_sans_cyrl700';
+            font-weight: normal; 
+        }
+        
+        .field-name-field-date span {
+            color: #e35825;
+            font-size: 30px; 
+            font-family: 'museo_sans_cyrl700';
+            font-weight: normal; 
+        }
+        
+        .field-name-field-fb-event {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        
+        @media(max-width:767px) { 
+        
+            .field-type-taxonomy-term-reference,
+            .submitted,
+            .field-name-field-fb-event,
+            .node-title,
+            .ya-share2,
+            .img-tag,
+            .field-name-field-date,
+            .node .field-name-body   {
+                padding: 10px 20px 0 20px;  
+            }
+            
+            .node h1, 
+            .node h2 {
+                font-size: 25px;    
+            }
+            
+            .carousel-indicators {
+                display: none;
+            }
+            
+            .date-display-start { padding-left: 10px;}
+            .date-display-start:after { content:"\A"; white-space:pre; }    
+    
+        }
+    }
+}
+
+.modal {
+    .modal-content {
+        background: none;
+        border: none;
+        border-radius: 0;
+        
+        .modal-header {
+            border: none;
+            padding: 0 0 30px 0;
+            h4 {
+                display: none;
+            }
+            button {
+                opacity: 1;
+                i {
+                    color: white;
+                }
+            }
+        }
+        
+        .modal-body {
+            padding: 0;
+            background: white; 
+        }
+    }
+}
+
+.modal-backdrop.in {
+    opacity: 0.75;
+}
+
+.close {
+    .fa-remove:before, 
+    .fa-close:before, 
+    .fa-times:before {
+        text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+    }
+}
