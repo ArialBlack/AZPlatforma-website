@@ -3147,153 +3147,233 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
     height: 300px;
   }
 }
-/* line 6, css\less\modal.less */
-.page-node.node-type-news .node .field-name-body,
-.page-node.node-type-event .node .field-name-body,
-.page-node.node-type-news .field-type-taxonomy-term-reference,
-.page-node.node-type-event .field-type-taxonomy-term-reference,
-.page-node.node-type-news .submitted,
-.page-node.node-type-event .submitted,
-.page-node.node-type-news .field-name-field-fb-event,
-.page-node.node-type-event .field-name-field-fb-event,
-.page-node.node-type-news .node-title,
-.page-node.node-type-event .node-title,
-.page-node.node-type-news .ya-share2,
-.page-node.node-type-event .ya-share2,
-.page-node.node-type-news .img-tag,
-.page-node.node-type-event .img-tag,
-.page-node.node-type-news .carousel-container,
-.page-node.node-type-event .carousel-container {
+/* line 5, css\less\modal.less */
+.page-node .node-type-news .node .field-name-body,
+.page-node .node-type-event .node .field-name-body,
+.modal-dialog.container .node .field-name-body,
+.page-node .node-type-news .field-type-taxonomy-term-reference,
+.page-node .node-type-event .field-type-taxonomy-term-reference,
+.modal-dialog.container .field-type-taxonomy-term-reference,
+.page-node .node-type-news .submitted,
+.page-node .node-type-event .submitted,
+.modal-dialog.container .submitted,
+.page-node .node-type-news .field-name-field-fb-event,
+.page-node .node-type-event .field-name-field-fb-event,
+.modal-dialog.container .field-name-field-fb-event,
+.page-node .node-type-news .node-title,
+.page-node .node-type-event .node-title,
+.modal-dialog.container .node-title,
+.page-node .node-type-news .ya-share2,
+.page-node .node-type-event .ya-share2,
+.modal-dialog.container .ya-share2,
+.page-node .node-type-news .img-tag,
+.page-node .node-type-event .img-tag,
+.modal-dialog.container .img-tag,
+.page-node .node-type-news .carousel-container,
+.page-node .node-type-event .carousel-container,
+.modal-dialog.container .carousel-container {
   padding: 20px 80px 0 80px;
 }
-/* line 17, css\less\modal.less */
-.page-node.node-type-news .views-field-field-youtube,
-.page-node.node-type-event .views-field-field-youtube,
-.page-node.node-type-news .views-field-field-vimeo,
-.page-node.node-type-event .views-field-field-vimeo {
+/* line 16, css\less\modal.less */
+.page-node .node-type-news .views-field-field-youtube,
+.page-node .node-type-event .views-field-field-youtube,
+.modal-dialog.container .views-field-field-youtube,
+.page-node .node-type-news .views-field-field-vimeo,
+.page-node .node-type-event .views-field-field-vimeo,
+.modal-dialog.container .views-field-field-vimeo {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 23, css\less\modal.less */
-.page-node.node-type-news .ya-share2 ul,
-.page-node.node-type-event .ya-share2 ul {
+/* line 22, css\less\modal.less */
+.page-node .node-type-news .ya-share2 ul,
+.page-node .node-type-event .ya-share2 ul,
+.modal-dialog.container .ya-share2 ul {
   margin-left: 0;
 }
-/* line 27, css\less\modal.less */
-.page-node.node-type-news .field-name-field-image .field-label,
-.page-node.node-type-event .field-name-field-image .field-label {
+/* line 26, css\less\modal.less */
+.page-node .node-type-news .field-name-field-image .field-label,
+.page-node .node-type-event .field-name-field-image .field-label,
+.modal-dialog.container .field-name-field-image .field-label {
   display: none;
 }
-/* line 31, css\less\modal.less */
-.page-node.node-type-news #overlay-content .field-name-field-image img,
-.page-node.node-type-event #overlay-content .field-name-field-image img {
+/* line 30, css\less\modal.less */
+.page-node .node-type-news #overlay-content .field-name-field-image img,
+.page-node .node-type-event #overlay-content .field-name-field-image img,
+.modal-dialog.container #overlay-content .field-name-field-image img {
   border: none;
 }
-/* line 35, css\less\modal.less */
-.page-node.node-type-news .submitted,
-.page-node.node-type-event .submitted {
+/* line 34, css\less\modal.less */
+.page-node .node-type-news .submitted,
+.page-node .node-type-event .submitted,
+.modal-dialog.container .submitted {
   padding-bottom: 80px;
 }
-/* line 39, css\less\modal.less */
-.page-node.node-type-news field-name-field-date,
-.page-node.node-type-event field-name-field-date {
+/* line 38, css\less\modal.less */
+.page-node .node-type-news field-name-field-date,
+.page-node .node-type-event field-name-field-date,
+.modal-dialog.container field-name-field-date {
   padding: 40px 80px 0 80px;
   font-size: 16px;
   text-align: left;
   font-family: 'museo_sans_cyrl700';
   font-weight: normal;
 }
-/* line 47, css\less\modal.less */
-.page-node.node-type-news .field-name-field-date span,
-.page-node.node-type-event .field-name-field-date span {
+/* line 46, css\less\modal.less */
+.page-node .node-type-news .field-name-field-date span,
+.page-node .node-type-event .field-name-field-date span,
+.modal-dialog.container .field-name-field-date span {
   color: #e35825;
   font-size: 30px;
   font-family: 'museo_sans_cyrl700';
   font-weight: normal;
 }
-/* line 54, css\less\modal.less */
-.page-node.node-type-news .field-name-field-fb-event,
-.page-node.node-type-event .field-name-field-fb-event {
+/* line 53, css\less\modal.less */
+.page-node .node-type-news .field-name-field-fb-event,
+.page-node .node-type-event .field-name-field-fb-event,
+.modal-dialog.container .field-name-field-fb-event {
   font-size: 18px;
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  /* line 61, css\less\modal.less */
-  .page-node.node-type-news .field-type-taxonomy-term-reference,
-  .page-node.node-type-event .field-type-taxonomy-term-reference,
-  .page-node.node-type-news .submitted,
-  .page-node.node-type-event .submitted,
-  .page-node.node-type-news .field-name-field-fb-event,
-  .page-node.node-type-event .field-name-field-fb-event,
-  .page-node.node-type-news .node-title,
-  .page-node.node-type-event .node-title,
-  .page-node.node-type-news .ya-share2,
-  .page-node.node-type-event .ya-share2,
-  .page-node.node-type-news .img-tag,
-  .page-node.node-type-event .img-tag,
-  .page-node.node-type-news .field-name-field-date,
-  .page-node.node-type-event .field-name-field-date,
-  .page-node.node-type-news .node .field-name-body,
-  .page-node.node-type-event .node .field-name-body {
+  /* line 60, css\less\modal.less */
+  .page-node .node-type-news .field-type-taxonomy-term-reference,
+  .page-node .node-type-event .field-type-taxonomy-term-reference,
+  .modal-dialog.container .field-type-taxonomy-term-reference,
+  .page-node .node-type-news .submitted,
+  .page-node .node-type-event .submitted,
+  .modal-dialog.container .submitted,
+  .page-node .node-type-news .field-name-field-fb-event,
+  .page-node .node-type-event .field-name-field-fb-event,
+  .modal-dialog.container .field-name-field-fb-event,
+  .page-node .node-type-news .node-title,
+  .page-node .node-type-event .node-title,
+  .modal-dialog.container .node-title,
+  .page-node .node-type-news .ya-share2,
+  .page-node .node-type-event .ya-share2,
+  .modal-dialog.container .ya-share2,
+  .page-node .node-type-news .img-tag,
+  .page-node .node-type-event .img-tag,
+  .modal-dialog.container .img-tag,
+  .page-node .node-type-news .field-name-field-date,
+  .page-node .node-type-event .field-name-field-date,
+  .modal-dialog.container .field-name-field-date,
+  .page-node .node-type-news .node .field-name-body,
+  .page-node .node-type-event .node .field-name-body,
+  .modal-dialog.container .node .field-name-body {
     padding: 10px 20px 0 20px;
   }
-  /* line 72, css\less\modal.less */
-  .page-node.node-type-news .node h1,
-  .page-node.node-type-event .node h1,
-  .page-node.node-type-news .node h2,
-  .page-node.node-type-event .node h2 {
+  /* line 71, css\less\modal.less */
+  .page-node .node-type-news .node h1,
+  .page-node .node-type-event .node h1,
+  .modal-dialog.container .node h1,
+  .page-node .node-type-news .node h2,
+  .page-node .node-type-event .node h2,
+  .modal-dialog.container .node h2 {
     font-size: 25px;
   }
-  /* line 77, css\less\modal.less */
-  .page-node.node-type-news .carousel-indicators,
-  .page-node.node-type-event .carousel-indicators {
+  /* line 76, css\less\modal.less */
+  .page-node .node-type-news .carousel-indicators,
+  .page-node .node-type-event .carousel-indicators,
+  .modal-dialog.container .carousel-indicators {
     display: none;
   }
-  /* line 81, css\less\modal.less */
-  .page-node.node-type-news .date-display-start,
-  .page-node.node-type-event .date-display-start {
+  /* line 80, css\less\modal.less */
+  .page-node .node-type-news .date-display-start,
+  .page-node .node-type-event .date-display-start,
+  .modal-dialog.container .date-display-start {
     padding-left: 10px;
   }
-  /* line 82, css\less\modal.less */
-  .page-node.node-type-news .date-display-start:after,
-  .page-node.node-type-event .date-display-start:after {
+  /* line 81, css\less\modal.less */
+  .page-node .node-type-news .date-display-start:after,
+  .page-node .node-type-event .date-display-start:after,
+  .modal-dialog.container .date-display-start:after {
     content: "\A";
     white-space: pre;
   }
 }
-/* line 89, css\less\modal.less */
+/* line 87, css\less\modal.less */
+.modal .modal-header {
+  border: none;
+  padding: 0 0 30px 0;
+}
+/* line 91, css\less\modal.less */
+.modal .modal-header h4 {
+  display: none;
+}
+/* line 95, css\less\modal.less */
+.modal .modal-header button {
+  opacity: 1;
+}
+/* line 98, css\less\modal.less */
+.modal .modal-header button i {
+  color: white;
+}
+/* line 104, css\less\modal.less */
+.modal .modal-dialog.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  /* line 14, css\less\mixins.less */
+  .modal .modal-dialog.container {
+    width: 750px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, css\less\mixins.less */
+  .modal .modal-dialog.container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 24, css\less\mixins.less */
+  .modal .modal-dialog.container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 28, css\less\mixins.less */
+  .modal .modal-dialog.container {
+    width: 1570px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 107, css\less\modal.less */
+  .modal .modal-dialog.container {
+    width: 1170px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 111, css\less\modal.less */
+  .modal .modal-dialog.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 117, css\less\modal.less */
 .modal .modal-content {
   background: none;
   border: none;
   border-radius: 0;
 }
-/* line 94, css\less\modal.less */
-.modal .modal-content .modal-header {
-  border: none;
-  padding: 0 0 30px 0;
-}
-/* line 97, css\less\modal.less */
-.modal .modal-content .modal-header h4 {
-  display: none;
-}
-/* line 100, css\less\modal.less */
-.modal .modal-content .modal-header button {
-  opacity: 1;
-}
-/* line 102, css\less\modal.less */
-.modal .modal-content .modal-header button i {
-  color: white;
-}
-/* line 108, css\less\modal.less */
+/* line 122, css\less\modal.less */
 .modal .modal-content .modal-body {
   padding: 0;
   background: white;
 }
-/* line 115, css\less\modal.less */
+/* line 126, css\less\modal.less */
+.modal .modal-content .modal-body .node {
+  margin-top: 0;
+}
+/* line 133, css\less\modal.less */
 .modal-backdrop.in {
   opacity: 0.75;
 }
-/* line 120, css\less\modal.less */
+/* line 138, css\less\modal.less */
 .close .fa-remove:before,
 .close .fa-close:before,
 .close .fa-times:before {
@@ -3487,30 +3567,38 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   .carousel-indicators {
     display: none;
   }
+  /* line 210, css\less\responsive.less */
+  #jquery_ajax_load {
+    padding-right: 0 !important;
+  }
+  /* line 214, css\less\responsive.less */
+  .modal-header .close {
+    margin-right: 20px;
+  }
 }
 @media (min-width: 768px) {
-  /* line 213, css\less\responsive.less */
+  /* line 221, css\less\responsive.less */
   .myModal .modal-dialog {
     width: 90%;
   }
-  /* line 218, css\less\responsive.less */
+  /* line 226, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 600px;
   }
 }
 @media (min-width: 992px) {
-  /* line 230, css\less\responsive.less */
+  /* line 238, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 236, css\less\responsive.less */
+  /* line 244, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 1170px;
   }
 }
-/* line 242, css\less\responsive.less */
+/* line 250, css\less\responsive.less */
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
