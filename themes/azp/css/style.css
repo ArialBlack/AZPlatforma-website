@@ -1,41 +1,48 @@
 /* colors */
-/* line 6, css\less\grid.less */
+/* line 7, css\less\grid.less */
 body.glossary #mcw .container,
 body.what-we-do.page-node-413 #mcw .container,
 .join.rent.node-type-webform #mcw .container,
 .page-node-414 #mcw .container,
+body.contacts #mcw .container,
 body.glossary #mcw .XLcontainer,
 body.what-we-do.page-node-413 #mcw .XLcontainer,
 .join.rent.node-type-webform #mcw .XLcontainer,
-.page-node-414 #mcw .XLcontainer {
+.page-node-414 #mcw .XLcontainer,
+body.contacts #mcw .XLcontainer {
   width: 100%;
   max-width: none;
 }
-/* line 12, css\less\grid.less */
+/* line 13, css\less\grid.less */
 body.glossary #mcw section,
 body.what-we-do.page-node-413 #mcw section,
 .join.rent.node-type-webform #mcw section,
 .page-node-414 #mcw section,
+body.contacts #mcw section,
 body.glossary #mcw .region.region-content,
 body.what-we-do.page-node-413 #mcw .region.region-content,
 .join.rent.node-type-webform #mcw .region.region-content,
 .page-node-414 #mcw .region.region-content,
+body.contacts #mcw .region.region-content,
 body.glossary #mcw .container,
 body.what-we-do.page-node-413 #mcw .container,
 .join.rent.node-type-webform #mcw .container,
 .page-node-414 #mcw .container,
+body.contacts #mcw .container,
 body.glossary #mcw .XLcontainer,
 body.what-we-do.page-node-413 #mcw .XLcontainer,
 .join.rent.node-type-webform #mcw .XLcontainer,
-.page-node-414 #mcw .XLcontainer {
+.page-node-414 #mcw .XLcontainer,
+body.contacts #mcw .XLcontainer {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 21, css\less\grid.less */
+/* line 22, css\less\grid.less */
 body.glossary .c,
 body.what-we-do.page-node-413 .c,
 .join.rent.node-type-webform .c,
-.page-node-414 .c {
+.page-node-414 .c,
+body.contacts .c {
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
@@ -46,7 +53,8 @@ body.what-we-do.page-node-413 .c,
   body.glossary .c,
   body.what-we-do.page-node-413 .c,
   .join.rent.node-type-webform .c,
-  .page-node-414 .c {
+  .page-node-414 .c,
+  body.contacts .c {
     width: 750px;
     padding-left: 60px;
     padding-right: 60px;
@@ -57,7 +65,8 @@ body.what-we-do.page-node-413 .c,
   body.glossary .c,
   body.what-we-do.page-node-413 .c,
   .join.rent.node-type-webform .c,
-  .page-node-414 .c {
+  .page-node-414 .c,
+  body.contacts .c {
     width: 970px;
   }
 }
@@ -66,7 +75,8 @@ body.what-we-do.page-node-413 .c,
   body.glossary .c,
   body.what-we-do.page-node-413 .c,
   .join.rent.node-type-webform .c,
-  .page-node-414 .c {
+  .page-node-414 .c,
+  body.contacts .c {
     width: 1170px;
   }
 }
@@ -75,207 +85,208 @@ body.what-we-do.page-node-413 .c,
   body.glossary .c,
   body.what-we-do.page-node-413 .c,
   .join.rent.node-type-webform .c,
-  .page-node-414 .c {
+  .page-node-414 .c,
+  body.contacts .c {
     width: 1570px;
   }
 }
 @media (max-width: 767px) {
-  /* line 27, css\less\grid.less */
+  /* line 28, css\less\grid.less */
   .join.rent.node-type-webform #mcw section.block-system {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 /* 5 column */
-/* line 36, css\less\grid.less */
+/* line 37, css\less\grid.less */
 .col5 {
   position: relative;
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 43, css\less\grid.less */
+/* line 44, css\less\grid.less */
 .col-xs-20 {
   width: 20%;
   float: left;
 }
-/* line 48, css\less\grid.less */
+/* line 49, css\less\grid.less */
 .col-sm-20 {
   width: 20%;
   float: left;
 }
-/* line 53, css\less\grid.less */
+/* line 54, css\less\grid.less */
 .col-md-20 {
   width: 20%;
   float: left;
 }
-/* line 58, css\less\grid.less */
+/* line 59, css\less\grid.less */
 .col-lg-20 {
   width: 20%;
   float: left;
 }
-/* line 63, css\less\grid.less */
+/* line 64, css\less\grid.less */
 .col-xl-20 {
   width: 20%;
   float: left;
 }
-/* line 68, css\less\grid.less */
+/* line 69, css\less\grid.less */
 .col-xs-40 {
   width: 40%;
   float: left;
 }
-/* line 73, css\less\grid.less */
+/* line 74, css\less\grid.less */
 .col-sm-40 {
   width: 40%;
   float: left;
 }
-/* line 78, css\less\grid.less */
+/* line 79, css\less\grid.less */
 .col-md-40 {
   width: 40%;
   float: left;
 }
-/* line 83, css\less\grid.less */
+/* line 84, css\less\grid.less */
 .col-lg-40 {
   width: 40%;
   float: left;
 }
-/* line 88, css\less\grid.less */
+/* line 89, css\less\grid.less */
 .col-xl-40 {
   width: 40%;
   float: left;
 }
-/* line 93, css\less\grid.less */
+/* line 94, css\less\grid.less */
 .col-xs-60 {
   width: 60%;
   float: left;
 }
-/* line 98, css\less\grid.less */
+/* line 99, css\less\grid.less */
 .col-sm-60 {
   width: 60%;
   float: left;
 }
-/* line 103, css\less\grid.less */
+/* line 104, css\less\grid.less */
 .col-md-60 {
   width: 60%;
   float: left;
 }
-/* line 108, css\less\grid.less */
+/* line 109, css\less\grid.less */
 .col-lg-60 {
   width: 60%;
   float: left;
 }
-/* line 113, css\less\grid.less */
+/* line 114, css\less\grid.less */
 .col-xl-60 {
   width: 60%;
   float: left;
 }
-/* line 118, css\less\grid.less */
+/* line 119, css\less\grid.less */
 .col-xs-80 {
   width: 80%;
   float: left;
 }
-/* line 123, css\less\grid.less */
+/* line 124, css\less\grid.less */
 .col-sm-80 {
   width: 80%;
   float: left;
 }
-/* line 128, css\less\grid.less */
+/* line 129, css\less\grid.less */
 .col-md-80 {
   width: 80%;
   float: left;
 }
-/* line 133, css\less\grid.less */
+/* line 134, css\less\grid.less */
 .col-lg-80 {
   width: 80%;
   float: left;
 }
-/* line 138, css\less\grid.less */
+/* line 139, css\less\grid.less */
 .col-xl-80 {
   width: 80%;
   float: left;
 }
-/* line 143, css\less\grid.less */
+/* line 144, css\less\grid.less */
 .col-xs-offset-20 {
   margin-left: 20%;
 }
-/* line 147, css\less\grid.less */
+/* line 148, css\less\grid.less */
 .col-sm-offset-20 {
   margin-left: 20%;
 }
-/* line 151, css\less\grid.less */
+/* line 152, css\less\grid.less */
 .col-md-offset-20 {
   margin-left: 20%;
 }
-/* line 155, css\less\grid.less */
+/* line 156, css\less\grid.less */
 .col-lg-offset-20 {
   margin-left: 20%;
 }
-/* line 159, css\less\grid.less */
+/* line 160, css\less\grid.less */
 .col-xl-offset-20 {
   margin-left: 20%;
 }
-/* line 163, css\less\grid.less */
+/* line 164, css\less\grid.less */
 .col-xs-offset-40 {
   margin-left: 20%;
 }
-/* line 167, css\less\grid.less */
+/* line 168, css\less\grid.less */
 .col-sm-offset-40 {
   margin-left: 40%;
 }
-/* line 171, css\less\grid.less */
+/* line 172, css\less\grid.less */
 .col-md-offset-40 {
   margin-left: 40%;
 }
-/* line 175, css\less\grid.less */
+/* line 176, css\less\grid.less */
 .col-lg-offset-40 {
   margin-left: 40%;
 }
-/* line 179, css\less\grid.less */
+/* line 180, css\less\grid.less */
 .col-xl-offset-40 {
   margin-left: 40%;
 }
-/* line 183, css\less\grid.less */
+/* line 184, css\less\grid.less */
 .col-xs-offset-60 {
   margin-left: 60%;
 }
-/* line 187, css\less\grid.less */
+/* line 188, css\less\grid.less */
 .col-sm-offset-60 {
   margin-left: 60%;
 }
-/* line 191, css\less\grid.less */
+/* line 192, css\less\grid.less */
 .col-md-offset-60 {
   margin-left: 60%;
 }
-/* line 195, css\less\grid.less */
+/* line 196, css\less\grid.less */
 .col-lg-offset-60 {
   margin-left: 60%;
 }
-/* line 199, css\less\grid.less */
+/* line 200, css\less\grid.less */
 .col-xl-offset-60 {
   margin-left: 60%;
 }
-/* line 203, css\less\grid.less */
+/* line 204, css\less\grid.less */
 .col-xs-offset-80 {
   margin-left: 80%;
 }
-/* line 207, css\less\grid.less */
+/* line 208, css\less\grid.less */
 .col-sm-offset-80 {
   margin-left: 80%;
 }
-/* line 211, css\less\grid.less */
+/* line 212, css\less\grid.less */
 .col-md-offset-80 {
   margin-left: 80%;
 }
-/* line 215, css\less\grid.less */
+/* line 216, css\less\grid.less */
 .col-lg-offset-80 {
   margin-left: 80%;
 }
-/* line 219, css\less\grid.less */
+/* line 220, css\less\grid.less */
 .col-xl-offset-80 {
   margin-left: 80%;
 }
 @media (min-width: 768px) {
-  /* line 226, css\less\grid.less */
+  /* line 227, css\less\grid.less */
   .col-sm-40 {
     width: 40%;
     float: left;
@@ -753,20 +764,32 @@ body {
     font-size: 15px;
   }
 }
-/* line 191, css\less\general.less */
+/* line 190, css\less\general.less */
+.front #wrapper:before {
+  background: none;
+}
+/* line 194, css\less\general.less */
+.touch .front .video_overlay {
+  display: none;
+}
+/* line 198, css\less\general.less */
+.no-touch .front #wrapper {
+  background: none;
+}
+/* line 203, css\less\general.less */
 a:hover {
   text-decoration: none;
 }
-/* line 196, css\less\general.less */
+/* line 208, css\less\general.less */
 .padding {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 201, css\less\general.less */
+/* line 213, css\less\general.less */
 .hidden {
   display: none;
 }
-/* line 205, css\less\general.less */
+/* line 217, css\less\general.less */
 h1.page-header {
   border: none;
   text-align: center;
@@ -793,7 +816,7 @@ h1.page-header {
     font-size: 100px;
   }
 }
-/* line 213, css\less\general.less */
+/* line 225, css\less\general.less */
 h1,
 h2,
 h3,
@@ -802,27 +825,27 @@ h5 {
   font-family: 'museo_sans_cyrl700';
   font-weight: normal;
 }
-/* line 218, css\less\general.less */
+/* line 230, css\less\general.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 224, css\less\general.less */
+/* line 236, css\less\general.less */
 ul.inlineList {
   text-align: center;
 }
-/* line 227, css\less\general.less */
+/* line 239, css\less\general.less */
 ul.inlineList li {
   list-style: none;
   display: inline-block;
   padding: 25px 20px;
   text-align: center;
 }
-/* line 236, css\less\general.less */
+/* line 248, css\less\general.less */
 p {
   text-align: justify;
 }
-/* line 240, css\less\general.less */
+/* line 252, css\less\general.less */
 .html .btn,
 .html .input,
 .html button,
@@ -830,7 +853,7 @@ p {
 .pager-load-more li > a {
   border-radius: 0;
 }
-/* line 248, css\less\general.less */
+/* line 260, css\less\general.less */
 .pager-load-more li > a {
   background: none;
   color: #e35825;
@@ -845,7 +868,7 @@ p {
   background: #e35825;
   color: #fafafa;
 }
-/* line 252, css\less\general.less */
+/* line 264, css\less\general.less */
 .btn-danger {
   background: none;
   color: #cb2c3a;
@@ -860,7 +883,7 @@ p {
   background: #cb2c3a;
   color: #fafafa;
 }
-/* line 256, css\less\general.less */
+/* line 268, css\less\general.less */
 .btn-info {
   background: none;
   color: #213f99;
@@ -875,7 +898,7 @@ p {
   background: #213f99;
   color: #fafafa;
 }
-/* line 260, css\less\general.less */
+/* line 272, css\less\general.less */
 .masonry-item {
   float: left;
   width: 23%;
@@ -883,20 +906,20 @@ p {
   margin-right: 1%;
   margin-bottom: 40px;
 }
-/* line 268, css\less\general.less */
+/* line 280, css\less\general.less */
 .masonry-item img {
   max-width: 100%;
   height: auto;
 }
-/* line 273, css\less\general.less */
+/* line 285, css\less\general.less */
 .slow-popup {
   cursor: pointer;
 }
-/* line 277, css\less\general.less */
+/* line 289, css\less\general.less */
 .popover_content_wrapper {
   display: none;
 }
-/* line 281, css\less\general.less */
+/* line 293, css\less\general.less */
 .popover {
   background: #191410;
   border-radius: 0;
@@ -904,63 +927,63 @@ p {
   color: white;
   max-width: 700px;
 }
-/* line 288, css\less\general.less */
+/* line 300, css\less\general.less */
 .popover .popover-title {
   display: none !important;
 }
-/* line 292, css\less\general.less */
+/* line 304, css\less\general.less */
 .popover .views-field-title,
 .popover .views-field-field-date,
 .popover .views-field-field-body,
 .popover .views-field-title a {
   color: white;
 }
-/* line 299, css\less\general.less */
+/* line 311, css\less\general.less */
 .popover img {
   max-width: 100%;
   height: auto;
 }
-/* line 305, css\less\general.less */
+/* line 317, css\less\general.less */
 .popover.top .arrow {
   border-top-color: #191410;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
-/* line 309, css\less\general.less */
+/* line 321, css\less\general.less */
 .popover.top .arrow:after {
   border-top-color: #191410;
 }
-/* line 312, css\less\general.less */
+/* line 324, css\less\general.less */
 .popover.right .arrow {
   border-right-color: #191410;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
-/* line 316, css\less\general.less */
+/* line 328, css\less\general.less */
 .popover.right .arrow:after {
   border-right-color: #191410;
 }
-/* line 319, css\less\general.less */
+/* line 331, css\less\general.less */
 .popover.bottom .arrow {
   border-bottom-color: #191410;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
-/* line 323, css\less\general.less */
+/* line 335, css\less\general.less */
 .popover.bottom .arrow:after {
   border-bottom-color: #191410;
 }
-/* line 326, css\less\general.less */
+/* line 338, css\less\general.less */
 .popover.left .arrow {
   border-left-color: #191410;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
-/* line 330, css\less\general.less */
+/* line 342, css\less\general.less */
 .popover.left .arrow:after {
   border-left-color: #191410;
 }
-/* line 334, css\less\general.less */
+/* line 346, css\less\general.less */
 .modal-content {
   box-shadow: none;
 }
-/* line 338, css\less\general.less */
+/* line 350, css\less\general.less */
 .pagination > li > a,
 .pagination > li > span {
   background: rgba(0, 0, 0, 0.5);
@@ -968,13 +991,13 @@ p {
   color: white;
   float: left;
 }
-/* line 345, css\less\general.less */
+/* line 357, css\less\general.less */
 .pagination > li > a:hover,
 .pagination > li > span:hover {
   background: black;
   color: white;
 }
-/* line 351, css\less\general.less */
+/* line 363, css\less\general.less */
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover,
@@ -985,18 +1008,18 @@ p {
   border: none;
   color: #fff;
 }
-/* line 358, css\less\general.less */
+/* line 370, css\less\general.less */
 ul li.translation_uk,
 ul li.translation_ru,
 ul li.translation_en {
   display: none;
 }
-/* line 364, css\less\general.less */
+/* line 376, css\less\general.less */
 #map {
   padding: 0;
   font-size: 0;
 }
-/* line 368, css\less\general.less */
+/* line 380, css\less\general.less */
 #map .overlayGoogleMap {
   background: transparent;
   position: relative;
@@ -1005,7 +1028,7 @@ ul li.translation_en {
   top: 350px;
   margin-top: -350px;
 }
-/* line 378, css\less\general.less */
+/* line 390, css\less\general.less */
 #footer {
   height: 80px;
   position: absolute;
@@ -1015,7 +1038,7 @@ ul li.translation_en {
   margin-top: 0;
   z-index: 2;
 }
-/* line 387, css\less\general.less */
+/* line 399, css\less\general.less */
 #footer .footer {
   color: white;
   border: none;
@@ -1023,59 +1046,59 @@ ul li.translation_en {
   padding: 0;
   padding-top: 30px;
 }
-/* line 394, css\less\general.less */
+/* line 406, css\less\general.less */
 #footer .footer .col-1 {
   text-align: left;
 }
-/* line 398, css\less\general.less */
+/* line 410, css\less\general.less */
 #footer .footer .col-2 {
   text-align: center;
 }
-/* line 400, css\less\general.less */
+/* line 412, css\less\general.less */
 #footer .footer .col-2 a:first-child {
   margin-right: 20px;
 }
 @media (max-width: 767px) {
-  /* line 405, css\less\general.less */
+  /* line 417, css\less\general.less */
   #footer .footer .col-2 span {
     display: none;
   }
 }
-/* line 411, css\less\general.less */
+/* line 423, css\less\general.less */
 #footer .footer .col-3 {
   text-align: right;
   float: right;
 }
-/* line 414, css\less\general.less */
+/* line 426, css\less\general.less */
 #footer .footer .col-3 a {
   margin-left: 10px;
 }
 @media (max-width: 767px) {
-  /* line 418, css\less\general.less */
+  /* line 430, css\less\general.less */
   #footer .footer .col-3 {
     float: none;
     text-align: center;
   }
 }
-/* line 424, css\less\general.less */
+/* line 436, css\less\general.less */
 #footer .footer i,
 #footer .footer a {
   color: white;
   text-decoration: none;
 }
-/* line 431, css\less\general.less */
+/* line 443, css\less\general.less */
 #footer .footer .btn {
   text-transform: uppercase;
   font-size: 18px;
   height: 50px;
   padding: 10px 40px;
 }
-/* line 440, css\less\general.less */
+/* line 452, css\less\general.less */
 #azpLocation {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 444, css\less\general.less */
+/* line 456, css\less\general.less */
 #azpLocation .c {
   margin-bottom: 12px;
 }
@@ -1103,30 +1126,30 @@ ul li.translation_en {
     margin-bottom: 60px;
   }
 }
-/* line 447, css\less\general.less */
+/* line 459, css\less\general.less */
 #azpLocation .c p {
   text-align: center;
 }
-/* line 452, css\less\general.less */
+/* line 464, css\less\general.less */
 #azpLocation #mapImage {
   text-align: center;
 }
-/* line 456, css\less\general.less */
+/* line 468, css\less\general.less */
 #azpLocation #mapImage .mapImage {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 461, css\less\general.less */
+/* line 473, css\less\general.less */
 #azpLocation #mapImage .imgContainer {
   position: relative;
 }
-/* line 464, css\less\general.less */
+/* line 476, css\less\general.less */
 #azpLocation #mapImage .imgContainer .mapDot {
   position: absolute;
   z-index: 1000;
   cursor: pointer;
 }
-/* line 469, css\less\general.less */
+/* line 481, css\less\general.less */
 #azpLocation #mapImage .imgContainer .mapDot.badge {
   background-color: black;
   font-size: 18px;
@@ -1134,26 +1157,26 @@ ul li.translation_en {
   min-width: 18px;
   padding: 3px 8px;
 }
-/* line 476, css\less\general.less */
+/* line 488, css\less\general.less */
 #azpLocation #mapImage .imgContainer .mapDot.badge:hover {
   background-color: #e35825;
 }
-/* line 486, css\less\general.less */
+/* line 498, css\less\general.less */
 #mapLegend .modal-body {
   color: black;
   padding: 30px 30px 60px 30px;
   overflow: auto;
 }
-/* line 492, css\less\general.less */
+/* line 504, css\less\general.less */
 #mapLegend .modal-body .place h3 {
   color: black;
   text-transform: uppercase;
 }
-/* line 497, css\less\general.less */
+/* line 509, css\less\general.less */
 #mapLegend .modal-body .place p {
   text-align: left;
 }
-/* line 506, css\less\general.less */
+/* line 518, css\less\general.less */
 .block .block-title {
   font-size: 26px;
   color: #c7c8ca;
@@ -1161,13 +1184,107 @@ ul li.translation_en {
   margin-bottom: 40px;
   padding-bottom: 10px;
 }
-/* line 513, css\less\general.less */
+/* line 525, css\less\general.less */
 .block .block-title:after {
   content: '';
   height: 2px;
   width: 80px;
   background: #c7c8ca;
   display: block;
+}
+/* line 535, css\less\general.less */
+.map-overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  /* your iframe height */
+  top: 450px;
+  /* your iframe height */
+  margin-top: -450px;
+  /* your iframe height */
+  pointer-events: none;
+}
+/* line 545, css\less\general.less */
+.ulogin-buttons-container {
+  width: auto !important;
+}
+/* line 548, css\less\general.less */
+.ulogin-buttons-container .ulogin-button-facebook,
+.ulogin-buttons-container .ulogin-button-vkontakte,
+.ulogin-buttons-container .ulogin-button-twitter,
+.ulogin-buttons-container .ulogin-button-google,
+.ulogin-buttons-container .ulogin-button-yandex,
+.ulogin-buttons-container .ulogin-button-linkedin {
+  background-image: url(../images/panel.png) !important;
+  width: 34px !important;
+}
+/* line 559, css\less\general.less */
+ul.tabs--primary.nav.nav-tabs {
+  border: none;
+  padding: 12px;
+  padding-bottom: 0 !important;
+  width: 45%;
+  margin-left: 2.5%;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  ul.tabs--primary.nav.nav-tabs {
+    padding: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  ul.tabs--primary.nav.nav-tabs {
+    padding: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  ul.tabs--primary.nav.nav-tabs {
+    padding: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  ul.tabs--primary.nav.nav-tabs {
+    padding: 60px;
+  }
+}
+/* line 566, css\less\general.less */
+ul.tabs--primary.nav.nav-tabs li a {
+  border: none;
+  font-family: 'museo_sans_cyrl900';
+  color: #7c7c7c;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 3px 7px;
+  margin-right: 20px;
+}
+/* line 576, css\less\general.less */
+ul.tabs--primary.nav.nav-tabs > li.active > a,
+ul.tabs--primary.nav.nav-tabs > li.active > a:focus,
+ul.tabs--primary.nav.nav-tabs > li.active > a:hover {
+  border: none;
+  background: #7c7c7c;
+  color: white;
+  border-radius: 0;
+}
+/* line 587, css\less\general.less */
+.events ul.tabs--primary.nav.nav-tabs {
+  width: auto;
+}
+/* line 592, css\less\general.less */
+.page-user #block-system-main,
+.page-user #block-block-2 {
+  width: 45%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+/* line 600, css\less\general.less */
+.carousel-indicators {
+  display: none;
 }
 /* line 2, css\less\content.less */
 body #wrapper {
@@ -1188,7 +1305,15 @@ body #wrapper:before {
   left: 0;
   z-index: 0;
 }
-/* line 19, css\less\content.less */
+/* line 18, css\less\content.less */
+body #tubular-container {
+  background: url(../images/front.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 24, css\less\content.less */
 body.join.art-colaboration #wrapper {
   background: url(../images/art.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1196,7 +1321,7 @@ body.join.art-colaboration #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 26, css\less\content.less */
+/* line 31, css\less\content.less */
 body.page-agenda #wrapper {
   background: url(../images/events.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1204,7 +1329,7 @@ body.page-agenda #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 33, css\less\content.less */
+/* line 38, css\less\content.less */
 body.what-we-do #wrapper {
   background: url(../images/we-do.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1212,7 +1337,7 @@ body.what-we-do #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 40, css\less\content.less */
+/* line 45, css\less\content.less */
 body.page-taxonomy-term-31 #wrapper {
   background: url(../images/events-coworking.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1220,7 +1345,7 @@ body.page-taxonomy-term-31 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 47, css\less\content.less */
+/* line 52, css\less\content.less */
 body.page-taxonomy-term-32 #wrapper {
   background: url(../images/events-art-gallery.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1228,7 +1353,7 @@ body.page-taxonomy-term-32 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 55, css\less\content.less */
+/* line 60, css\less\content.less */
 body.page-taxonomy-term-33 #wrapper,
 body.page-events #wrapper {
   background: url(../images/events-concerts.jpg) no-repeat center center fixed;
@@ -1237,7 +1362,7 @@ body.page-events #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 62, css\less\content.less */
+/* line 67, css\less\content.less */
 body.page-taxonomy-term-34 #wrapper {
   background: url(../images/events-fest.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1245,7 +1370,7 @@ body.page-taxonomy-term-34 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 69, css\less\content.less */
+/* line 74, css\less\content.less */
 body.page-taxonomy-term-35 #wrapper {
   background: url(../images/events-edutainment.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1253,7 +1378,7 @@ body.page-taxonomy-term-35 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 76, css\less\content.less */
+/* line 81, css\less\content.less */
 body.page-taxonomy-term-36 #wrapper {
   background: url(../images/events-creative-workshops.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1261,7 +1386,7 @@ body.page-taxonomy-term-36 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 83, css\less\content.less */
+/* line 88, css\less\content.less */
 body.page-taxonomy-term-37 #wrapper {
   background: url(../images/events-urban-fashion.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1269,7 +1394,7 @@ body.page-taxonomy-term-37 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 90, css\less\content.less */
+/* line 95, css\less\content.less */
 body.page-taxonomy-term-38 #wrapper {
   background: url(../images/events-pool.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1277,7 +1402,7 @@ body.page-taxonomy-term-38 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 97, css\less\content.less */
+/* line 102, css\less\content.less */
 body.page-news #wrapper {
   background: url(../images/news.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1285,7 +1410,7 @@ body.page-news #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 104, css\less\content.less */
+/* line 109, css\less\content.less */
 body.contacts #wrapper {
   background: url(../images/contacts.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1293,7 +1418,7 @@ body.contacts #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 112, css\less\content.less */
+/* line 117, css\less\content.less */
 body.page-shop wrapper,
 body.page-cart wrapper {
   background: url(../images/shop.jpg) no-repeat center center fixed;
@@ -1302,7 +1427,7 @@ body.page-cart wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 118, css\less\content.less */
+/* line 123, css\less\content.less */
 body.page-glossary {
   background: url(../images/glossary.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1310,7 +1435,7 @@ body.page-glossary {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 124, css\less\content.less */
+/* line 129, css\less\content.less */
 body.philosophy #wrapper {
   background: url(../images/ph.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1318,7 +1443,7 @@ body.philosophy #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 130, css\less\content.less */
+/* line 135, css\less\content.less */
 body.join,
 body.page-user {
   background: url(../images/join.jpg) no-repeat center center fixed;
@@ -1327,7 +1452,7 @@ body.page-user {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 137, css\less\content.less */
+/* line 142, css\less\content.less */
 body.join.rent #wrapper {
   background: url(../images/rent.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1335,7 +1460,7 @@ body.join.rent #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 145, css\less\content.less */
+/* line 150, css\less\content.less */
 body.page-node-414 #wrapper,
 body.page-node-293 #wrapper {
   background: url(../images/mapcover.jpg) no-repeat center center fixed;
@@ -1344,7 +1469,7 @@ body.page-node-293 #wrapper {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 152, css\less\content.less */
+/* line 157, css\less\content.less */
 body.page-partners #wrapper {
   background: url(../images/kyiv.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1353,11 +1478,11 @@ body.page-partners #wrapper {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  /* line 159, css\less\content.less */
+  /* line 164, css\less\content.less */
   body #wrapper {
     background: #213f99 !important;
   }
-  /* line 164, css\less\content.less */
+  /* line 169, css\less\content.less */
   body.front #wrapper {
     background: url(../images/front.jpg) no-repeat center center fixed !important;
     -webkit-background-size: cover;
@@ -1366,18 +1491,18 @@ body.page-partners #wrapper {
     background-size: cover;
   }
 }
-/* line 172, css\less\content.less */
+/* line 177, css\less\content.less */
 .product-image,
 .display-price {
   clear: none;
   float: none;
   text-align: left;
 }
-/* line 180, css\less\content.less */
+/* line 185, css\less\content.less */
 .front h1 {
   display: none;
 }
-/* line 184, css\less\content.less */
+/* line 189, css\less\content.less */
 .front .region-content {
   width: 50%;
   margin-left: auto;
@@ -1388,11 +1513,11 @@ body.page-partners #wrapper {
   background: rgba(0, 0, 0, 0.7);
   color: white;
 }
-/* line 198, css\less\content.less */
+/* line 203, css\less\content.less */
 .node-type-webform #mcw .XLcontainer {
   max-width: 1170px;
 }
-/* line 203, css\less\content.less */
+/* line 208, css\less\content.less */
 .node-type-webform .field-name-body {
   padding-top: 4px;
   padding-bottom: 16px;
@@ -1445,11 +1570,7 @@ body.page-partners #wrapper {
     padding-bottom: 80px;
   }
 }
-/* line 207, css\less\content.less */
-.node-type-webform .field-name-body p {
-  text-align: center;
-}
-/* line 211, css\less\content.less */
+/* line 216, css\less\content.less */
 .node-type-webform .field-name-body:after {
   content: "";
   height: 1px;
@@ -1485,7 +1606,7 @@ body.page-partners #wrapper {
     margin-top: 80px;
   }
 }
-/* line 216, css\less\content.less */
+/* line 221, css\less\content.less */
 .node-type-webform .webform-client-form {
   padding-left: 40px;
   padding-right: 40px;
@@ -1540,71 +1661,35 @@ body.page-partners #wrapper {
     padding-top: 80px;
   }
 }
-/* line 222, css\less\content.less */
-.node-type-webform .webform-client-form:after {
-  content: "";
-  height: 1px;
-  left: 0;
-  margin: 0 -9999px;
-  padding: 0 9999px;
-  position: absolute;
-  background-color: #c2c2c2;
-  width: 10000px;
-  margin-top: 16px;
-}
-@media (min-width: 768px) {
-  /* line 100, css\less\mixins.less */
-  .node-type-webform .webform-client-form:after {
-    margin-top: 32px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 105, css\less\mixins.less */
-  .node-type-webform .webform-client-form:after {
-    margin-top: 48.01920768307323px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 110, css\less\mixins.less */
-  .node-type-webform .webform-client-form:after {
-    margin-top: 64px;
-  }
-}
-@media (min-width: 1600px) {
-  /* line 115, css\less\mixins.less */
-  .node-type-webform .webform-client-form:after {
-    margin-top: 80px;
-  }
-}
-/* line 226, css\less\content.less */
+/* line 231, css\less\content.less */
 .node-type-webform .webform-client-form > div {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  /* line 231, css\less\content.less */
+  /* line 236, css\less\content.less */
   .node-type-webform .webform-client-form > div {
     width: 75%;
   }
 }
 @media (min-width: 992px) {
-  /* line 235, css\less\content.less */
+  /* line 240, css\less\content.less */
   .node-type-webform .webform-client-form > div {
     width: 50%;
   }
 }
-/* line 239, css\less\content.less */
+/* line 244, css\less\content.less */
 .node-type-webform .webform-client-form > div .description {
   font-size: 12px;
   padding-left: 12px;
   padding-top: 5px;
 }
-/* line 245, css\less\content.less */
+/* line 250, css\less\content.less */
 .node-type-webform .webform-client-form > div .form-item {
   margin-bottom: 20px;
 }
-/* line 248, css\less\content.less */
+/* line 253, css\less\content.less */
 .node-type-webform .webform-client-form > div .form-item.hide-on-hover {
   transition: 0.5s ease;
   max-height: 0;
@@ -1615,7 +1700,7 @@ body.page-partners #wrapper {
   opacity: 0;
   margin-bottom: 0;
 }
-/* line 254, css\less\content.less */
+/* line 259, css\less\content.less */
 .node-type-webform .webform-client-form > div .webform-submit,
 .node-type-webform .webform-client-form > div .bnt.hide {
   transition: 0.5s ease;
@@ -1627,11 +1712,11 @@ body.page-partners #wrapper {
   opacity: 0;
   margin-bottom: 0;
 }
-/* line 260, css\less\content.less */
+/* line 265, css\less\content.less */
 .node-type-webform .webform-client-form > div .webform-component--btn {
   margin-bottom: 0;
 }
-/* line 264, css\less\content.less */
+/* line 269, css\less\content.less */
 .node-type-webform .webform-client-form > div .webform-submit,
 .node-type-webform .webform-client-form > div .btn.showform {
   background: none;
@@ -1649,82 +1734,82 @@ body.page-partners #wrapper {
   background: #e35825;
   color: #fafafa;
 }
-/* line 270, css\less\content.less */
+/* line 275, css\less\content.less */
 .node-type-webform .webform-client-form > div .webform-component--btn,
 .node-type-webform .webform-client-form > div .webform-submit-container {
   text-align: center;
 }
-/* line 275, css\less\content.less */
+/* line 280, css\less\content.less */
 .node-type-webform .webform-client-form > div .webform-submit.show {
   opacity: 1;
   max-height: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 285, css\less\content.less */
+/* line 290, css\less\content.less */
 .node-type-webform .webform-client-form.showall > div .hide-on-hover {
   max-height: 1000px;
   opacity: 1;
   transition: 1s ease;
   margin-bottom: 20px;
 }
-/* line 289, css\less\content.less */
+/* line 294, css\less\content.less */
 .node-type-webform .webform-client-form.showall > div .hide-on-hover .form-managed-file button {
   margin-top: 20px;
 }
-/* line 294, css\less\content.less */
+/* line 299, css\less\content.less */
 .node-type-webform .webform-client-form.showall > div .webform-submit {
   margin-top: 20px;
   max-height: 1000px;
   opacity: 1;
   transition: 1s ease;
 }
-/* line 306, css\less\content.less */
+/* line 311, css\less\content.less */
 .page-shop .form-item-attributes-1 label {
   font-size: 14px;
   font-weight: normal;
 }
-/* line 311, css\less\content.less */
+/* line 316, css\less\content.less */
 .page-shop .form-item-attributes-1 select {
   width: auto;
   min-width: 180px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 319, css\less\content.less */
+/* line 324, css\less\content.less */
 .page-shop .view .col {
   text-align: center;
   margin-bottom: 120px;
 }
-/* line 323, css\less\content.less */
+/* line 328, css\less\content.less */
 .page-shop .view .col img {
   max-width: 100%;
   height: auto;
 }
-/* line 328, css\less\content.less */
+/* line 333, css\less\content.less */
 .page-shop .view .col .views-field-display-price {
   font-family: 'museo_sans_cyrl100';
   font-size: 50px;
   padding: 40px 0 20px 0;
 }
-/* line 333, css\less\content.less */
+/* line 338, css\less\content.less */
 .page-shop .view .col .views-field-display-price span > span {
   font-size: 20px;
 }
-/* line 339, css\less\content.less */
+/* line 344, css\less\content.less */
 .page-shop .view .col .views-field-title {
   font-size: 16px;
   margin-bottom: 20px;
   font-family: 'museo_sans_cyrl700';
   text-transform: uppercase;
 }
-/* line 346, css\less\content.less */
+/* line 351, css\less\content.less */
 .page-shop .view .col .views-field-addtocartlink {
   width: 274px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 351, css\less\content.less */
+/* line 356, css\less\content.less */
 .page-shop .view .col .views-field-addtocartlink button {
   background: none;
   color: #e35825;
@@ -1741,47 +1826,39 @@ body.page-partners #wrapper {
   background: #e35825;
   color: #fafafa;
 }
-/* line 362, css\less\content.less */
+/* line 367, css\less\content.less */
 .page-cart #edit-update {
   margin-left: 20px;
 }
-/* line 366, css\less\content.less */
+/* line 371, css\less\content.less */
 .page-cart .table-striped > tbody > tr:nth-child(2n+1) > td,
 .page-cart .table-striped > tbody > tr:nth-child(2n+1) > th {
   background: none;
   border: none;
 }
-/* line 373, css\less\content.less */
+/* line 378, css\less\content.less */
 .page-cart .table > thead > tr > th {
   font-weight: normal;
 }
-/* line 380, css\less\content.less */
+/* line 385, css\less\content.less */
 .page-cart-checkout .region-content {
   color: black;
 }
-/* line 387, css\less\content.less */
+/* line 392, css\less\content.less */
 .page-cart-checkout-review .region-content,
 .page-cart-checkout-complete .region-content {
   color: black;
 }
-/* line 393, css\less\content.less */
-.page-user-login #block-system-main,
-.page-user-login #block-block-2 {
-  width: 45%;
-  float: left;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-}
-/* line 403, css\less\content.less */
+/* line 399, css\less\content.less */
 .page-user .profile .user-picture {
   display: none;
 }
-/* line 410, css\less\content.less */
+/* line 406, css\less\content.less */
 .page-join .views-field-view-node {
   margin: 30px auto auto;
   text-align: center;
 }
-/* line 414, css\less\content.less */
+/* line 410, css\less\content.less */
 .page-join .views-field-view-node a {
   background: none;
   color: #e35825;
@@ -1796,7 +1873,7 @@ body.page-partners #wrapper {
   background: #e35825;
   color: #fafafa;
 }
-/* line 419, css\less\content.less */
+/* line 415, css\less\content.less */
 .page-join .view-header {
   padding-bottom: 12px;
 }
@@ -1824,7 +1901,7 @@ body.page-partners #wrapper {
     padding-bottom: 60px;
   }
 }
-/* line 422, css\less\content.less */
+/* line 418, css\less\content.less */
 .page-join .view-header:after {
   content: "";
   height: 1px;
@@ -1860,7 +1937,7 @@ body.page-partners #wrapper {
     margin-top: 60px;
   }
 }
-/* line 427, css\less\content.less */
+/* line 423, css\less\content.less */
 .page-join .view-content {
   padding-top: 12px;
 }
@@ -1888,18 +1965,18 @@ body.page-partners #wrapper {
     padding-top: 60px;
   }
 }
-/* line 431, css\less\content.less */
+/* line 427, css\less\content.less */
 .page-join .views-field-title {
   text-align: center;
   font-size: 20px;
   font-family: 'museo_sans_cyrl700';
   margin-bottom: 20px;
 }
-/* line 437, css\less\content.less */
+/* line 433, css\less\content.less */
 .page-join .views-field-title a {
   color: #4d4d4f;
 }
-/* line 442, css\less\content.less */
+/* line 438, css\less\content.less */
 .page-join .view-content .col {
   margin-bottom: 12px;
 }
@@ -1927,7 +2004,7 @@ body.page-partners #wrapper {
     margin-bottom: 60px;
   }
 }
-/* line 447, css\less\content.less */
+/* line 443, css\less\content.less */
 .join.as-media .field-name-body,
 .page-join .view-header,
 .page-partners .view-header {
@@ -1935,7 +2012,7 @@ body.page-partners #wrapper {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 452, css\less\content.less */
+/* line 448, css\less\content.less */
 .join.as-media .field-name-body p,
 .page-join .view-header p,
 .page-partners .view-header p,
@@ -1947,11 +2024,11 @@ body.page-partners #wrapper {
 .page-partners .view-header ul {
   text-align: left;
 }
-/* line 459, css\less\content.less */
+/* line 455, css\less\content.less */
 .page-partners #mcw {
   background: white;
 }
-/* line 463, css\less\content.less */
+/* line 459, css\less\content.less */
 .page-partners .view-header {
   margin-bottom: 12px;
 }
@@ -1979,7 +2056,7 @@ body.page-partners #wrapper {
     margin-bottom: 60px;
   }
 }
-/* line 466, css\less\content.less */
+/* line 462, css\less\content.less */
 .page-partners .view-header:after {
   content: "";
   height: 1px;
@@ -2015,7 +2092,7 @@ body.page-partners #wrapper {
     margin-top: 60px;
   }
 }
-/* line 471, css\less\content.less */
+/* line 467, css\less\content.less */
 .page-partners .view-content {
   padding-top: 12px;
 }
@@ -2043,7 +2120,7 @@ body.page-partners #wrapper {
     padding-top: 60px;
   }
 }
-/* line 475, css\less\content.less */
+/* line 471, css\less\content.less */
 .page-partners .view {
   margin-right: auto;
   margin-left: auto;
@@ -2076,7 +2153,7 @@ body.page-partners #wrapper {
     width: 1570px;
   }
 }
-/* line 479, css\less\content.less */
+/* line 475, css\less\content.less */
 .page-partners .view h3 {
   clear: both;
   float: none;
@@ -2084,85 +2161,86 @@ body.page-partners #wrapper {
   font-size: 30px;
   margin-bottom: 45px;
 }
-/* line 487, css\less\content.less */
+/* line 483, css\less\content.less */
 .page-partners .view a {
   color: white;
   font-size: 12px;
   line-height: 14px;
   text-decoration: none;
 }
-/* line 494, css\less\content.less */
+/* line 490, css\less\content.less */
 .page-partners .view a div {
   display: block;
   width: 100%;
   clear: both;
 }
-/* line 500, css\less\content.less */
+/* line 496, css\less\content.less */
 .page-partners .view a .partnerImage {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
   height: auto;
+  padding: 20px;
 }
-/* line 508, css\less\content.less */
+/* line 505, css\less\content.less */
 .page-partners .view a .partnerTitle {
   margin-top: 20px;
 }
-/* line 512, css\less\content.less */
+/* line 509, css\less\content.less */
 .page-partners .view a .partnerTitle,
 .page-partners .view a .partnerText {
   visibility: hidden;
   background: grey;
   padding: 3px 6px;
 }
-/* line 517, css\less\content.less */
+/* line 514, css\less\content.less */
 .page-partners .view a .partnerTitle p,
 .page-partners .view a .partnerText p {
   text-align: left;
 }
-/* line 523, css\less\content.less */
+/* line 520, css\less\content.less */
 .page-partners .view a:hover .partnerTitle,
 .page-partners .view a:hover .partnerText {
   visibility: visible;
 }
-/* line 529, css\less\content.less */
+/* line 526, css\less\content.less */
 .page-partners .view .views-row {
   padding-bottom: 20px;
 }
-/* line 532, css\less\content.less */
+/* line 529, css\less\content.less */
 .page-partners .view .views-row.rowNum-1 .partnerTitle,
 .page-partners .view .views-row.rowNum-1 .partnerText {
   background: #e9a61d;
 }
-/* line 537, css\less\content.less */
+/* line 534, css\less\content.less */
 .page-partners .view .views-row.rowNum-2 .partnerTitle,
 .page-partners .view .views-row.rowNum-2 .partnerText {
   background: #6d3c7d;
 }
-/* line 542, css\less\content.less */
+/* line 539, css\less\content.less */
 .page-partners .view .views-row.rowNum-3 .partnerTitle,
 .page-partners .view .views-row.rowNum-3 .partnerText {
   background: #cb2c3a;
 }
-/* line 547, css\less\content.less */
+/* line 544, css\less\content.less */
 .page-partners .view .views-row.rowNum-4 .partnerTitle,
 .page-partners .view .views-row.rowNum-4 .partnerText {
   background: #4f9094;
 }
-/* line 559, css\less\content.less */
+/* line 556, css\less\content.less */
 .page-agenda .region-content,
 .page-art .region-content {
   background: none;
   padding-top: 0;
   overflow-y: visible;
 }
-/* line 565, css\less\content.less */
+/* line 562, css\less\content.less */
 .page-agenda h1,
 .page-art h1 {
   padding-left: 60px;
 }
-/* line 569, css\less\content.less */
+/* line 566, css\less\content.less */
 .page-agenda h1,
 .page-art h1,
 .page-agenda h2,
@@ -2173,7 +2251,7 @@ body.page-partners #wrapper {
   font-size: 30px;
   margin-bottom: 45px;
 }
-/* line 577, css\less\content.less */
+/* line 574, css\less\content.less */
 .page-agenda h1:after,
 .page-art h1:after,
 .page-agenda h2:after,
@@ -2186,17 +2264,17 @@ body.page-partners #wrapper {
   height: 2px;
   margin-top: 40px;
 }
-/* line 587, css\less\content.less */
+/* line 584, css\less\content.less */
 .page-agenda .view .col,
 .page-art .view .col {
   margin-bottom: 30px;
 }
-/* line 590, css\less\content.less */
+/* line 587, css\less\content.less */
 .page-agenda .view .col a,
 .page-art .view .col a {
   color: white;
 }
-/* line 593, css\less\content.less */
+/* line 590, css\less\content.less */
 .page-agenda .view .col a .views-field-title,
 .page-art .view .col a .views-field-title,
 .page-agenda .view .col a .views-field-field-date,
@@ -2207,7 +2285,7 @@ body.page-partners #wrapper {
   font-size: 20px;
   font-family: 'museo_sans_cyrl700';
 }
-/* line 602, css\less\content.less */
+/* line 599, css\less\content.less */
 .page-agenda .view .col a .views-field-field-body,
 .page-art .view .col a .views-field-field-body {
   background: #e35825;
@@ -2215,12 +2293,12 @@ body.page-partners #wrapper {
   padding: 5px 20px;
   display: none;
 }
-/* line 609, css\less\content.less */
+/* line 606, css\less\content.less */
 .page-agenda .view .col a .views-field-field-photo-anons,
 .page-art .view .col a .views-field-field-photo-anons {
   display: none;
 }
-/* line 613, css\less\content.less */
+/* line 610, css\less\content.less */
 .page-agenda .view .col a:hover,
 .page-art .view .col a:hover {
   text-decoration: none;
@@ -2232,24 +2310,24 @@ body.page-partners #wrapper {
   box-shadow: 0px 0px 30px 0px #323232;
   border: black 10px solid;
 }
-/* line 624, css\less\content.less */
+/* line 621, css\less\content.less */
 .page-agenda .view .col a:hover .views-field-field-body,
 .page-art .view .col a:hover .views-field-field-body,
 .page-agenda .view .col a:hover .views-field-field-photo-anons,
 .page-art .view .col a:hover .views-field-field-photo-anons {
   display: block;
 }
-/* line 630, css\less\content.less */
+/* line 627, css\less\content.less */
 .page-agenda .view .col a:hover .hide-on-hover,
 .page-art .view .col a:hover .hide-on-hover {
   display: none;
 }
-/* line 642, css\less\content.less */
+/* line 639, css\less\content.less */
 .page-agenda #block-system-main,
 .page-art #block-system-main {
   margin-top: 40px;
 }
-/* line 645, css\less\content.less */
+/* line 642, css\less\content.less */
 .page-agenda #block-system-main .views-field-title,
 .page-art #block-system-main .views-field-title,
 .page-agenda #block-system-main .views-field-field-date,
@@ -2259,7 +2337,7 @@ body.page-partners #wrapper {
   background: #213f99;
 }
 /* ------------------------HOVER CARDS */
-/* line 659, css\less\content.less */
+/* line 656, css\less\content.less */
 .page-news .view .col,
 .page-taxonomy-term.events .view .col,
 .join.art-colaboration .view .col,
@@ -2270,7 +2348,7 @@ body.page-partners #wrapper {
 .page-taxonomy-term.what-we-do .view .views-row {
   margin-bottom: 40px;
 }
-/* line 663, css\less\content.less */
+/* line 660, css\less\content.less */
 .page-news .view .col a,
 .page-taxonomy-term.events .view .col a,
 .join.art-colaboration .view .col a,
@@ -2284,7 +2362,7 @@ body.page-partners #wrapper {
   position: relative;
   display: block;
 }
-/* line 669, css\less\content.less */
+/* line 666, css\less\content.less */
 .page-news .view .col a .text-block,
 .page-taxonomy-term.events .view .col a .text-block,
 .join.art-colaboration .view .col a .text-block,
@@ -2301,7 +2379,7 @@ body.page-partners #wrapper {
   padding: 15px 20px;
   width: 100%;
 }
-/* line 678, css\less\content.less */
+/* line 675, css\less\content.less */
 .page-news .view .col a .text-block .views-field-title,
 .page-taxonomy-term.events .view .col a .text-block .views-field-title,
 .join.art-colaboration .view .col a .text-block .views-field-title,
@@ -2315,7 +2393,7 @@ body.page-partners #wrapper {
   text-transform: uppercase;
   font-family: 'museo_sans_cyrl900';
 }
-/* line 685, css\less\content.less */
+/* line 682, css\less\content.less */
 .page-news .view .col a .text-block .views-field-title,
 .page-taxonomy-term.events .view .col a .text-block .views-field-title,
 .join.art-colaboration .view .col a .text-block .views-field-title,
@@ -2342,7 +2420,7 @@ body.page-partners #wrapper {
 .page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-body {
   /*font-family: 'museo_sans_cyrl700';*/
 }
-/* line 692, css\less\content.less */
+/* line 689, css\less\content.less */
 .page-news .view .col a .text-block .views-field-field-body,
 .page-taxonomy-term.events .view .col a .text-block .views-field-field-body,
 .join.art-colaboration .view .col a .text-block .views-field-field-body,
@@ -2372,7 +2450,7 @@ body.page-partners #wrapper {
   text-align: left;
   margin-top: 10px;
 }
-/* line 700, css\less\content.less */
+/* line 697, css\less\content.less */
 .page-news .view .col a .text-block .views-field-field-body p,
 .page-taxonomy-term.events .view .col a .text-block .views-field-field-body p,
 .join.art-colaboration .view .col a .text-block .views-field-field-body p,
@@ -2391,7 +2469,7 @@ body.page-partners #wrapper {
 .page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-date p {
   text-align: left;
 }
-/* line 707, css\less\content.less */
+/* line 704, css\less\content.less */
 .page-news .view .col a:hover .views-field-field-body,
 .page-taxonomy-term.events .view .col a:hover .views-field-field-body,
 .join.art-colaboration .view .col a:hover .views-field-field-body,
@@ -2412,103 +2490,103 @@ body.page-partners #wrapper {
   opacity: 1;
   transition: 1s ease;
 }
-/* line 717, css\less\content.less */
+/* line 714, css\less\content.less */
 .join.art-colaboration .region-content {
   padding-bottom: 0;
 }
-/* line 723, css\less\content.less */
+/* line 720, css\less\content.less */
 .page-news h1 {
   display: block;
   text-align: center;
   margin: 20px auto;
 }
-/* line 731, css\less\content.less */
+/* line 728, css\less\content.less */
 .page-user .region-content {
   overflow: auto;
 }
-/* line 737, css\less\content.less */
+/* line 734, css\less\content.less */
 body.philosophy .XLcontainer {
   max-width: 1170px;
 }
-/* line 742, css\less\content.less */
+/* line 739, css\less\content.less */
 body.philosophy .field-name-body .field-item {
   padding: 40px;
 }
-/* line 745, css\less\content.less */
+/* line 742, css\less\content.less */
 body.philosophy .field-name-body .field-item.odd {
   text-align: right;
 }
-/* line 753, css\less\content.less */
+/* line 750, css\less\content.less */
 body.what-we-do.page-node-413 .region.region-content {
   background: none;
 }
-/* line 757, css\less\content.less */
+/* line 754, css\less\content.less */
 body.what-we-do.page-node-413 h1 {
   text-align: center;
   margin-top: 40px;
 }
-/* line 762, css\less\content.less */
+/* line 759, css\less\content.less */
 body.what-we-do.page-node-413 .node .field-name-body p {
   text-align: center;
 }
-/* line 766, css\less\content.less */
+/* line 763, css\less\content.less */
 body.what-we-do.page-node-413 h2 {
   text-align: center;
   margin: 40px auto;
 }
-/* line 773, css\less\content.less */
+/* line 770, css\less\content.less */
 body.what-we-do.page-node-413 td {
   border: none !important;
 }
-/* line 778, css\less\content.less */
+/* line 775, css\less\content.less */
 body.what-we-do.page-node-413 td.views-field-field-image {
   padding-right: 40px;
   padding-bottom: 60px;
 }
-/* line 783, css\less\content.less */
+/* line 780, css\less\content.less */
 body.what-we-do.page-node-413 td a {
   color: white;
 }
-/* line 787, css\less\content.less */
+/* line 784, css\less\content.less */
 body.what-we-do.page-node-413 td h3 {
   font-size: 20px;
 }
-/* line 795, css\less\content.less */
+/* line 792, css\less\content.less */
 .page-taxonomy-term.events h1 {
   display: block;
   margin-top: 40px;
   text-align: center;
 }
-/* line 802, css\less\content.less */
+/* line 799, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .view-content,
 .page-taxonomy-term.events .view-taxonomy-term .text-center,
 .page-taxonomy-term.events .view-taxonomy-term .view-header {
   width: 70%;
   float: left;
 }
-/* line 809, css\less\content.less */
+/* line 806, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .view-header h2 {
   margin-left: 30px;
 }
-/* line 814, css\less\content.less */
+/* line 811, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment {
   width: 30%;
   overflow: hidden;
   padding-left: 40px;
 }
-/* line 819, css\less\content.less */
+/* line 816, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer {
   clear: both;
 }
-/* line 821, css\less\content.less */
+/* line 818, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer a {
   color: white;
 }
-/* line 826, css\less\content.less */
+/* line 823, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-header h2 {
   margin-left: 0;
 }
-/* line 836, css\less\content.less */
+/* line 833, css\less\content.less */
 .page-glossary .view .name,
 .what-we-do.page-node-413 .view .name,
 .join.rent .view .name,
@@ -2520,7 +2598,7 @@ body.what-we-do.page-node-413 td h3 {
   padding-bottom: 10px;
   color: #58595b;
 }
-/* line 844, css\less\content.less */
+/* line 841, css\less\content.less */
 .page-glossary .c,
 .what-we-do.page-node-413 .c,
 .join.rent .c {
@@ -2591,7 +2669,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-bottom: 60px;
   }
 }
-/* line 849, css\less\content.less */
+/* line 846, css\less\content.less */
 .page-glossary .views-row,
 .what-we-do.page-node-413 .views-row,
 .join.rent .views-row {
@@ -2599,13 +2677,13 @@ body.what-we-do.page-node-413 td h3 {
   padding-right: 20px;
   overflow: hidden;
 }
-/* line 854, css\less\content.less */
+/* line 851, css\less\content.less */
 .page-glossary .views-row.views-row-even,
 .what-we-do.page-node-413 .views-row.views-row-even,
 .join.rent .views-row.views-row-even {
   background: url(../images/col.jpg) repeat-y;
 }
-/* line 858, css\less\content.less */
+/* line 855, css\less\content.less */
 .page-glossary .views-row .image,
 .what-we-do.page-node-413 .views-row .image,
 .join.rent .views-row .image {
@@ -2613,7 +2691,7 @@ body.what-we-do.page-node-413 td h3 {
   margin-right: 100px;
   padding-bottom: 60px;
 }
-/* line 865, css\less\content.less */
+/* line 862, css\less\content.less */
 .page-glossary .views-row.views-row-odd .image,
 .what-we-do.page-node-413 .views-row.views-row-odd .image,
 .join.rent .views-row.views-row-odd .image {
@@ -2621,7 +2699,7 @@ body.what-we-do.page-node-413 td h3 {
   margin-left: 100px;
 }
 @media (max-width: 767px) {
-  /* line 875, css\less\content.less */
+  /* line 872, css\less\content.less */
   .page-glossary .views-row.views-row-odd .image,
   .what-we-do.page-node-413 .views-row.views-row-odd .image,
   .join.rent .views-row.views-row-odd .image,
@@ -2635,7 +2713,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-bottom: 20px;
   }
 }
-/* line 888, css\less\content.less */
+/* line 885, css\less\content.less */
 .join.rent .views-row {
   padding-bottom: 12px;
   padding-top: 12px;
@@ -2688,7 +2766,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-top: 60px;
   }
 }
-/* line 892, css\less\content.less */
+/* line 889, css\less\content.less */
 .join.rent .views-row .node {
   margin-right: auto;
   margin-left: auto;
@@ -2721,33 +2799,33 @@ body.what-we-do.page-node-413 td h3 {
     width: 1570px;
   }
 }
-/* line 895, css\less\content.less */
+/* line 892, css\less\content.less */
 .join.rent .views-row .node h2 {
   margin-top: 0;
 }
-/* line 899, css\less\content.less */
+/* line 896, css\less\content.less */
 .join.rent .views-row .node .field-name-body {
   padding-bottom: 0;
 }
-/* line 902, css\less\content.less */
+/* line 899, css\less\content.less */
 .join.rent .views-row .node .field-name-body p,
 .join.rent .views-row .node .field-name-body ul,
 .join.rent .views-row .node .field-name-body li {
   text-align: left;
 }
-/* line 906, css\less\content.less */
+/* line 903, css\less\content.less */
 .join.rent .views-row .node .field-name-body:after {
   display: none;
 }
-/* line 913, css\less\content.less */
+/* line 910, css\less\content.less */
 .join.rent .region-content {
   padding-bottom: 0;
 }
-/* line 917, css\less\content.less */
+/* line 914, css\less\content.less */
 .join.rent #block-views-arenda-block {
   border-bottom: #c2c2c2 1px solid;
 }
-/* line 920, css\less\content.less */
+/* line 917, css\less\content.less */
 .join.rent #block-system-main {
   padding-top: 12px;
 }
@@ -2775,54 +2853,177 @@ body.what-we-do.page-node-413 td h3 {
     padding-top: 60px;
   }
 }
-/* line 924, css\less\content.less */
+/* line 921, css\less\content.less */
 .join.rent #block-system-main .field-name-body {
   padding-top: 0;
+  text-align: center;
 }
-/* line 928, css\less\content.less */
+/* line 925, css\less\content.less */
+.join.rent #block-system-main .field-name-body p {
+  text-align: center;
+}
+/* line 930, css\less\content.less */
 .join.rent #block-system-main ul.list-inline {
   display: none;
 }
-/* line 932, css\less\content.less */
+/* line 934, css\less\content.less */
 .join.rent #block-system-main h2 {
   text-align: center;
   margin-top: 0;
   font-size: 24px;
 }
-/* line 938, css\less\content.less */
+/* line 940, css\less\content.less */
 .join.rent #block-system-main .webform-client-form {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 941, css\less\content.less */
+/* line 943, css\less\content.less */
 .join.rent #block-system-main .webform-client-form:after {
   display: none;
 }
-/* line 950, css\less\content.less */
+/* line 952, css\less\content.less */
+.join.as-media .field-name-body .field-item:first-child,
+.join.art-colaboration .field-name-body .field-item:first-child {
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item:first-child,
+  .join.art-colaboration .field-name-body .field-item:first-child {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item:first-child,
+  .join.art-colaboration .field-name-body .field-item:first-child {
+    padding-bottom: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item:first-child,
+  .join.art-colaboration .field-name-body .field-item:first-child {
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item:first-child,
+  .join.art-colaboration .field-name-body .field-item:first-child {
+    padding-bottom: 60px;
+  }
+}
+/* line 956, css\less\content.less */
+.join.as-media .field-name-body .field-item.odd,
+.join.art-colaboration .field-name-body .field-item.odd {
+  padding-top: 12px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd,
+  .join.art-colaboration .field-name-body .field-item.odd {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd,
+  .join.art-colaboration .field-name-body .field-item.odd {
+    padding-top: 36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd,
+  .join.art-colaboration .field-name-body .field-item.odd {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd,
+  .join.art-colaboration .field-name-body .field-item.odd {
+    padding-top: 60px;
+  }
+}
+/* line 960, css\less\content.less */
+.join.as-media .field-name-body .field-item.odd p,
+.join.art-colaboration .field-name-body .field-item.odd p {
+  text-align: center;
+}
+/* line 964, css\less\content.less */
+.join.as-media .field-name-body .field-item.odd:before,
+.join.art-colaboration .field-name-body .field-item.odd:before {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 -9999px;
+  padding: 0 9999px;
+  position: absolute;
+  background-color: #c2c2c2;
+  width: 10000px;
+  margin-top: -12px;
+}
+@media (min-width: 768px) {
+  /* line 100, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd:before,
+  .join.art-colaboration .field-name-body .field-item.odd:before {
+    margin-top: -24px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 105, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd:before,
+  .join.art-colaboration .field-name-body .field-item.odd:before {
+    margin-top: -36.014405762304925px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd:before,
+  .join.art-colaboration .field-name-body .field-item.odd:before {
+    margin-top: -48px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 115, css\less\mixins.less */
+  .join.as-media .field-name-body .field-item.odd:before,
+  .join.art-colaboration .field-name-body .field-item.odd:before {
+    margin-top: -60px;
+  }
+}
+/* line 972, css\less\content.less */
 .page-node-293 .imgContainer,
 .page-node-414 .imgContainer {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 957, css\less\content.less */
+/* line 976, css\less\content.less */
+.page-node-293 .region.region-content,
+.page-node-414 .region.region-content {
+  background: url(../images/col.jpg) no-repeat bottom center;
+}
+/* line 985, css\less\content.less */
 body.events .view .views-row {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: #c2c2c2 1px solid;
 }
-/* line 962, css\less\content.less */
+/* line 990, css\less\content.less */
 body.events .view .views-row:last-child {
   border: none;
 }
-/* line 968, css\less\content.less */
+/* line 996, css\less\content.less */
 body.events .view .views-row .views-field-nothing a {
   font-size: 14px;
   font-family: 'museo_sans_cyrl300_italic';
   text-decoration: underline;
 }
-/* line 975, css\less\content.less */
+/* line 1003, css\less\content.less */
 body.events .view .views-row .views-field-nothing h3,
 body.events .view .views-row .views-field-nothing h3 a {
   color: #4d4d4f;
@@ -2832,48 +3033,48 @@ body.events .view .views-row .views-field-nothing h3 a {
   text-decoration: none;
   font-family: 'museo_sans_cyrl700';
 }
-/* line 984, css\less\content.less */
+/* line 1012, css\less\content.less */
 body.events .view .views-row .views-field-nothing p {
   font-size: 14px;
   margin-bottom: 0;
 }
-/* line 989, css\less\content.less */
+/* line 1017, css\less\content.less */
 body.events .view .views-row .views-field-nothing .col-sm-1 {
   font-size: 11px;
 }
-/* line 992, css\less\content.less */
+/* line 1020, css\less\content.less */
 body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-size: 14px;
   font-family: 'museo_sans_cyrl700';
 }
 @media (max-width: 1000px) {
-  /* line 1006, css\less\content.less */
+  /* line 1034, css\less\content.less */
   .page-events aside,
   .page-events section.col-sm-8 {
     width: 100%;
   }
 }
-/* line 1012, css\less\content.less */
+/* line 1040, css\less\content.less */
 .page-events .region.region-content {
   padding-left: 0;
 }
-/* line 1015, css\less\content.less */
+/* line 1043, css\less\content.less */
 .page-events .region.region-content .view .date-nav-wrapper {
   margin-top: 0;
 }
-/* line 1019, css\less\content.less */
+/* line 1047, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav {
   text-align: center;
 }
-/* line 1022, css\less\content.less */
+/* line 1050, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav li {
   margin-top: -50px;
 }
-/* line 1026, css\less\content.less */
+/* line 1054, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav .pager {
   display: inline-block;
 }
-/* line 1034, css\less\content.less */
+/* line 1062, css\less\content.less */
 .page-events .tabs--primary.nav.nav-tabs {
   margin-top: 20px;
   padding-left: 15px;
@@ -2891,56 +3092,56 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
     padding-right: 30px;
   }
 }
-/* line 1041, css\less\content.less */
+/* line 1069, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-heading h3 {
   text-align: center;
   text-transform: lowercase;
   font-size: 18px;
 }
-/* line 1047, css\less\content.less */
+/* line 1075, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-nav {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  /* line 1055, css\less\content.less */
+  /* line 1083, css\less\content.less */
   .page-events .view .event-date {
     float: right;
   }
-  /* line 1056, css\less\content.less */
+  /* line 1084, css\less\content.less */
   .page-events .view .event-image {
     float: left;
   }
-  /* line 1057, css\less\content.less */
+  /* line 1085, css\less\content.less */
   .page-events .view .event-text {
     margin-top: 20px;
   }
 }
-/* line 1060, css\less\content.less */
+/* line 1088, css\less\content.less */
 .page-events .view .event-date {
   font-size: 14px;
 }
-/* line 1063, css\less\content.less */
+/* line 1091, css\less\content.less */
 .page-events .view .event-date .date-display-start,
 .page-events .view .event-date .date-display-end,
 .page-events .view .event-date .date-display-single {
   font-weight: bold;
   font-family: 'museo_sans_cyrl700' !important;
 }
-/* line 1070, css\less\content.less */
+/* line 1098, css\less\content.less */
 .page-events .view .event-date .date-display-start:after {
   content: "\A";
   white-space: pre;
 }
-/* line 1077, css\less\content.less */
+/* line 1105, css\less\content.less */
 .page-events .view .event-text p {
   text-align: left;
 }
-/* line 1082, css\less\content.less */
+/* line 1110, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-prev a {
   margin-left: 0;
 }
-/* line 1086, css\less\content.less */
+/* line 1114, css\less\content.less */
 .page-events .view .pager {
   position: relative;
   padding-left: 0;
@@ -2951,35 +3152,35 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   width: 50%;
 }
 @media (max-width: 767px) {
-  /* line 1096, css\less\content.less */
+  /* line 1124, css\less\content.less */
   .page-events .view .pager {
     width: 100%;
   }
 }
-/* line 1100, css\less\content.less */
+/* line 1128, css\less\content.less */
 .page-events .view .pager li {
   background: none;
   margin-top: -40px;
 }
-/* line 1105, css\less\content.less */
+/* line 1133, css\less\content.less */
 .page-events .view .pager li.date-prev {
   left: 0;
   right: auto;
 }
-/* line 1108, css\less\content.less */
+/* line 1136, css\less\content.less */
 .page-events .view .pager li.date-prev a {
   background: url(../images/arrow-left.png) center center no-repeat;
 }
-/* line 1113, css\less\content.less */
+/* line 1141, css\less\content.less */
 .page-events .view .pager li.date-next {
   left: auto;
   right: 0;
 }
-/* line 1117, css\less\content.less */
+/* line 1145, css\less\content.less */
 .page-events .view .pager li.date-next a {
   background: url(../images/arrow-right.png) center center no-repeat;
 }
-/* line 1122, css\less\content.less */
+/* line 1150, css\less\content.less */
 .page-events .view .pager li a {
   border: none;
   text-indent: -9999px;
@@ -2988,39 +3189,39 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   display: inline-block;
   font-size: 0;
 }
-/* line 1137, css\less\content.less */
+/* line 1165, css\less\content.less */
 .page-events-week .region.region-content .date-nav-wrapper .date-nav .pager {
   width: 80%;
 }
 @media (max-width: 767px) {
-  /* line 1140, css\less\content.less */
+  /* line 1168, css\less\content.less */
   .page-events-week .region.region-content .date-nav-wrapper .date-nav .pager {
     width: 100%;
   }
 }
-/* line 1145, css\less\content.less */
+/* line 1173, css\less\content.less */
 .page-events-day .region.region-content .date-nav-wrapper .date-nav .pager {
   width: 65%;
 }
 @media (max-width: 767px) {
-  /* line 1148, css\less\content.less */
+  /* line 1176, css\less\content.less */
   .page-events-day .region.region-content .date-nav-wrapper .date-nav .pager {
     width: 100%;
   }
 }
-/* line 1153, css\less\content.less */
+/* line 1181, css\less\content.less */
 #block-views-calendar-block-3 {
   margin-top: 110px;
 }
-/* line 1156, css\less\content.less */
+/* line 1184, css\less\content.less */
 #block-views-calendar-block-3 .view-footer {
   padding: 20px 0;
 }
-/* line 1159, css\less\content.less */
+/* line 1187, css\less\content.less */
 #block-views-calendar-block-3 .view-footer a {
   text-decoration: underline;
 }
-/* line 1164, css\less\content.less */
+/* line 1192, css\less\content.less */
 #block-views-calendar-block-3 .view .date-nav-wrapper .date-heading h3 {
   text-align: center;
   font-size: 18px;
@@ -3030,41 +3231,41 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   background: #eee;
   border: #e1dfdf 1px solid;
 }
-/* line 1174, css\less\content.less */
+/* line 1202, css\less\content.less */
 #block-views-calendar-block-3 .view .date-nav-wrapper .date-nav {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 1179, css\less\content.less */
+/* line 1207, css\less\content.less */
 #block-views-calendar-block-3 .view .pager {
   margin: 0;
   width: 100%;
 }
-/* line 1183, css\less\content.less */
+/* line 1211, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-prev,
 #block-views-calendar-block-3 .view .pager li.date-next {
   margin-top: -45px;
 }
-/* line 1188, css\less\content.less */
+/* line 1216, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-prev {
   left: 0;
   right: auto;
 }
-/* line 1194, css\less\content.less */
+/* line 1222, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-next {
   left: auto;
   right: 0;
 }
-/* line 1205, css\less\content.less */
+/* line 1233, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td {
   text-align: left;
 }
-/* line 1208, css\less\content.less */
+/* line 1236, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item {
   display: inline-block;
   font-family: 'museo_sans_cyrl700' !important;
 }
-/* line 1212, css\less\content.less */
+/* line 1240, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot {
   display: inline-block;
   height: 5px;
@@ -3075,92 +3276,92 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   vertical-align: top;
   background-color: #4d4d4f;
 }
-/* line 1223, css\less\content.less */
+/* line 1251, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.art {
-  background-color: #43459d;
+  background-color: #2c3294;
 }
-/* line 1224, css\less\content.less */
+/* line 1252, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.coworking {
-  background-color: #e65826;
+  background-color: #68993d;
 }
-/* line 1225, css\less\content.less */
+/* line 1253, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.concerts {
-  background-color: #feb415;
+  background-color: #569eb6;
 }
-/* line 1226, css\less\content.less */
+/* line 1254, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.creative-workspaces {
-  background-color: #67983d;
+  background-color: #2e3095;
 }
-/* line 1227, css\less\content.less */
+/* line 1255, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.pool {
-  background-color: #559db6;
+  background-color: #e95726;
 }
-/* line 1228, css\less\content.less */
+/* line 1256, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.urban-fashion {
-  background-color: #ec1944;
+  background-color: #ed1a45;
 }
-/* line 1229, css\less\content.less */
+/* line 1257, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.fest {
-  background-color: #5c3092;
+  background-color: #5e3092;
 }
-/* line 1230, css\less\content.less */
+/* line 1258, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.edutainment {
-  background-color: #13f34d;
+  background-color: #feb413;
 }
-/* line 1238, css\less\content.less */
+/* line 1266, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
   background: none;
 }
-/* line 1244, css\less\content.less */
+/* line 1272, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry,
 #block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
   height: auto !important;
   line-height: 1;
 }
-/* line 1250, css\less\content.less */
+/* line 1278, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar div.calendar {
   font-size: 18px;
 }
-/* line 1254, css\less\content.less */
+/* line 1282, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
   padding: 0;
 }
-/* line 1260, css\less\content.less */
+/* line 1288, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full .inner .monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full .inner .weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full .inner .dayview {
   margin: 0;
 }
-/* line 1266, css\less\content.less */
+/* line 1294, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar td.empty {
   color: #d7d5d5;
 }
-/* line 1270, css\less\content.less */
+/* line 1298, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar td {
   border-color: #e1dfdf;
 }
-/* line 1275, css\less\content.less */
+/* line 1303, css\less\content.less */
 #block-views-calendar-block-4 {
   padding-bottom: 20px;
 }
-/* line 1278, css\less\content.less */
+/* line 1306, css\less\content.less */
 #block-views-calendar-block-4 .view-header {
   display: none;
 }
-/* line 1282, css\less\content.less */
+/* line 1310, css\less\content.less */
 #block-views-calendar-block-4 .item-list {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-/* line 1286, css\less\content.less */
+/* line 1314, css\less\content.less */
 #block-views-calendar-block-4 .item-list ul {
   display: none;
 }
-/* line 1290, css\less\content.less */
+/* line 1318, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3 {
   display: none;
   margin: 0;
@@ -3168,90 +3369,104 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 1297, css\less\content.less */
+/* line 1325, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.our-event {
   display: list-item;
 }
-/* line 1302, css\less\content.less */
+/* line 1330, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.art a {
-  color: #43459d;
+  color: #2c3294;
 }
-/* line 1303, css\less\content.less */
+/* line 1331, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.coworking a {
-  color: #e65826;
+  color: #68993d;
 }
-/* line 1304, css\less\content.less */
+/* line 1332, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.concerts a {
-  color: #feb415;
+  color: #569eb6;
 }
-/* line 1305, css\less\content.less */
+/* line 1333, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.creative-workspaces a {
-  color: #67983d;
+  color: #2e3095;
 }
-/* line 1306, css\less\content.less */
+/* line 1334, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.pool a {
-  color: #559db6;
+  color: #e95726;
 }
-/* line 1307, css\less\content.less */
+/* line 1335, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.urban-fashion a {
-  color: #ec1944;
+  color: #ed1a45;
 }
-/* line 1308, css\less\content.less */
+/* line 1336, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.fest a {
-  color: #5c3092;
+  color: #5e3092;
 }
-/* line 1309, css\less\content.less */
+/* line 1337, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.edutainment a {
-  color: #13f34d;
+  color: #feb413;
 }
-/* line 1315, css\less\content.less */
+/* line 1343, css\less\content.less */
 .page-user.register #block-block-2 {
   display: none;
 }
-/* line 1323, css\less\content.less */
+/* line 1351, css\less\content.less */
 .page-user h1 {
   display: none;
 }
-/* line 1327, css\less\content.less */
+/* line 1355, css\less\content.less */
 .page-user .region-content.user {
   padding: 0;
 }
-/* line 1331, css\less\content.less */
+/* line 1359, css\less\content.less */
 .page-user #navbar {
   height: 200px;
   min-height: 145px;
 }
 @media (max-width: 767px) {
-  /* line 1335, css\less\content.less */
+  /* line 1363, css\less\content.less */
   .page-user #navbar {
     height: 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 1339, css\less\content.less */
+  /* line 1367, css\less\content.less */
   .page-user #navbar {
     height: 200px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1343, css\less\content.less */
+  /* line 1371, css\less\content.less */
   .page-user #navbar {
     height: 250px;
   }
 }
 @media (min-width: 1600px) {
-  /* line 1347, css\less\content.less */
+  /* line 1375, css\less\content.less */
   .page-user #navbar {
     height: 300px;
   }
 }
-/* line 5, css\less\modal.less */
+/* line 1381, css\less\content.less */
+#user-profile-form #edit-locale,
+#user-profile-form #edit-timezone,
+#user-profile-form #edit-picture {
+  display: none;
+}
+/* line 1, css\less\modal.less */
+.img-tag {
+  float: right;
+}
+/* line 4, css\less\modal.less */
+.img-tag img {
+  max-width: 127px;
+}
+/* line 13, css\less\modal.less */
 .page-node .node-type-news .content,
 .page-node .node-type-event .content,
 .modal-dialog.container .content {
   padding-bottom: 40px;
 }
-/* line 9, css\less\modal.less */
+/* line 17, css\less\modal.less */
 .page-node .node-type-news .node .field-name-body,
 .page-node .node-type-event .node .field-name-body,
 .modal-dialog.container .node .field-name-body,
@@ -3281,7 +3496,13 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
 .modal-dialog.container .field-name-field-date {
   padding: 20px 80px 0 80px;
 }
-/* line 21, css\less\modal.less */
+/* line 29, css\less\modal.less */
+.page-node .node-type-news .ya-share2,
+.page-node .node-type-event .ya-share2,
+.modal-dialog.container .ya-share2 {
+  padding-bottom: 80px;
+}
+/* line 33, css\less\modal.less */
 .page-node .node-type-news .views-field-field-youtube,
 .page-node .node-type-event .views-field-field-youtube,
 .modal-dialog.container .views-field-field-youtube,
@@ -3291,31 +3512,31 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 27, css\less\modal.less */
+/* line 39, css\less\modal.less */
 .page-node .node-type-news .ya-share2 ul,
 .page-node .node-type-event .ya-share2 ul,
 .modal-dialog.container .ya-share2 ul {
   margin-left: 0;
 }
-/* line 31, css\less\modal.less */
+/* line 43, css\less\modal.less */
 .page-node .node-type-news .field-name-field-image .field-label,
 .page-node .node-type-event .field-name-field-image .field-label,
 .modal-dialog.container .field-name-field-image .field-label {
   display: none;
 }
-/* line 35, css\less\modal.less */
+/* line 47, css\less\modal.less */
 .page-node .node-type-news #overlay-content .field-name-field-image img,
 .page-node .node-type-event #overlay-content .field-name-field-image img,
 .modal-dialog.container #overlay-content .field-name-field-image img {
   border: none;
 }
-/* line 39, css\less\modal.less */
+/* line 51, css\less\modal.less */
 .page-node .node-type-news .submitted,
 .page-node .node-type-event .submitted,
 .modal-dialog.container .submitted {
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
-/* line 43, css\less\modal.less */
+/* line 55, css\less\modal.less */
 .page-node .node-type-news field-name-field-date,
 .page-node .node-type-event field-name-field-date,
 .modal-dialog.container field-name-field-date {
@@ -3325,7 +3546,7 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-family: 'museo_sans_cyrl700';
   font-weight: normal;
 }
-/* line 51, css\less\modal.less */
+/* line 63, css\less\modal.less */
 .page-node .node-type-news .field-name-field-date span,
 .page-node .node-type-event .field-name-field-date span,
 .modal-dialog.container .field-name-field-date span {
@@ -3334,7 +3555,7 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-family: 'museo_sans_cyrl700';
   font-weight: normal;
 }
-/* line 58, css\less\modal.less */
+/* line 70, css\less\modal.less */
 .page-node .node-type-news .field-name-field-fb-event,
 .page-node .node-type-event .field-name-field-fb-event,
 .modal-dialog.container .field-name-field-fb-event {
@@ -3342,7 +3563,7 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  /* line 65, css\less\modal.less */
+  /* line 77, css\less\modal.less */
   .page-node .node-type-news .field-type-taxonomy-term-reference,
   .page-node .node-type-event .field-type-taxonomy-term-reference,
   .modal-dialog.container .field-type-taxonomy-term-reference,
@@ -3372,7 +3593,7 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   .modal-dialog.container .field-name-field-date {
     padding: 10px 20px 0 20px;
   }
-  /* line 77, css\less\modal.less */
+  /* line 89, css\less\modal.less */
   .page-node .node-type-news .node h1,
   .page-node .node-type-event .node h1,
   .modal-dialog.container .node h1,
@@ -3381,19 +3602,19 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   .modal-dialog.container .node h2 {
     font-size: 25px;
   }
-  /* line 82, css\less\modal.less */
+  /* line 94, css\less\modal.less */
   .page-node .node-type-news .carousel-indicators,
   .page-node .node-type-event .carousel-indicators,
   .modal-dialog.container .carousel-indicators {
     display: none;
   }
-  /* line 86, css\less\modal.less */
+  /* line 98, css\less\modal.less */
   .page-node .node-type-news .date-display-start,
   .page-node .node-type-event .date-display-start,
   .modal-dialog.container .date-display-start {
     padding-left: 10px;
   }
-  /* line 87, css\less\modal.less */
+  /* line 99, css\less\modal.less */
   .page-node .node-type-news .date-display-start:after,
   .page-node .node-type-event .date-display-start:after,
   .modal-dialog.container .date-display-start:after {
@@ -3401,24 +3622,24 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
     white-space: pre;
   }
 }
-/* line 93, css\less\modal.less */
+/* line 105, css\less\modal.less */
 .modal .modal-header {
   border: none;
   padding: 0 0 30px 0;
 }
-/* line 97, css\less\modal.less */
+/* line 109, css\less\modal.less */
 .modal .modal-header h4 {
   display: none;
 }
-/* line 101, css\less\modal.less */
+/* line 113, css\less\modal.less */
 .modal .modal-header button {
   opacity: 1;
 }
-/* line 104, css\less\modal.less */
+/* line 116, css\less\modal.less */
 .modal .modal-header button i {
   color: white;
 }
-/* line 110, css\less\modal.less */
+/* line 122, css\less\modal.less */
 .modal .modal-dialog.container {
   margin-right: auto;
   margin-left: auto;
@@ -3452,52 +3673,52 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 113, css\less\modal.less */
+  /* line 125, css\less\modal.less */
   .modal .modal-dialog.container {
     width: 1170px;
   }
 }
 @media (max-width: 767px) {
-  /* line 117, css\less\modal.less */
+  /* line 129, css\less\modal.less */
   .modal .modal-dialog.container {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 123, css\less\modal.less */
+/* line 135, css\less\modal.less */
 .modal .modal-content {
   background: none;
   border: none;
   border-radius: 0;
 }
-/* line 128, css\less\modal.less */
+/* line 140, css\less\modal.less */
 .modal .modal-content .field-name-body:after {
   background-color: none;
 }
-/* line 132, css\less\modal.less */
+/* line 144, css\less\modal.less */
 .modal .modal-content .modal-body {
   padding: 0;
   background: white;
 }
-/* line 136, css\less\modal.less */
+/* line 148, css\less\modal.less */
 .modal .modal-content .modal-body .node {
   margin-top: 0;
 }
-/* line 143, css\less\modal.less */
+/* line 155, css\less\modal.less */
 .modal-backdrop.in {
   opacity: 0.75;
 }
-/* line 148, css\less\modal.less */
+/* line 160, css\less\modal.less */
 .close .fa-remove:before,
 .close .fa-close:before,
 .close .fa-times:before {
   text-shadow: 0px 0px 12px #000000;
 }
-/* line 155, css\less\modal.less */
+/* line 167, css\less\modal.less */
 .loading-div {
   text-align: center;
 }
-/* line 158, css\less\modal.less */
+/* line 170, css\less\modal.less */
 .loading-div .text-warning {
   color: white;
   font-family: 'museo_sans_cyrl700';
@@ -3636,93 +3857,88 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
     padding-right: 0;
     text-align: center;
   }
-  /* line 149, css\less\responsive.less */
-  .page-partners .view img {
-    max-width: 100%;
-    width: auto;
-    height: 150px;
-  }
-  /* line 156, css\less\responsive.less */
+  /* line 151, css\less\responsive.less */
   .page-partners .view h3 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 40px;
   }
-  /* line 163, css\less\responsive.less */
+  /* line 158, css\less\responsive.less */
   .page-partners .view a .partnerTitle {
-    display: none;
+    visibility: visible;
+    text-align: left;
   }
-  /* line 167, css\less\responsive.less */
+  /* line 163, css\less\responsive.less */
   .page-partners .view a .partnerText {
     visibility: visible;
     padding: 5px 10px;
     color: white;
     text-align: left;
   }
-  /* line 174, css\less\responsive.less */
+  /* line 170, css\less\responsive.less */
   #azpLocation #mapImage .imgContainer .mapDot.badge {
     font-size: 8px;
     border-radius: 100%;
     min-width: 0;
     padding: 2px 4px;
   }
-  /* line 183, css\less\responsive.less */
+  /* line 179, css\less\responsive.less */
   body.map .modal {
     margin-top: 10px;
   }
-  /* line 187, css\less\responsive.less */
+  /* line 183, css\less\responsive.less */
   body.map .modal-header .close {
     position: static;
     right: 0;
     z-index: 900;
   }
-  /* line 194, css\less\responsive.less */
+  /* line 190, css\less\responsive.less */
   body.map #mapLegend .modal-dialog.container {
     margin: 0;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 199, css\less\responsive.less */
+  /* line 195, css\less\responsive.less */
   body.map #mapLegend .modal-dialog.container .modal-body {
     padding: 15px 15px 30px 15px;
   }
-  /* line 206, css\less\responsive.less */
+  /* line 202, css\less\responsive.less */
   .carousel-indicators {
     display: none;
   }
-  /* line 210, css\less\responsive.less */
+  /* line 206, css\less\responsive.less */
   #jquery_ajax_load {
     padding-right: 0 !important;
   }
-  /* line 214, css\less\responsive.less */
+  /* line 210, css\less\responsive.less */
   .modal-header .close {
     margin-right: 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 221, css\less\responsive.less */
+  /* line 217, css\less\responsive.less */
   .myModal .modal-dialog {
     width: 90%;
   }
-  /* line 226, css\less\responsive.less */
+  /* line 222, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 600px;
   }
 }
 @media (min-width: 992px) {
-  /* line 238, css\less\responsive.less */
+  /* line 234, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 244, css\less\responsive.less */
+  /* line 240, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 1170px;
   }
 }
-/* line 250, css\less\responsive.less */
+/* line 246, css\less\responsive.less */
 .col-xs-1,
 .col-sm-1,
 .col-md-1,

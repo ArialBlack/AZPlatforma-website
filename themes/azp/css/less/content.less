@@ -15,6 +15,11 @@ body {
         }
     }
     
+    #tubular-container {
+        background: url(../images/front.jpg) no-repeat center center fixed;
+        .cover(); 
+    }
+    
     &.join.art-colaboration {
         #wrapper {
             background: url(../images/art.jpg) no-repeat center center fixed;
@@ -205,11 +210,11 @@ body {
         .offset(padding-bottom, 80);
         
         p {
-            text-align: center;
+            //text-align: center;
         }
         
         &:after {
-            .line(80);
+           .line(80);
         }
     }
  
@@ -220,7 +225,7 @@ body {
         .offset(padding-top, 80);
                
         &:after {
-            .line(80);
+            //.line(80);
         }
         
         > div {
@@ -389,15 +394,6 @@ body {
     }
 }
 
-.page-user-login {
-    #block-system-main, #block-block-2 { 
-        width: 45%;
-        float: left;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-    }
-}
-
 .page-user {
     .profile {
         .user-picture {
@@ -502,7 +498,8 @@ body {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 100%;
-                height: auto; 
+                height: auto;
+                padding: 20px;
             }
             
             .partnerTitle {
@@ -923,6 +920,11 @@ body.what-we-do.page-node-413 {
         
         .field-name-body {
             padding-top: 0;
+            text-align: center;
+            
+            p {
+                text-align: center;
+            }
         }
         
         ul.list-inline {
@@ -945,12 +947,38 @@ body.what-we-do.page-node-413 {
     }
 }
 
+.join.as-media,
+.join.art-colaboration {
+     .field-name-body .field-item:first-child {
+        .offset(padding-bottom);
+     }
+     
+    .field-name-body .field-item.odd {
+        .offset(padding-top);
+        text-align: center;
+        
+        p {
+            text-align: center;
+        }
+        
+        &:before {
+            .line(-@padding);
+        }
+    }
+}
+
 .page-node-293,
 .page-node-414 {
-        .imgContainer {
-            .fixedcontainer(1920px);
-        }
+    .imgContainer {
+        .fixedcontainer(1920px);
+    }
+        
+    .region.region-content {
+        background:url(../images/col.jpg) no-repeat bottom center;
+    }
 }
+
+
 
 body.events {
     .view {
@@ -1220,14 +1248,14 @@ body.events {
                         vertical-align: top;
                         background-color: @title;
                         
-                        &.art { background-color: #43459d; }
-                        &.coworking { background-color: #e65826; }
-                        &.concerts { background-color: #feb415; } 
-                        &.creative-workspaces { background-color: #67983d; } 
-                        &.pool { background-color:  #559db6; }
-                        &.urban-fashion { background-color: #ec1944; }
-                        &.fest { background-color: #5c3092; }
-                        &.edutainment { background-color: #13f34d; } 
+                        &.art { background-color: #2c3294; }
+                        &.coworking { background-color: #68993d; }
+                        &.concerts { background-color: #569eb6; } 
+                        &.creative-workspaces { background-color: #2e3095; } 
+                        &.pool { background-color:  #e95726; }
+                        &.urban-fashion { background-color: #ed1a45; }
+                        &.fest { background-color: #5e3092; }
+                        &.edutainment { background-color: #feb413; } 
                     }
                     
                 }
@@ -1299,14 +1327,14 @@ body.events {
                     
             }
             
-            &.art a { color: #43459d; }
-            &.coworking a { color: #e65826; }
-            &.concerts a { color: #feb415; } 
-            &.creative-workspaces a { color: #67983d; } 
-            &.pool a { color:  #559db6; }
-            &.urban-fashion a { color: #ec1944; }
-            &.fest a { color: #5c3092; }
-            &.edutainment a { color: #13f34d; } 
+            &.art a { color: #2c3294; }
+            &.coworking a { color: #68993d; }
+            &.concerts a { color: #569eb6; } 
+            &.creative-workspaces a { color: #2e3095; } 
+            &.pool a { color:  #e95726; }
+            &.urban-fashion a { color: #ed1a45; }
+            &.fest a { color: #5e3092; }
+            &.edutainment a { color: #feb413; } 
         }
     }
 }
@@ -1349,6 +1377,13 @@ body.events {
         }
     }
 }
+
+#user-profile-form #edit-locale,
+#user-profile-form #edit-timezone,
+#user-profile-form #edit-picture{      
+    display: none;
+}
+
         
 
 

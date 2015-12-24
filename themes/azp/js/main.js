@@ -110,35 +110,11 @@ function calendarCategoriesDots() {
             $this.parents("h3").addClass(last).addClass("our-event");                
     });
     
-    //// TODO 
-   // jQuery(".page-user-edit #overlay-tabs li a").each(function (index) {
-    //    var $this = jQuery(this)
-   //     uloginlink0 = $this.attr('href');
-   // console.log(uloginlink0); 
-   // uloginlink = uloginlink0.substring(uloginlink0.lastIndexOf("/") + 1, uloginlink0.length); 
-   // if (uloginlink == "ulogin") {
-   //     $this.parents("li").addClass("ulogin").css("display","none"); 
-   // }
-    //}); 
-    
 }
 
 function imageDots() {
-            //var maxContainerWidth = 890;
-            //var currentContainerWidth = $(".doorViewContainer").width();
-            //var dotMinSize = 20;
-            
-            //jQuery( ".mapDot" ).click(function() {
-            //  var divClassName="."+jQuery(this).data('legend');
-            //    jQuery("#mapLegend .place").removeClass("show");    
-            //    jQuery("#mapLegend").find(divClassName).addClass("show");  
-            //});
             
             jQuery('.mapDot').each(function() {
-                //dotMaxSize=$(this).data('diameter');
-                //scaleFactor=currentContainerWidth*100/maxContainerWidth;
-                //dotScaledSize=dotMaxSize*scaleFactor/100;
-                //if ( dotScaledSize < dotMinSize) { dotScaledSize = dotMinSize; }
                 
                 var oiw=1920;
                 var oih=960;
@@ -149,16 +125,9 @@ function imageDots() {
                 _x= (jQuery(this).data('x'))*100/oiw;
                 _y= (jQuery(this).data('y'))*100/oih;
                 
-                console.log(icw, _x);
-                
                 jQuery(this).css({
-                    
-                    
-                    
                     'left': _x + "%",
                     'top': _y + "%",
-                    //'height':  dotScaledSize,
-                    //'width':  dotScaledSize
                 });
             });
 }
@@ -272,7 +241,16 @@ jQuery(document).ready(function($) {
     showWebformComponents();
     calendarCategoriesDots();
     newsHideImgIfYoutube();
-    touchCarousel(); 
+    touchCarousel();
+    
+    $('body').on('click', function (e) {
+        $this = jQuery(".navbar-toggle");
+        if (jQuery("body").hasClass("menu-opened")) {
+            if (!$this.is(e.target) && $this.has(e.target).length === 0 && $('.navbar-nav').has(e.target).length === 0) {
+                jQuery(".navbar-toggle").click();   
+            }
+        }
+    });
     
        
     jQuery('.navbar-toggle').on('click', function(e) {
@@ -288,7 +266,7 @@ jQuery(document).ready(function($) {
     
     jQuery(".view-news").on('views_load_more.new_content', function(event, content) {
         hover_text();  
-        jQuery(".view .col:even").addClass("even");
+        jQuery(".view .col:even").addClass("even"); 
         jQuery(".view .col:odd").addClass("odd"); 
     }); 
     
@@ -299,9 +277,9 @@ jQuery(document).ready(function($) {
    jQuery(".front .region-content").addClass("animated");
    jQuery(".front .logo").hover(
         function() {
-            jQuery(".front .region-content").removeClass("zoomOut").addClass("bounceInDown").css("opacity",1);   
+            jQuery(".front .region-content").removeClass("zoomOut").addClass("zoomIn").css("opacity",1);   
         }, function() {
-            jQuery(".front .region-content").removeClass("bounceInDown").addClass("zoomOut").css("opacity",0);;
+            jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);   
         }
     );
     
@@ -314,7 +292,7 @@ jQuery(document).ready(function($) {
     bg();
     partners_colors ();
     wrapTablesResponsive();   
-    eqBlockHeight(".view-partners .view-content", ".views-row", 1); 
+    //eqBlockHeight(".view-partners .view-content", ".views-row", 1); 
     jQuery(".view .col:even").addClass("even");
     jQuery(".view .col:odd").addClass("odd");
     //hover_cards();
