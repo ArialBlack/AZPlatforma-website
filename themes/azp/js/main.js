@@ -54,7 +54,16 @@ function touchCarousel() {
             },
             threshold: swipeTreshold
         });
- }
+}
+
+function changeSomePath() {
+    
+    $link = jQuery('.what-we-do .view-we-have a[href$="coworking"]');
+    if ($link.length > 0 ) {
+        $link.attr("href", "http://coworkingplatforma.com/").attr('target','_blank');
+    }
+}
+ 
 
 function wrapTablesResponsive() {
     jQuery('table').each(function() {
@@ -136,20 +145,6 @@ function imageDots() {
 function sizeMeUp() {
     
     jQuery(".navbar-collapse").css("height", getWindowHeight()); 
-    
-  //  var cw = jQuery('.view-team .views-row').width();
-
-//jQuery('.view-team .views-row .wshad').css({
-	//    'height':cw+'px', 
-//'margin-top':cw*(-1)+'px' 
-	//});
-           
-   // jQuery('.view-team .views-row .title_container').css({
-	//	'margin-top':cw*(-1)+'px' ,
-	//    'width':cw-20
-	//});
-    
-    //target_height = 990;    
 
 }
 
@@ -205,9 +200,6 @@ function detectOnWhite() {
   else jQuery("body").removeClass("on-white");
 }
 
-
-
-
 function hover_join_init() {
         jQuery(".page-join .node").each(function (index) {                           
             jQuery( "<div class='overlay_g'></div>" ).insertAfter(jQuery( this ).children(".content"));
@@ -236,7 +228,7 @@ function hover_join() {
    //
 
 jQuery(document).ready(function($) {
-    
+    changeSomePath();  
     detectOnWhite();
     showWebformComponents();
     calendarCategoriesDots();
@@ -279,7 +271,7 @@ jQuery(document).ready(function($) {
         function() {
             jQuery(".front .region-content").removeClass("zoomOut").addClass("zoomIn").css("opacity",1);   
         }, function() {
-            jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);   
+            jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);
         }
     );
     

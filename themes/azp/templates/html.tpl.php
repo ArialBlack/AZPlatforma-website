@@ -60,6 +60,11 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<script>
+    if ( document.location.href.indexOf('what-we-do/coworking') > -1 ) {
+    window.location.replace("http://coworkingplatforma.com/");
+    }
+</script>
   <div id="wrapper">
       <div id="skip-link">
         <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>

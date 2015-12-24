@@ -114,7 +114,7 @@ body {
       
     &.page-shop,
     &.page-cart {
-        wrapper {
+        #wrapper {
             background: url(../images/shop.jpg) no-repeat center center fixed;
             .cover(); 
         }
@@ -134,8 +134,10 @@ body {
       
     &.join,
     &.page-user {
-          background: url(../images/join.jpg) no-repeat center center fixed;
-          .cover(); 
+        #wrapper {
+            background: url(../images/join.jpg) no-repeat center center fixed;
+            .cover();
+        }
     }
     
     &.join.rent {
@@ -500,6 +502,16 @@ body {
                 max-width: 100%;
                 height: auto;
                 padding: 20px;
+                
+                img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(../images/grayscale.svg#greyscale); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+                }
             }
             
             .partnerTitle {
@@ -517,8 +529,18 @@ body {
             }
              
             &:hover {
-                .partnerTitle, .partnerText {
-                    visibility: visible;
+                .partnerTitle, 
+                .partnerText {
+                    visibility: visible; 
+                }
+                
+                .partnerImage img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none; /* IE 6-9 */
                 }
             }
         }  

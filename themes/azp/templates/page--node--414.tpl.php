@@ -239,17 +239,13 @@ global $user;
       </div>
       <div class="modal-body">
         <div class="place place1">
-            <h3><span>1.</span> Парк</h3>
-                
-                <div class="col-sm-4">
-                    <p>Наши жители, гости и друзья всегда могут прогуляться по парку и подышать свежим воздухом. На территории парка проходят мастер-классы, пре-пати, брейнсторминги, пикники и занятия спортом. </p>
-                    <p>4500 м<sup>2</sup></p>
-               </div>
-               
-               <div class="col-sm-8">
-                    <img class="img-responsive" src="/sites/default/files/park.jpg" />
-               </div>
-               
+            <?php $nnode = node_load(495); ?>
+            <h3><?php print $nnode->title; ?></h3>
+            <?php
+                $prepared_node = node_view($nnode, 'teaser');
+                $rendered_teaser = render($prepared_node);
+                print $rendered_teaser; 
+             ?>
            </div> 
         </div>
     </div>
@@ -265,15 +261,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place2">
-                    <h3><span>2.</span>Территория отдыха</h3>
-                    <div class="col-sm-4">
-                        <p>С мая 2016 года на территории «Арт-завода Платформа» откроется зона для отдыха с бассейном, баром и площадкой для пляжного спорта, первых посетителей встретит йога-центр. Это «оазис в городе» для отдыха с семьей и друзьями в пределах мегаполиса. </p>
-                        <p>Площадь – 2770 м2</p>
-                        <p>Открытый басейн – 340 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/pop.jpg" />
-                    </div>
+                    <?php $nnode = node_load(496); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser; 
+                     ?>
                 </div>
             </div>
         </div>
@@ -289,14 +283,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place31">
-                    <h3><span>Литера 3.1 </span> Ивент-пространство</h3>
-                    <div class="col-sm-4">
-                        <p>Первые этажи зданий используются под лектории, хакатоны, воркшопы, выставки и маркеты. Территория удобно трансформируется и ее можно делить на отдельные зоны для организации любого мероприятия.</p>
-                        <p>Площадь - 3300 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/p1.jpg" />
-                    </div>
+                    <?php $nnode = node_load(497); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -312,14 +305,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place32">
-                    <h3><span>Литера 3.2 </span> Арт-пространство</h3>
-                    <div class="col-sm-4">
-                        <p>ЛЛ2 - Первые этажи зданий используются под презентации, выставки и маркеты. Территория удобно трансформируется и ее можно делить на отдельные зоны для организации пространств под спектакли, галереи и перформансы.</p>
-                        <p>Площадь - 3600 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/p2.jpg" /> 
-                    </div>
+                    <?php $nnode = node_load(498); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -335,17 +327,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place33">
-                    <h3><span>Литера 3.3 </span> Творческие мастерские</h3>
-                    <div class="col-sm-4">
-                        <p>Творческие мастерские – душа нашего креативного кластера. 
-Мы рады приветствовать мастеров, фотографов, ремесленников, художников и скульпторов. Мы открыты к арт-коллаборациям и другим совместным проектам. 
-Наши гости и жители могут познакомиться с мастерами и наблюдать за процессом их работы. 
-«Арт-завод Платформа» - место, где каждый может реализовать свои идеи.</p>
-<p>Площадь - 4750 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/p3.jpg" />
-                    </div>
+                    <?php $nnode = node_load(499); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -361,14 +349,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place34">
-                    <h3><span>3.4.</span> Галерея Космос</h3>
-                    <div class="col-sm-4">
-                        <p>Пространства для организации выставок, презентаций и воркшопов.<br>
-550 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/p4.jpg" />
-                    </div>
+                    <?php $nnode = node_load(500); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -384,17 +371,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place4">
-                    <h3><span>4.</span> Галерея Арт-Дом</h3>
-                    <div class="col-sm-4">
-                        <p>Территория Галереи Арт-Дом разделена на две части: 
-- пространство для организации выставок, фотосессий, лекториев и воркшопов
-- атмосферный зал, который быстро и легко трансформируются под ваш формат события, таких как театральные перформансы, кинопоказы 
-<br>
-740 м2</p>
-                    </div>
-                    <div class="col-sm-8">    
-                        <img class="img-responsive" src="/sites/default/files/artdom.jpg" />
-                    </div>
+                    <?php $nnode = node_load(501); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -410,14 +393,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place6">
-                    <h3><span>Литера 6</span></h3>
-                    <div class="col-sm-4">
-                        <p>Литера 6 – пространство для креативных офисов компаний от 50-ти сотрудников. Мы закладываем фундамент для большого расширенного коворкинга «Платформа», готовим конференц-залы, помещения для презентаций и мастер-классов. Крыша здания Л6 оборудуется под ночные вечеринки и кино-показы. <br>
-Площадь -  17 770 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/l6.jpg" /> 
-                    </div>
+                    <?php $nnode = node_load(502); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -433,14 +415,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place7">
-                    <h3><span>7.</span> Зеленая Лаунж Зона</h3>
-                    <div class="col-sm-4">
-                        <p>Пространство на открытом воздухе, прекрасно подходит для развлекательных и спортивные мероприятий. Наши гости и жители приходят сюда смотреть кино, читать, заниматься йогой, медитировать, участвовать в мастер-классах, встречах и вечеринках.<br>
-Площадь - 2100 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/zl.jpg" />
-                    </div>
+                    <?php $nnode = node_load(503); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -456,14 +437,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place8">
-                    <h3><span>8.</span> Коворкинг «Платформа»</h3>
-                    <div class="col-sm-4">
-                        <p>Коворкинг "Платформа" – это офис, который работает иначе! Современное рабочее пространство для представителей креативного бизнеса – от дизайн студий до ІТ компаний. Каждый коворкер становится частью коворкинга «Платформа». Несмотря на то, что мы все разные, нас всех объединяет желание изменить в лучшую сторону себя и окружающий нас мир.<br>
-Площадь -  500 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/cw.jpg" />  
-                    </div>
+                    <?php $nnode = node_load(504); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -479,67 +459,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place91">
-                    <h3><span>9.1</span> Пьяцца 1</h3>
-                    <div class="col-sm-4">
-                        <p>Пьяцца 1 - центральная площадь «Арт-завода Платформа». Пространство подходит под любой тип мероприятий – концерты, конференции, презентации, кинотеатры под открытым небом или арт-перформансы. Вместительность 5000 человек.<br>
-2000 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                              <!-- Indicators -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                              </ol>
-                            
-                              <!-- Wrapper for slides -->
-                              <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                   <img src="/sites/default/files/pj1.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj2.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj3.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj4.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj5.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj6.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Controls -->
-                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                        </div>
-                    </div>
+                    <?php $nnode = node_load(505); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -555,55 +481,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place92">
-                    <h3><span>9.2</span> Пьяцца 2</h3>
-                    <div class="col-sm-4">
-                        <p>Пьяцца 2 - открытое пространство для проведения развлекательных ивентов, встреч, нетворкинга, конференций и лекториев. В темное время суток здесь проводятся концерты и вечеринки. <br>
-1800 м2</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-                              <!-- Indicators -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
-                              </ol>
-                            
-                              <!-- Wrapper for slides -->
-                              <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                   <img src="/sites/default/files/pj1.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj2.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj5.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="/sites/default/files/pj6.jpg" /> 
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Controls -->
-                              <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                        </div>
-                    </div>
+                    <?php $nnode = node_load(506); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
@@ -619,13 +503,13 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place21">
-                    <h3><span>21.</span>  Административное здание Арт-завода Платформа.</h3>
-                    <div class="col-sm-4">
-                        <p>Мы работаем для вас!</p>
-                    </div>
-                    <div class="col-sm-8">
-                        <img class="img-responsive" src="/sites/default/files/admin.jpg" />
-                    </div>
+                    <?php $nnode = node_load(507); ?>
+                    <h3><?php print $nnode->title; ?></h3>
+                    <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;  
+                     ?>
                 </div>
             </div>
         </div>
