@@ -219,21 +219,45 @@ function hover_join() {
 }
 
 
-
-   //function resizemapImage() {
-       // var content_height = getWindowHeight() - jQuery("#navbar").outerHeight(true) - jQuery("#footer").outerHeight(true) - 80;
-       // jQuery("#mapImage, #mapImage .imgContainer").css("height", content_height + 'px');
-     
-  // }
-   //
-
 jQuery(document).ready(function($) {
+
     changeSomePath();  
     detectOnWhite();
     showWebformComponents();
     calendarCategoriesDots();
     newsHideImgIfYoutube();
     touchCarousel();
+    
+    
+    
+    
+    var onMapMouseleaveHandler = function (event) {
+    var that = jQuery(this);
+
+    that.on('click', onMapClickHandler);
+    that.off('mouseleave', onMapMouseleaveHandler);
+    that.find('iframe').css("pointer-events", "none");
+  }
+
+  var onMapClickHandler = function (event) {
+    var that = jQuery(this);
+
+    // Disable the click handler until the user leaves the map area
+    that.off('click', onMapClickHandler);
+
+    // Enable scrolling zoom
+    that.find('iframe').css("pointer-events", "auto");
+
+    // Handle the mouse leave event
+    that.on('mouseleave', onMapMouseleaveHandler);
+  }
+
+  // Enable map zooming with mouse scroll when the user clicks the map
+  jQuery('.maps.embed-container').on('click', onMapClickHandler);
+  
+     
+  
+  
     
     $('body').on('click', function (e) {
         $this = jQuery(".navbar-toggle");
@@ -282,7 +306,7 @@ jQuery(document).ready(function($) {
     
     sizeMeUp();
     bg();
-    partners_colors ();
+    partners_colors();  
     wrapTablesResponsive();   
     //eqBlockHeight(".view-partners .view-content", ".views-row", 1); 
     jQuery(".view .col:even").addClass("even");

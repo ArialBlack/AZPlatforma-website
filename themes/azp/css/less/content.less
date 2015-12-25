@@ -480,6 +480,11 @@ body {
             text-transform: uppercase;
             font-size: 30px;
             margin-bottom: 45px;
+            
+            &.rowNum-1 { color: @azp-purpule; }
+            &.rowNum-2 { color: @azp-blue; }
+            &.rowNum-3 { color: @azp-red; }
+            
         }
         
         a {
@@ -504,13 +509,13 @@ body {
                 padding: 20px;
                 
                 img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: url(../images/grayscale.svg#greyscale); /* Firefox 4+ */
-  filter: gray; /* IE 6-9 */
+                  -webkit-filter: grayscale(100%);
+                  -moz-filter: grayscale(100%);
+                  -ms-filter: grayscale(100%);
+                  -o-filter: grayscale(100%);
+                  filter: grayscale(100%);
+                  filter: url(../images/grayscale.svg#greyscale); /* Firefox 4+ */
+                  filter: gray; /* IE 6-9 */
                 }
             }
             
@@ -535,38 +540,18 @@ body {
                 }
                 
                 .partnerImage img {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
-  filter: none; /* IE 6-9 */
+                  -webkit-filter: grayscale(0%);
+                  -moz-filter: grayscale(0%);
+                  -ms-filter: grayscale(0%);
+                  -o-filter: grayscale(0%);
+                  filter: grayscale(0%);
+                  filter: none; /* IE 6-9 */
                 }
             }
         }  
          
          .views-row {
                 padding-bottom: 20px;
-                &.rowNum-1 {
-                        .partnerTitle, .partnerText {
-                            background: @azp-yellow;  
-                        }
-                }
-                &.rowNum-2 {
-                        .partnerTitle, .partnerText {
-                            background: @azp-purpule;  
-                        }
-                }
-                &.rowNum-3 {
-                        .partnerTitle, .partnerText {
-                            background: @azp-red;  
-                        }  
-                }  
-                &.rowNum-4 {
-                        .partnerTitle, .partnerText {
-                            background: @azp-blue-green;  
-                        }
-                }
           }   
           
         
@@ -1404,6 +1389,14 @@ body.events {
 #user-profile-form #edit-timezone,
 #user-profile-form #edit-picture{      
     display: none;
+}
+
+body.contacts {
+    .text-center {
+        p {
+            text-align: center;
+        }
+    }
 }
 
         
