@@ -675,8 +675,9 @@ body {
                 position: absolute;
                 bottom: 0px;
                 left: 0px;
-                min-height: 82px; 
+                min-height: 100px; 
                 padding: 15px 20px;
+                box-sizing: border-box;
                 width: 100%;
                 
                 .views-field-title {
@@ -728,6 +729,37 @@ body {
         display: block; 
         text-align: center;
         margin: 20px auto;
+    }
+    
+    .view-id-news.view-display-id-attachment_1 {
+        .views-row-1 {
+            width: 65%;
+            float: left;
+            
+            .views-field-field-date,
+            .views-field-field-body {
+                max-height: 1000px !important; 
+                opacity: 1 !important;
+            }
+            
+        }
+        
+         .views-row-2,
+         .views-row-3 {
+             width: 32%;
+             float: right;
+             
+             img {
+                 display: none;
+             }
+             
+             .views-field-img {
+                 .cover();
+                 background-repeat: no-repeat;
+                 background-position: center center; 
+             }
+         }
+             
     }
 }
 

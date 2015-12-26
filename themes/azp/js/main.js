@@ -62,6 +62,19 @@ function changeSomePath() {
     if ($link.length > 0 ) {
         $link.attr("href", "http://coworkingplatforma.com/").attr('target','_blank');
     }
+    
+    jQuery('.tabs--primary.nav.nav-tabs li a[href$="ulogin"]').parents("li").addClass("ulogin-item-menu");
+    
+    
+    imgsrc2 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 img").attr("src");
+    console.log(imgsrc2); 
+    imgsrc3 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 img").attr("src");
+    
+    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',
+}); 
+    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
+});  
+
 }
  
 
@@ -144,7 +157,13 @@ function imageDots() {
  
 function sizeMeUp() {
     
-    jQuery(".navbar-collapse").css("height", getWindowHeight()); 
+    jQuery(".navbar-collapse").css("height", getWindowHeight());
+    
+    bigNewsHeight = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-1 .views-field-nothing").height();
+    console.log(bigNewsHeight); 
+    newHeight = (bigNewsHeight / 2 ) - 20; 
+    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img, .view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css("height", newHeight+"px");    
+    
 
 }
 
@@ -327,7 +346,7 @@ jQuery(document).ready(function($) {
 }); /*---------doc ready */
 
 
-jQuery(window).resize(function () {
+jQuery(window).resize(function () {  
     detectOnWhite();
     
     

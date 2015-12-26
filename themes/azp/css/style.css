@@ -1224,7 +1224,6 @@ ul.tabs--primary.nav.nav-tabs {
   border: none;
   padding: 12px;
   padding-bottom: 0 !important;
-  width: 45%;
   margin-left: 2.5%;
 }
 @media (min-width: 768px) {
@@ -1283,6 +1282,18 @@ ul.tabs--primary.nav.nav-tabs > li.active > a:hover {
   padding-right: 2.5%;
 }
 /* line 600, css\less\general.less */
+.page-user.page-user-ulogin #block-system-main {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 606, css\less\general.less */
+  .page-user #block-system-main,
+  .page-user #block-block-2 {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 613, css\less\general.less */
 .carousel-indicators {
   display: none;
 }
@@ -2389,11 +2400,12 @@ body.page-partners #wrapper {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  min-height: 82px;
+  min-height: 100px;
   padding: 15px 20px;
+  box-sizing: border-box;
   width: 100%;
 }
-/* line 682, css\less\content.less */
+/* line 683, css\less\content.less */
 .page-news .view .col a .text-block .views-field-title,
 .page-taxonomy-term.events .view .col a .text-block .views-field-title,
 .join.art-colaboration .view .col a .text-block .views-field-title,
@@ -2407,7 +2419,7 @@ body.page-partners #wrapper {
   text-transform: uppercase;
   font-family: 'museo_sans_cyrl900';
 }
-/* line 689, css\less\content.less */
+/* line 690, css\less\content.less */
 .page-news .view .col a .text-block .views-field-title,
 .page-taxonomy-term.events .view .col a .text-block .views-field-title,
 .join.art-colaboration .view .col a .text-block .views-field-title,
@@ -2434,7 +2446,7 @@ body.page-partners #wrapper {
 .page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-body {
   /*font-family: 'museo_sans_cyrl700';*/
 }
-/* line 696, css\less\content.less */
+/* line 697, css\less\content.less */
 .page-news .view .col a .text-block .views-field-field-body,
 .page-taxonomy-term.events .view .col a .text-block .views-field-field-body,
 .join.art-colaboration .view .col a .text-block .views-field-field-body,
@@ -2464,7 +2476,7 @@ body.page-partners #wrapper {
   text-align: left;
   margin-top: 10px;
 }
-/* line 704, css\less\content.less */
+/* line 705, css\less\content.less */
 .page-news .view .col a .text-block .views-field-field-body p,
 .page-taxonomy-term.events .view .col a .text-block .views-field-field-body p,
 .join.art-colaboration .view .col a .text-block .views-field-field-body p,
@@ -2483,7 +2495,7 @@ body.page-partners #wrapper {
 .page-taxonomy-term.what-we-do .view .views-row a .text-block .views-field-field-date p {
   text-align: left;
 }
-/* line 711, css\less\content.less */
+/* line 712, css\less\content.less */
 .page-news .view .col a:hover .views-field-field-body,
 .page-taxonomy-term.events .view .col a:hover .views-field-field-body,
 .join.art-colaboration .view .col a:hover .views-field-field-body,
@@ -2504,103 +2516,135 @@ body.page-partners #wrapper {
   opacity: 1;
   transition: 1s ease;
 }
-/* line 721, css\less\content.less */
+/* line 722, css\less\content.less */
 .join.art-colaboration .region-content {
   padding-bottom: 0;
 }
-/* line 727, css\less\content.less */
+/* line 728, css\less\content.less */
 .page-news h1 {
   display: block;
   text-align: center;
   margin: 20px auto;
 }
 /* line 735, css\less\content.less */
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-1 {
+  width: 65%;
+  float: left;
+}
+/* line 739, css\less\content.less */
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-1 .views-field-field-date,
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-1 .views-field-field-body {
+  max-height: 1000px !important;
+  opacity: 1 !important;
+}
+/* line 747, css\less\content.less */
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-2,
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-3 {
+  width: 32%;
+  float: right;
+}
+/* line 752, css\less\content.less */
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-2 img,
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-3 img {
+  display: none;
+}
+/* line 756, css\less\content.less */
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img,
+.page-news .view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 767, css\less\content.less */
 .page-user .region-content {
   overflow: auto;
 }
-/* line 741, css\less\content.less */
+/* line 773, css\less\content.less */
 body.philosophy .XLcontainer {
   max-width: 1170px;
 }
-/* line 746, css\less\content.less */
+/* line 778, css\less\content.less */
 body.philosophy .field-name-body .field-item {
   padding: 40px;
 }
-/* line 749, css\less\content.less */
+/* line 781, css\less\content.less */
 body.philosophy .field-name-body .field-item.odd {
   text-align: right;
 }
-/* line 757, css\less\content.less */
+/* line 789, css\less\content.less */
 body.what-we-do.page-node-413 .region.region-content {
   background: none;
 }
-/* line 761, css\less\content.less */
+/* line 793, css\less\content.less */
 body.what-we-do.page-node-413 h1 {
   text-align: center;
   margin-top: 40px;
 }
-/* line 766, css\less\content.less */
+/* line 798, css\less\content.less */
 body.what-we-do.page-node-413 .node .field-name-body p {
   text-align: center;
 }
-/* line 770, css\less\content.less */
+/* line 802, css\less\content.less */
 body.what-we-do.page-node-413 h2 {
   text-align: center;
   margin: 40px auto;
 }
-/* line 777, css\less\content.less */
+/* line 809, css\less\content.less */
 body.what-we-do.page-node-413 td {
   border: none !important;
 }
-/* line 782, css\less\content.less */
+/* line 814, css\less\content.less */
 body.what-we-do.page-node-413 td.views-field-field-image {
   padding-right: 40px;
   padding-bottom: 60px;
 }
-/* line 787, css\less\content.less */
+/* line 819, css\less\content.less */
 body.what-we-do.page-node-413 td a {
   color: white;
 }
-/* line 791, css\less\content.less */
+/* line 823, css\less\content.less */
 body.what-we-do.page-node-413 td h3 {
   font-size: 20px;
 }
-/* line 799, css\less\content.less */
+/* line 831, css\less\content.less */
 .page-taxonomy-term.events h1 {
   display: block;
   margin-top: 40px;
   text-align: center;
 }
-/* line 806, css\less\content.less */
+/* line 838, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .view-content,
 .page-taxonomy-term.events .view-taxonomy-term .text-center,
 .page-taxonomy-term.events .view-taxonomy-term .view-header {
   width: 70%;
   float: left;
 }
-/* line 813, css\less\content.less */
+/* line 845, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .view-header h2 {
   margin-left: 30px;
 }
-/* line 818, css\less\content.less */
+/* line 850, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment {
   width: 30%;
   overflow: hidden;
   padding-left: 40px;
 }
-/* line 823, css\less\content.less */
+/* line 855, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer {
   clear: both;
 }
-/* line 825, css\less\content.less */
+/* line 857, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-footer a {
   color: white;
 }
-/* line 830, css\less\content.less */
+/* line 862, css\less\content.less */
 .page-taxonomy-term.events .view-taxonomy-term .attachment .view-header h2 {
   margin-left: 0;
 }
-/* line 840, css\less\content.less */
+/* line 872, css\less\content.less */
 .page-glossary .view .name,
 .what-we-do.page-node-413 .view .name,
 .join.rent .view .name,
@@ -2612,7 +2656,7 @@ body.what-we-do.page-node-413 td h3 {
   padding-bottom: 10px;
   color: #58595b;
 }
-/* line 848, css\less\content.less */
+/* line 880, css\less\content.less */
 .page-glossary .c,
 .what-we-do.page-node-413 .c,
 .join.rent .c {
@@ -2683,7 +2727,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-bottom: 60px;
   }
 }
-/* line 853, css\less\content.less */
+/* line 885, css\less\content.less */
 .page-glossary .views-row,
 .what-we-do.page-node-413 .views-row,
 .join.rent .views-row {
@@ -2691,13 +2735,13 @@ body.what-we-do.page-node-413 td h3 {
   padding-right: 20px;
   overflow: hidden;
 }
-/* line 858, css\less\content.less */
+/* line 890, css\less\content.less */
 .page-glossary .views-row.views-row-even,
 .what-we-do.page-node-413 .views-row.views-row-even,
 .join.rent .views-row.views-row-even {
   background: url(../images/col.jpg) repeat-y;
 }
-/* line 862, css\less\content.less */
+/* line 894, css\less\content.less */
 .page-glossary .views-row .image,
 .what-we-do.page-node-413 .views-row .image,
 .join.rent .views-row .image {
@@ -2705,7 +2749,7 @@ body.what-we-do.page-node-413 td h3 {
   margin-right: 100px;
   padding-bottom: 60px;
 }
-/* line 869, css\less\content.less */
+/* line 901, css\less\content.less */
 .page-glossary .views-row.views-row-odd .image,
 .what-we-do.page-node-413 .views-row.views-row-odd .image,
 .join.rent .views-row.views-row-odd .image {
@@ -2713,7 +2757,7 @@ body.what-we-do.page-node-413 td h3 {
   margin-left: 100px;
 }
 @media (max-width: 767px) {
-  /* line 879, css\less\content.less */
+  /* line 911, css\less\content.less */
   .page-glossary .views-row.views-row-odd .image,
   .what-we-do.page-node-413 .views-row.views-row-odd .image,
   .join.rent .views-row.views-row-odd .image,
@@ -2727,7 +2771,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-bottom: 20px;
   }
 }
-/* line 892, css\less\content.less */
+/* line 924, css\less\content.less */
 .join.rent .views-row {
   padding-bottom: 12px;
   padding-top: 12px;
@@ -2780,7 +2824,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-top: 60px;
   }
 }
-/* line 896, css\less\content.less */
+/* line 928, css\less\content.less */
 .join.rent .views-row .node {
   margin-right: auto;
   margin-left: auto;
@@ -2813,33 +2857,33 @@ body.what-we-do.page-node-413 td h3 {
     width: 1570px;
   }
 }
-/* line 899, css\less\content.less */
+/* line 931, css\less\content.less */
 .join.rent .views-row .node h2 {
   margin-top: 0;
 }
-/* line 903, css\less\content.less */
+/* line 935, css\less\content.less */
 .join.rent .views-row .node .field-name-body {
   padding-bottom: 0;
 }
-/* line 906, css\less\content.less */
+/* line 938, css\less\content.less */
 .join.rent .views-row .node .field-name-body p,
 .join.rent .views-row .node .field-name-body ul,
 .join.rent .views-row .node .field-name-body li {
   text-align: left;
 }
-/* line 910, css\less\content.less */
+/* line 942, css\less\content.less */
 .join.rent .views-row .node .field-name-body:after {
   display: none;
 }
-/* line 917, css\less\content.less */
+/* line 949, css\less\content.less */
 .join.rent .region-content {
   padding-bottom: 0;
 }
-/* line 921, css\less\content.less */
+/* line 953, css\less\content.less */
 .join.rent #block-views-arenda-block {
   border-bottom: #c2c2c2 1px solid;
 }
-/* line 924, css\less\content.less */
+/* line 956, css\less\content.less */
 .join.rent #block-system-main {
   padding-top: 12px;
 }
@@ -2867,36 +2911,36 @@ body.what-we-do.page-node-413 td h3 {
     padding-top: 60px;
   }
 }
-/* line 928, css\less\content.less */
+/* line 960, css\less\content.less */
 .join.rent #block-system-main .field-name-body {
   padding-top: 0;
   text-align: center;
 }
-/* line 932, css\less\content.less */
+/* line 964, css\less\content.less */
 .join.rent #block-system-main .field-name-body p {
   text-align: center;
 }
-/* line 937, css\less\content.less */
+/* line 969, css\less\content.less */
 .join.rent #block-system-main ul.list-inline {
   display: none;
 }
-/* line 941, css\less\content.less */
+/* line 973, css\less\content.less */
 .join.rent #block-system-main h2 {
   text-align: center;
   margin-top: 0;
   font-size: 24px;
 }
-/* line 947, css\less\content.less */
+/* line 979, css\less\content.less */
 .join.rent #block-system-main .webform-client-form {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 950, css\less\content.less */
+/* line 982, css\less\content.less */
 .join.rent #block-system-main .webform-client-form:after {
   display: none;
 }
-/* line 959, css\less\content.less */
+/* line 991, css\less\content.less */
 .join.as-media .field-name-body .field-item:first-child,
 .join.art-colaboration .field-name-body .field-item:first-child {
   padding-bottom: 12px;
@@ -2929,7 +2973,7 @@ body.what-we-do.page-node-413 td h3 {
     padding-bottom: 60px;
   }
 }
-/* line 963, css\less\content.less */
+/* line 995, css\less\content.less */
 .join.as-media .field-name-body .field-item.odd,
 .join.art-colaboration .field-name-body .field-item.odd {
   padding-top: 12px;
@@ -2963,12 +3007,12 @@ body.what-we-do.page-node-413 td h3 {
     padding-top: 60px;
   }
 }
-/* line 967, css\less\content.less */
+/* line 999, css\less\content.less */
 .join.as-media .field-name-body .field-item.odd p,
 .join.art-colaboration .field-name-body .field-item.odd p {
   text-align: center;
 }
-/* line 971, css\less\content.less */
+/* line 1003, css\less\content.less */
 .join.as-media .field-name-body .field-item.odd:before,
 .join.art-colaboration .field-name-body .field-item.odd:before {
   content: "";
@@ -3009,35 +3053,35 @@ body.what-we-do.page-node-413 td h3 {
     margin-top: -60px;
   }
 }
-/* line 979, css\less\content.less */
+/* line 1011, css\less\content.less */
 .page-node-293 .imgContainer,
 .page-node-414 .imgContainer {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 983, css\less\content.less */
+/* line 1015, css\less\content.less */
 .page-node-293 .region.region-content,
 .page-node-414 .region.region-content {
   background: url(../images/col.jpg) no-repeat bottom center;
 }
-/* line 992, css\less\content.less */
+/* line 1024, css\less\content.less */
 body.events .view .views-row {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: #c2c2c2 1px solid;
 }
-/* line 997, css\less\content.less */
+/* line 1029, css\less\content.less */
 body.events .view .views-row:last-child {
   border: none;
 }
-/* line 1003, css\less\content.less */
+/* line 1035, css\less\content.less */
 body.events .view .views-row .views-field-nothing a {
   font-size: 14px;
   font-family: 'museo_sans_cyrl300_italic';
   text-decoration: underline;
 }
-/* line 1010, css\less\content.less */
+/* line 1042, css\less\content.less */
 body.events .view .views-row .views-field-nothing h3,
 body.events .view .views-row .views-field-nothing h3 a {
   color: #4d4d4f;
@@ -3047,48 +3091,48 @@ body.events .view .views-row .views-field-nothing h3 a {
   text-decoration: none;
   font-family: 'museo_sans_cyrl700';
 }
-/* line 1019, css\less\content.less */
+/* line 1051, css\less\content.less */
 body.events .view .views-row .views-field-nothing p {
   font-size: 14px;
   margin-bottom: 0;
 }
-/* line 1024, css\less\content.less */
+/* line 1056, css\less\content.less */
 body.events .view .views-row .views-field-nothing .col-sm-1 {
   font-size: 11px;
 }
-/* line 1027, css\less\content.less */
+/* line 1059, css\less\content.less */
 body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-size: 14px;
   font-family: 'museo_sans_cyrl700';
 }
 @media (max-width: 1000px) {
-  /* line 1041, css\less\content.less */
+  /* line 1073, css\less\content.less */
   .page-events aside,
   .page-events section.col-sm-8 {
     width: 100%;
   }
 }
-/* line 1047, css\less\content.less */
+/* line 1079, css\less\content.less */
 .page-events .region.region-content {
   padding-left: 0;
 }
-/* line 1050, css\less\content.less */
+/* line 1082, css\less\content.less */
 .page-events .region.region-content .view .date-nav-wrapper {
   margin-top: 0;
 }
-/* line 1054, css\less\content.less */
+/* line 1086, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav {
   text-align: center;
 }
-/* line 1057, css\less\content.less */
+/* line 1089, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav li {
   margin-top: -50px;
 }
-/* line 1061, css\less\content.less */
+/* line 1093, css\less\content.less */
 .page-events .region.region-content .date-nav-wrapper .date-nav .pager {
   display: inline-block;
 }
-/* line 1069, css\less\content.less */
+/* line 1101, css\less\content.less */
 .page-events .tabs--primary.nav.nav-tabs {
   margin-top: 20px;
   padding-left: 15px;
@@ -3106,56 +3150,56 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
     padding-right: 30px;
   }
 }
-/* line 1076, css\less\content.less */
+/* line 1108, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-heading h3 {
   text-align: center;
   text-transform: lowercase;
   font-size: 18px;
 }
-/* line 1082, css\less\content.less */
+/* line 1114, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-nav {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  /* line 1090, css\less\content.less */
+  /* line 1122, css\less\content.less */
   .page-events .view .event-date {
     float: right;
   }
-  /* line 1091, css\less\content.less */
+  /* line 1123, css\less\content.less */
   .page-events .view .event-image {
     float: left;
   }
-  /* line 1092, css\less\content.less */
+  /* line 1124, css\less\content.less */
   .page-events .view .event-text {
     margin-top: 20px;
   }
 }
-/* line 1095, css\less\content.less */
+/* line 1127, css\less\content.less */
 .page-events .view .event-date {
   font-size: 14px;
 }
-/* line 1098, css\less\content.less */
+/* line 1130, css\less\content.less */
 .page-events .view .event-date .date-display-start,
 .page-events .view .event-date .date-display-end,
 .page-events .view .event-date .date-display-single {
   font-weight: bold;
   font-family: 'museo_sans_cyrl700' !important;
 }
-/* line 1105, css\less\content.less */
+/* line 1137, css\less\content.less */
 .page-events .view .event-date .date-display-start:after {
   content: "\A";
   white-space: pre;
 }
-/* line 1112, css\less\content.less */
+/* line 1144, css\less\content.less */
 .page-events .view .event-text p {
   text-align: left;
 }
-/* line 1117, css\less\content.less */
+/* line 1149, css\less\content.less */
 .page-events .view .date-nav-wrapper .date-prev a {
   margin-left: 0;
 }
-/* line 1121, css\less\content.less */
+/* line 1153, css\less\content.less */
 .page-events .view .pager {
   position: relative;
   padding-left: 0;
@@ -3166,35 +3210,35 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   width: 50%;
 }
 @media (max-width: 767px) {
-  /* line 1131, css\less\content.less */
+  /* line 1163, css\less\content.less */
   .page-events .view .pager {
     width: 100%;
   }
 }
-/* line 1135, css\less\content.less */
+/* line 1167, css\less\content.less */
 .page-events .view .pager li {
   background: none;
   margin-top: -40px;
 }
-/* line 1140, css\less\content.less */
+/* line 1172, css\less\content.less */
 .page-events .view .pager li.date-prev {
   left: 0;
   right: auto;
 }
-/* line 1143, css\less\content.less */
+/* line 1175, css\less\content.less */
 .page-events .view .pager li.date-prev a {
   background: url(../images/arrow-left.png) center center no-repeat;
 }
-/* line 1148, css\less\content.less */
+/* line 1180, css\less\content.less */
 .page-events .view .pager li.date-next {
   left: auto;
   right: 0;
 }
-/* line 1152, css\less\content.less */
+/* line 1184, css\less\content.less */
 .page-events .view .pager li.date-next a {
   background: url(../images/arrow-right.png) center center no-repeat;
 }
-/* line 1157, css\less\content.less */
+/* line 1189, css\less\content.less */
 .page-events .view .pager li a {
   border: none;
   text-indent: -9999px;
@@ -3203,39 +3247,39 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   display: inline-block;
   font-size: 0;
 }
-/* line 1172, css\less\content.less */
+/* line 1204, css\less\content.less */
 .page-events-week .region.region-content .date-nav-wrapper .date-nav .pager {
   width: 80%;
 }
 @media (max-width: 767px) {
-  /* line 1175, css\less\content.less */
+  /* line 1207, css\less\content.less */
   .page-events-week .region.region-content .date-nav-wrapper .date-nav .pager {
     width: 100%;
   }
 }
-/* line 1180, css\less\content.less */
+/* line 1212, css\less\content.less */
 .page-events-day .region.region-content .date-nav-wrapper .date-nav .pager {
   width: 65%;
 }
 @media (max-width: 767px) {
-  /* line 1183, css\less\content.less */
+  /* line 1215, css\less\content.less */
   .page-events-day .region.region-content .date-nav-wrapper .date-nav .pager {
     width: 100%;
   }
 }
-/* line 1188, css\less\content.less */
+/* line 1220, css\less\content.less */
 #block-views-calendar-block-3 {
   margin-top: 110px;
 }
-/* line 1191, css\less\content.less */
+/* line 1223, css\less\content.less */
 #block-views-calendar-block-3 .view-footer {
   padding: 20px 0;
 }
-/* line 1194, css\less\content.less */
+/* line 1226, css\less\content.less */
 #block-views-calendar-block-3 .view-footer a {
   text-decoration: underline;
 }
-/* line 1199, css\less\content.less */
+/* line 1231, css\less\content.less */
 #block-views-calendar-block-3 .view .date-nav-wrapper .date-heading h3 {
   text-align: center;
   font-size: 18px;
@@ -3245,41 +3289,41 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   background: #eee;
   border: #e1dfdf 1px solid;
 }
-/* line 1209, css\less\content.less */
+/* line 1241, css\less\content.less */
 #block-views-calendar-block-3 .view .date-nav-wrapper .date-nav {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 1214, css\less\content.less */
+/* line 1246, css\less\content.less */
 #block-views-calendar-block-3 .view .pager {
   margin: 0;
   width: 100%;
 }
-/* line 1218, css\less\content.less */
+/* line 1250, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-prev,
 #block-views-calendar-block-3 .view .pager li.date-next {
   margin-top: -45px;
 }
-/* line 1223, css\less\content.less */
+/* line 1255, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-prev {
   left: 0;
   right: auto;
 }
-/* line 1229, css\less\content.less */
+/* line 1261, css\less\content.less */
 #block-views-calendar-block-3 .view .pager li.date-next {
   left: auto;
   right: 0;
 }
-/* line 1240, css\less\content.less */
+/* line 1272, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td {
   text-align: left;
 }
-/* line 1243, css\less\content.less */
+/* line 1275, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item {
   display: inline-block;
   font-family: 'museo_sans_cyrl700' !important;
 }
-/* line 1247, css\less\content.less */
+/* line 1279, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot {
   display: inline-block;
   height: 5px;
@@ -3290,92 +3334,92 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   vertical-align: top;
   background-color: #4d4d4f;
 }
-/* line 1258, css\less\content.less */
+/* line 1290, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.art {
   background-color: #2c3294;
 }
-/* line 1259, css\less\content.less */
+/* line 1291, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.coworking {
   background-color: #68993d;
 }
-/* line 1260, css\less\content.less */
+/* line 1292, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.concerts {
   background-color: #569eb6;
 }
-/* line 1261, css\less\content.less */
+/* line 1293, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.creative-workspaces {
   background-color: #2e3095;
 }
-/* line 1262, css\less\content.less */
+/* line 1294, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.pool {
   background-color: #e95726;
 }
-/* line 1263, css\less\content.less */
+/* line 1295, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.urban-fashion {
   background-color: #ed1a45;
 }
-/* line 1264, css\less\content.less */
+/* line 1296, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.fest {
   background-color: #5e3092;
 }
-/* line 1265, css\less\content.less */
+/* line 1297, css\less\content.less */
 #block-views-calendar-block-3 .view-calendar .calendar-calendar td .item .event-dot.edutainment {
   background-color: #feb413;
 }
-/* line 1273, css\less\content.less */
+/* line 1305, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
   background: none;
 }
-/* line 1279, css\less\content.less */
+/* line 1311, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry,
 #block-views-calendar-block-3 .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
   height: auto !important;
   line-height: 1;
 }
-/* line 1285, css\less\content.less */
+/* line 1317, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar div.calendar {
   font-size: 18px;
 }
-/* line 1289, css\less\content.less */
+/* line 1321, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full td.single-day div.monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full td.single-day div.weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full td.single-day div.dayview {
   padding: 0;
 }
-/* line 1295, css\less\content.less */
+/* line 1327, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar .month-view .full .inner .monthview,
 #block-views-calendar-block-3 .calendar-calendar .week-view .full .inner .weekview,
 #block-views-calendar-block-3 .calendar-calendar .day-view .full .inner .dayview {
   margin: 0;
 }
-/* line 1301, css\less\content.less */
+/* line 1333, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar td.empty {
   color: #d7d5d5;
 }
-/* line 1305, css\less\content.less */
+/* line 1337, css\less\content.less */
 #block-views-calendar-block-3 .calendar-calendar td {
   border-color: #e1dfdf;
 }
-/* line 1310, css\less\content.less */
+/* line 1342, css\less\content.less */
 #block-views-calendar-block-4 {
   padding-bottom: 20px;
 }
-/* line 1313, css\less\content.less */
+/* line 1345, css\less\content.less */
 #block-views-calendar-block-4 .view-header {
   display: none;
 }
-/* line 1317, css\less\content.less */
+/* line 1349, css\less\content.less */
 #block-views-calendar-block-4 .item-list {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-/* line 1321, css\less\content.less */
+/* line 1353, css\less\content.less */
 #block-views-calendar-block-4 .item-list ul {
   display: none;
 }
-/* line 1325, css\less\content.less */
+/* line 1357, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3 {
   display: none;
   margin: 0;
@@ -3383,90 +3427,90 @@ body.events .view .views-row .views-field-nothing .col-sm-1 span {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 1332, css\less\content.less */
+/* line 1364, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.our-event {
   display: list-item;
 }
-/* line 1337, css\less\content.less */
+/* line 1369, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.art a {
   color: #2c3294;
 }
-/* line 1338, css\less\content.less */
+/* line 1370, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.coworking a {
   color: #68993d;
 }
-/* line 1339, css\less\content.less */
+/* line 1371, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.concerts a {
   color: #569eb6;
 }
-/* line 1340, css\less\content.less */
+/* line 1372, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.creative-workspaces a {
   color: #2e3095;
 }
-/* line 1341, css\less\content.less */
+/* line 1373, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.pool a {
   color: #e95726;
 }
-/* line 1342, css\less\content.less */
+/* line 1374, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.urban-fashion a {
   color: #ed1a45;
 }
-/* line 1343, css\less\content.less */
+/* line 1375, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.fest a {
   color: #5e3092;
 }
-/* line 1344, css\less\content.less */
+/* line 1376, css\less\content.less */
 #block-views-calendar-block-4 .item-list h3.edutainment a {
   color: #feb413;
 }
-/* line 1350, css\less\content.less */
+/* line 1382, css\less\content.less */
 .page-user.register #block-block-2 {
   display: none;
 }
-/* line 1358, css\less\content.less */
+/* line 1390, css\less\content.less */
 .page-user h1 {
   display: none;
 }
-/* line 1362, css\less\content.less */
+/* line 1394, css\less\content.less */
 .page-user .region-content.user {
   padding: 0;
 }
-/* line 1366, css\less\content.less */
+/* line 1398, css\less\content.less */
 .page-user #navbar {
   height: 200px;
   min-height: 145px;
 }
 @media (max-width: 767px) {
-  /* line 1370, css\less\content.less */
+  /* line 1402, css\less\content.less */
   .page-user #navbar {
     height: 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 1374, css\less\content.less */
+  /* line 1406, css\less\content.less */
   .page-user #navbar {
     height: 200px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1378, css\less\content.less */
+  /* line 1410, css\less\content.less */
   .page-user #navbar {
     height: 250px;
   }
 }
 @media (min-width: 1600px) {
-  /* line 1382, css\less\content.less */
+  /* line 1414, css\less\content.less */
   .page-user #navbar {
     height: 300px;
   }
 }
-/* line 1388, css\less\content.less */
+/* line 1420, css\less\content.less */
 #user-profile-form #edit-locale,
 #user-profile-form #edit-timezone,
 #user-profile-form #edit-picture {
   display: none;
 }
-/* line 1396, css\less\content.less */
+/* line 1428, css\less\content.less */
 body.contacts .text-center p {
   text-align: center;
 }
@@ -3943,34 +3987,64 @@ body.map .modal-dialog.container .in-teaser .carousel-container p {
   .modal-header .close {
     margin-right: 20px;
   }
+  /* line 214, css\less\responsive.less */
+  #edit-account {
+    margin-top: 40px;
+  }
+  /* line 218, css\less\responsive.less */
+  .g-recaptcha {
+    transform: scale(0.7);
+    margin-left: -40px;
+  }
+  /* line 225, css\less\responsive.less */
+  .page-user-register .password-strength {
+    float: none;
+  }
+  /* line 229, css\less\responsive.less */
+  .page-user-register div.password-suggestions {
+    font-size: 12px;
+  }
+  /* line 233, css\less\responsive.less */
+  .page-user-register .confirm-parent,
+  .page-user-register .password-parent,
+  .page-user-register div.password-suggestions,
+  .page-user-register .password-strength {
+    width: auto !important;
+  }
 }
 @media (min-width: 768px) {
-  /* line 217, css\less\responsive.less */
+  /* line 245, css\less\responsive.less */
   .myModal .modal-dialog {
     width: 90%;
   }
-  /* line 222, css\less\responsive.less */
+  /* line 250, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 600px;
   }
 }
 @media (min-width: 992px) {
-  /* line 234, css\less\responsive.less */
+  /* line 262, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 970px;
   }
 }
+@media (max-width: 1023px) {
+  /* line 268, css\less\responsive.less */
+  ul.tabs--primary li.ulogin-item-menu {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
-  /* line 240, css\less\responsive.less */
+  /* line 274, css\less\responsive.less */
   .myModal.normal .modal-dialog {
     width: 1170px;
   }
-  /* line 244, css\less\responsive.less */
+  /* line 278, css\less\responsive.less */
   body.map .modal-dialog.container .in-teaser {
     padding-left: 15px;
   }
 }
-/* line 250, css\less\responsive.less */
+/* line 284, css\less\responsive.less */
 .col-xs-1,
 .col-sm-1,
 .col-md-1,

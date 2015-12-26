@@ -210,6 +210,34 @@
     .modal-header .close {
         margin-right: 20px;
     }
+    
+    #edit-account {
+        margin-top: 40px;
+    }
+    
+    .g-recaptcha {
+        transform:scale(0.7);
+        margin-left: -40px;
+    }
+    
+    .page-user-register {
+        
+        .password-strength {
+            float: none;
+        }
+        
+        div.password-suggestions {
+            font-size: 12px;
+        }
+        
+        .confirm-parent, 
+        .password-parent,
+        div.password-suggestions,
+        .password-strength {
+            width: auto !important;
+        }
+    }
+        
 }
 
 @media (min-width:@small) {  
@@ -233,6 +261,12 @@
 @media (min-width: @medium) {
     .myModal.normal .modal-dialog {
         width: 970px;
+    }
+}
+
+@media (max-width: 1023px) { 
+    ul.tabs--primary li.ulogin-item-menu {
+        display: none;
     }
 }
 
