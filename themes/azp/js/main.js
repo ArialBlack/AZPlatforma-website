@@ -46,7 +46,7 @@ function touchCarousel() {
 
         $carousel.swipe( {
             swipeLeft: function(event, direction, distance, duration, fingerCount) {
-                console.log("l");  
+
                 $carousel.carousel('next'); 
             },
             swipeRight: function() {
@@ -67,7 +67,7 @@ function changeSomePath() {
     
     
     imgsrc2 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 img").attr("src");
-    console.log(imgsrc2); 
+
     imgsrc3 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 img").attr("src");
     
     jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',
@@ -75,7 +75,9 @@ function changeSomePath() {
     jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
 });  
 
+
 }
+
  
 
 function wrapTablesResponsive() {
@@ -160,11 +162,10 @@ function sizeMeUp() {
     jQuery(".navbar-collapse").css("height", getWindowHeight());
     
     bigNewsHeight = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-1 .views-field-nothing").height();
-    console.log(bigNewsHeight); 
-    newHeight = (bigNewsHeight / 2 ) - 20; 
-    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img, .view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css("height", newHeight+"px");    
-    
 
+    newHeight = (bigNewsHeight / 2 ) - 20; 
+    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img, .view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css("height", newHeight+"px");
+  
 }
 
 
@@ -291,6 +292,12 @@ jQuery(document).ready(function($) {
     jQuery('.navbar-toggle').on('click', function(e) {
         jQuery('body').toggleClass("menu-opened"); //you can list several class names  
         e.preventDefault();
+        
+        $menu = jQuery("ul.navbar-nav");
+        $headerH=jQuery(".navbar-header").height();
+        if ($menu.height() > getWindowHeight() - $headerH) {  
+            $menu.toggleClass("overflow");  
+        }  
     });  
     
     jQuery(".view-events").on('views_load_more.new_content', function(event, content) {
@@ -346,7 +353,7 @@ jQuery(document).ready(function($) {
 }); /*---------doc ready */
 
 
-jQuery(window).resize(function () {  
+jQuery(window).resize(function () {
     detectOnWhite();
     
     

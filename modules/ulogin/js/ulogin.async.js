@@ -19,7 +19,7 @@ Drupal.behaviors.ulogin_async.attach = function(context, settings) {
       uloginInitWidgets();
     });*/
     $.ajax({
-      url: '//ulogin.ru/js/ulogin.js',
+      url: '/sites/all/modules/ulogin/js/ulogin-copy.js',
       dataType: 'script',
       cache: true, //otherwise will get fresh copy every page load, this is why not $.getScript().
       success: function(data, textStatus, jqXHR) {

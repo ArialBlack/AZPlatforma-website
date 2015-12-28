@@ -164,7 +164,7 @@ global $user;
           <div class="row">
               <div class="region region-content">
                 <section id="azpLocation">
-                    <div class="c text-center"><p class="text-center">Общая  территория «Арт-завод Платформа» -   120&nbsp;000 м2. <br>
+                    <div class="c text-center"><p class="text-center">Общая  территория «Арт-завода Платформа» -   120&nbsp;000 м2. <br>
                         Рабочее пространство  (офисы, коворкинг) - 25&nbsp;000 м2 <br>
                         Закрытые  выставочные площадки, мастерские, галереи, арт-пространства – 16000 м2<br>
                         Ивент-пространства  для проведения фестивалей, конференций, хакатонов, концертов и маркетов –  60&nbsp;000 м2<br>

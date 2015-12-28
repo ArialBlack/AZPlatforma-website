@@ -199,6 +199,24 @@ body {
         .navbar-nav {
             float: none !important;
             margin: 0;
+            
+            &.overflow {
+                @media(max-width:767px) {
+                    li {
+                        width: 50%;
+                        float: left;
+                          
+                        a {
+                            padding-top: 5px;
+                            padding-bottom: 5px; 
+                        }
+                        
+                        li {
+                            float: none;
+                        }
+                    }
+                }
+            }
         
             >li {
                 float: none;
