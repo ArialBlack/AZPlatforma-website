@@ -80,71 +80,21 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+    <div class="content"<?php print $content_attributes; ?>>
+        <div class="row">
+             <div class="col-sm-4 in-teaser"> <?php print render($title_prefix); ?> 
+                <?php  print render($content["body"]); ?>
+            </div>
+            <div class="col-sm-8 in-teaser"> <?php print render($content["field_photos"]); ?> </div>
+           
+        </div>
+        <?php
       // We hide the comments and links now so that we can render them later.
-      hide($content); 
       hide($content['comments']);
       hide($content['links']);
       //print render($content);
-      
-      
     ?>
-    
-    <?php print render($content['field_image']); ?>
-    
-            <?php
-      if( isset($content['field_event_term'])) {
-   $term=taxonomy_term_load($node->field_event_term['und'][0]['tid']);   
-   $image_field=field_view_field('taxonomy_term', $term,'field_image');
-   $term_tid = $term->tid;}
-   ?>
-   <div class="img-tag">
-   <a href="/taxonomy/term/<?php print $term_tid; ?>">  
-   <?php print render($image_field); ?>
-   </a>
-   </div>   
-    
-      <?php print render($title_prefix); ?>
- 
-    <div class="node-title"><h2<?php print $title_attributes; ?>><?php print $title; ?></h2></div>
-   
-  <?php print render($title_suffix); ?>
-  
-  
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
     </div>
-  <?php endif; ?>  
-   <?php     
-   
-   print render($content['field_youtube']);
-   print render($content['field_vimeo']);
-   print render($content['body']);
-   print render($content['field_galery']);
-   
-   ?>
-   <div class="ya-share2" data-services="vkontakte,facebook,twitter" data-counter=""></div>
-
-  
-  
-  
-  </div>
-
-  <?php print render($content['links']); ?>
-  
-    <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-  
-    
-    
-  
-
-        
-
-  <?php print render($content['comments']); ?>
-
 </div>

@@ -61,6 +61,7 @@ body {
         padding-bottom: @navbar-height;
         box-sizing: border-box;
         text-align: center;
+        width: 100%;
         
         h1 {
             margin-bottom: 0;
@@ -199,6 +200,24 @@ body {
         .navbar-nav {
             float: none !important;
             margin: 0;
+            
+            &.overflow {
+                @media(max-width:767px) {
+                    li {
+                        width: 50%;
+                        float: left;
+                          
+                        a {
+                            padding-top: 5px;
+                            padding-bottom: 5px; 
+                        }
+                        
+                        li {
+                            float: none;
+                        }
+                    }
+                }
+            }
         
             >li {
                 float: none;

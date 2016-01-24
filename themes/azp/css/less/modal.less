@@ -1,6 +1,30 @@
+.img-tag {
+    float: right;
+    
+    img {
+        max-width: 127px;
+    }
+}
+
+body.jquery-ajax-load {
+    background: rgba(0, 0, 0, 0.75);
+    
+    .node {
+        .container();
+        background: white;
+        padding-left: 0 !important;
+        padding-right: 0 !important; 
+    }
+}
+
 .page-node .node-type-news,
 .page-node .node-type-event,
-.modal-dialog.container {
+.modal-dialog.container,
+body.jquery-ajax-load {
+    
+        .content {
+            padding-bottom: 40px;
+        }
         
         .node .field-name-body,
         .field-type-taxonomy-term-reference,
@@ -9,8 +33,13 @@
         .node-title,
         .ya-share2,
         .img-tag,
-        .carousel-container {
+        .carousel-container,
+        .field-name-field-date {
             padding: 20px 80px 0 80px;
+        }
+        
+        .ya-share2 {
+            padding-bottom: 80px;
         }
         
         .views-field-field-youtube,
@@ -32,7 +61,7 @@
         } 
   
         .submitted  {
-            padding-bottom: 80px;
+            padding-bottom: 0; 
         }
         
         field-name-field-date {  
@@ -64,7 +93,8 @@
             .ya-share2,
             .img-tag,
             .field-name-field-date,
-            .node .field-name-body   {
+            .node .field-name-body,
+            .field-name-field-date   {
                 padding: 10px 20px 0 20px;  
             }
             
@@ -83,7 +113,23 @@
         }  
 }
 
+body.map {
+    .modal-dialog.container {
+        .in-teaser {
+            .field-name-body,
+            .carousel-container {
+                padding: 0;
+                
+                p {
+                    font-size: 16px;
+                }
+            }
+        } 
+    }
+}
+    
 .modal {
+    
     .modal-header {
         border: none;
         padding: 0 0 30px 0;
@@ -119,6 +165,10 @@
         border: none;
         border-radius: 0;
         
+        .field-name-body:after {
+            background-color: none;
+        }
+        
         .modal-body {
             padding: 0;
             background: white; 
@@ -141,3 +191,14 @@
         text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
     }
 }
+
+.loading-div {
+    text-align: center;
+    
+    .text-warning {
+        color: white;
+        font-family: 'museo_sans_cyrl700';
+        text-transform: lowercase;
+    }
+}
+

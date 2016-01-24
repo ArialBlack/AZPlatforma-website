@@ -75,6 +75,7 @@
 global $user;
  global $language ;
  $lang = $language->language;
+  if ($lang == 'uk') { $lang = 'ua'; }
 ?>
 
 <div class="video_overlay"></div>
@@ -177,24 +178,9 @@ global $user;
     <div  class="footer container XLcontainer">
         <div class="col col-sm-4 col-1"> <?php print render($page['footer_first']); ?> </div>
         <div class="col col-sm-4 col-2">
-        <a href="#" data-toggle="modal" data-target="#modalMap"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
-        <a href="/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
+        <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+        <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
         </div>
         <div class="col col-sm-4 col-3"> <?php print render($page['footer_third']); ?> </div>
     </div>
 </footer>
-
-<!-- Modal -->
-<div class="myModal modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMaplLabel">
-    <div class="modal-dialog container XLcontainer" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalMap">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.944031702218!2d30.638141451461397!3d50.46076689440154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4daaee41f7ce5%3A0x3735bc69913d8fa4!2z0JDRgNGCINC30LDQstC-0LQ!5e0!3m2!1sru!2sua!4v1444982721407" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>

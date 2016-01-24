@@ -93,7 +93,22 @@
       
     ?>
         <?php print render($content['field_image']); ?>
+        
+         <?php
+        if( isset($content['field_event_term'])) {
+        $term=taxonomy_term_load($node->field_event_term['und'][0]['tid']);   
+        $image_field=field_view_field('taxonomy_term', $term,'field_image'); 
+        $term_tid = $term->tid;
+        }
+        ?>
+   <div class="img-tag">
+   <a href="/taxonomy/term/<?php print $term_tid; ?>"> 
+   <?php print render($image_field); ?>
+   </a>
+   </div>  
+        
         <?php 
+      
       
       
       print render($content['field_date']); 
@@ -115,18 +130,7 @@
     
    ?>
         <div class="ya-share2" data-services="vkontakte,facebook,twitter" data-counter=""></div>
-        <?php
-        if( isset($content['field_event_term'])) {
-        $term=taxonomy_term_load($node->field_event_term['und'][0]['tid']);   
-        $image_field=field_view_field('taxonomy_term', $term,'field_image'); 
-        $term_tid = $term->tid;
-        }
-        ?>
-   <div class="img-tag">
-   <a href="/taxonomy/term/<?php print $term_tid; ?>"> 
-   <?php print render($image_field); ?>
-   </a>
-   </div>
+       
       
     </div>
     <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> 

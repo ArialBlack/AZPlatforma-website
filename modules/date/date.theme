@@ -314,7 +314,7 @@ function theme_date_display_range($variables) {
   $timezone = $variables['timezone'];
   $attributes_start = $variables['attributes_start'];
   $attributes_end = $variables['attributes_end'];
-
+   
   $start_date = '<span class="date-display-start"' . drupal_attributes($attributes_start) . '>' . $date1 . '</span>';
   $end_date = '<span class="date-display-end"' . drupal_attributes($attributes_end) . '>' . $date2 . $timezone . '</span>';
 
@@ -326,7 +326,7 @@ function theme_date_display_range($variables) {
   }
 
   // Wrap the result with the attributes.
-  return t('!start-date to !end-date', array(
+  return t('!start-date !end-date', array(
     '!start-date' => $start_date,
     '!end-date' => $end_date,
   ));

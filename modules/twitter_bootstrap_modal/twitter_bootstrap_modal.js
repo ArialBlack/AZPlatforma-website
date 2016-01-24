@@ -44,7 +44,7 @@ function twitter_bootstrap_modal_create_modal() {
   $('#jquery_ajax_load .modal-dialog').append('<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button><h4 class="modal_title">' + modal_name + '</h4></div>');
   $('#jquery_ajax_load .modal-dialog').append('<div class="modal-content" />');
 
-  $('#jquery_ajax_load .modal-content').append('<div class="modal-body"><span class="text-warning">' + Drupal.t('Loading') + '... </span><img src="/' + modal_module + '/twitter_bootstrap_modal_loading.gif"></div>');
+  $('#jquery_ajax_load .modal-content').append('<center><div class="text-center loading-div"><span class="text-warning">' + Drupal.t('Loading') + '... </span><img src="/sites/all/themes/azp/images/loading.gif"></div></center>');   
   //$('#jquery_ajax_load .modal-content').append('<div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">' + Drupal.t('Close') + '</button></div>');
 }
 

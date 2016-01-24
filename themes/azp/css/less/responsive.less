@@ -82,7 +82,9 @@
         padding: 10px;
     }
     
-    .what-we-do.page-node-413 { 
+    .what-we-do.page-node-413,
+    .what-we-do.page-node-398,
+    .what-we-do.page-node-557 { 
         .view {
             img {
                 max-width: 220px;
@@ -145,12 +147,7 @@
             padding-right: 0;
             text-align: center;
         }
-        
-        img {
-            max-width: 100%;
-            width: auto;
-            height: 150px;
-        }
+       
     }
     
     .page-partners .view h3 {
@@ -161,7 +158,8 @@
     }
     
     .page-partners .view a .partnerTitle  {
-        display: none;
+        visibility: visible;
+        text-align: left;
     }
     
     .page-partners .view a .partnerText {
@@ -214,6 +212,34 @@
     .modal-header .close {
         margin-right: 20px;
     }
+    
+    #edit-account {
+        margin-top: 40px;
+    }
+    
+    .g-recaptcha {
+        transform:scale(0.7);
+        margin-left: -40px;
+    }
+    
+    .page-user-register {
+        
+        .password-strength {
+            float: none;
+        }
+        
+        div.password-suggestions {
+            font-size: 12px;
+        }
+        
+        .confirm-parent, 
+        .password-parent,
+        div.password-suggestions,
+        .password-strength {
+            width: auto !important;
+        }
+    }
+        
 }
 
 @media (min-width:@small) {  
@@ -240,9 +266,19 @@
     }
 }
 
+@media (max-width: 1023px) { 
+    ul.tabs--primary li.ulogin-item-menu {
+        display: none;
+    }
+}
+
 @media (min-width: @large) {
    .myModal.normal .modal-dialog {
         width: 1170px;
+    }
+    
+    body.map .modal-dialog.container .in-teaser {
+        padding-left: 15px;
     }
 }
 
