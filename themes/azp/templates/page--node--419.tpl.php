@@ -1,5 +1,7 @@
-<?php
-/**
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQEVWdcAHJwYNQSqSUk4CEoKb_XwGeEnk&signed_in=true&amp;sensor=true&amp;language=ru-RU"></script>
+<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+<?php 
+/** 
  * @file
  * Default theme implementation to display a single Drupal page.
  *
@@ -191,9 +193,9 @@ global $user;
               <?php if (!empty($action_links)): ?>
                 <ul class="action-links"><?php print render($action_links); ?></ul>
               <?php endif; ?>
+              
               <?php print render($page['content']); ?>
-    
-    
+
             </section>
         
             <?php if (!empty($page['sidebar_second'])): ?>
@@ -217,7 +219,7 @@ global $user;
       </div>
         <div class="col col-sm-4 col-2">
         
-        <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+        <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>   
         <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
         </div>
       <div class="col col-sm-4 col-3">
@@ -225,3 +227,97 @@ global $user;
     </div>
     </div>
 </footer>
+<script>
+var marker;
+var markerArray = [];
+
+function initMap() {
+
+   var directionsService = new google.maps.DirectionsService;
+
+   var azp = {lat: 50.459953, lng: 30.638844};
+   var map = new google.maps.Map(document.getElementById('gmap'), {  
+   zoom: 14,
+   center: azp,
+   scrollwheel: false,  
+  });
+
+  var marker1 = new MarkerWithLabel({   
+       position: azp,
+       draggable: false,
+       raiseOnDrag: true,
+       icon: {
+      path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+        scale: 5,
+        strokeWeight:2,
+        strokeColor:"#B40404",
+    },
+       map: map,
+       labelContent: "Арт-завод</br>ПЛАТФОРМА",
+       labelAnchor: new google.maps.Point(22, 0),
+       labelClass: "labels", // the CSS class for the label
+       labelStyle: {opacity: 1}
+     });
+  
+ var iw1 = new google.maps.InfoWindow({
+       content: "Ул. Беломорская, 1 <strong>(рядом с Дарынком)</strong>"  
+     });
+
+  google.maps.event.addListener(marker1, "click", function (e) { iw1.open(map, this); });
+  
+   // Create a renderer for directions and bind it to the map.
+  var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+
+  // Instantiate an info window to hold step text.
+  var stepDisplay = new google.maps.InfoWindow;
+
+  // Display the route between the initial start and end selections.
+  calculateAndDisplayRoute(
+      directionsDisplay, directionsService, markerArray, stepDisplay, map);
+  // Listen to change events from the start and end lists.
+  var onChangeHandler = function() {
+    calculateAndDisplayRoute(
+        directionsDisplay, directionsService, markerArray, stepDisplay, map);
+  };
+  document.getElementById('start').addEventListener('change', onChangeHandler);
+  document.getElementById('end').addEventListener('change', onChangeHandler);
+}
+
+function calculateAndDisplayRoute(directionsDisplay, directionsService,
+    markerArray, stepDisplay, map) {
+  // First, remove any existing markers from the map.
+  for (var i = 0; i < markerArray.length; i++) {
+    markerArray[i].setMap(null);
+  }
+
+  // Retrieve the start and end locations and create a DirectionsRequest using
+  // WALKING directions.
+  directionsService.route({
+    origin: document.getElementById('start').value,
+    destination: document.getElementById('end').value,
+    travelMode: google.maps.TravelMode.DRIVING
+  }, function(response, status) {
+    // Route the directions and pass the response to a function to create
+    // markers for each step.
+    if (status === google.maps.DirectionsStatus.OK) {
+      document.getElementById('warnings-panel').innerHTML =
+          '<b>' + response.routes[0].warnings + '</b>';
+      directionsDisplay.setDirections(response);
+     // showSteps(response, markerArray, stepDisplay, map);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
+  
+
+}  
+
+  initMap();
+</script>
+ 
+
+
+  
+
+
+

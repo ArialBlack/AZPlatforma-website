@@ -165,11 +165,11 @@ global $user;
           <div class="row">
               <div class="region region-content">
                 <section id="azpLocation">
-                    <div class="c text-center"><p class="text-center">Общая  территория «Арт-завода Платформа» -   120&nbsp;000 м2. <br>
-                        Рабочее пространство  (офисы, коворкинг) - 25&nbsp;000 м2 <br>
-                        Закрытые  выставочные площадки, мастерские, галереи, арт-пространства – 16000 м2<br>
-                        Ивент-пространства  для проведения фестивалей, конференций, хакатонов, концертов и маркетов –  60&nbsp;000 м2<br>
-                        Пространства  для отдыха и развлечений – 10&nbsp;000 м2</p></div>
+                    <div class="c text-center"><p class="text-center">Total square of “Art-zavod Platforma” - 120 000 м<sup>2</sup><br>
+                        Work / Business space (offices, coworking) - 25 000 м<sup>2</sup><br>
+                        Closed exhibition areas, shops, galleries, art spaces - 16000 м<sup>2</sup><br>
+                        Event spaces for festivals, conferences, hackathons, concerts and markets - 60 000 м<sup>2</sup><br>
+                        Space for entertainment and recreation - 10 000 м<sup>2</sup></p></div>
 <div id="mapImage">
                         <div class="imgContainer">
                             <img class="mapImage" src="/sites/default/files/map.jpg" />
@@ -205,7 +205,7 @@ global $user;
         
         <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
         <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
-        </div>   
+        </div>
       <div class="col col-sm-4 col-3">
       <?php print render($page['footer_third']); ?>
     </div>
@@ -223,7 +223,7 @@ global $user;
       </div>
       <div class="modal-body">
         <div class="place place1">
-            <?php $nnode = node_load(495); ?>
+            <?php $nnode = node_load(559); ?>
             <h3><?php print $nnode->title; ?></h3>
             <?php
                 $prepared_node = node_view($nnode, 'teaser');
@@ -245,7 +245,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place2">
-                    <?php $nnode = node_load(496); ?>
+                    <?php $nnode = node_load(560); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -267,7 +267,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place31">
-                    <?php $nnode = node_load(497); ?>
+                    <?php $nnode = node_load(561); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -289,7 +289,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place32">
-                    <?php $nnode = node_load(498); ?>
+                    <?php $nnode = node_load(564); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -311,7 +311,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place33">
-                    <?php $nnode = node_load(499); ?>
+                    <?php $nnode = node_load(563); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -333,7 +333,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place34">
-                    <?php $nnode = node_load(500); ?>
+                    <?php $nnode = node_load(562); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -355,7 +355,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place4">
-                    <?php $nnode = node_load(501); ?>
+                    <?php $nnode = node_load(565); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -377,7 +377,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place6">
-                    <?php $nnode = node_load(502); ?>
+                    <?php $nnode = node_load(566); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -399,7 +399,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place7">
-                    <?php $nnode = node_load(503); ?>
+                    <?php $nnode = node_load(567); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -421,7 +421,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place8">
-                    <?php $nnode = node_load(504); ?>
+                    <?php $nnode = node_load(568); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -443,7 +443,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place91">
-                    <?php $nnode = node_load(505); ?>
+                    <?php $nnode = node_load(569); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -465,7 +465,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place92">
-                    <?php $nnode = node_load(506); ?>
+                    <?php $nnode = node_load(570); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');
@@ -487,7 +487,7 @@ global $user;
             </div>
             <div class="modal-body">
                 <div class="place place21">
-                    <?php $nnode = node_load(507); ?>
+                    <?php $nnode = node_load(571); ?>
                     <h3><?php print $nnode->title; ?></h3>
                     <?php
                         $prepared_node = node_view($nnode, 'teaser');

@@ -15,3 +15,7 @@ themes/azp/css/less/_notes/dwsync.xml
 modules/ulogin/_notes/dwsync.xml
 themes/azp/css/less/_notes/dwsync.xml
 themes/azp/js/_notes/dwsync.xml
+*.mp4
+*.ogv
+*.webm
+modules/content_access/

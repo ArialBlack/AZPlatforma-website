@@ -66,13 +66,13 @@ function changeSomePath() {
     jQuery('.tabs--primary.nav.nav-tabs li a[href$="ulogin"]').parents("li").addClass("ulogin-item-menu");
     
     
-    imgsrc2 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 img").attr("src");
+    imgsrc2 = jQuery("#block-views-news-block-2 .views-row-2 img").attr("src");
 
-    imgsrc3 = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 img").attr("src");
+    imgsrc3 = jQuery("#block-views-news-block-2 .views-row-3 img").attr("src");
     
-    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',
+    jQuery("#block-views-news-block-2 .views-row-2 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',
 }); 
-    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
+    jQuery("#block-views-news-block-2 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
 });  
 
 
@@ -157,29 +157,65 @@ function imageDots() {
 }
 
  
-function sizeMeUp() {
-    
+function sizeMeUp() {  
     jQuery(".navbar-collapse").css("height", getWindowHeight());
     
-    bigNewsHeight = jQuery(".view-id-news.view-display-id-attachment_1 .views-row-1 .views-field-nothing").height();
+    bigNewsHeight = jQuery("#block-views-news-block-2 .views-row-1 .views-field-nothing").height();
 
     newHeight = (bigNewsHeight / 2 ) - 20; 
-    jQuery(".view-id-news.view-display-id-attachment_1 .views-row-2 .views-field-img, .view-id-news.view-display-id-attachment_1 .views-row-3 .views-field-img").css("height", newHeight+"px");
-  
+    jQuery("#block-views-news-block-2 .views-row-2 .views-field-img, #block-views-news-block-2 .views-row-3 .views-field-img").css("height", newHeight+"px");
 }
 
+   var min_w = 300; // minimum video width allowed
+    var vid_w_orig;  // original video dimensions
+    var vid_h_orig;
+    
+function bg() { 
+     //jQuery(".no-touch body.front ").tubular({videoId: 'C8hyDLjTGy8'});
+    
+    jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4"type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm"type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv"type="video/webm" /></video>');
+    
+ 
+    
+    vid_w_orig = parseInt(jQuery('video').attr('width'));
+    vid_h_orig = parseInt(jQuery(' video').attr('height'));
+      
+        
+    jQuery(window).resize(function () { resizeToCover(); });
+    jQuery(window).trigger('resize');
 
-function bg() {
-     jQuery(".no-touch body.front ").tubular({videoId: 'C8hyDLjTGy8'}); 
 }
 
-function partners_colors () {
+function resizeToCover() {
+    
+    // set the video viewport to the window size
+    jQuery('#video-background').width(jQuery(window).width());
+    jQuery('#video-background').height(jQuery(window).height());
+
+    // use largest scale factor of horizontal/vertical
+    var scale_h = jQuery(window).width() / vid_w_orig;
+    var scale_v = jQuery(window).height() / vid_h_orig;
+    var scale = scale_h > scale_v ? scale_h : scale_v;
+
+    // don't allow scaled width < minimum video width
+    if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
+
+    // now scale the video
+    jQuery('video').width(scale * vid_w_orig);
+    jQuery('video').height(scale * vid_h_orig);
+    // and center it by scrolling the video viewport
+    jQuery('#video-background').scrollLeft((jQuery('video').width() - jQuery(window).width()) / 2);
+  //  jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
+    
+};
+
+/*function partners_colors () {
     var h3_counter=0;
     jQuery( ".view-partners .view-content > *" ).each(function( index ) {
         if (jQuery( this ).is("h3")) {h3_counter++;}
         jQuery( this ).addClass("rowNum-"+h3_counter);
     });
-}
+}*/
 
 function eqBlockHeight (container, block_el, mode) {
             var $list = jQuery(container);
@@ -237,7 +273,6 @@ function hover_join() {
         });     
     });
 }
-
 
 jQuery(document).ready(function($) {
 
@@ -301,13 +336,16 @@ jQuery(document).ready(function($) {
     });  
     
     jQuery(".view-events").on('views_load_more.new_content', function(event, content) {
-        hover_cards();  
+        console.log("e");
+        //hover_cards();  
         jQuery(".view .col:even").addClass("even");
         jQuery(".view .col:odd").addClass("odd");
     });
     
     jQuery(".view-news").on('views_load_more.new_content', function(event, content) {
-        hover_text();  
+        console.log("n"); 
+       // hover_text();
+        newsHideImgIfYoutube(); 
         jQuery(".view .col:even").addClass("even"); 
         jQuery(".view .col:odd").addClass("odd"); 
     }); 
@@ -317,11 +355,15 @@ jQuery(document).ready(function($) {
    jQuery(".join.rent .webform-client-form").appendTo(".join.rent .side-blocks .sblock-2 div");
    
    jQuery(".front .region-content").addClass("animated");
+   var hoverTimeout;
    jQuery(".front .logo").hover(
         function() {
+            clearTimeout(hoverTimeout);
             jQuery(".front .region-content").removeClass("zoomOut").addClass("zoomIn").css("opacity",1);   
         }, function() {
-            jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);
+            hoverTimeout = setTimeout(function() {
+                jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);
+            }, 3000);
         }
     );
     
@@ -332,7 +374,7 @@ jQuery(document).ready(function($) {
     
     sizeMeUp();
     bg();
-    partners_colors();  
+    //partners_colors();  
     wrapTablesResponsive();   
     //eqBlockHeight(".view-partners .view-content", ".views-row", 1); 
     jQuery(".view .col:even").addClass("even");
@@ -370,13 +412,13 @@ jQuery(window).scroll(function() {
     detectOnWhite();
 });
 
-/*jQuery(window).load(function() {
-     var desc_h = Math.max.apply(null, jQuery("#block-views-works-block-1 .views-field-nothing").map(function ()
-		{
-   			 return jQuery(this).height();
-		}).get());
-	alert(desc_h);
+jQuery(window).load(function() {
+     sizeMeUp();
 });
-*/
+
+
+
+
+
 
  
