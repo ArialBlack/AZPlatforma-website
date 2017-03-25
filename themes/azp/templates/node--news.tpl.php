@@ -127,7 +127,7 @@
    print render($content['field_galery']);
    
    ?>
-   <div class="ya-share2" data-services="vkontakte,facebook,twitter" data-counter=""></div>
+   <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
 
   
   

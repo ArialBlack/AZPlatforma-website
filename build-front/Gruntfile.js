@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'comments'
                 },
                 files: {
-                    '../themes/azp/css/style.css': '../themes/azp/less/style.less'
+                    '../themes/azp/css/style.css': '../themes/azp/less/main.less'
                 }
             }
         },
