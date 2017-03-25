@@ -9,6 +9,7 @@ libraries/
 modules/
 node_modules/
 
+themes/azp/css/
 themes/azp/templates/page.tpl.php
 themes/azp/templates/page--node--293.tpl.php
 themes/azp/templates/page--node--414.tpl.php
