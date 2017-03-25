@@ -51,10 +51,10 @@ After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
 <div class="col-sm-6">
-    <div class="panel-group downloads-pr" role="tablist">  
+    <div class="panel-group downloads-pr" role="tablist">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
-                <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="true" aria-controls="collapseListGroup1"> Пресс-релизы  <i class="fa fa-bullhorn"></i></a> </h4>
+                <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="true" aria-controls="collapseListGroup1"> <?php print t("Press Releases");?>  <i class="fa fa-bullhorn"></i></a> </h4>
             </div>
             <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
             

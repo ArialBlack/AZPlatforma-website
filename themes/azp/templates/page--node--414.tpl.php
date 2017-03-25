@@ -78,82 +78,51 @@ global $user;
   if ($lang == 'uk') { $lang = 'ua'; }
 ?>
 <div id="page">
-    <header id="navbar" role="banner" class="navbar navbar-default"> 
-      <div class="padding"> 
-        <div class="navbar-header">
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-           <span id="bw">
-               <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <i class="fa fa-times"></i>
-              </button>
-          </span>
-          <a class="logo navbar-btn text-center" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            </a>
-             
-        </div> 
-        <div class="addNav pull-right">
-            
-           <nav role="navigation">
-    <?php /*?>          <?php if (!empty($secondary_nav)): ?>
-                <?php print render($secondary_nav); ?>
-              <?php endif; ?><?php */?>
-              <?php if (!empty($page['navigation'])): ?>
-                <?php print render($page['navigation']); ?>
-              <?php endif; ?>
-              <div class="region region-navigation">
-                  <section class="block user-nav clearfix">  
-                      <ul>  
-                      <?php if ($user->uid): ?>  
-                            <li><a href="/join" title="<?php print "Join"; ?>"><?php print "Join"; ?> <i class="fa fa-plug"></i></a></li>
-                            <li><a href="/user" title="<?php print t("User account"); ?>"><i class="fa fa-user"></i></a></li>
-                            <li><a href="/user/logout" title="<?php print t("Logout"); ?>"><i class="fa fa-sign-out"></i></a></li>
-                      <?php endif; ?>
-                      
-                       <?php if (!$user->uid): ?>
-                            <li><a href="/user/login?destination=join" title="<?php print "Join"; ?>"><?php print "Join"; ?> <i class="fa fa-plug"></i></a></li>
-                      <?php endif; ?>        
-                      </ul>
-                  </section>
-              </div>
-            </nav>
-        </div>
-        
-        
-        
-    
-        <?php if (!empty($primary_nav)): ?>
-          <div class="navbar-collapse">
-            <nav role="navigation">
-              <?php if (!empty($primary_nav)): ?>
-                <?php print render($primary_nav); ?>
-              <?php endif; ?>
-            </nav>
-          </div>
-        <?php endif; ?>
-        
+
+    <header id="navbar" role="banner" class="navbar navbar-default">
+        <div class="padding">
+            <div class="navbar-header">
+              <span id="bw">
+                  <button type="button" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <i class="fa fa-times"></i>
+                  </button>
+              </span>
+                <a class="logo navbar-btn text-center" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                </a>
+            </div>
+            <div class="addNav pull-right">
+                <nav role="navigation">
+                    <?php if (!empty($page['navigation'])): ?>
+                        <?php print render($page['navigation']); ?>
+                    <?php endif; ?>
+                    <div class="region region-navigation"></div>
+                </nav>
+            </div>
+            <?php if (!empty($primary_nav)): ?>
+                <div class="navbar-collapse">
+                    <nav role="navigation">
+                        <?php if (!empty($primary_nav)): ?>
+                            <?php print render($primary_nav); ?>
+                        <?php endif; ?>
+                    </nav>
+                </div>
+            <?php endif; ?>
+
             <div class="h1-container container XLcontainer">
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-            <h1 class="page-header"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-    </div>   
-        
-        
-      </div> 
-      
-      
-      
+                <?php print render($title_prefix); ?>
+                <?php if (!empty($title)): ?>
+                    <h1 class="page-header"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
+            </div>
+        </div>
     </header>
-    
-    
-    
-    
+
     <div id="mcw">
         <div class="main-container container XLcontainer">
         
@@ -169,8 +138,9 @@ global $user;
                         Рабочее пространство  (офисы, коворкинг) - 25&nbsp;000 м2 <br>
                         Закрытые  выставочные площадки, мастерские, галереи, арт-пространства – 16000 м2<br>
                         Ивент-пространства  для проведения фестивалей, конференций, хакатонов, концертов и маркетов –  60&nbsp;000 м2<br>
-                        Пространства  для отдыха и развлечений – 10&nbsp;000 м2</p></div>
-<div id="mapImage">
+                        Пространства  для отдыха и развлечений – 10&nbsp;000 м2</p>
+                    </div>
+                    <div id="mapImage">
                         <div class="imgContainer">
                             <img class="mapImage" src="/sites/default/files/map.jpg" />
                             <a href="#" data-toggle="modal" data-target="#modalPlace1"><span data-x="810" data-y="170" class="mapDot badge">1</span></a>
@@ -187,8 +157,7 @@ global $user;
                             <a href="#" data-toggle="modal" data-target="#modalPlace91"><span data-x="1186" data-y="202" class="mapDot badge">9.1</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace92"><span data-x="1312" data-y="153" class="mapDot badge">9.2</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace21"><span data-x="799" data-y="64" class="mapDot badge">21</span></a>
-                        </div> 
-                         
+                        </div>
                     </div>
                 </section> 
               </div> 
@@ -196,310 +165,307 @@ global $user;
         </div>
     </div>
 </div>
+
 <footer id="footer">
     <div  class="footer container XLcontainer">
-      <div class="col col-sm-4 col-1">
-        <?php print render($page['footer_first']); ?>
-      </div>
+        <div class="col col-sm-4 col-1">
+            <?php print render($page['footer_first']); ?>
+        </div>
         <div class="col col-sm-4 col-2">
-        
-        <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
-        <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
-        </div>   
-      <div class="col col-sm-4 col-3">
-      <?php print render($page['footer_third']); ?>
-    </div>
+
+            <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+            <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
+        </div>
+        <div class="col col-sm-4 col-3">
+            <?php print render($page['footer_third']); ?>
+        </div>
     </div>
 </footer>
 
 <div id="mapLegend">
-
-<div class="myModal normal modal fade" id="modalPlace1" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabel">
-  <div class="modal-dialog container" role="document">  
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-        <h4 class="modal-title" id="modalPlace1">Парк</h4>
+    <div class="myModal normal modal fade" id="modalPlace1" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabel">
+      <div class="modal-dialog container" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+            <h4 class="modal-title" id="modalPlace1">Парк</h4>
+          </div>
+          <div class="modal-body">
+            <div class="place place1">
+                <?php $nnode = node_load(495); ?>
+                <h3><?php print $nnode->title; ?></h3>
+                <?php
+                    $prepared_node = node_view($nnode, 'teaser');
+                    $rendered_teaser = render($prepared_node);
+                    print $rendered_teaser;
+                 ?>
+               </div>
+            </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <div class="place place1">
-            <?php $nnode = node_load(495); ?>
-            <h3><?php print $nnode->title; ?></h3>
-            <?php
-                $prepared_node = node_view($nnode, 'teaser');
-                $rendered_teaser = render($prepared_node);
-                print $rendered_teaser; 
-             ?>
-           </div> 
-        </div>
     </div>
-  </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace2" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe2">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace2">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place2">
-                    <?php $nnode = node_load(496); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser; 
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace2" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe2">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace2">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place2">
+                        <?php $nnode = node_load(496); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace31" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe31">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace31">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place31">
-                    <?php $nnode = node_load(497); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace31" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe31">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace31">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place31">
+                        <?php $nnode = node_load(497); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace32" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe32">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace32">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place32">
-                    <?php $nnode = node_load(498); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace32" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe32">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace32">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place32">
+                        <?php $nnode = node_load(498); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace33" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe33">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace33">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place33">
-                    <?php $nnode = node_load(499); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace33" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe33">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace33">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place33">
+                        <?php $nnode = node_load(499); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace34" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe34">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace34">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place34">
-                    <?php $nnode = node_load(500); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace34" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe34">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace34">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place34">
+                        <?php $nnode = node_load(500); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace4" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe4">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace4">Галерея Арт-Дом</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place4">
-                    <?php $nnode = node_load(501); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace4" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe4">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace4">Галерея Арт-Дом</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place4">
+                        <?php $nnode = node_load(501); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace6" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe6">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace6">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place6">
-                    <?php $nnode = node_load(502); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace6" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe6">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace6">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place6">
+                        <?php $nnode = node_load(502); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace7" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe7">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace7">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place7">
-                    <?php $nnode = node_load(503); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace7" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe7">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace7">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place7">
+                        <?php $nnode = node_load(503); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace8" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe8">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace8">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place8">
-                    <?php $nnode = node_load(504); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace8" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe8">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace8">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place8">
+                        <?php $nnode = node_load(504); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="myModal normal modal fade" id="modalPlace91" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe91">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace91">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place91">
-                    <?php $nnode = node_load(505); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+    <div class="myModal normal modal fade" id="modalPlace91" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe91">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace91">Pop-Up Beach</h4>
                 </div>
-            </div>
-        </div>
-    </div>     
-</div>
-
-<div class="myModal normal modal fade" id="modalPlace92" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe92"> 
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace92">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place92">
-                    <?php $nnode = node_load(506); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
-                </div>
-            </div>
-        </div>
-    </div>     
-</div>
-
-<div class="myModal normal modal fade" id="modalPlace21" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe21">
-    <div class="modal-dialog container" role="document">  
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                <h4 class="modal-title" id="modalPlace21">Pop-Up Beach</h4>
-            </div>
-            <div class="modal-body">
-                <div class="place place21">
-                    <?php $nnode = node_load(507); ?>
-                    <h3><?php print $nnode->title; ?></h3>
-                    <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;  
-                     ?>
+                <div class="modal-body">
+                    <div class="place place91">
+                        <?php $nnode = node_load(505); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <div class="myModal normal modal fade" id="modalPlace92" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe92">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace92">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place92">
+                        <?php $nnode = node_load(506); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="myModal normal modal fade" id="modalPlace21" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe21">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlace21">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place21">
+                        <?php $nnode = node_load(507); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                            $prepared_node = node_view($nnode, 'teaser');
+                            $rendered_teaser = render($prepared_node);
+                            print $rendered_teaser;
+                         ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

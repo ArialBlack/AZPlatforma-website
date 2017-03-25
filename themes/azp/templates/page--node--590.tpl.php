@@ -1,5 +1,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQEVWdcAHJwYNQSqSUk4CEoKb_XwGeEnk&signed_in=true&amp;sensor=true&amp;language=ru-RU"></script>
-<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+<script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/markerwithlabel/src/markerwithlabel.js"></script>
 <?php 
 /** 
  * @file
@@ -79,87 +79,54 @@ global $user;
  $lang = $language->language;
  if ($lang == 'uk') { $lang = 'ua'; }
 ?>
+
 <div id="video-background"></div>
-<!--<div class="video_overlay"></div>-->
+
 <div id="page">
-    <header id="navbar" role="banner" class="navbar navbar-default"> 
-      <div class="padding"> 
-        <div class="navbar-header">
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <span id="bw">
-          <button type="button" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <i class="fa fa-times"></i>
-          </button>
-          </span>
-          <a class="logo navbar-btn text-center" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            </a>
-             
-        </div> 
-        <div class="addNav pull-right">
-            
-           <nav role="navigation">
-    <?php /*?>          <?php if (!empty($secondary_nav)): ?>
-                <?php print render($secondary_nav); ?>
-              <?php endif; ?><?php */?>
-              <?php if (!empty($page['navigation'])): ?>
-                <?php print render($page['navigation']); ?>
-              <?php endif; ?>
-              <div class="region region-navigation">
-                  <section class="block user-nav clearfix">  
-                      <ul>
-                      <?php if ($user->uid): ?>  
-                            <li><a href="/<?php print $lang; ?>/join" title="<?php print "Join"; ?>"><?php print "Join"; ?> <i class="fa fa-plug"></i></a></li>
-                            <li><a href="/<?php print $lang; ?>/user" title="<?php print t("User account"); ?>"><i class="fa fa-user"></i></a></li>
-                            <li><a href="/<?php print $lang; ?>/user/logout" title="<?php print t("Logout"); ?>"><i class="fa fa-sign-out"></i></a></li>
-                      <?php endif; ?>
-                      
-                       <?php if (!$user->uid): ?>
-                            <li><a href="/<?php print $lang; ?>/user/login?destination=join" title="<?php print "Join"; ?>"><?php print "Join"; ?> <i class="fa fa-plug"></i></a></li>
-                      <?php endif; ?>        
-                      </ul>
-                      <?php if (sizeof(uc_cart_get_contents()) > 0): ?>
-                        <ul class="ucart">
-                            <li><a href="/<?php print $lang; ?>/cart"><i class="fa fa-cart-arrow-down"></i></a></li> 
-                        </ul>
-                      <?php endif; ?>
-                  </section>
-              </div>
-            </nav>
+    <header id="navbar" role="banner" class="navbar navbar-default">
+        <div class="padding">
+            <div class="navbar-header">
+              <span id="bw">
+                  <button type="button" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <i class="fa fa-times"></i>
+                  </button>
+              </span>
+                <a class="logo navbar-btn text-center" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                </a>
+            </div>
+            <div class="addNav pull-right">
+                <nav role="navigation">
+                    <?php if (!empty($page['navigation'])): ?>
+                        <?php print render($page['navigation']); ?>
+                    <?php endif; ?>
+                    <div class="region region-navigation"></div>
+                </nav>
+            </div>
+            <?php if (!empty($primary_nav)): ?>
+                <div class="navbar-collapse">
+                    <nav role="navigation">
+                        <?php if (!empty($primary_nav)): ?>
+                            <?php print render($primary_nav); ?>
+                        <?php endif; ?>
+                    </nav>
+                </div>
+            <?php endif; ?>
+
+            <div class="h1-container container XLcontainer">
+                <?php print render($title_prefix); ?>
+                <?php if (!empty($title)): ?>
+                    <h1 class="page-header"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
+            </div>
         </div>
-        
-       
-        
-    
-        <?php if (!empty($primary_nav)): ?>
-          <div class="navbar-collapse">
-            <nav role="navigation">
-              <?php if (!empty($primary_nav)): ?>
-                <?php print render($primary_nav); ?>
-              <?php endif; ?>
-            </nav>
-          </div>
-        <?php endif; ?>
-        
-        
-    <div class="h1-container container XLcontainer">
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-            <h1 class="page-header"><?php print $title; ?></h1>                
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-    </div> 
-        
-        
-      </div>
     </header>
-    
-  
-        
+
     <div id="mcw">
         <div class="main-container container XLcontainer">
         
@@ -196,7 +163,6 @@ global $user;
               
               <?php print render($page['content']); ?>
 
-    
             </section>
         
             <?php if (!empty($page['sidebar_second'])): ?>
@@ -213,21 +179,23 @@ global $user;
         </div>
     </div>
 </div>
+
 <footer id="footer">
     <div  class="footer container XLcontainer">
-      <div class="col col-sm-4 col-1">
-        <?php print render($page['footer_first']); ?>
-      </div>
+        <div class="col col-sm-4 col-1">
+            <?php print render($page['footer_first']); ?>
+        </div>
         <div class="col col-sm-4 col-2">
-        
-        <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>   
-        <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
-        </div> 
-      <div class="col col-sm-4 col-3">
-      <?php print render($page['footer_third']); ?>
-    </div>
+
+            <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+            <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
+        </div>
+        <div class="col col-sm-4 col-3">
+            <?php print render($page['footer_third']); ?>
+        </div>
     </div>
 </footer>
+
 <script>
 var marker;
 var markerArray = [];
