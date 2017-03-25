@@ -14,7 +14,7 @@ function theme_uc_payment_totals($variables) {
   $order = $variables['order'];
   $line_items = uc_order_load_line_items_display($order);
 
-  $output = '<table class="table" id="uc-order-total-preview">';
+  $output = '<div class="table-responsive"><table class="table" id="uc-order-total-preview">';
 
   foreach ($line_items as $line) {
     if (!empty($line['title'])) {
@@ -24,7 +24,7 @@ function theme_uc_payment_totals($variables) {
     }
   }
 
-  $output .= '</table>'; 
+  $output .= '</table></div>'; 
 
   return $output;
 }
