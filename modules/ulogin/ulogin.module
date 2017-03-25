@@ -85,6 +85,11 @@ function ulogin_menu() {
     'access arguments' => array(1),
     'type' => MENU_LOCAL_TASK,
     'file' => 'ulogin.pages.inc',
+     'options' => array(
+      'attributes' => array(
+        'class' => array('drupal-menu-class')
+      )
+   ),  
   );
   $items['user/%user/ulogin/delete'] = array(
     'title' => 'Delete uLogin identity',

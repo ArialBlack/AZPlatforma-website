@@ -98,7 +98,7 @@ function newsHideImgIfYoutube() {
         // console.log($y, $v);  
         
         if($y !=0 || $v !=0) {
-            $this.find(".views-field-field-image").css("display", "none");
+         //   $this.find(".views-field-field-image").css("display", "none");
         }
     });
 }
@@ -280,7 +280,7 @@ jQuery(document).ready(function($) {
     detectOnWhite();
     showWebformComponents();
     calendarCategoriesDots();
-    newsHideImgIfYoutube();
+    //newsHideImgIfYoutube();
     touchCarousel();
     
     
