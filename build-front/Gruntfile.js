@@ -24,6 +24,8 @@ module.exports = function(grunt) {
                 },
 
                 files: {
+                    "../themes/azp/templates/page--type-landing--277.tpl.php": "../themes/azp/_templates_src/page--type-landing--277.tpl.php",
+                    "../themes/azp/templates/page--type-landing.tpl.php": "../themes/azp/_templates_src/page--type-landing.tpl.php",
                     "../themes/azp/templates/page.tpl.php": "../themes/azp/_templates_src/page.tpl.php",
                     //map
                     //"../themes/azp/templates/page--node--293.tpl.php": "../themes/azp/_templates_src/page--node--293.tpl.php.bkp---ua",

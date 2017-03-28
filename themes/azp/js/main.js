@@ -158,7 +158,7 @@ function imageDots() {
 
  
 function sizeMeUp() {  
-    jQuery(".navbar-collapse").css("height", getWindowHeight());
+   // jQuery(".navbar-collapse").css("height", getWindowHeight());
     
     bigNewsHeight = jQuery("#block-views-news-block-2 .views-row-1 .views-field-nothing").height();
 
@@ -190,7 +190,8 @@ function resizeToCover() {
     
     // set the video viewport to the window size
     jQuery('#video-background').width(jQuery(window).width());
-    jQuery('#video-background').height(jQuery(window).height());
+    jQuery('.media-bg').height(jQuery(window).height());
+    jQuery('#page-header').height(jQuery(window).height());
 
     // use largest scale factor of horizontal/vertical
     var scale_h = jQuery(window).width() / vid_w_orig;
@@ -314,7 +315,7 @@ jQuery(document).ready(function($) {
   
   
     
-    $('body').on('click', function (e) {
+    /*$('body').on('click', function (e) {
         $this = jQuery(".navbar-toggle");
         if (jQuery("body").hasClass("menu-opened")) {
             if (!$this.is(e.target) && $this.has(e.target).length === 0 && $('.navbar-nav').has(e.target).length === 0) {
@@ -333,7 +334,7 @@ jQuery(document).ready(function($) {
         if ($menu.height() > getWindowHeight() - $headerH) {  
             $menu.toggleClass("overflow");  
         }  
-    });  
+    });  */
     
     jQuery(".view-events").on('views_load_more.new_content', function(event, content) {
         console.log("e");
@@ -354,7 +355,7 @@ jQuery(document).ready(function($) {
    
    jQuery(".join.rent .webform-client-form").appendTo(".join.rent .side-blocks .sblock-2 div");
    
-   jQuery(".front .region-content").addClass("animated");
+  /* jQuery(".front .region-content").addClass("animated");
    var hoverTimeout;
    jQuery(".front .logo").hover(
         function() {
@@ -365,7 +366,7 @@ jQuery(document).ready(function($) {
                 jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);
             }, 3000);
         }
-    );
+    );*/
     
     
     

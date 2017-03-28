@@ -16,18 +16,20 @@
  * $slides - Array containing all slide images, its sanatized title & alt ready to print, its hash id and the full image URL if you need it
  * $thumbs - Array containing all thumbnail images ready to print and their hash
  * $settings - The settings for galleryformatter as configured for this field instance.
- 
 
- 
- 
+
+
+
+?>
+<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide  data-ride="carousel" data-interval="false">
  
  */
 
 $gal_id = generateRandomString();
- 
+$sc = count($slides);
 ?>
 <div class="carousel-container">
-<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide" data-ride="carousel" data-interval="false">
+<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide scount-<?php print $sc; ?>"" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php foreach ($slides as $id => $data): ?>

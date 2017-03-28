@@ -79,6 +79,7 @@ global $user;
 ?>
 
 <div class="media-container">
+  <div id="video-background" class="media-bg"></div>
   <header role="banner" id="page-header">
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
@@ -88,22 +89,12 @@ global $user;
 
 <div id="page">
 
-
-
     <div id="mcw">
-        <div class="main-container container XLcontainer">
-        
+        <div class="main-container">
+          <div class="">
 
         
-          <div class="row">
-        
-            <?php if (!empty($page['sidebar_first'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_first']); ?>
-              </aside>  <!-- /#sidebar-first -->
-            <?php endif; ?>
-        
-            <section<?php print $content_column_class; ?>>
+            <section>
               <?php if (!empty($page['highlighted'])): ?>
                 <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
               <?php endif; ?>
@@ -114,7 +105,7 @@ global $user;
 
               <?php print render($title_prefix); ?>
               <?php if (!empty($title)): ?>
-                <h1 class="page-header"><?php print $title; ?></h1>
+                <h2 class="page-header"><?php print $title; ?></h2>
               <?php endif; ?>
               <?php print render($title_suffix); ?>
 
@@ -134,12 +125,7 @@ global $user;
 
               <?php print render($page['content']); ?>
             </section>
-        
-            <?php if (!empty($page['sidebar_second'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_second']); ?>
-              </aside>  <!-- /#sidebar-second -->
-            <?php endif; ?>
+
             
             <?php if (!empty($page['content_bottom'])): ?>
                 <?php print render($page['content_bottom']); ?>

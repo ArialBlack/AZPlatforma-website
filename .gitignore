@@ -6,7 +6,10 @@ libraries/
 *.ogv
 *.webm
 
-modules/
+!modules/
+modules/*
+!modules/custom/
+
 node_modules/
 
 themes/azp/css/
@@ -16,3 +19,5 @@ themes/azp/templates/page--node--414.tpl.php
 themes/azp/templates/page--node--558.tpl.php
 themes/azp/templates/page--node--419.tpl.php
 themes/azp/templates/page--node--590.tpl.php
+themes/azp/templates/page--type-landing--277.tpl.php
+themes/azp/templates/page--type-landing.tpl.php
