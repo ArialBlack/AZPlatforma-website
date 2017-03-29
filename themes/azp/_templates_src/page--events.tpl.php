@@ -78,21 +78,17 @@ global $user;
  if ($lang == 'uk') { $lang = 'ua'; }
 ?>
 
-<div class="media-container">
-  <div id="video-background" class="media-bg"></div>
-  <header role="banner" id="page-header">
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-</div>
-
 <!--(bake parts/header.php)-->
 
 <div id="page">
-
     <div id="mcw">
         <div class="main-container">
           <div class="">
-
+            <?php if (!empty($page['sidebar_first'])): ?>
+              <aside class="col-sm-4" role="complementary">
+                <?php print render($page['sidebar_first']); ?>
+              </aside>  <!-- /#sidebar-first -->
+            <?php endif; ?>
         
             <section>
               <?php if (!empty($page['highlighted'])): ?>
@@ -105,7 +101,7 @@ global $user;
 
               <?php print render($title_prefix); ?>
               <?php if (!empty($title)): ?>
-                <h2 class="page-header"><?php print $title; ?></h2>
+                <h1 class="page-header"><?php print $title; ?></h1>
               <?php endif; ?>
               <?php print render($title_suffix); ?>
 
@@ -125,7 +121,12 @@ global $user;
 
               <?php print render($page['content']); ?>
             </section>
-
+        
+            <?php if (!empty($page['sidebar_second'])): ?>
+              <aside class="col-sm-4" role="complementary">
+                <?php print render($page['sidebar_second']); ?>
+              </aside>  <!-- /#sidebar-second -->
+            <?php endif; ?>
             
             <?php if (!empty($page['content_bottom'])): ?>
                 <?php print render($page['content_bottom']); ?>

@@ -75,6 +75,21 @@ function changeSomePath() {
     jQuery("#block-views-news-block-2 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
 });  
 
+    var $headerParagraph = jQuery('.paragraphs-item-landing-header'),
+        $viewsCovers = jQuery('.view .cover-image');
+    $headerParagraph.each(function() {
+        var $this = jQuery(this),
+            $url = $this.data('img');
+        console.log($url);
+        $this.parent('.field-item').addClass('cover-image').css('background-image', 'url("' + $url + '")');
+    });
+
+    $viewsCovers.each(function() {
+        var $this = jQuery(this),
+            $url = $this.data('img');
+        $this.css('background-image', 'url("' + $url + '")');
+    });
+
 
 }
 
@@ -187,11 +202,14 @@ function bg() {
 }
 
 function resizeToCover() {
-    
+    var $wh = jQuery(window).height();
     // set the video viewport to the window size
     jQuery('#video-background').width(jQuery(window).width());
-    jQuery('.media-bg').height(jQuery(window).height());
-    jQuery('#page-header').height(jQuery(window).height());
+    jQuery('#video-background').height($wh);
+
+    jQuery('.paragraphs-item-landing-header').parent('.field-item').height($wh);
+    //jQuery('.paragraphs-item-landing-header').parent('.field-item').next().css('margin-top', $wh + 'px')
+    //jQuery('#page-header').height(jQuery(window).height());
 
     // use largest scale factor of horizontal/vertical
     var scale_h = jQuery(window).width() / vid_w_orig;

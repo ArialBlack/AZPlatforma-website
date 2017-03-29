@@ -78,25 +78,47 @@ global $user;
  if ($lang == 'uk') { $lang = 'ua'; }
 ?>
 
-<!--(bake parts/header.php)-->
+<div class="header-container">
+    <header id="navbar" role="banner" class="navbar container navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <?php if ($logo): ?>
+                    <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                    </a>
+                <?php endif; ?>
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+                <div class="navbar-collapse collapse">
+                    <nav role="navigation">
+                        <?php if (!empty($primary_nav)): ?>
+                            <?php print render($primary_nav); ?>
+                        <?php endif; ?>
+                        <?php if (!empty($page['navigation'])): ?>
+                            <?php print render($page['navigation']); ?>
+                        <?php endif; ?>
+                    </nav>
+                </div>
+            <?php endif; ?>
+        </div>
+    </header>
+</div>
 
 <div id="page">
     <div id="mcw">
         <div class="main-container">
           <div class="">
-            <?php if (!empty($page['sidebar_first'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_first']); ?>
-              </aside>  <!-- /#sidebar-first -->
-            <?php endif; ?>
         
             <section>
-              <?php if (!empty($page['highlighted'])): ?>
-                <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-              <?php endif; ?>
-
-              <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-
               <a id="main-content"></a>
 
               <?php print render($title_prefix); ?>
@@ -121,12 +143,6 @@ global $user;
 
               <?php print render($page['content']); ?>
             </section>
-        
-            <?php if (!empty($page['sidebar_second'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_second']); ?>
-              </aside>  <!-- /#sidebar-second -->
-            <?php endif; ?>
             
             <?php if (!empty($page['content_bottom'])): ?>
                 <?php print render($page['content_bottom']); ?>
@@ -137,4 +153,18 @@ global $user;
     </div>
 </div>
 
-<!--(bake parts/footer.php)-->
+<footer id="footer">
+    <div  class="footer container XLcontainer">
+        <div class="col col-sm-4 col-1">
+            <?php print render($page['footer_first']); ?>
+        </div>
+        <div class="col col-sm-4 col-2">
+
+            <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+            <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
+        </div>
+        <div class="col col-sm-4 col-3">
+            <?php print render($page['footer_third']); ?>
+        </div>
+    </div>
+</footer>

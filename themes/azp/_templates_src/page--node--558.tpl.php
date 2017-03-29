@@ -81,14 +81,14 @@ global $user;
     <!--(bake parts/header.php)-->
     
     <div id="mcw">
-        <div class="main-container container XLcontainer">
+        <div class="main-container">
         
           <header role="banner" id="page-header">
         
             <?php print render($page['header']); ?>
           </header> <!-- /#page-header -->
         
-          <div class="row">
+          <div class="">
               <div class="region region-content">
                 <section id="azpLocation">
                     <div class="c text-center"><p class="text-center">Total square of “Art-zavod Platforma” - 120 000 м<sup>2</sup><br>

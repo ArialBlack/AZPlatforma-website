@@ -82,14 +82,14 @@ global $user;
     <!--(bake parts/header.php)-->
 
     <div id="mcw">
-        <div class="main-container container XLcontainer">
+        <div class="main-container">
         
           <header role="banner" id="page-header">
         
             <?php print render($page['header']); ?>
           </header> <!-- /#page-header -->
         
-          <div class="row">
+          <div class="">
               <div class="region region-content">
                 <section id="azpLocation">
                     <div class="c text-center"><p class="text-center">Общая  территория «Арт-завода Платформа» -   120&nbsp;000 м2. <br>

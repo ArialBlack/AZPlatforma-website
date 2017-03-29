@@ -84,19 +84,8 @@ global $user;
     <div id="mcw">
         <div class="main-container">
           <div class="">
-            <?php if (!empty($page['sidebar_first'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_first']); ?>
-              </aside>  <!-- /#sidebar-first -->
-            <?php endif; ?>
         
             <section>
-              <?php if (!empty($page['highlighted'])): ?>
-                <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-              <?php endif; ?>
-
-              <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-
               <a id="main-content"></a>
 
               <?php print render($title_prefix); ?>
@@ -121,12 +110,6 @@ global $user;
 
               <?php print render($page['content']); ?>
             </section>
-        
-            <?php if (!empty($page['sidebar_second'])): ?>
-              <aside class="col-sm-4" role="complementary">
-                <?php print render($page['sidebar_second']); ?>
-              </aside>  <!-- /#sidebar-second -->
-            <?php endif; ?>
             
             <?php if (!empty($page['content_bottom'])): ?>
                 <?php print render($page['content_bottom']); ?>
