@@ -77,11 +77,12 @@ function changeSomePath() {
 
     var $headerParagraph = jQuery('.paragraphs-item-landing-header'),
         $viewsCovers = jQuery('.view .cover-image');
+
     $headerParagraph.each(function() {
         var $this = jQuery(this),
             $url = $this.data('img');
-        console.log($url);
-        $this.parent('.field-item').addClass('cover-image').css('background-image', 'url("' + $url + '")');
+        //console.log($url);
+        $this.addClass('cover-image').css('background-image', 'url("' + $url + '")');
     });
 
     $viewsCovers.each(function() {
@@ -207,7 +208,8 @@ function resizeToCover() {
     jQuery('#video-background').width(jQuery(window).width());
     jQuery('#video-background').height($wh);
 
-    jQuery('.paragraphs-item-landing-header').parent('.field-item').height($wh);
+    jQuery('.paragraphs-item-landing-header').height($wh);
+    jQuery('.paragraphs-item-landing-header').next('div').css('margin-top', $wh+'px');
     //jQuery('.paragraphs-item-landing-header').parent('.field-item').next().css('margin-top', $wh + 'px')
     //jQuery('#page-header').height(jQuery(window).height());
 

@@ -192,6 +192,16 @@
     }
 }
 */
+.azp-map {
+    iframe {
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+        -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+    }
+}
+
+
 
 .product-image,
 .display-price {
@@ -403,7 +413,6 @@ body.downloads {
         }
         
         .views-field-display-price {
-            font-family: 'museo_sans_cyrl100';
             font-size: 50px;
             padding: 40px 0 20px 0;
              
@@ -416,7 +425,6 @@ body.downloads {
         .views-field-title {
             font-size: 16px;
             margin-bottom: 20px;
-            font-family: 'museo_sans_cyrl700';
             text-transform: uppercase;
         }
         
@@ -499,7 +507,6 @@ body.downloads {
     .views-field-title {
         text-align: center;
         font-size: 20px;
-        font-family: 'museo_sans_cyrl700';
         margin-bottom: 20px;
         
         a {
@@ -684,7 +691,6 @@ body.downloads {
                     background: @azp-orange;
                     padding: 2px 20px;  
                     font-size: 20px;
-                    font-family: 'museo_sans_cyrl700'; 
                 }
         
                 .views-field-field-body {
@@ -765,8 +771,7 @@ body.downloads {
                 .views-field-title {
                     font-size: 14px;
                     line-height: 1.2;
-                    text-transform: uppercase; 
-                    font-family: 'museo_sans_cyrl900';   
+                    text-transform: uppercase;
                 }
                 
                 .views-field-title,
@@ -1059,7 +1064,6 @@ body.what-we-do.page-node-557 {
     .view .name,
     .view h3 {
         font-size: 30px;
-        font-family: 'museo_sans_cyrl700'; 
         padding-bottom: 10px;
         color: @font;  
     }
@@ -1221,7 +1225,6 @@ body.events {
                 
                 a {
                     font-size: 14px;
-                    font-family: 'museo_sans_cyrl300_italic';
                     text-decoration: underline;
                     
                 }
@@ -1232,7 +1235,6 @@ body.events {
                     font-size: 14px;
                     text-transform: uppercase;
                     text-decoration:none;
-                    font-family: 'museo_sans_cyrl700';
                 } 
                 
                 p {
@@ -1245,7 +1247,6 @@ body.events {
                     
                     span {
                         font-size: 14px;
-                        font-family: 'museo_sans_cyrl700';
                     }
                 }
 
@@ -1318,7 +1319,6 @@ body.events {
             .date-display-end,
             .date-display-single {
                 font-weight: bold;
-                font-family: 'museo_sans_cyrl700' !important;
             }
             
             .date-display-start:after {
@@ -1461,7 +1461,6 @@ body.events {
                 
                 .item {
                     display: inline-block;
-                    font-family: 'museo_sans_cyrl700' !important;
                     
                     .event-dot {
                         
@@ -1544,7 +1543,6 @@ body.events {
         h3 {
             display: none;
             margin: 0;
-            font-family: 'museo_sans_cyrl700' !important;
             font-size: 16px;
             font-weight: normal;
             

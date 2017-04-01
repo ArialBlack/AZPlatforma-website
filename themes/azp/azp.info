@@ -55,8 +55,11 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
 
- scripts[] = 'js/jquery.fittext.js'
- scripts[] = 'js/packery.pkgd.min.js'
+scripts[] = 'js/bootstrap.min.js'
+scripts[] = 'js/tooltip.js'
+scripts[] = 'js/popover.js'
+scripts[] = 'js/jquery.fittext.js'
+scripts[] = 'js/packery.pkgd.min.js'
 ;scripts[] = 'js/jquery.waypoints.min.js'
 scripts[] = 'js/jquery.backstretch.min.js'
 scripts[] = 'js/jquery.tubular.1.0.js'

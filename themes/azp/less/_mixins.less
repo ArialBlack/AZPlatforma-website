@@ -31,9 +31,44 @@
 }
 
 .XLcontainer {
+    .container();
+
     @media (min-width: 1600px) {
         width: 1570px;
     }
+}
+
+.button(@color: @azp-red) {
+    background: @color;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+    border: @color 2px solid;
+    border-radius: 150px;
+    padding: 10px 30px;
+
+    &:hover {
+        background: none;
+        color: @color;
+    }
+}
+
+.title() {
+    color: @title;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*
+X * S / 1000 = P
+X is equal to the letter-tracking value in Photoshop
+S is the font-size in pixels
+P is the resulted value in "px" to use in CSS*/
+.letter-spacing(@x, @s) {
+    letter-spacing: @x * @s / 1000 * 1px;
 }
 
 .page_header(@pth: @page-title-height) {
@@ -59,8 +94,7 @@
     border: @color 2px solid;
     font-size:20px;
     text-transform: uppercase;
-    padding: 10px 20px; 
-    font-family: 'museo_sans_cyrl300'; 
+    padding: 10px 20px;
     
     &:hover {
         background: @color;
