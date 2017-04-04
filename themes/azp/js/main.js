@@ -64,18 +64,15 @@ function changeSomePath() {
     }
     
     jQuery('.tabs--primary.nav.nav-tabs li a[href$="ulogin"]').parents("li").addClass("ulogin-item-menu");
-    
-    
-    imgsrc2 = jQuery("#block-views-news-block-2 .views-row-2 img").attr("src");
 
-    imgsrc3 = jQuery("#block-views-news-block-2 .views-row-3 img").attr("src");
-    
-    jQuery("#block-views-news-block-2 .views-row-2 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',
-}); 
-    jQuery("#block-views-news-block-2 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',
-});  
+    imgsrc2 = jQuery("#block-views-news-block-2 .views-row-1 img").attr("src");
 
-    var $headerParagraph = jQuery('.paragraphs-item-landing-header'),
+    //imgsrc3 = jQuery("#block-views-news-block-2 .views-row-3 img").attr("src");
+    
+    jQuery("#block-views-news-block-2 .views-row-1 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',});
+   // jQuery("#block-views-news-block-2 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',});
+
+    var $headerParagraph = jQuery('.not-front .paragraphs-item-landing-header'),
         $viewsCovers = jQuery('.view .cover-image');
 
     $headerParagraph.each(function() {
@@ -180,6 +177,11 @@ function sizeMeUp() {
 
     newHeight = (bigNewsHeight / 2 ) - 20; 
     jQuery("#block-views-news-block-2 .views-row-2 .views-field-img, #block-views-news-block-2 .views-row-3 .views-field-img").css("height", newHeight+"px");
+
+    eqBlockHeight ('.view-news-4-front .attachment .row', '.view-news-4-front .attachment .row .col');
+    eqBlockHeight ('.view-id-events_4_main .attachment .row', '.view-id-events_4_main .attachment .row .col');
+
+
 }
 
    var min_w = 300; // minimum video width allowed
@@ -209,7 +211,8 @@ function resizeToCover() {
     jQuery('#video-background').height($wh);
 
     jQuery('.paragraphs-item-landing-header').height($wh);
-    jQuery('.paragraphs-item-landing-header').next('div').css('margin-top', $wh+'px');
+    jQuery('.view-display-id-block_2 .views-field-img').height($wh);
+    //jQuery('.paragraphs-item-landing-header').next('div').css('margin-top', $wh+'px');
     //jQuery('.paragraphs-item-landing-header').parent('.field-item').next().css('margin-top', $wh + 'px')
     //jQuery('#page-header').height(jQuery(window).height());
 
@@ -226,9 +229,13 @@ function resizeToCover() {
     jQuery('video').height(scale * vid_h_orig);
     // and center it by scrolling the video viewport
     jQuery('#video-background').scrollLeft((jQuery('video').width() - jQuery(window).width()) / 2);
-  //  jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
-    
-};
+    //jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
+
+    var $containerMargin = parseInt(jQuery('#navbar').css('margin-left'), 10);
+    jQuery('.paragraphs-item-landing-header .field-name-field-long-text .field-items').css('padding-left', $containerMargin + 30 + 'px');
+    jQuery('.view-news-4-front .views-field-nothing').css('padding-left', $containerMargin + 30 + 'px');
+
+}
 
 /*function partners_colors () {
     var h3_counter=0;

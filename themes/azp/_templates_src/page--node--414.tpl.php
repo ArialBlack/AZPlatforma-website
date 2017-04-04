@@ -92,12 +92,23 @@ global $user;
           <div class="">
               <div class="region region-content">
                 <section id="azpLocation">
-                    <div class="c text-center"><p class="text-center">Общая  территория «Арт-завода Платформа» -   120&nbsp;000 м2. <br>
-                        Рабочее пространство  (офисы, коворкинг) - 25&nbsp;000 м2 <br>
-                        Закрытые  выставочные площадки, мастерские, галереи, арт-пространства – 16000 м2<br>
-                        Ивент-пространства  для проведения фестивалей, конференций, хакатонов, концертов и маркетов –  60&nbsp;000 м2<br>
-                        Пространства  для отдыха и развлечений – 10&nbsp;000 м2</p>
+
+                    <div class="azp-location">
+                        <div class="azp-location-wrap">
+                            <div class="c">
+                                <p>Общая  территория «Арт-завода Платформа» - <b>120&nbsp;000 м2.</b> <br>
+                                Рабочее пространство  (офисы, коворкинг) - <b>25&nbsp;000 м2</b> <br>
+                                Закрытые  выставочные площадки, мастерские, галереи, арт-пространства – <b>16000 м2</b><br>
+                                Ивент-пространства  для проведения фестивалей, конференций, хакатонов, концертов и маркетов –  <b>60&nbsp;000 м2</b><br>
+                                Пространства  для отдыха и развлечений – <b>10&nbsp;000 м2</b></p>
+                            </div>
+                            <div class="links">
+                                <a href="#mapImage" class="azp-button">Детальнее</a>
+                                <a href="#">Скачать Pdf</a>
+                            </div>
+                        </div>
                     </div>
+
                     <div id="mapImage">
                         <div class="imgContainer">
                             <img class="mapImage" src="/sites/default/files/map.jpg" />

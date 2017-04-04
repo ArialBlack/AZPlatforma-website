@@ -91,11 +91,21 @@ global $user;
           <div class="">
               <div class="region region-content">
                 <section id="azpLocation">
-                    <div class="c text-center"><p class="text-center">Total square of “Art-zavod Platforma” - 120 000 м<sup>2</sup><br>
-                        Work / Business space (offices, coworking) - 25 000 м<sup>2</sup><br>
-                        Closed exhibition areas, shops, galleries, art spaces - 16000 м<sup>2</sup><br>
-                        Event spaces for festivals, conferences, hackathons, concerts and markets - 60 000 м<sup>2</sup><br>
-                        Space for entertainment and recreation - 10 000 м<sup>2</sup></p>
+
+                    <div class="azp-location">
+                        <div class="azp-location-wrap">
+                            <div class="c">
+                                <p>Total square of “Art-zavod Platforma” - 120 000 м<sup>2</sup><br>
+                                Work / Business space (offices, coworking) - 25 000 м<sup>2</sup><br>
+                                Closed exhibition areas, shops, galleries, art spaces - 16000 м<sup>2</sup><br>
+                                Event spaces for festivals, conferences, hackathons, concerts and markets - 60 000 м<sup>2</sup><br>
+                                Space for entertainment and recreation - 10 000 м<sup>2</sup></p>
+                            </div>
+                            <div class="links">
+                                <a href="#mapImage" class="azp-button">Details</a>
+                                <a href="#">Download Pdf</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="mapImage">
                         <div class="imgContainer">

@@ -225,6 +225,9 @@ p {
     color: #fff;
 }
 
+.azp-button {
+    .button(@azp-red);
+}
 
 ul li.translation_uk,
 ul li.translation_ru,
@@ -250,133 +253,6 @@ ul li.translation_en {
        top: 350px;
        margin-top: -350px;
    }
-}
-
-#footer {
-    height: @footer-height;
-    //position: absolute;
-   // bottom: 0;
-   // left: 0;
-   // width: 100%;
-    margin-top: 0;
-    //z-index: 2;
-    
-    .footer {
-        color: white;
-        border: none;
-        margin: 0 auto;
-        padding: 0;
-        padding-top: 30px;
-        
-        .col-1 {
-            text-align: left;
-        }
-        
-        .col-2 {
-            text-align: center;
-            a:first-child {
-                margin-right: 20px;
-            }
-            
-            @media(max-width:767px) {
-                span {
-                    display: none;
-                }
-            }
-        }
-        
-        .col-3 {
-            text-align: right;
-            float: right;
-            a {
-                margin-left: 10px;
-            }
-            
-            @media(max-width:767px) {
-                float: none;
-                text-align: center;
-            }
-        }
-        
-        i, a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        
-        
-         .btn {
-            text-transform: uppercase;
-            font-size: 18px;
-            height: 50px;
-            padding: 10px 40px;
-         }
-    }
-}
-        
-#azpLocation {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
-    .c {
-        .offset(margin-bottom);
-        
-        p {
-            text-align: center;
-        }
-    }
-        
-    #mapImage {
-       text-align: center;
-
-        
-        .mapImage {         
-            margin-left: auto; 
-            margin-right: auto;
-        }
-            
-            .imgContainer {
-                position: relative;
-                
-                    .mapDot {
-                        position: absolute;
-                        z-index: 1000;
-                        cursor: pointer; 
-            
-                        &.badge {
-                            background-color: black;
-                            font-size: 18px;
-                            border-radius: 18px; 
-                            min-width: 18px;
-                            padding: 3px 8px; 
-                            
-                            &:hover {
-                                background-color: @azp-orange;
-                            }
-                        }  
-                    } 
-        }
-    }
-}
-    
-#mapLegend {
-    .modal-body {
-        color: black;
-        padding: 30px 30px 60px 30px;
-        overflow: auto;
-        
-        .place {            
-            h3 {
-                color: black; 
-                text-transform: uppercase;
-            }
-            
-            p {
-                text-align: left;
-            } 
-            
-        }
-    }
 }
 
 .block {
