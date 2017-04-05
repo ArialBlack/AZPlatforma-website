@@ -180,6 +180,8 @@ function sizeMeUp() {
 
     eqBlockHeight ('.view-news-4-front .attachment .row', '.view-news-4-front .attachment .row .col');
     eqBlockHeight ('.view-id-events_4_main .attachment .row', '.view-id-events_4_main .attachment .row .col');
+    eqBlockHeight ('.block-views-events-calendar-block-2 .row', '.block-views-events-calendar-block-2 .row .col');
+    eqBlockHeight ('#block-views-events-calendar-block-2 .row', '#block-views-events-calendar-block-2 .row .col');
 
 
 }
@@ -233,8 +235,7 @@ function resizeToCover() {
 
     var $containerMargin = parseInt(jQuery('#navbar').css('margin-left'), 10);
     jQuery('.paragraphs-item-landing-header .field-name-field-long-text .field-items').css('padding-left', $containerMargin + 30 + 'px');
-    jQuery('.view-news-4-front .views-field-nothing').css('padding-left', $containerMargin + 30 + 'px');
-
+    jQuery('.view-news-4-front.view-id-news_4_front.view-display-id-block > .view-content .views-field-nothing').css('padding-left', $containerMargin + 30 + 'px');
 }
 
 /*function partners_colors () {
@@ -282,24 +283,6 @@ function detectOnWhite() {
       jQuery("body").addClass("on-white");
   }
   else jQuery("body").removeClass("on-white");
-}
-
-function hover_join_init() {
-        jQuery(".page-join .node").each(function (index) {                           
-            jQuery( "<div class='overlay_g'></div>" ).insertAfter(jQuery( this ).children(".content"));
-            jQuery( this ).addClass("node_"+index);
-        });
-}
-function hover_join() {
-    jQuery(".page-join .node").each(function (index) {                           
-        var tmp_w=jQuery( this ).parent(".col").width() + "px";       
-        var tmp_h=jQuery( this ).children(".content").height();
-        jQuery( this ).css("width",tmp_w);
-        jQuery( this ).children(".overlay_g").css({
-            "width": tmp_w,
-            "height": tmp_h
-        });     
-    });
 }
 
 jQuery(document).ready(function($) {
@@ -409,8 +392,6 @@ jQuery(document).ready(function($) {
     jQuery(".view .col:odd").addClass("odd");
     //hover_cards();
     //hover_text();
-    hover_join_init(); 
-    hover_join();
     imageDots();
     
     //delay_hover();
@@ -431,7 +412,6 @@ jQuery(window).resize(function () {
     sizeMeUp(); 
     //hover_cards(); 
    // hover_text();
-    hover_join();
     imageDots(); 
    // resizemapImage();  
 });  

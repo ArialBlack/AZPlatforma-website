@@ -9,6 +9,7 @@ libraries/
 !modules/
 modules/*
 !modules/custom/
+!modules/calendar/includes/calendar_plugin_style.inc
 
 node_modules/
 bower_components/

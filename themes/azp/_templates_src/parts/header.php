@@ -20,11 +20,11 @@
             <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
                 <div class="navbar-collapse collapse">
                     <nav role="navigation">
-                        <?php if (!empty($primary_nav)): ?>
-                            <?php print render($primary_nav); ?>
-                        <?php endif; ?>
                         <?php if (!empty($page['navigation'])): ?>
                             <?php print render($page['navigation']); ?>
+                        <?php endif; ?>
+                        <?php if (!empty($primary_nav)): ?>
+                            <?php print render($primary_nav); ?>
                         <?php endif; ?>
                     </nav>
                 </div>

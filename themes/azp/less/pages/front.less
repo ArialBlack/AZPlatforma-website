@@ -13,22 +13,6 @@
 
 
 .front {
-  /*#wrapper {
-    background: url(../images/front.jpg) no-repeat center center fixed;
-    .cover();
-
-    &:before {
-      content: '';
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-  }*/
-
   .paragraphs-item-landing-header {
     > .content {
       position: relative;
@@ -111,157 +95,6 @@
     }
   }
 
-  .view-id-events_4_main {
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    &.view-display-id-block {
-      .container();
-      .XLcontainer();
-
-    }
-
-    > .view-content {
-      > .views-row {
-        @media (min-width: @screen-md-min) {
-          display: flex;
-          align-items: center;
-        }
-
-        @media (min-width: @screen-md-min) {
-          .views-field-field-image,
-          .views-field-nothing {
-            .make-sm-column(6);
-          }
-        }
-
-        .views-field-nothing {
-          padding-left: 100% / 12;
-          position: relative;
-
-          @media (min-width: @screen-md-min) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &:after {
-              content: '';
-              display: block;
-              position: absolute;
-              height: 100%;
-              width: 50%;
-              z-index: 99;
-              top: 0;
-              right: 0;
-              background: url('../images/events-right-overlay.png') no-repeat center right;
-              background-size: contain;
-            }
-          }
-
-          .views-field-field-date {
-            padding-bottom: 30px;
-            color: @azp-red;
-          }
-
-          .views-field-title {
-            margin-bottom: 30px;
-
-            a {
-              color: @title;
-              font-size: 24px;
-              text-transform: uppercase;
-              font-weight: bold;
-            }
-          }
-
-          .views-field-body {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-          }
-
-          .views-field-view-node {
-            position: absolute;
-            bottom: 0;
-
-            a {
-              .button(@azp-red);
-            }
-          }
-        }
-      }
-    }
-
-    .attachment {
-      .col {
-        position: relative;
-
-        /*
-        @media (min-width: @screen-md-min) {
-          &:before,
-          &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 33%;
-            width: 100%;
-            z-index: 99;
-            top: 0;
-            left: 0;
-            background: url('../images/events-top-overlay.png') no-repeat center top;
-            background-size: contain;
-          }
-
-          &:after {
-            transform: rotate(180deg);
-            top: auto;
-            bottom: 0;
-          }
-        }
-        */
-      }
-
-      .views-field-field-date {
-        margin-top: 20px;
-        padding-bottom: 20px;
-        color: @azp-red;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .views-field-title {
-        margin-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-        a {
-          color: @title;
-          font-size: 24px;
-          text-transform: uppercase;
-          font-weight: bold;
-        }
-      }
-
-      .views-field-body {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .views-field-view-node {
-        position: absolute;
-        bottom: 0;
-        margin-top: 40px;
-        text-align: center;
-        width: calc(~"100% - 100px");
-
-        a {
-          .button(@azp-red);
-        }
-      }
-    }
-  }
-
   .view-news-4-front {
     > .view-content {
       margin-bottom: 100px;
@@ -283,9 +116,44 @@
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
+          padding-right: 40px;
+          width: 50%;
+
+          .views-field-title {
+            position: relative;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 60px;
+            padding: 60px 40px;
+
+            @media (min-width: @screen-md-min) {
+              &:before,
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 33%;
+                width: 100%;
+                z-index: 99;
+                top: -20px;
+                left: 0;
+                background: url('../images/header-top-overlay.png') no-repeat center top;
+                background-size: cover;
+                z-index: 2;
+              }
+
+              &:after {
+                transform: rotate(180deg);
+                top: auto;
+                bottom: -20px;
+              }
+            }
+          }
 
           a {
-            color: white;
+            .button(@azp-red);
           }
         }
       }
@@ -302,14 +170,12 @@
       }
 
       .views-field-title {
+        margin-top: 20px;
         margin-bottom: 40px;
-
-        a {
-          color: @title;
-          font-size: 24px;
-          text-transform: uppercase;
-          font-weight: bold;
-        }
+        color: @title;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
       }
 
       .views-field-body {
@@ -317,7 +183,7 @@
         padding-bottom: 40px;
       }
 
-      .views-field-view-node {
+      .views-field-nothing {
         position: absolute;
         bottom: 0;
         margin-top: 40px;

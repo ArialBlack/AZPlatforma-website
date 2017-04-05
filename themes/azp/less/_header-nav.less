@@ -9,7 +9,6 @@ body.map {
   }
 }
 
-
 .navbar.container {
   margin-top: 0;
 }
@@ -18,5 +17,73 @@ body.map {
   border-radius: 0;
   background: none;
   border: none;
+
+  .navbar-nav > li > a {
+    color: white;
+    border-bottom: transparent 3px solid;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
 }
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background: none;
+  border-bottom-color: @azp-red;
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav {
+    float: right;
+    margin-top: 23px;
+
+    > li > a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .region-navigation {
+    float: right;
+  }
+}
+
+#block-locale-language {
+  padding-top: 26px;
+  margin-left: 100px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      &.active {
+        display: none;
+      }
+
+      a {
+        color: @azp-red;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: @azp-red 1px solid;
+        border-radius: 100%;
+        font-weight: bold;
+
+        &:hover {
+          background-color: @azp-red;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 
