@@ -10,37 +10,48 @@
   }
 }
 
-
-
 .front {
   .paragraphs-item-landing-header {
+    background: url(../images/front.jpg) no-repeat center center fixed !important;
+    background-size: cover;
+
     > .content {
       position: relative;
+
 
       &:after {
         content: '';
         display: block;
-        width: 50%;
+        width: 100%;
         height: 100%;
         position: absolute;
         background: rgba(0,0,0,0.45);
         left: 0;
         top: 0;
         z-index: 1;
+
+        @media (min-width: @screen-md-min) {
+          width: 50%;
+        }
       }
 
       .field-name-field-long-text {
-        width: 50%;
-        padding-right: 40px;
+        width: 100%;
+        padding-right: 30px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         color: white;
-        font-size: 30px;
+        .rft(20,30);
         line-height: 46px;
         .letter-spacing(30, 60);
         text-transform: uppercase;
         z-index: 2;
+
+        @media (min-width: @screen-md-min) {
+          width: 50%;
+          padding-right: 40px;
+        }
 
         a {
           .button(@azp-red);
@@ -97,7 +108,11 @@
 
   .view-news-4-front {
     > .view-content {
-      margin-bottom: 100px;
+      margin-bottom: 40px;
+
+      @media (min-width: @screen-md-min) {
+        margin-bottom: 100px;
+      }
 
       .views-row {
         position: relative;
@@ -106,27 +121,43 @@
           content: '';
           display: block;
           position: absolute;
-          width: 50%;
+          width: 100%;
           height: 100%;
           top: 0;
           background: rgba(0,0,0,0.45);
+
+          @media (min-width: @screen-md-min) {
+            width: 50%;
+          }
         }
 
         .views-field-nothing {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          padding-right: 40px;
-          width: 50%;
+          padding-bottom: 40px;
+          width: 100%;
+
+          @media (min-width: @screen-md-min) {
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-right: 40px;
+            padding-bottom: 0;
+          }
 
           .views-field-title {
             position: relative;
-            font-size: 24px;
+            .rft(16, 24);
             text-transform: uppercase;
             font-weight: bold;
             color: white;
-            margin-bottom: 60px;
-            padding: 60px 40px;
+            margin-bottom: 10px;
+            padding: 20px 0 10px 0;
+            line-height: 160%;
+
+            @media (min-width: @screen-md-min) {
+              margin-bottom: 60px;
+              padding: 60px 40px;
+            }
 
             @media (min-width: @screen-md-min) {
               &:before,
@@ -154,6 +185,7 @@
 
           a {
             .button(@azp-red);
+            position: relative;
           }
         }
       }
@@ -165,15 +197,20 @@
 
       .col {
         position: relative;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (min-width: @screen-md-min) {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
       }
 
       .views-field-title {
         margin-top: 20px;
         margin-bottom: 40px;
         color: @title;
-        font-size: 24px;
+        .rft(20, 24);
         text-transform: uppercase;
         font-weight: bold;
       }
@@ -185,8 +222,12 @@
 
       .views-field-nothing {
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
         margin-top: 40px;
+
+        @media (min-width: @screen-md-min) {
+          bottom: 0;
+        }
 
         a {
           .button(@azp-red);
@@ -200,15 +241,18 @@
   .bean-map {
     background: url('../images/contacts-front.jpg') no-repeat center center;
     background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: white;
+
+    @media (min-width: @screen-md-min) {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
 
     > .content {
       .container();
       .XLcontainer();
-      display: flex;
-      align-items: center;
       position: relative;
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -220,6 +264,7 @@
 
         &:before,
         &:after {
+          content: '';
           display: block;
           position: absolute;
           height: 33%;
@@ -241,6 +286,14 @@
 
     .field-name-field-map {
       .make-sm-column(6);
+
+      iframe {
+        height: 300px;
+
+        @media (min-width: @screen-md-min) {
+          height: 550px;
+        }
+      }
     }
 
     .field-name-field-contacts {
@@ -255,8 +308,12 @@
     .field-name-field-social {
       .make-sm-column(1);
       padding-right: 0 !important;
-      text-align: right;
+
       font-size: 24px;
+
+      @media (min-width: @screen-md-min) {
+        text-align: right;
+      }
 
       ul {
         margin: 0;
@@ -266,6 +323,11 @@
           list-style: none;
           margin-bottom: 10px;
           margin-top: 10px;
+          display: inline-block;
+
+          @media (min-width: @screen-md-min) {
+            display: block;
+          }
 
           a {
             color: @azp-red;
@@ -275,3 +337,111 @@
     }
   }
 }
+
+.pst() {
+  padding-left: 15px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: bold;
+  display: block;
+}
+
+.i18n-ru {
+  .front-top-event-block{
+    &:before {
+      content: 'Ближайшие ивенты';
+      .pst();
+    }
+  }
+
+  .front-top-news-block {
+    &:before {
+      content: 'Новости';
+      .container();
+      .XLcontainer();
+      .pst();
+    }
+  }
+
+  &.about {
+    .paragraphs-item-text-with-image-and-link.paragraphs-item-2 {
+      &:before {
+        content: 'Экосистема';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-7 {
+      &:before {
+        content: 'Контакти и команда';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-views-block.paragraphs-item-9 {
+      &:before {
+        content: 'Партнеры';
+        .pst();
+        .container();
+        .XLcontainer();
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+///
+.i18n-en {
+  .front-top-event-block{
+    &:before {
+      content: 'Upcoming events';
+      .pst();
+    }
+  }
+
+  .front-top-news-block {
+    &:before {
+      content: 'News';
+      .container();
+      .XLcontainer();
+      .pst();
+    }
+  }
+
+  &.about {
+    .paragraphs-item-text-with-image-and-link.paragraphs-item-27 {
+      &:before {
+        content: 'Ecosystem';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-32 {
+      &:before {
+        content: 'Contacts & team';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-views-block.paragraphs-item-34 {
+      &:before {
+        content: 'Partners';
+        .pst();
+        .container();
+        .XLcontainer();
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+

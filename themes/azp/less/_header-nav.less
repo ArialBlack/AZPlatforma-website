@@ -24,6 +24,17 @@ body.map {
     text-transform: uppercase;
     font-size: 14px;
   }
+
+  .navbar-collapse {
+    background: #101010;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+    #block-locale-language {
+      margin-left: 0;
+    }
+  }
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -48,6 +59,16 @@ body.map {
 
   .region-navigation {
     float: right;
+  }
+}
+
+.events {
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black;
+  }
+
+  .navbar-inverse .navbar-collapse.collapse.in  li  a {
+    color: white;
   }
 }
 
@@ -83,6 +104,20 @@ body.map {
         }
       }
     }
+  }
+}
+
+.admin-menu {
+  .navbar-inverse {
+    .navbar-nav > li > a {
+      color: black !important;
+    }
+  }
+}
+
+.logo {
+  img {
+    max-width: 220px;
   }
 }
 

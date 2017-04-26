@@ -57,7 +57,6 @@ function touchCarousel() {
 }
 
 function changeSomePath() {
-    
     $link = jQuery('.what-we-do .view-we-have a[href$="coworking"]');
     if ($link.length > 0 ) {
         $link.attr("href", "http://coworkingplatforma.com/").attr('target','_blank');
@@ -66,8 +65,6 @@ function changeSomePath() {
     jQuery('.tabs--primary.nav.nav-tabs li a[href$="ulogin"]').parents("li").addClass("ulogin-item-menu");
 
     imgsrc2 = jQuery("#block-views-news-block-2 .views-row-1 img").attr("src");
-
-    //imgsrc3 = jQuery("#block-views-news-block-2 .views-row-3 img").attr("src");
     
     jQuery("#block-views-news-block-2 .views-row-1 .views-field-img").css({'background-image': 'url(' + imgsrc2 + ')',});
    // jQuery("#block-views-news-block-2 .views-row-3 .views-field-img").css({'background-image': 'url(' + imgsrc3 + ')',});
@@ -78,7 +75,6 @@ function changeSomePath() {
     $headerParagraph.each(function() {
         var $this = jQuery(this),
             $url = $this.data('img');
-        //console.log($url);
         $this.addClass('cover-image').css('background-image', 'url("' + $url + '")');
     });
 
@@ -87,11 +83,7 @@ function changeSomePath() {
             $url = $this.data('img');
         $this.css('background-image', 'url("' + $url + '")');
     });
-
-
 }
-
- 
 
 function wrapTablesResponsive() {
     jQuery('table').each(function() {
@@ -101,21 +93,6 @@ function wrapTablesResponsive() {
         }
     });
 }
-    
-
-function newsHideImgIfYoutube() {
-    jQuery(".views-field-nothing a").each(function (index) {
-        $this = jQuery(this);
-        $y = $this.find(".views-field-field-youtube img").length;
-        $v = $this.find(".views-field-field-vimeo img").length;
-        // console.log($y, $v);  
-        
-        if($y !=0 || $v !=0) {
-         //   $this.find(".views-field-field-image").css("display", "none");
-        }
-    });
-}
-
 
 function showWebformComponents() {
     jQuery(".node-type-webform.join .webform-client-form a.btn").on('click', function(e) {
@@ -146,11 +123,9 @@ function calendarCategoriesDots() {
             last = str.substring(str.lastIndexOf("/") + 1, str.length); 
             $this.parents("h3").addClass(last).addClass("our-event");                
     });
-    
 }
 
 function imageDots() {
-            
             jQuery('.mapDot').each(function() {
                 
                 var oiw=1920;
@@ -170,63 +145,51 @@ function imageDots() {
 }
 
  
-function sizeMeUp() {  
-   // jQuery(".navbar-collapse").css("height", getWindowHeight());
-    
-    bigNewsHeight = jQuery("#block-views-news-block-2 .views-row-1 .views-field-nothing").height();
+function sizeMeUp() {
+    //bigNewsHeight = jQuery("#block-views-news-block-2 .views-row-1 .views-field-nothing").height();
 
-    newHeight = (bigNewsHeight / 2 ) - 20; 
-    jQuery("#block-views-news-block-2 .views-row-2 .views-field-img, #block-views-news-block-2 .views-row-3 .views-field-img").css("height", newHeight+"px");
+    //newHeight = (bigNewsHeight / 2 ) - 20;
+    //jQuery("#block-views-news-block-2 .views-row-2 .views-field-img, #block-views-news-block-2 .views-row-3 .views-field-img").css("height", newHeight+"px");
 
     eqBlockHeight ('.view-news-4-front .attachment .row', '.view-news-4-front .attachment .row .col');
     eqBlockHeight ('.view-id-events_4_main .attachment .row', '.view-id-events_4_main .attachment .row .col');
     eqBlockHeight ('.block-views-events-calendar-block-2 .row', '.block-views-events-calendar-block-2 .row .col');
     eqBlockHeight ('#block-views-events-calendar-block-2 .row', '#block-views-events-calendar-block-2 .row .col');
-
-
 }
 
-   var min_w = 300; // minimum video width allowed
+    var min_w = 300; // minimum video width allowed
     var vid_w_orig;  // original video dimensions
     var vid_h_orig;
     
-function bg() { 
-     //jQuery(".no-touch body.front ").tubular({videoId: 'C8hyDLjTGy8'});
-    
-    jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4"type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm"type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv"type="video/webm" /></video>');
-    
- 
-    
+function bg() {
+    jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4" type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm" type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv" type="video/webm" /></video>');
     vid_w_orig = parseInt(jQuery('video').attr('width'));
     vid_h_orig = parseInt(jQuery(' video').attr('height'));
-      
-        
+
     jQuery(window).resize(function () { resizeToCover(); });
     jQuery(window).trigger('resize');
-
 }
 
 function resizeToCover() {
     var $wh = jQuery(window).height();
-    // set the video viewport to the window size
     jQuery('#video-background').width(jQuery(window).width());
     jQuery('#video-background').height($wh);
 
     jQuery('.paragraphs-item-landing-header').height($wh);
-    jQuery('.view-display-id-block_2 .views-field-img').height($wh);
-    //jQuery('.paragraphs-item-landing-header').next('div').css('margin-top', $wh+'px');
-    //jQuery('.paragraphs-item-landing-header').parent('.field-item').next().css('margin-top', $wh + 'px')
-    //jQuery('#page-header').height(jQuery(window).height());
 
-    // use largest scale factor of horizontal/vertical
+    if(jQuery(window).width() < 767) {
+        jQuery('.view-display-id-block_2 .views-field-img').height($wh + jQuery('.news .header-container').height() + 110);
+    } else {
+        jQuery('.view-display-id-block_2 .views-field-img').height($wh);
+    }
+
+
     var scale_h = jQuery(window).width() / vid_w_orig;
     var scale_v = jQuery(window).height() / vid_h_orig;
     var scale = scale_h > scale_v ? scale_h : scale_v;
 
-    // don't allow scaled width < minimum video width
     if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
 
-    // now scale the video
     jQuery('video').width(scale * vid_w_orig);
     jQuery('video').height(scale * vid_h_orig);
     // and center it by scrolling the video viewport
@@ -236,15 +199,9 @@ function resizeToCover() {
     var $containerMargin = parseInt(jQuery('#navbar').css('margin-left'), 10);
     jQuery('.paragraphs-item-landing-header .field-name-field-long-text .field-items').css('padding-left', $containerMargin + 30 + 'px');
     jQuery('.view-news-4-front.view-id-news_4_front.view-display-id-block > .view-content .views-field-nothing').css('padding-left', $containerMargin + 30 + 'px');
-}
 
-/*function partners_colors () {
-    var h3_counter=0;
-    jQuery( ".view-partners .view-content > *" ).each(function( index ) {
-        if (jQuery( this ).is("h3")) {h3_counter++;}
-        jQuery( this ).addClass("rowNum-"+h3_counter);
-    });
-}*/
+    //jQuery('.news #block-views-news-block-2 .views-field-nothing .field-content .text-inner').css('top', jQuery('.news .header-container').height());
+}
 
 function eqBlockHeight (container, block_el, mode) {
             var $list = jQuery(container);
@@ -285,18 +242,30 @@ function detectOnWhite() {
   else jQuery("body").removeClass("on-white");
 }
 
-jQuery(document).ready(function($) {
+function _addCorners(userselector, type) {
+    var $selector = jQuery(userselector);
+    $selector.prepend('<span class="azp-corners azp-corners-' + type + ' azp-corner-top-left"></span><span class="azp-corners azp-corners-' + type + ' azp-corner-top-right"></span><span class="azp-corners azp-corners-' + type + ' azp-corner-bottom-left"></span> <span class="azp-corners azp-corners-' + type + ' azp-corner-bottom-right"></span>');
+    $selector.addClass('azp-corners-container azp-corners-container-' + type);
+}
 
+function addCorners() {
+    _addCorners('#block-views-news-block-2 .views-field-nothing .field-content .text-inner .text-wrap-inner .text-wrap .text-container .text-container-content', 'single');
+    _addCorners('.azp-location-wrap .c', 'single');
+    _addCorners('.not-front.about .paragraphs-item-p-teaser > .content', 'single');
+
+    _addCorners('.not-front.about .paragraphs-item-landing-header > .content > .field > .field-items > .field-item', 'multiple');
+    _addCorners('.events .view-id-events_calendar.view-display-id-block_1 .promo-event-inner', 'multiple');
+}
+
+
+jQuery(document).ready(function($) {
+    addCorners();
     changeSomePath();  
     detectOnWhite();
     showWebformComponents();
     calendarCategoriesDots();
-    //newsHideImgIfYoutube();
     touchCarousel();
-    
-    
-    
-    
+
     var onMapMouseleaveHandler = function (event) {
     var that = jQuery(this);
 
@@ -320,31 +289,6 @@ jQuery(document).ready(function($) {
 
   // Enable map zooming with mouse scroll when the user clicks the map
   jQuery('.maps.embed-container').on('click', onMapClickHandler);
-  
-     
-  
-  
-    
-    /*$('body').on('click', function (e) {
-        $this = jQuery(".navbar-toggle");
-        if (jQuery("body").hasClass("menu-opened")) {
-            if (!$this.is(e.target) && $this.has(e.target).length === 0 && $('.navbar-nav').has(e.target).length === 0) {
-                jQuery(".navbar-toggle").click();   
-            }
-        }
-    });
-    
-       
-    jQuery('.navbar-toggle').on('click', function(e) {
-        jQuery('body').toggleClass("menu-opened"); //you can list several class names  
-        e.preventDefault();
-        
-        $menu = jQuery("ul.navbar-nav");
-        $headerH=jQuery(".navbar-header").height();
-        if ($menu.height() > getWindowHeight() - $headerH) {  
-            $menu.toggleClass("overflow");  
-        }  
-    });  */
     
     jQuery(".view-events").on('views_load_more.new_content', function(event, content) {
         console.log("e");
@@ -359,70 +303,35 @@ jQuery(document).ready(function($) {
         newsHideImgIfYoutube(); 
         jQuery(".view .col:even").addClass("even"); 
         jQuery(".view .col:odd").addClass("odd"); 
-    }); 
-    
-  
-   
-   jQuery(".join.rent .webform-client-form").appendTo(".join.rent .side-blocks .sblock-2 div");
-   
-  /* jQuery(".front .region-content").addClass("animated");
-   var hoverTimeout;
-   jQuery(".front .logo").hover(
-        function() {
-            clearTimeout(hoverTimeout);
-            jQuery(".front .region-content").removeClass("zoomOut").addClass("zoomIn").css("opacity",1);   
-        }, function() {
-            hoverTimeout = setTimeout(function() {
-                jQuery(".front .region-content").removeClass("zoomIn").addClass("zoomOut").css("opacity",0);
-            }, 3000);
-        }
-    );*/
-    
-    
-    
-     
-    
+    });
     
     sizeMeUp();
     bg();
-    //partners_colors();  
-    wrapTablesResponsive();   
-    //eqBlockHeight(".view-partners .view-content", ".views-row", 1); 
+    wrapTablesResponsive();
     jQuery(".view .col:even").addClass("even");
     jQuery(".view .col:odd").addClass("odd");
-    //hover_cards();
-    //hover_text();
     imageDots();
-    
-    //delay_hover();
-    //resizemapImage();
-    //mypopovers();  
-           
-    //jQuery(".view-team .views-row .wtitle").fitText(1, { minFontSize: '10px', maxFontSize: '32px' });
-    
-
 }); /*---------doc ready */
 
 
 jQuery(window).resize(function () {
     detectOnWhite();
-    
-    
-    
-    sizeMeUp(); 
-    //hover_cards(); 
-   // hover_text();
-    imageDots(); 
-   // resizemapImage();  
+    sizeMeUp();
+    imageDots();
 });  
 
 jQuery(window).scroll(function() { 
     detectOnWhite();
+
+    if (jQuery(this).scrollTop() === 300) {
+        jQuery('.paragraphs-item-landing-header').addClass('scrolled');
+    }
 });
 
 jQuery(window).load(function() {
      sizeMeUp();
 });
+
 
 
 

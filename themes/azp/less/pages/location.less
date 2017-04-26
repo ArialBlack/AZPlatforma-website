@@ -1,9 +1,20 @@
 .azp-location {
   background: url('../images/about.jpg') no-repeat center center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   position: relative;
+
+  @media (min-width: @screen-sm-min) {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  p {
+    b {
+      .rft(20, 26);
+    }
+  }
 
   &:before {
     width: 100%;
@@ -25,27 +36,8 @@
     .container();
     .XLcontainer();
     z-index: 2;
-
-    @media (min-width: @screen-md-min) {
-      &:before,
-      &:after {
-        display: block;
-        position: absolute;
-        height: 33%;
-        width: 100%;
-        z-index: 99;
-        top: -20px;
-        left: 0;
-        background: url('../images/intro-top-overlay.png') no-repeat center top;
-        background-size: cover;
-      }
-
-      &:after {
-        transform: rotate(180deg);
-        top: auto;
-        bottom: -20px;
-      }
-    }
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .links {
@@ -53,13 +45,25 @@
     .XLcontainer();
     position: relative;
     z-index: 2;
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+      margin-top: 40px;
+      padding-top: 40px;
+    }
   }
 
   a {
     color: white;
     margin-right: 40px;
+
+    @media (max-width: @screen-xs-max) {
+      display: block;
+      margin-bottom: 20px;
+    }
   }
 }
 

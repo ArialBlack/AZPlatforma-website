@@ -7,15 +7,19 @@
 
   > .content {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
     left: 0;
     top: 0;
     color: white;
-    font-size: 30px;
+    .rft(20,30);
     line-height: 46px;
     .letter-spacing(30, 60);
     text-transform: uppercase;
+
+    @media (min-width: @screen-md-min) {
+      width: 50%;
+    }
 
     > .field {
       width: 100%;
@@ -30,31 +34,8 @@
         padding-right: 40px;
 
         > .field-item {
-          position: relative;
-          padding: 60px 0;
-          padding-left: 30px;
-
-          @media (min-width: @screen-md-min) {
-            &:before,
-            &:after {
-              content: '';
-              display: block;
-              position: absolute;
-              height: 33%;
-              width: 100%;
-              z-index: 99;
-              top: -20px;
-              left: 0;
-              background: url('../images/header-top-overlay.png') no-repeat center top;
-              background-size: cover;
-            }
-
-            &:after {
-              transform: rotate(180deg);
-              top: auto;
-              bottom: -20px;
-            }
-          }
+          padding: 100px 0;
+          padding-left: 40px;
         }
       }
     }
@@ -71,25 +52,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      &:before,
-      &:after {
-        display: block;
-        position: absolute;
-        height: 33%;
-        width: 100%;
-        z-index: 99;
-        top: -20px;
-        left: 0;
-        background: url('../images/intro-top-overlay.png') no-repeat center top;
-        background-size: contain;
-      }
-
-      &:after {
-        transform: rotate(180deg);
-        top: auto;
-        bottom: -20px;
-      }
     }
   }
 
@@ -181,6 +143,7 @@
       line-height: 36px;
       .title();
       margin-bottom:  40px;
+      min-height: 72px;
     }
 
     .field-name-field-title {
@@ -209,7 +172,11 @@
     }
 
     .views-field-nothing {
-      padding: 60px;
+      padding: 20px;
+
+      @media (min-width: @screen-md-min) {
+        padding: 60px;
+      }
     }
   }
 }

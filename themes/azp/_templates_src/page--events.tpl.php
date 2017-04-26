@@ -70,6 +70,16 @@
  * @see template_process()
  * @see html.tpl.php
  *
+ *
+ * $parameters = drupal_get_query_parameters();
+if(isset($parameters['month'])) {
+return date('Y-m', $parameters['month']);
+} else {
+return date('Y-m');
+}
+
+ *
+ *
  * @ingroup themeable
  */
 global $user;

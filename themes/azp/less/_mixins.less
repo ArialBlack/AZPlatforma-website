@@ -170,3 +170,73 @@ P is the resulted value in "px" to use in CSS*/
     margin-right: auto;
 }
 
+@basefontsize: 18;
+
+.font-size(@mysizeValue) {
+    @sizeValue: @mysizeValue / @basefontsize;
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}
+
+.line-height(@mysizeValue) {
+    @sizeValue: @mysizeValue / @basefontsize;
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    line-height: ~"@{pxValue}px";
+    line-height: ~"@{remValue}rem";
+}
+
+.rft(@mysizeValue-min, @mysizeValue-max) {
+
+    @delta: @mysizeValue-max - @mysizeValue-min;
+    @step: @delta / 3;
+
+    .font-size(@mysizeValue-min);
+
+    @media (min-width: @screen-sm-min) {
+        .font-size(@mysizeValue-max - @step * 2);
+    }
+    @media (min-width: @screen-md-min) {
+        .font-size(@mysizeValue-max - @step);
+    }
+    @media (min-width: @screen-lg-min) {
+        .font-size(@mysizeValue-max);
+    }
+}
+
+.rlh(@mysizeValue-min, @mysizeValue-max) {
+    @delta: @mysizeValue-max - @mysizeValue-min;
+    @step: @delta / 3;
+
+    @sizeValue: @mysizeValue-min / @basefontsize;
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    line-height: ~"@{pxValue}px";
+    line-height: ~"@{remValue}rem";
+
+    @media (min-width: @screen-sm-min) {
+        @sizeValue: (@mysizeValue-max - @step * 2) / @basefontsize;
+        @remValue: @sizeValue;
+        @pxValue: (@sizeValue * 10);
+        line-height: ~"@{pxValue}px";
+        line-height: ~"@{remValue}rem";
+    }
+    @media (min-width: @screen-md-min) {
+        @sizeValue: (@mysizeValue-max - @step) / @basefontsize;
+        @remValue: @sizeValue;
+        @pxValue: (@sizeValue * 10);
+        line-height: ~"@{pxValue}px";
+        line-height: ~"@{remValue}rem";
+
+    }
+    @media (min-width: @screen-lg-min) {
+        @sizeValue: @mysizeValue-max / @basefontsize;
+        @remValue: @sizeValue;
+        @pxValue: (@sizeValue * 10);
+        line-height: ~"@{pxValue}px";
+        line-height: ~"@{remValue}rem";
+    }
+}
+

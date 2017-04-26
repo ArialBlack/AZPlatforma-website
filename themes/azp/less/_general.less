@@ -106,6 +106,8 @@ ul {
 
 p {
     margin-bottom: 20px;
+    letter-spacing: normal;
+    line-height: 160%;
 }
 
 .html .btn,
@@ -121,11 +123,11 @@ p {
 }
 
 .btn-danger {
-    .btn-outline(@azp-red);
+    .button(@azp-red);
 }
 
 .btn-info {
-    .btn-outline(@azp-blue);
+    .button(@azp-red);
 }
 
 .masonry-item { 
@@ -261,18 +263,12 @@ ul li.translation_en {
 
 .block {
     .block-title {
-        font-size: 26px;
+        font-size: 20px;
         color: @fade-title;
         margin-bottom: 40px;
         padding-bottom: 10px;
-        
-        &:after {
-            content: '';
-            height: 2px;
-            width: 80px;
-            background: @fade-title;
-            display: block;
-        }
+        text-transform: uppercase;
+        font-weight: bold;
     }
 }
 
@@ -397,5 +393,92 @@ ul.tabs--primary.nav.nav-tabs {
 
 .node-unpublished {
     background: #e4b9b9;
+}
+
+@media (min-width: @screen-md-min) {
+    .azp-corners-container {
+        position: relative;
+    }
+
+    .azp-corners {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 30%;
+        z-index: -1;
+
+        &.azp-corners-single {
+            border-width: 3px;
+            border-style: solid;
+            border-color: @azp-red;
+        }
+
+        &.azp-corner-top-left {
+            border-right: none;
+            border-bottom: none;
+            left: 0;
+            top: 0;
+        }
+
+        &.azp-corner-top-right {
+            border-left: none;
+            border-bottom: none;
+            right: 0;
+            top: 0;
+        }
+
+        &.azp-corner-bottom-left {
+            border-right: none;
+            border-top: none;
+            left: 0;
+            bottom: 0;
+        }
+
+        &.azp-corner-bottom-right {
+            border-left: none;
+            border-top: none;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &.azp-corners-container-multiple {
+        .azp-corners-multiple {
+            background-position: center center;
+            background-repeat: repeat;
+            background-size: contain;
+            display: inline-block;
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 30%;
+            z-index: -1;
+        }
+
+        .azp-corner-top-left {
+            width: 187px;
+            height: 140px;
+            background-image: url('../images/m-c-l.png');
+        }
+
+        .azp-corner-top-right {
+            width: 189px;
+            height: 140px;
+            background-image: url('../images/m-c-r.png');
+        }
+
+        .azp-corner-bottom-left {
+            width: 187px;
+            height: 144px;
+            background-image: url('../images/m-c-b-l.png');
+        }
+
+        .azp-corner-bottom-right {
+            width: 189px;
+            height: 144px;
+            background-image: url('../images/m-c-b-r.png');
+        }
+    }
 }
 

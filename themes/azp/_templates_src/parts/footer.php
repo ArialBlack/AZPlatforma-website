@@ -5,7 +5,7 @@
         </div>
         <div class="col col-sm-4 col-2">
 
-            <a href="/<?php print $lang; ?>/contacts"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
+            <a href="/<?php print $lang; ?>/map"><i class="fa fa-map-marker"></i> <span><?php print t("Map"); ?></span></a>
             <a href="/<?php print $lang; ?>/events"><i class="fa fa-calendar"></i> <span><?php print t("Calendar"); ?></span></a>
         </div>
         <div class="col col-sm-4 col-3">

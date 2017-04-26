@@ -1,5 +1,5 @@
 .img-tag {
-    float: right;
+    //float: right;
     
     img {
         max-width: 127px;
@@ -21,7 +21,6 @@ body.jquery-ajax-load {
 .page-node .node-type-event,
 .modal-dialog.container,
 body.jquery-ajax-load {
-    
         .content {
             padding-bottom: 40px;
         }
@@ -30,18 +29,18 @@ body.jquery-ajax-load {
         .field-type-taxonomy-term-reference,
         .submitted,
         .field-name-field-fb-event,
-        .node-title,
         .ya-share2,
-        .img-tag,
+        .node-title,
         .carousel-container,
-        .field-name-field-date,
         .field-name-field-vimeo {
-            padding: 20px 80px 0 80px;
+            padding: 20px 80px 20px 80px;
+        }
+
+        .img-tag {
+          padding: 20px 80px 80px 80px;
         }
         
-        .ya-share2 {
-            padding-bottom: 80px;
-        }
+        .ya-share2 {}
         
         .views-field-field-youtube,
         .views-field-field-vimeo {
@@ -65,19 +64,6 @@ body.jquery-ajax-load {
             padding-bottom: 0; 
         }
         
-        .field-name-field-date {
-            padding: 40px 80px 0 80px;  
-            font-size:16px;
-            text-align: left;
-            font-weight: normal; 
-        }
-        
-        .field-name-field-date span {
-            color: #e35825;
-            font-size: 30px;
-            font-weight: normal; 
-        }
-        
         .field-name-field-fb-event {
             font-size: 18px;
             text-decoration: underline;
@@ -91,9 +77,7 @@ body.jquery-ajax-load {
             .node-title,
             .ya-share2,
             .img-tag,
-            .field-name-field-date,
-            .node .field-name-body,
-            .field-name-field-date   {
+            .node .field-name-body {
                 padding: 10px 20px 0 20px;  
             }
             
@@ -198,5 +182,21 @@ body.map {
         color: white;
         text-transform: lowercase;
     }
+}
+
+.modal-body {
+  .node-place.node-teaser {
+    .field-name-body {
+      a.btn {
+        .button();
+      }
+
+      .collapse {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 

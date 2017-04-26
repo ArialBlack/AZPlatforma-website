@@ -103,7 +103,7 @@ global $user;
                             </div>
                             <div class="links">
                                 <a href="#mapImage" class="azp-button">Details</a>
-                                <a href="#">Download Pdf</a>
+                                <a href="/sites/default/files/Loft_presentation_mini.pdf" target="_blank">Download Pdf</a>
                             </div>
                         </div>
                     </div>
@@ -117,13 +117,17 @@ global $user;
                             <a href="#" data-toggle="modal" data-target="#modalPlace33"><span data-x="1365" data-y="84" class="mapDot badge">3.3</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace34"><span data-x="1477" data-y="412" class="mapDot badge">3.4</span></a>
                                        
-                            <a href="#" data-toggle="modal" data-target="#modalPlace4"><span data-x="1218" data-y="475" class="mapDot badge">4</span></a>
+                            <a href="#" data-toggle="modal" data-target="#modalPlace4"><span data-x="1218" data-y="475" class="mapDot badge">ART-DOM</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace6"><span data-x="994" data-y="404" class="mapDot badge">6</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace7"><span data-x="1005" data-y="300" class="mapDot badge">7</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace8"><span data-x="1651" data-y="499" class="mapDot badge">8</span></a>
+                            <a href="#" data-toggle="modal" data-target="#modalPlace8"><span data-x="1500" data-y="588" class="mapDot badge">Coworking «Platforma»</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace91"><span data-x="1186" data-y="202" class="mapDot badge">9.1</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace92"><span data-x="1312" data-y="153" class="mapDot badge">9.2</span></a>
                             <a href="#" data-toggle="modal" data-target="#modalPlace21"><span data-x="799" data-y="64" class="mapDot badge">21</span></a>
+
+                            <a href="#" data-toggle="modal" data-target="#modalPlaceLB"><span data-x="633" data-y="123" class="mapDot badge">B</span></a>
+
+                            <a href="#" data-toggle="modal" data-target="#modalPlaceLoft"><span data-x="1190" data-y="615" class="mapDot badge">LOFT</span></a>
                         </div>
                     </div>
                 </section> 
@@ -299,7 +303,7 @@ global $user;
                 </div>
                 <div class="modal-body">
                     <div class="place place6">
-                        <?php $nnode = node_load(566); ?>
+                        <?php $nnode = node_load(1085); ?>
                         <h3><?php print $nnode->title; ?></h3>
                         <?php
                             $prepared_node = node_view($nnode, 'teaser');
@@ -416,6 +420,50 @@ global $user;
                             $rendered_teaser = render($prepared_node);
                             print $rendered_teaser;
                          ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="myModal normal modal fade" id="modalPlaceLB" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLB">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlaceLB">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place21">
+                        <?php $nnode = node_load(1079); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="myModal normal modal fade" id="modalPlaceLoft" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLoft">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="modalPlaceLoft">Pop-Up Beach</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="place place21">
+                        <?php $nnode = node_load(566); ?>
+                        <h3><?php print $nnode->title; ?></h3>
+                        <?php
+                        $prepared_node = node_view($nnode, 'teaser');
+                        $rendered_teaser = render($prepared_node);
+                        print $rendered_teaser;
+                        ?>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,52 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+
+
+function azp_block_info() {
+  $blocks = array();
+
+  $blocks['azp_events_block'] = array(
+    'info' => t('AZP event block'),
+  );
+
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function azp_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'azp_events_block':
+      $block['subject'] = '';
+      $block['content'] = _azp_events_block();
+      break;
+  }
+
+  return $block;
+
+}
+
+function _azp_events_block() {
+    global $language ;
+    $lang = $language->language;
+
+    $parameters = drupal_get_query_parameters();
+    if(isset($parameters['month'])) {
+        $p = $parameters['month'].'-01';
+        $udate = date('Y-m',strtotime($p));
+    } else {
+        $udate = date('Y-m');
+    }
+    
+    return $udate;
+}
+
+
+
+

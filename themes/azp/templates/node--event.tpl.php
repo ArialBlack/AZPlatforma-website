@@ -101,12 +101,6 @@
             }
          ?>
 
-         <div class="img-tag">
-            <a href="/taxonomy/term/<?php print $term_tid; ?>">
-                <?php print render($image_field); ?>
-            </a>
-         </div>
-
         <?php print render($title_prefix); ?>
         <div class="node-title">
             <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
@@ -114,22 +108,31 @@
         <?php print render($title_suffix); ?>
 
         <div class="event-summary">
+            <h3><?php print t("Summary");?></h3>
             <div class="event-date">
                 <?php
-                    print '<label>' . t("When") . '</label>';
+                    print '<label>' . t("When") . ' / </label>';
                     print render($content['field_date']);
                 ?>
             </div>
             <div class="event-place">
                 <?php
-                    print '<label>' . t("Where") . '</label>';
-                    print render($content['field_where']);
+                    print '<label>' . t("Where") . ' / </label>';
+                    if( isset($content['field_where'])) {
+                        print render($content['field_where']);
+                    } else {
+                        print t("Artzavod Platforma");
+                    }
                 ?>
             </div>
             <div class="event-object">
                 <?php
-                    print '<label>' . t("what") . '</label>';
-                    print render($content['field_what']);
+                    print '<label>' . t("what") . ' / </label>';
+                    if( isset($content['field_what'])) {
+                        print render($content['field_what']);
+                    } else {
+                        print $title;
+                    }
                 ?>
             </div>
         </div>
@@ -144,6 +147,11 @@
         ?>
 
         <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
+        <div class="img-tag">
+            <a href="/taxonomy/term/<?php print $term_tid; ?>">
+                <?php print render($image_field); ?>
+            </a>
+        </div>
     </div>
 
     <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> 
