@@ -176,6 +176,7 @@ function resizeToCover() {
     jQuery('#video-background').height($wh);
 
     jQuery('.paragraphs-item-landing-header').height($wh);
+    jQuery('#azpLocation .azp-location').height($wh);
 
     if(jQuery(window).width() < 767) {
         jQuery('.view-display-id-block_2 .views-field-img').height($wh + jQuery('.news .header-container').height() + 110);
@@ -300,7 +301,6 @@ jQuery(document).ready(function($) {
     jQuery(".view-news").on('views_load_more.new_content', function(event, content) {
         console.log("n"); 
        // hover_text();
-        newsHideImgIfYoutube(); 
         jQuery(".view .col:even").addClass("even"); 
         jQuery(".view .col:odd").addClass("odd"); 
     });
@@ -324,7 +324,7 @@ jQuery(window).scroll(function() {
     detectOnWhite();
 
     if (jQuery(this).scrollTop() === 300) {
-        jQuery('.paragraphs-item-landing-header').addClass('scrolled');
+        jQuery('body').addClass('scrolled');
     }
 });
 

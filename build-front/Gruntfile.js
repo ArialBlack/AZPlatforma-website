@@ -24,14 +24,14 @@ module.exports = function(grunt) {
                 },
 
                 files: {
-                    "../themes/azp/templates/page--type-landing.tpl.php": "../themes/azp/_templates_src/page--type-landing.tpl.php",
-                    "../themes/azp/templates/page--events.tpl.php": "../themes/azp/_templates_src/page--events.tpl.php",
-                    "../themes/azp/templates/page--news.tpl.php": "../themes/azp/_templates_src/page--news.tpl.php",
-                    "../themes/azp/templates/page.tpl.php": "../themes/azp/_templates_src/page.tpl.php",
+                    "../themes/azp/templates/page--type-landing.tpl.php": "_templates_src/page--type-landing.tpl.php",
+                    "../themes/azp/templates/page--events.tpl.php": "_templates_src/page--events.tpl.php",
+                    "../themes/azp/templates/page--news.tpl.php": "_templates_src/page--news.tpl.php",
+                    "../themes/azp/templates/page.tpl.php": "_templates_src/page.tpl.php",
                     //map
                     //"../themes/azp/templates/page--node--293.tpl.php": "../themes/azp/_templates_src/page--node--293.tpl.php.bkp---ua",
-                    "../themes/azp/templates/page--node--414.tpl.php": "../themes/azp/_templates_src/page--node--414.tpl.php",
-                    "../themes/azp/templates/page--node--558.tpl.php": "../themes/azp/_templates_src/page--node--558.tpl.php",
+                    "../themes/azp/templates/page--node--414.tpl.php": "_templates_src/page--node--414.tpl.php",
+                    "../themes/azp/templates/page--node--558.tpl.php": "_templates_src/page--node--558.tpl.php",
                     //contacts
                     //"../themes/azp/templates/page--node--419.tpl.php": "../themes/azp/_templates_src/page--node--419.tpl.php",
                    //"../themes/azp/templates/page--node--590.tpl.php": "../themes/azp/_templates_src/page--node--590.tpl.php"
