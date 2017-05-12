@@ -428,7 +428,7 @@ global $user;
         </div>
     </div>
 
-    <div class="myModal normal modal fade" id="modalPlaceL" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLB">
+    <div class="myModal normal modal fade" id="modalPlaceLB" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLB">
         <div class="modal-dialog container" role="document">
             <div class="modal-content">
                 <div class="modal-header">

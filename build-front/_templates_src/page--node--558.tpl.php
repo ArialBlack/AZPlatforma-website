@@ -435,7 +435,7 @@ global $user;
                 </div>
                 <div class="modal-body">
                     <div class="place place21">
-                        <?php $nnode = node_load(1079); ?>
+                        <?php $nnode = node_load(1080); ?>
                         <h3><?php print $nnode->title; ?></h3>
                         <?php
                         $prepared_node = node_view($nnode, 'teaser');

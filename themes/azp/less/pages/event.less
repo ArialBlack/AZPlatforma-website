@@ -1,17 +1,18 @@
 .events {
   #block-system-main {
     .container();
-    .XLcontainer();
+    //.XLcontainer();
+    max-width: 1170px;
   }
 
   //сам календарь
   .view-id-events_calendar.view-display-id-page_4 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     @media (min-width: @screen-md-min) {
-      margin-top: 150px;
-      margin-bottom: 150px;
+      margin-top: 80px;
+      margin-bottom: 80px;
     }
   }
 
@@ -191,7 +192,6 @@
 
 
 //Calendar cells
-
 .calendar-calendar {
   .table-responsive > .table > thead > tr > th,
   .table-responsive > .table > tbody > tr > th,
@@ -230,8 +230,8 @@
 
 .calendar-calendar .month-view .full tr td.multi-day,
 .calendar-calendar .month-view .full tr td.date-box {
-  background: @azp-red;
-  color: white;
+  background: #f1f2f2;
+  //color: white;
   font-size: 14px;
 
   &.no-entry {
@@ -244,7 +244,7 @@
 .calendar-calendar .month-view .full tr td.single-day,
 .calendar-agenda-items,
 .calendar-calendar div.calendar {
-  background: @azp-red;
+  background: #f1f2f2;
   letter-spacing: normal;
 
   &.no-entry {
@@ -253,18 +253,64 @@
 
   .inner {
     min-height: 100px;
+
+    .item {
+      //background: @azp-red;
+      padding: 7px;
+      margin-bottom: 10px;
+
+      a {
+          color: white;
+          font-size: 12px;
+          font-weight: normal;
+          text-transform: uppercase;
+      }
+
+      &.event-index-33 {  background: @azp-red;  }           //  Концерты
+      &.event-index-34 {  background: @azp-yellow;  }        //  Фестивали
+      &.event-index-32 {  background: @azp-orange;  }        //  Арт-Галереи
+      &.event-index-35 {  background: @azp-purpule;  }       //  Edutainment
+      &.event-index-31 {  background: @azp-blue-green;  }    //  Коворкинг (Coworking)
+      &.event-index-48 {  background: @azp-blue;  }          //  Арт-завод Платформа
+
+      &.event-index-36 {  background: #4766b0;  }            //  Сreative workspaces
+      &.event-index-37 {  background: #2c2c2c;  }            //  Урбан Фешн (Urban fashion)
+      &.event-index-38 {  background: fade(@azp-red, 80%); } //  Рекреации (Recreation)
+
+      /*&.event-index-1 {  background: @azp-red;  }
+      &.event-index-2 {  background: #4766b0;  }
+      &.event-index-3 {  background: #2c2c2c;  }
+      &.event-index-4 {  background: @azp-yellow;  }
+      &.event-index-5 {  background: @azp-orange;  }
+      &.event-index-6 {  background: @azp-purpule;  }
+      &.event-index-7 {  background: @azp-blue-green; }
+      &.event-index-8 {  background: @azp-blue; }
+
+      &.event-index-9 {  background: fade(#4766b0, 80%); }
+      &.event-index-10 {  background: fade(#2c2c2c, 80%); }
+      &.event-index-11 {  background: fade(@azp-yellow, 80%); }
+      &.event-index-12 {  background: fade(@azp-orange, 80%); }
+      &.event-index-13 {  background: fade(@azp-purpule, 80%); }
+      &.event-index-14 {  background: fade(@azp-blue-green, 80%); }
+      &.event-index-15 {  background: fade(@azp-blue, 80%); }
+
+      &.event-index-16 {  background: fade(@azp-red, 80%); }
+      &.event-index-17 {  background: fade(#4766b0, 60%); }
+      &.event-index-18 {  background: fade(#2c2c2c, 60%); }
+      &.event-index-19 {  background: fade(@azp-yellow, 60%); }
+      &.event-index-20 {  background: fade(@azp-orange, 60%); }
+      &.event-index-21 {  background: fade(@azp-purpule, 60%); }
+      &.event-index-22 {  background: fade(@azp-blue-green, 60%); }
+      &.event-index-23 {  background: fade(@azp-blue, 60%); }
+      */
+    }
   }
 }
 
 .calendar-calendar .month-view .full td.single-day div.monthview,
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
-  background: @azp-red;
-  margin-bottom: 10px;
-
-  a {
-    color: white;
-  }
+  background: none;
 }
 
 //Node-event

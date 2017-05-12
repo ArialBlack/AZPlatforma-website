@@ -108,8 +108,9 @@ function showWebformComponents() {
     }
 }
 
+
 function calendarCategoriesDots() {
-    jQuery("#block-views-calendar-block-3 .views-field-field-event-term a").each(function (index) {
+    /*jQuery("#block-views-calendar-block-3 .views-field-field-event-term a").each(function (index) {
         var $this = jQuery(this),
             str = $this.attr('href'),
             last = str.substring(str.lastIndexOf("/") + 1, str.length);  
@@ -117,11 +118,42 @@ function calendarCategoriesDots() {
             $this.replaceWith($new_html);       
     });
     
-      jQuery("#block-views-calendar-block-4 .item-list h3 a").each(function (index) {
+    jQuery("#block-views-calendar-block-4 .item-list h3 a").each(function (index) {
         var $this = jQuery(this),
             str = $this.attr('href'),
             last = str.substring(str.lastIndexOf("/") + 1, str.length); 
             $this.parents("h3").addClass(last).addClass("our-event");                
+    });*/
+
+    /*var $calendarNodes = jQuery('.page-events .view-events-calendar .month-view a'),
+        $unicNodes = [],
+        c = 0;
+    $calendarNodes.each(function(index) {
+        var url = jQuery(this).attr('href');
+
+        if ($unicNodes.indexOf(url) === -1) {
+            $unicNodes.push(url);
+            c++;
+            //console.log('New veggies collection is : ' + veggies);
+
+            jQuery('.page-events .view-events-calendar .month-view a[href="'+url+'"]').parents('.item').addClass('event-index-'+c);
+        }
+    });*/
+
+    var $calendarNodes = jQuery('.page-events .view-events-calendar .month-view a'),
+        $unicNodes = [],
+        c = 0;
+
+    $calendarNodes.each(function(index) {
+        var et = jQuery(this).data('et');
+
+        if ($unicNodes.indexOf(et) === -1) {
+            $unicNodes.push(et);
+            c++;
+            //console.log('New veggies collection is : ' + veggies);
+
+            jQuery('.page-events .view-events-calendar .month-view a[data-et="'+et+'"]').parents('.item').addClass('event-index-'+et);
+        }
     });
 }
 
