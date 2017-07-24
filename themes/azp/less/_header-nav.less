@@ -121,4 +121,68 @@ body.map {
   }
 }
 
+.page-events,
+body.contacts {
+  .page-header {
+    display: none;
+  }
+
+  .navbar-inverse {
+    .navbar-nav > li > a {
+      color: #58595b;
+    }
+  }
+
+  #block-locale-language {
+    ul {
+      li {
+        a {
+          color: @azp-red;
+          border: @azp-red 1px solid;
+
+          &:hover {
+            background-color: @azp-red;
+            color: #58595b;
+          }
+        }
+      }
+    }
+  }
+
+  .view-header {
+    > ul {
+      margin-left: 0;
+      padding-left: 0;
+      overflow: hidden;
+
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+
+        a {
+          color: #58595b;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.inverse-logo {
+  display: none;
+}
+
+.contacts {
+  .logo {
+    img {
+      display: none;
+
+      &.inverse-logo {
+        display: inline;
+      }
+    }
+  }
+}
 

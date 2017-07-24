@@ -85,6 +85,7 @@ global $user;
                 <?php if ($logo): ?>
                     <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
                         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                        <img class="inverse-logo" src="/sites/default/files/azp-logo-inverse.png" alt="<?php print t('Home'); ?>" />
                     </a>
                 <?php endif; ?>
 

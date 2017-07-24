@@ -290,7 +290,6 @@ function addCorners() {
     _addCorners('.events .view-id-events_calendar.view-display-id-block_1 .promo-event-inner', 'multiple');
 }
 
-
 jQuery(document).ready(function($) {
     addCorners();
     changeSomePath();  
@@ -363,6 +362,58 @@ jQuery(window).scroll(function() {
 jQuery(window).load(function() {
      sizeMeUp();
 });
+
+jQuery( document ).ajaxStop(function() {
+    addthis.init();
+    addthis.toolbox('.addthis_toolbox');
+    addthis.toolbox();
+
+    if(jQuery('.page-events.modal-open').length > 0) {
+        var ptitle = jQuery('.page-events.modal-open .modal-body .node-title h2').text(),
+            purl = location.protocol + "//" + location.host + jQuery('.page-events.modal-open .modal-body .node').attr('id'),
+            pdesc = jQuery('.page-events.modal-open .modal-body .field-name-body .field-item').text(),
+            pimg = jQuery('.page-events.modal-open .modal-body .field-name-field-image img').attr('src');
+
+        addthis.update('share', 'url', purl);
+        addthis.url = purl;
+
+        addthis.update('share', 'title', ptitle);
+        addthis.title = ptitle;
+
+        addthis.update('share', 'description', pdesc);
+        addthis.description = pdesc;
+
+        addthis.update('share', 'media', pimg);
+        addthis.media = pimg;
+        
+        addthis.toolbox(".addthis_toolbox");
+    }
+
+    if(jQuery('.page-news.modal-open').length > 0) {
+        var ptitle = jQuery('.page-news.modal-open .modal-body .node-title h2').text(),
+            str = jQuery('.page-news.modal-open .modal-body .node').attr('id'),
+            purl = location.protocol + "//" + location.host + '/node/' + str.substring(5),
+            pdesc = jQuery('.page-news.modal-open .modal-body .field-name-body .field-item').text(),
+            pimg = jQuery('.page-news.modal-open .modal-body .field-name-field-image img').attr('src');
+
+        console.log(purl);
+
+        addthis.update('share', 'url', purl);
+        addthis.url = purl;
+
+        addthis.update('share', 'title', ptitle);
+        addthis.title = ptitle;
+
+        addthis.update('share', 'description', pdesc);
+        addthis.description = pdesc;
+
+        addthis.update('share', 'media', pimg);
+        addthis.media = pimg;
+
+        addthis.toolbox(".addthis_toolbox");
+    }
+});
+
 
 
 

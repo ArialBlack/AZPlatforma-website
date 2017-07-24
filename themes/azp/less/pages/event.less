@@ -339,12 +339,19 @@
 
       &.event-date,
       &.event-place,
-      .event-object {
+      &.event-object,
+      &.event-ticket {
         display: block;
         margin-bottom: 10px;
 
         @media (min-width:@large) {
           margin-bottom: 20px;
+        }
+      }
+
+      &.event-ticket {
+        .field-label {
+          display: none;
         }
       }
     }
@@ -356,63 +363,19 @@
       .rft(18,24);
     }
 
-    label {
+    label,
+    .event-ticket a {
       color: @azp-red;
       text-transform: uppercase;
       display: inline;
       margin-right: 20px;
-    }
-  }
-}
 
-.page-events {
-  .page-header {
-    display: none;
-  }
-
-  .navbar-inverse {
-    .navbar-nav > li > a {
-      color: #58595b;
-    }
-  }
-
-  #block-locale-language {
-    ul {
-      li {
-        a {
-          color: @azp-red;
-          border: @azp-red 1px solid;
-
-          &:hover {
-            background-color: @azp-red;
-            color: #58595b;
-          }
-        }
-      }
-    }
-  }
-
-  .view-header {
-    > ul {
-      margin-left: 0;
-      padding-left: 0;
-      overflow: hidden;
-
-      li {
-        list-style: none;
-        float: left;
-        margin-right: 20px;
-
-        a {
-          color: #58595b;
-          font-size: 14px;
-          text-transform: uppercase;
-        }
+      &:hover {
+        color: @azp-blue;
       }
     }
   }
 }
-
 
 #block-views-events-calendar-block-2 {
   .container();

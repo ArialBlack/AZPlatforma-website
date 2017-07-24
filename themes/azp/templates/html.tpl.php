@@ -67,6 +67,7 @@
       <?php print $page_top; ?>
       <?php print $page; ?>
       <?php print $page_bottom; ?>
-  </div> 
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f37c12947d9a04a"></script>
 </body>
 </html>

@@ -134,3 +134,200 @@ body.scrolled {
   50% {bottom: -5px;}
   100% {bottom: 20px;}
 }
+
+.i18n-ru {
+  .front-top-event-block{
+    &:before {
+      content: 'Ближайшие ивенты';
+      .pst();
+    }
+  }
+
+  .front-top-news-block {
+    &:before {
+      content: 'Новости';
+      .container();
+      .XLcontainer();
+      .pst();
+    }
+  }
+
+  &.about,
+  &.contacts {
+    .paragraphs-item-text-with-image-and-link.paragraphs-item-2,
+    .paragraphs-item-raw-code.paragraphs-item-60 {
+      &:before {
+        content: 'Экосистема';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-7,
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-42 {
+      &:before {
+        content: 'Контакты и команда';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-views-block.paragraphs-item-9,
+    .paragraphs-item-views-block.paragraphs-item-43 {
+      overflow: hidden;
+
+      &:before {
+        content: 'Партнеры';
+        .pst();
+        .container();
+        .XLcontainer();
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+///
+.i18n-en {
+  .front-top-event-block{
+    &:before {
+      content: 'Upcoming events';
+      .pst();
+    }
+  }
+
+  .front-top-news-block {
+    &:before {
+      content: 'News';
+      .container();
+      .XLcontainer();
+      .pst();
+    }
+  }
+
+  &.about,
+  &.contacts {
+    .paragraphs-item-text-with-image-and-link.paragraphs-item-27,
+    .paragraphs-item-raw-code.paragraphs-item-61 {
+      &:before {
+        content: 'Ecosystem';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-32,
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-52 {
+      &:before {
+        content: 'Contacts & team';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-views-block.paragraphs-item-34,
+    .paragraphs-item-views-block.paragraphs-item-53 {
+      overflow: hidden;
+
+      &:before {
+        content: 'Partners';
+        .pst();
+        .container();
+        .XLcontainer();
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+.not-front.about,
+.not-front.contacts {
+
+  .paragraphs-item-paragraphs-pack-node-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    clear: both;
+
+    .node {
+      text-align: center;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url('../images/team-top-overlay.png') no-repeat center 90px;
+        background-size: contain;
+        display: block;
+        z-index: -1;
+        visibility: visible;
+      }
+
+      .field-name-field-image {
+        margin-bottom:  40px;
+
+        img {
+          width: 50%;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+        .title();
+        margin-bottom:  40px;
+        min-height: 72px;
+      }
+
+      .field-name-field-title {
+        font-style: italic;
+        color: @fade-title;
+        margin-bottom:  40px;
+      }
+
+      .field-type-text-long {
+        font-size: 16px;
+        line-height: 24px;
+        .letter-spacing(25, 16);
+        color: @title;
+      }
+    }
+  }
+
+  .paragraphs-item-views-block {
+    > .content {
+      .XLcontainer;
+    }
+
+    .view {
+      h2 {
+        display: none;
+      }
+
+      .views-field-nothing {
+        padding: 20px;
+
+        @media (min-width: @screen-md-min) {
+          padding: 60px;
+        }
+      }
+    }
+  }
+}
+
+.not-front.contacts {
+  .paragraphs-item-raw-code.paragraphs-item-56,
+  .paragraphs-item-raw-code.paragraphs-item-57 {
+    margin-top: 100px;
+  }
+}
+

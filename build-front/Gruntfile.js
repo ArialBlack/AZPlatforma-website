@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 
             bake: {
                 files: [
-                    '../themes/azp/_templates_src/**/*.php'
+                    '_templates_src/**/*.php'
                 ],
                 tasks: ['bake']
             }

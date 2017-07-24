@@ -86,6 +86,7 @@
         <div class="row">
              <div class="col-sm-4 in-teaser"> <?php print render($title_prefix); ?> 
                 <?php  print render($content["body"]); ?>
+                 <?php  print render($content["field_link"]); ?>
             </div>
             <div class="col-sm-8 in-teaser"> <?php print render($content["field_photos"]); ?> </div>
            

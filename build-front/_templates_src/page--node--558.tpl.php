@@ -95,15 +95,16 @@ global $user;
                     <div class="azp-location">
                         <div class="azp-location-wrap">
                             <div class="c">
-                                <p>Total square of “Art-zavod Platforma” - 120 000 м<sup>2</sup><br>
-                                Work / Business space (offices, coworking) - 25 000 м<sup>2</sup><br>
-                                Closed exhibition areas, shops, galleries, art spaces - 16000 м<sup>2</sup><br>
-                                Event spaces for festivals, conferences, hackathons, concerts and markets - 60 000 м<sup>2</sup><br>
-                                Space for entertainment and recreation - 10 000 м<sup>2</sup></p>
+                                <p>Total square of «Art-zavod Platforma» – <b>120 000 м<sup>2</sup></b><br>.
+                                    Work/business space (offices, coworking) – <b>25 000 м<sup>2</sup></b><br>.
+                                    Closed exhibition areas, shops, galleries, art spaces – <b>16 000 м<sup>2</sup></b><br>.
+                                    Event spaces for festivals, conferences, hackathons, concerts and markets – <b>60 000 м<sup>2</sup></b><br>.
+                                    Space for entertainment and recreation – <b>10 000 м<sup>2</sup></b><br>.
+                                </p>
                             </div>
                             <div class="links">
                                 <a href="#mapImage" class="azp-button">Details</a>
-                                <a href="/sites/default/files/Loft_presentation_mini.pdf" target="_blank">Download Pdf</a>
+                                <a href="/sites/default/files/Loft_presentation_mini.pdf" target="_blank">Download PDF</a>
                             </div>
                         </div>
                     </div>
