@@ -73,9 +73,9 @@
  * @ingroup themeable
  */
 global $user;
- global $language ;
- $lang = $language->language;
-  if ($lang == 'uk') { $lang = 'ua'; }
+global $language ;
+$lang = $language->language;
+if ($lang == 'uk') { $lang = 'ua'; }
 ?>
 <div id="page">
 
@@ -83,393 +83,93 @@ global $user;
 
     <div id="mcw">
         <div class="main-container">
-        
-          <header role="banner" id="page-header">
-        
-            <?php print render($page['header']); ?>
-          </header> <!-- /#page-header -->
-        
-          <div class="">
-              <div class="region region-content">
-                <section id="azpLocation">
 
-                    <div class="azp-location">
-                        <div class="azp-location-wrap">
-                            <div class="c">
-                                <p>Общая территория «Арт-завода Платформа» – <b>120 000 м<sup>2</sup></b><br>.
-                                    Рабочее пространство (офисы, коворкинг) –  <b>25 000 м<sup>2</sup></b><br>.
-                                    Закрытые выставочные площадки, мастерские, галереи, арт-пространства – <b>16 000 м<sup>2</sup></b><br>.
-                                    Ивент-пространства для проведения фестивалей, конференций, хакатонов, концертов и маркетов – <b>60 000 м<sup>2</sup></b><br>.
-                                    Пространства для отдыха и развлечений – <b>10 000 м<sup>2</sup></b><br>.
-                                </p>
-                            </div>
-                            <div class="links">
-                                <a href="#mapImage" class="azp-button">Детальнее</a>
-                                <a href="/sites/default/files/Loft_presentation_mini.pdf" target="_blank">Скачать PDF</a>
+            <header role="banner" id="page-header">
+
+                <?php print render($page['header']); ?>
+            </header> <!-- /#page-header -->
+
+            <div class="">
+                <div class="region region-content">
+                    <section id="azpLocation">
+
+                        <div class="azp-location">
+                            <div class="azp-location-wrap">
+                                <div class="c">
+                                    <p>Общая территория «Арт-завода Платформа» – <b>120 000 м<sup>2</sup></b><br>.
+                                        Рабочее пространство (офисы, коворкинг) –  <b>25 000 м<sup>2</sup></b><br>.
+                                        Закрытые выставочные площадки, мастерские, галереи, арт-пространства – <b>16 000 м<sup>2</sup></b><br>.
+                                        Ивент-пространства для проведения фестивалей, конференций, хакатонов, концертов и маркетов – <b>60 000 м<sup>2</sup></b><br>.
+                                        Пространства для отдыха и развлечений – <b>10 000 м<sup>2</sup></b><br>.
+                                    </p>
+                                </div>
+                                <div class="links">
+                                    <a href="#mapImage" class="azp-button">Детальнее</a>
+                                    <a href="/sites/default/files/Loft_presentation_mini.pdf" target="_blank">Скачать PDF</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="mapImage">
-                        <div class="imgContainer">
-                            <img class="mapImage" src="/sites/default/files/map.jpg" />
-                            <a href="#" data-toggle="modal" data-target="#modalPlace1"><span data-x="810" data-y="170" class="mapDot badge">1</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace2"><span data-x="600" data-y="237" class="mapDot badge">2</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace31"><span data-x="1104" data-y="211" class="mapDot badge">3.1</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace32"><span data-x="1245" data-y="136" class="mapDot badge">3.2</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace33"><span data-x="1365" data-y="84" class="mapDot badge">3.3</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace34"><span data-x="1477" data-y="412" class="mapDot badge">3.4</span></a>
-                                       
-                            <a href="#" data-toggle="modal" data-target="#modalPlace4"><span data-x="1218" data-y="475" class="mapDot badge">АРТ-ДОМ</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace6"><span data-x="994" data-y="404" class="mapDot badge">6</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace7"><span data-x="1005" data-y="300" class="mapDot badge">7</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace8"><span data-x="1500" data-y="588" class="mapDot badge">Coworking «Platforma»</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace91"><span data-x="1186" data-y="202" class="mapDot badge">9.1</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace92"><span data-x="1312" data-y="153" class="mapDot badge">9.2</span></a>
-                            <a href="#" data-toggle="modal" data-target="#modalPlace21"><span data-x="799" data-y="64" class="mapDot badge">21</span></a>
+                        <div id="mapImage">
+                            <div class="imgContainer">
+                                <img src="/sites/all/themes/azp/images/azp-map.svg" width="1920px" height="1357px" border="0" usemap="#Map" />
+                                <img src="/sites/all/themes/azp/images/azp-map-legend.svg" width="1920px" height="1357px" border="0" />
 
-                            <a href="#" data-toggle="modal" data-target="#modalPlaceLB"><span data-x="633" data-y="123" class="mapDot badge">B</span></a>
+                                <map name="Map" id="Map">
+                                    <?php $node_1 = node_load(502); ?> <!-- 566 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-1" alt="<?php print $node_1->title; ?>" title="<?php print $node_1->title; ?>" href="#mapImage" shape="poly" coords="902,858,902,801,546,593,487,620,487,671,834,887,834,869,842,862,870,878" />
 
-                            <a href="#" data-toggle="modal" data-target="#modalPlaceLoft"><span data-x="1190" data-y="615" class="mapDot badge">LOFT</span></a>
+                                    <?php $node_2 = node_load(501); ?> <!-- 565 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-2" shape="poly" coords="939,788,1013,744,1014,695,906,638,832,678,832,727" alt="<?php print $node_2->title; ?>" title="<?php print $node_2->title; ?>" href="#mapImage">
+
+                                    <?php $node_31 = node_load(497); ?> <!-- 561 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-31" shape="poly" coords="1129,721,1181,689,1181,631,824,460,770,484,770,537" alt="<?php print $node_31->title; ?>" title="<?php print $node_31->title; ?>" href="#mapImage">
+
+                                    <?php $node_32 = node_load(498); ?> <!-- 564 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-32" shape="poly" coords="1262,641,1314,610,1313,551,1005,416,950,442,951,495,1035,534,1091,505,1102,509,1102,566,1107,568,1119,556,1152,550,1222,581,1222,622" alt="<?php print $node_32->title; ?>" title="<?php print $node_32->title; ?>" href="#mapImage">
+
+                                    <?php $node_33 = node_load(499); ?> <!-- 563 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-33" shape="poly" coords="1392,561,1444,530,1444,475,1137,351,1084,377,1084,428,1169,464,1225,436,1235,440,1235,493" alt="<?php print $node_33->title; ?>" title="<?php print $node_33->title; ?>" href="#mapImage">
+
+                                    <?php $node_4 = node_load(1084); ?> <!-- 1085 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-4" shape="poly" coords="1153,550,1120,556,1087,586,1155,619,1181,631,1182,646,1222,623,1222,581" alt="<?php print $node_4->title; ?>" title="<?php print $node_4->title; ?>" href="#mapImage">
+
+                                    <?php $node_5 = node_load(504); ?> <!-- 568 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-5" shape="poly" coords="1357,686,1358,620,1464,553,1509,572,1510,637,1405,707"  alt="<?php print $node_5->title; ?>" title="<?php print $node_5->title; ?>" href="#mapImage">
+
+                                    <?php $node_6 = node_load(505); ?> <!-- 569 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-6" shape="poly" coords="866,480,824,459,946,403,985,424,950,441,950,493,922,507" alt="<?php print $node_6->title; ?>" title="<?php print $node_6->title; ?>" href="#mapImage">
+
+                                    <?php $node_7 = node_load(506); ?> <!-- 570 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-7" shape="poly" coords="946,402,986,424,1004,415,1060,440,1084,428,1084,377,1135,351,1094,334" alt="<?php print $node_7->title; ?>" title="<?php print $node_7->title; ?>" href="#mapImage">
+
+                                    <?php $node_8 = node_load(503); ?> <!-- 567 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-8" shape="poly" coords="721,659,721,624,762,588,797,586,861,619,862,655,785,695" alt="<?php print $node_8->title; ?>" title="<?php print $node_8->title; ?>" href="#mapImage">
+
+                                    <?php $node_9 = node_load(496); ?> <!-- 560 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-9" shape="poly" coords="571,597,693,540,772,583,660,647" alt="<?php print $node_9->title; ?>" title="<?php print $node_9->title; ?>" href="#mapImage">
+
+                                    <?php $node_10 = node_load(495); ?> <!-- 559 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-10" shape="poly" coords="449,544,522,588,771,473,746,460,743,467,739,471,739,482,734,482,733,472,728,467,725,457,721,461,721,471,716,472,716,462,711,457,709,449,706,452,707,463,701,463,701,453,696,448,693,441,691,443,691,454,686,454,686,443,683,442,545,504,545,516,545,531,544,543,541,553,537,558,534,563,533,573,529,572,529,563,524,558,521,548,517,552,517,563,512,563,512,552,508,548,504,540,502,543,502,554,496,553,496,543,492,539,489,531,486,533,487,544,481,544,481,534,479,532,477,531" alt="<?php print $node_10->title; ?>" title="<?php print $node_10->title; ?>" href="#mapImage">
+
+                                    <?php $node_11 = node_load(500); ?> <!-- 562 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-11" shape="poly" coords="346,590,432,552,504,595,417,634" alt="<?php print $node_11->title; ?>" title="<?php print $node_11->title; ?>" href="#mapImage">
+
+                                    <?php $node_12 = node_load(507); ?> <!-- 571 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-12" shape="poly" coords="367,470,367,434,612,337,646,335,682,369,683,374,680,380,677,388,675,399,675,410,676,418,676,427,677,431,540,491,534,488,531,490,527,493,525,486,520,481,516,477,510,482,509,476,504,471,501,468,495,472,493,466,489,462,486,460,482,461,478,467,474,474,472,484,471,500,471,513,472,519,434,537,396,514,397,488" alt="<?php print $node_12->title; ?>" title="<?php print $node_12->title; ?>" href="#mapImage">
+
+                                    <?php $node_13 = node_load(1079); ?> <!-- 1080 -->
+                                    <area data-toggle="modal" data-target="#modalPlace-13" shape="poly" coords="276,479,338,454,395,487,396,554,335,580,276,544"  alt='<?php print $node_13->title; ?>' title='<?php print $node_13->title; ?>' href="#mapImage">
+                                </map>
+                            </div>
                         </div>
-                    </div>
-                </section> 
-              </div> 
-          </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!--(bake parts/footer.php)-->
 
-<div id="mapLegend">
-    <div class="myModal normal modal fade" id="modalPlace1" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabel">
-      <div class="modal-dialog container" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-            <h4 class="modal-title" id="modalPlace1">Парк</h4>
-          </div>
-          <div class="modal-body">
-            <div class="place place1">
-                <?php $nnode = node_load(495); ?>
-                <h3><?php print $nnode->title; ?></h3>
-                <?php
-                    $prepared_node = node_view($nnode, 'teaser');
-                    $rendered_teaser = render($prepared_node);
-                    print $rendered_teaser;
-                 ?>
-               </div>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace2" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe2">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace2">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place2">
-                        <?php $nnode = node_load(496); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace31" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe31">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace31">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place31">
-                        <?php $nnode = node_load(497); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace32" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe32">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace32">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place32">
-                        <?php $nnode = node_load(498); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace33" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe33">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace33">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place33">
-                        <?php $nnode = node_load(499); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace34" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe34">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace34">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place34">
-                        <?php $nnode = node_load(500); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace4" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe4">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace4">Галерея Арт-Дом</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place4">
-                        <?php $nnode = node_load(501); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace6" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe6">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace6">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place6">
-                        <?php $nnode = node_load(1084); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace7" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe7">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace7">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place7">
-                        <?php $nnode = node_load(503); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace8" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe8">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace8">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place8">
-                        <?php $nnode = node_load(504); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace91" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe91">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace91">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place91">
-                        <?php $nnode = node_load(505); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace92" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe92">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace92">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place92">
-                        <?php $nnode = node_load(506); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlace21" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabe21">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlace21">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place21">
-                        <?php $nnode = node_load(507); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                            $prepared_node = node_view($nnode, 'teaser');
-                            $rendered_teaser = render($prepared_node);
-                            print $rendered_teaser;
-                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlaceLB" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLB">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlaceLB">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place21">
-                        <?php $nnode = node_load(1079); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="myModal normal modal fade" id="modalPlaceLoft" tabindex="-1" role="dialog" aria-labelledby="modalPlacelLabeLoft">
-        <div class="modal-dialog container" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <h4 class="modal-title" id="modalPlaceLoft">Pop-Up Beach</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="place place21">
-                        <?php $nnode = node_load(502); ?>
-                        <h3><?php print $nnode->title; ?></h3>
-                        <?php
-                        $prepared_node = node_view($nnode, 'teaser');
-                        $rendered_teaser = render($prepared_node);
-                        print $rendered_teaser;
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--(bake parts/map-legend-modals.php)-->
