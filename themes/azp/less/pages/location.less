@@ -107,6 +107,15 @@ body.scrolled {
     text-align: center;
     background: #a3a5b1;
 
+    @d: -180px;
+
+    .mapify-holder {
+      top: @d;
+    }
+
+    .mapify-holder + img {
+      margin-top: @d;
+    }
 
     .mapImage {
       margin-left: auto;
