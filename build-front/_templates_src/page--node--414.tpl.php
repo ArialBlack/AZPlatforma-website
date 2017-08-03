@@ -76,6 +76,7 @@ global $user;
 global $language ;
 $lang = $language->language;
 if ($lang == 'uk') { $lang = 'ua'; }
+$node = node_load(414);
 ?>
 <div id="page">
 
@@ -96,12 +97,7 @@ if ($lang == 'uk') { $lang = 'ua'; }
                         <div class="azp-location">
                             <div class="azp-location-wrap">
                                 <div class="c">
-                                    <p>Общая территория «Арт-завода Платформа» – <b>120 000 м<sup>2</sup></b><br>.
-                                        Рабочее пространство (офисы, коворкинг) –  <b>25 000 м<sup>2</sup></b><br>.
-                                        Закрытые выставочные площадки, мастерские, галереи, арт-пространства – <b>16 000 м<sup>2</sup></b><br>.
-                                        Ивент-пространства для проведения фестивалей, конференций, хакатонов, концертов и маркетов – <b>60 000 м<sup>2</sup></b><br>.
-                                        Пространства для отдыха и развлечений – <b>10 000 м<sup>2</sup></b><br>.
-                                    </p>
+                                    <?php print $node->body['und'][0]['value']; ?>
                                 </div>
                                 <div class="links">
                                     <a href="#mapImage" class="azp-button">Детальнее</a>

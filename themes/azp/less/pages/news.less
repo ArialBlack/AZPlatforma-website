@@ -101,14 +101,23 @@
 
               @media (min-width: @screen-md-min) {
                 .text-block {
-                  .make-sm-column(5);
+                  //.make-sm-column(5);
                   padding: 20px;
                 }
 
                 .text-block-2 {
-                  .make-sm-column(5);
-                  margin-left: 2 * 100% / 12;
-                  padding-right: 1 * 100% / 12;
+                //  .make-sm-column(5);
+                //  margin-left: 2 * 100% / 12;
+                //  padding-right: 1 * 100% / 12;
+                  width: 190px;
+                  margin-left: 80px;
+                  margin-right: 20px;
+                }
+              }
+
+              @media (min-width: @screen-lg-min) {
+                .text-block-2 {
+                  margin-left: 200px;
                 }
               }
 
@@ -134,8 +143,8 @@
                 line-height: 60px;
                 text-transform: uppercase;
                 font-weight: bold;
-                .rft(20,36);
-                .rlh(30,40);
+                .rft(20,30);
+                .rlh(24,36);
               }
 
               a {

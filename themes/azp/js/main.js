@@ -16,9 +16,11 @@ function detectIE() {
 	if (jQuery.browser.msie && $.browser.version == 9) {
 		return true;
 	}
+    
 	if (jQuery.browser.msie && $.browser.version == 8) {
 		return true;
 	}
+    
 	return false;
 }
 
@@ -108,38 +110,7 @@ function showWebformComponents() {
     }
 }
 
-
 function calendarCategoriesDots() {
-    /*jQuery("#block-views-calendar-block-3 .views-field-field-event-term a").each(function (index) {
-        var $this = jQuery(this),
-            str = $this.attr('href'),
-            last = str.substring(str.lastIndexOf("/") + 1, str.length);  
-            $new_html = '<span class="event-dot ' + last + '"></span>';  
-            $this.replaceWith($new_html);       
-    });
-    
-    jQuery("#block-views-calendar-block-4 .item-list h3 a").each(function (index) {
-        var $this = jQuery(this),
-            str = $this.attr('href'),
-            last = str.substring(str.lastIndexOf("/") + 1, str.length); 
-            $this.parents("h3").addClass(last).addClass("our-event");                
-    });*/
-
-    /*var $calendarNodes = jQuery('.page-events .view-events-calendar .month-view a'),
-        $unicNodes = [],
-        c = 0;
-    $calendarNodes.each(function(index) {
-        var url = jQuery(this).attr('href');
-
-        if ($unicNodes.indexOf(url) === -1) {
-            $unicNodes.push(url);
-            c++;
-            //console.log('New veggies collection is : ' + veggies);
-
-            jQuery('.page-events .view-events-calendar .month-view a[href="'+url+'"]').parents('.item').addClass('event-index-'+c);
-        }
-    });*/
-
     var $calendarNodes = jQuery('.page-events .view-events-calendar .month-view a'),
         $unicNodes = [],
         c = 0;
@@ -157,26 +128,6 @@ function calendarCategoriesDots() {
     });
 }
 
-function imageDots() {
-            jQuery('.mapDot').each(function() {
-                
-                var oiw=1920;
-                var oih=960;
-                
-                ich= jQuery("#azpLocation .imgContainer").height();
-                icw= jQuery("#azpLocation .imgContainer").width();
-                
-                _x= (jQuery(this).data('x'))*100/oiw;
-                _y= (jQuery(this).data('y'))*100/oih;
-                
-                jQuery(this).css({
-                    'left': _x + "%",
-                    'top': _y + "%",
-                });
-            });
-}
-
- 
 function sizeMeUp() {
     //bigNewsHeight = jQuery("#block-views-news-block-2 .views-row-1 .views-field-nothing").height();
 
@@ -229,7 +180,8 @@ function resizeToCover() {
     jQuery('#video-background').scrollLeft((jQuery('video').width() - jQuery(window).width()) / 2);
     //jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
 
-    var $containerMargin = parseInt(jQuery('#navbar').css('margin-left'), 10);
+    var $containerMargin = parseInt(jQuery('#navbar').offset().left, 10);
+
     jQuery('.paragraphs-item-landing-header .field-name-field-long-text .field-items').css('padding-left', $containerMargin + 30 + 'px');
     jQuery('.view-news-4-front.view-id-news_4_front.view-display-id-block > .view-content .views-field-nothing').css('padding-left', $containerMargin + 30 + 'px');
 
@@ -298,8 +250,6 @@ jQuery(document).ready(function($) {
     calendarCategoriesDots();
     touchCarousel();
 
-
-
     jQuery("img[usemap]").mapify({
         popOver: {
             content: function(zone){
@@ -367,14 +317,12 @@ jQuery(document).ready(function($) {
     wrapTablesResponsive();
     jQuery(".view .col:even").addClass("even");
     jQuery(".view .col:odd").addClass("odd");
-    imageDots();
+ 
 }); /*---------doc ready */
-
 
 jQuery(window).resize(function () {
     detectOnWhite();
     sizeMeUp();
-    imageDots();
 });  
 
 jQuery(window).scroll(function() { 
