@@ -1,0 +1,321 @@
+.azp-location {
+  background: url('../images/about.jpg') no-repeat center center;
+  background-size: cover;
+  //padding-top: 100px;
+ // padding-bottom: 50px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../images/scroll.png') no-repeat center center;
+    background-size: contain;
+    z-index: 99;
+    animation: pulsate 1s linear infinite;
+  }
+
+  @media (min-width: @screen-sm-min) {
+   // padding-top: 200px;
+   // padding-bottom: 100px;
+  }
+
+  p {
+    b {
+      .rft(20, 26);
+    }
+  }
+
+  &:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.45);
+    left: 0;
+    top: 0;
+    display: block;
+    content: '';
+    z-index: 1;
+  }
+}
+
+body.scrolled {
+  .azp-location {
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+.azp-location-wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @media (max-width: @screen-sm-max) {
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+
+      strong {
+        display: block;
+      }
+    }
+  }
+
+  .c {
+    position: relative;
+    color: white;
+    .container();
+    .XLcontainer();
+    z-index: 2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .links {
+    .container();
+    .XLcontainer();
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+      margin-top: 40px;
+      padding-top: 40px;
+    }
+  }
+
+  a {
+    color: white;
+    margin-right: 40px;
+
+    @media (max-width: @screen-xs-max) {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#azpLocation {
+ // padding-bottom: 40px;
+
+  .c {
+    .offset(margin-bottom);
+  }
+
+  #mapImage {
+    text-align: center;
+    background: #a3a5b1;
+
+    @d: -180px;
+
+    .mapify-holder {
+      //top: @d;
+    }
+
+    .mapify-holder + img {
+      //margin-top: @d;
+    }
+
+    .mapImage {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .imgContainer {
+      position: relative;
+
+      .mapDot {
+        position: absolute;
+        z-index: 1000;
+        cursor: pointer;
+
+        &.badge {
+          background-color: black;
+          font-size: 18px;
+          border-radius: 18px;
+          min-width: 18px;
+          padding: 3px 8px;
+
+          &:hover {
+            background-color: @azp-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mapLegend {
+  .modal-body {
+    color: black;
+    padding: 30px 30px 60px 30px;
+    overflow: auto;
+
+    .place {
+      h3 {
+        color: black;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: left;
+      }
+
+    }
+  }
+}
+
+/////////////////////////
+.mapify-holder {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  max-width: 100%;
+  z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+.mapify-imgHolder {
+  position: relative;
+  z-index: 1
+}
+.mapify-GPU, .mapify-holder * {
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
+}
+.mapify-imgHolder .mapify {
+  max-width: 100%;
+  height: auto
+}
+.mapify-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2
+}
+.mapify-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2
+}
+.mapify-polygon {
+  transition: all .5s;
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 0
+}
+.mapify-hover {
+  fill: #09f
+}
+.mapify-popOver {
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  width: 260px;
+  background: #fff;
+  box-shadow: rgba(0,0,0,.15) 0 0 0 2px;
+  z-index: 999;
+  -ms-transform: translateY(-15px);
+  transform: translateY(-15px);
+  border-radius: 5px;
+  text-align: center;
+  height: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 14px;
+  z-index: -1;
+  opacity: 0
+}
+.mapify-popOver .mapify-popOver-arrow {
+  content: "";
+  width: 15px;
+  height: 15px;
+  z-index: -2;
+  margin-top: -3px;
+  box-shadow: inset #fff 0 0 0 100px;
+  border-top: solid transparent 2px;
+  border-left: solid transparent 2px;
+  border-right: solid rgba(0,0,0,.15) 2px;
+  border-bottom: solid rgba(0,0,0,.15) 2px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translateX(-15px) rotate(45deg) translateY(-50%);
+  transform: translateX(-15px) rotate(45deg) translateY(-50%)
+}
+.mapify-popOver.mapify-bottom .mapify-popOver-arrow {
+  top: auto;
+  bottom: 100%;
+  margin-top: auto;
+  margin-bottom: -3px;
+  border-bottom: solid transparent 2px;
+  border-right: solid transparent 2px;
+  border-top: solid rgba(0,0,0,.15) 2px;
+  border-left: solid rgba(0,0,0,.15) 2px;
+  -ms-transform: rotate(45deg) translateY(50%);
+  transform: rotate(45deg) translateY(50%)
+}
+.mapify-popOver.mapify-visible {
+  opacity: 1;
+  -ms-transform: translateY(0);
+  transform: translateY(0)
+}
+//
+.mapify-popOver strong{
+  font-weight: 400;
+  font-size:24px;
+  line-height: 1em;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+.mapify-popOver{
+  color: #999;
+  font-size: 16px;
+  height: 130px;
+}
+.mapify-popOver-content{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.mapify-popOver.customPopOver{
+  background: #09f;
+}
+
+/* Custom hovering style */
+.mapify-hover{
+  fill:rgba(255,242,0,0.5);
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.customHover{
+  fill:#09f;
+  stroke: #fff;
+  stroke-width: 2;
+}

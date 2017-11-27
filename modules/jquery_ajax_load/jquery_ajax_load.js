@@ -59,7 +59,8 @@
      // loading_html += module_path;
       loading_html += 'sites/all/themes/azp/images/loading.gif">';
       $(target).html(loading_html);
-      $(target).load(base_path + 'jquery_ajax_load/get' + url, function( response, status, xhr ) {
+      condole.log(Drupal.settings.pathPrefix);
+        $(target).load(base_path + Drupal.settings.pathPrefix + 'jquery_ajax_load/get' + url, function( response, status, xhr ) {
         if ( status == "error" ) {
           var msg = "Sorry but there was an error: ";
           $(target).html( msg + xhr.status + " " + xhr.statusText );

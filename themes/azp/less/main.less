@@ -1,3 +1,4 @@
+@import '_bootstrap';
 @import '_animate';
 
 @import "_variables";
@@ -9,9 +10,29 @@
 @import "_general";
 @import "_content";
 @import "_modal";
+
+@import "parts/carousel";
+@import "parts/paragraphs";
+
+@import "pages/front";
+
+.not-front.about {
+  @import "pages/about";
+}
+
 @import "pages/event";
+@import "pages/news";
+@import "pages/location";
+
+@import "parts/footer";
 
 @import "_responsive";
+
+.touch {
+  .not-front.about {
+    @import "pages/about-touch";
+  }
+}
 
 
 

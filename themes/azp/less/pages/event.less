@@ -1,9 +1,629 @@
+.events {
+  #block-system-main {
+    .container();
+    //.XLcontainer();
+    max-width: 1170px;
+  }
+
+  //сам календарь
+  .view-id-events_calendar.view-display-id-page_4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (min-width: @screen-md-min) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+
+  //промо ивент месяца
+  .view-id-events_calendar.view-display-id-block_1 {
+    .promo-event.cover-image {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.25);
+        top: 0;
+        left: 0;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: rgba(0,0,0,0.25);
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+    .promo-event-inner {
+      position: relative;
+      .container();
+      .XLcontainer();
+      padding-top: 120px;
+      padding-bottom: 120px;
+      color: white;
+      z-index: 3;
+
+      @media (max-width: @screen-sm-max) {
+        .left {
+          h2 {
+            .rft(20,36);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          a {
+            .button(@azp-red);
+          }
+        }
+
+        .right {
+          padding-top: 30px;
+
+          .when {
+            font-style: italic;
+            font-weight: 400;
+            .rft(20, 30);
+            color: @azp-red;
+            margin-bottom: 30px;
+          }
+
+          .where {
+            font-style: italic;
+            .rft(24, 36);
+            color: @azp-red;
+            margin-bottom: 30px;
+          }
+
+          .time,
+          .price {
+            margin-bottom:  20px;
+            text-transform: uppercase;
+            .font-size(16);
+          }
+
+          .notice {
+            .font-size(16);
+            margin-bottom: 50px;
+          }
+
+          .bodytext {
+            text-transform: uppercase;
+            .font-size(16);
+            font-weight: bold;
+            line-height: 160%;
+          }
+
+        }
+
+      }
+
+      @media (min-width: @screen-md-min) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .azp-corners {
+          z-index: 2;
+        }
+
+        .left,
+        .right {
+          .make-sm-column(6);
+        }
+
+        .left {
+          h2 {
+            .rft(20,36);
+            .line-height(60);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 40px;
+          }
+
+          a {
+            .button(@azp-red);
+          }
+        }
+
+        .right {
+          padding-left: 100px;
+
+          .when {
+            font-style: italic;
+            font-weight: 400;
+            .rft(20, 30);
+            color: @azp-red;
+            margin-bottom: 30px;
+          }
+
+          .where {
+            font-style: italic;
+            .rft(24, 36);
+            color: @azp-red;
+            margin-bottom: 30px;
+          }
+
+          .time,
+          .price {
+            margin-bottom:  20px;
+            text-transform: uppercase;
+            .font-size(16);
+
+            b {
+              display: inline;
+              color: @azp-red;
+            }
+
+            p {
+              display: inline;
+            }
+          }
+
+          .notice {
+            .font-size(16);
+            margin-bottom: 20px;
+          }
+
+          .bodytext {
+            text-transform: uppercase;
+            .font-size(16);
+            font-weight: bold;
+            line-height: 160%;
+          }
+
+          .notice p,
+          .bodytext p {
+            .font-size(14);
+            font-weight: normal;
+            font-style: normal;
+            text-transform: uppercase;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+
+//Calendar cells
+.calendar-calendar {
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: normal;
+  }
+}
+
+.calendar-calendar div.day {
+  float: none;
+}
+
+.calendar-calendar .week-view .full .calendar-agenda-hour {
+  display: none;
+}
+
+.calendar-calendar td,
+.calendar-calendar th.days,
+.calendar-calendar td.empty,
+.calendar-calendar .month-view .full tr td.single-day.today,
+.calendar-calendar .month-view .full td.date-box.today,
+.calendar-calendar td.calendar-agenda-items {
+  border: white 2px solid;
+}
+
+.calendar-calendar .month-view .full tr td.single-day.today {
+  border-top: none;
+}
+
+.calendar-calendar .month-view .full td.date-box.today {
+  border-bottom: none;
+}
+
+.calendar-calendar .month-view .full tr td.multi-day,
+.calendar-calendar .month-view .full tr td.date-box {
+  background: #f1f2f2;
+  //color: white;
+  font-size: 14px;
+
+  &.no-entry {
+    background: #f1f2f2;
+    color: #58595b;
+  }
+}
+
+.calendar-calendar .month-view .full tr td.multi-day,
+.calendar-calendar .month-view .full tr td.single-day,
+.calendar-agenda-items,
+.calendar-calendar div.calendar {
+  background: #f1f2f2;
+  letter-spacing: normal;
+
+  &.no-entry {
+    background: #f1f2f2;
+  }
+
+  .inner {
+    min-height: 100px;
+
+    .item {
+      //background: @azp-red;
+      padding: 7px;
+      margin-bottom: 10px;
+
+      a {
+          color: white;
+          font-size: 12px;
+          font-weight: normal;
+          text-transform: uppercase;
+      }
+
+      &.event-index-33 {  background: @azp-red;  }           //  Концерты
+      &.event-index-34 {  background: @azp-yellow;  }        //  Фестивали
+      &.event-index-32 {  background: @azp-orange;  }        //  Арт-Галереи
+      &.event-index-35 {  background: @azp-purpule;  }       //  Edutainment
+      &.event-index-31 {  background: @azp-blue-green;  }    //  Коворкинг (Coworking)
+      &.event-index-48 {  background: @azp-blue;  }          //  Арт-завод Платформа
+
+      &.event-index-36 {  background: #4766b0;  }            //  Сreative workspaces
+      &.event-index-37 {  background: #2c2c2c;  }            //  Урбан Фешн (Urban fashion)
+      &.event-index-38 {  background: fade(@azp-red, 80%); } //  Рекреации (Recreation)
+
+      /*&.event-index-1 {  background: @azp-red;  }
+      &.event-index-2 {  background: #4766b0;  }
+      &.event-index-3 {  background: #2c2c2c;  }
+      &.event-index-4 {  background: @azp-yellow;  }
+      &.event-index-5 {  background: @azp-orange;  }
+      &.event-index-6 {  background: @azp-purpule;  }
+      &.event-index-7 {  background: @azp-blue-green; }
+      &.event-index-8 {  background: @azp-blue; }
+
+      &.event-index-9 {  background: fade(#4766b0, 80%); }
+      &.event-index-10 {  background: fade(#2c2c2c, 80%); }
+      &.event-index-11 {  background: fade(@azp-yellow, 80%); }
+      &.event-index-12 {  background: fade(@azp-orange, 80%); }
+      &.event-index-13 {  background: fade(@azp-purpule, 80%); }
+      &.event-index-14 {  background: fade(@azp-blue-green, 80%); }
+      &.event-index-15 {  background: fade(@azp-blue, 80%); }
+
+      &.event-index-16 {  background: fade(@azp-red, 80%); }
+      &.event-index-17 {  background: fade(#4766b0, 60%); }
+      &.event-index-18 {  background: fade(#2c2c2c, 60%); }
+      &.event-index-19 {  background: fade(@azp-yellow, 60%); }
+      &.event-index-20 {  background: fade(@azp-orange, 60%); }
+      &.event-index-21 {  background: fade(@azp-purpule, 60%); }
+      &.event-index-22 {  background: fade(@azp-blue-green, 60%); }
+      &.event-index-23 {  background: fade(@azp-blue, 60%); }
+      */
+    }
+  }
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview,
+.calendar-calendar .week-view .full td.single-day div.weekview,
+.calendar-calendar .day-view .full td.single-day div.dayview {
+  background: none;
+}
+
+//Node-event
 .node-event {
   .event-summary {
-    float: right;
-    margin: 20px 0 20px 20px;
-    padding: 20px;
-    border: gray 1px solid;
-    width: 300px;
+    @media (max-width: @screen-md-max) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 40px 40px;
+      border: @azp-red 2px solid;
+    }
+
+    @media (min-width:@large) {
+      float: right;
+      margin: 20px 0 100px 100px;
+      padding: 20px 40px 40px;
+      border: @azp-red 2px solid;
+      border-right: 0;
+      width: 350px;
+      clear: right;
+    }
+
+    div {
+      display: inline;
+
+      &.event-date,
+      &.event-place,
+      &.event-object,
+      &.event-ticket {
+        display: block;
+        margin-bottom: 10px;
+
+        @media (min-width:@large) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &.event-ticket {
+        .field-label {
+          display: none;
+        }
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 30px;
+      .rft(18,24);
+    }
+
+    label,
+    .event-ticket a {
+      color: @azp-red;
+      text-transform: uppercase;
+      display: inline;
+      margin-right: 20px;
+
+      &:hover {
+        color: @azp-blue;
+      }
+    }
+  }
+}
+
+#block-views-events-calendar-block-2 {
+  .container();
+  .XLcontainer();
+
+  a {
+    white-space: normal;
+  }
+
+  .col {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  .views-field-field-date {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: @azp-red;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .views-field-title {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: @title;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .views-field-body {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .views-field-nothing {
+      position: absolute;
+      bottom: 0;
+      margin-top: 40px;
+      text-align: center;
+      width: calc(~"100% - 100px");
+
+    a {
+      .button(@azp-red);
+    }
+  }
+}
+
+.view-id-events_4_main {
+  padding-top: 20px;
+  padding-bottom: 0px;
+
+  @media (min-width: @screen-md-min) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &.view-display-id-block {
+    .container();
+    .XLcontainer();
+  }
+
+  .view-display-id-attachment_1 {
+    @media (max-width: @screen-sm-max) {
+      margin-top: 20px;
+    }
+  }
+
+  a {
+    white-space: normal;
+  }
+
+  > .view-content {
+    > .views-row {
+      @media (min-width: @screen-md-min) {
+        display: flex;
+        align-items: center;
+      }
+
+      @media (min-width: @screen-md-min) {
+        .views-field-field-image,
+        .views-field-nothing {
+          .make-sm-column(6);
+        }
+      }
+
+      .views-field-nothing {
+        padding-left: 100% / 12;
+        position: relative;
+
+        @media (min-width: @screen-md-min) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            z-index: 99;
+            top: 0;
+            right: 0;
+            background: url('../images/events-right-overlay.png') no-repeat center right;
+            background-size: contain;
+          }
+        }
+
+        @media (max-width: @screen-sm-max) {
+          padding-left: 0;
+        }
+
+        .views-field-field-date {
+          padding-bottom: 30px;
+          color: @azp-red;
+
+          @media (max-width: @screen-sm-max) {
+            padding-top: 30px;
+            padding-left: 0;
+          }
+        }
+
+        .views-field-title {
+          margin-bottom: 30px;
+          color: @title;
+          font-size: 24px;
+          text-transform: uppercase;
+          font-weight: bold;
+          border: none;
+          text-align: left;
+          padding: 0;
+
+          @media (max-width: @screen-sm-max) {
+            padding-left: 0;
+          }
+        }
+
+        .views-field-body {
+          margin-bottom: 30px;
+          padding-bottom: 60px;
+
+          @media (min-width: @screen-sm-min) {
+            padding-bottom: 30px;
+          }
+
+          @media (max-width: @screen-md-max) {
+            margin-bottom: 0;
+            padding-left: 0;
+          }
+        }
+
+        .views-field-view-node {
+          position: absolute;
+          bottom: 0;
+
+          a {
+            .button(@azp-red);
+          }
+        }
+      }
+    }
+  }
+
+  .attachment {
+    .col {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: space-around;
+      align-items: flex-start;
+
+      @media (max-width: @screen-sm-max) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: @screen-md-max) {
+        padding-left: 0;
+      }
+
+
+    }
+
+    .views-field-field-date {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      color: @azp-red;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (max-width: @screen-sm-max) {
+        padding-left: 0;
+      }
+    }
+
+    .views-field-title {
+      margin-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: @title;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      @media (max-width: @screen-sm-max) {
+        padding-left: 0;
+      }
+    }
+
+    .views-field-body {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (max-width: @screen-sm-max) {
+        padding-left: 0;
+      }
+    }
+
+    .views-field-view-node {
+     // position: absolute;
+     // bottom: 20px;
+    //  margin-top: 40px;
+      text-align: center;
+      width: calc(~"100% - 100px");
+
+      @media (max-width: @screen-sm-max) {
+        text-align: left;
+      }
+
+      a {
+        .button(@azp-red);
+      }
+    }
   }
 }

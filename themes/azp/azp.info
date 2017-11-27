@@ -27,6 +27,7 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] = assets/owl.carousel.css
 stylesheets[all][] = css/style.css
 
 
@@ -55,8 +56,11 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
 
- scripts[] = 'js/jquery.fittext.js'
- scripts[] = 'js/packery.pkgd.min.js'
+scripts[] = 'js/bootstrap.min.js'
+scripts[] = 'js/tooltip.js'
+scripts[] = 'js/popover.js'
+scripts[] = 'js/jquery.fittext.js'
+scripts[] = 'js/packery.pkgd.min.js'
 ;scripts[] = 'js/jquery.waypoints.min.js'
 scripts[] = 'js/jquery.backstretch.min.js'
 scripts[] = 'js/jquery.tubular.1.0.js'
@@ -64,6 +68,8 @@ scripts[] ='js/modernizr.js'
 scripts[] ='js/jquery.touchSwipe.min.js'
 ;scripts[] ='js/video.js'
 ;scripts[] ='js/bigvideo.js'
+scripts[] = 'js/mapy.js'
+scripts[] = 'js/owl.carousel.js'
 scripts[] = 'js/main.js'
 
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.

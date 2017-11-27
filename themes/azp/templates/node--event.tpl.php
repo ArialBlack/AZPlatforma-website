@@ -79,6 +79,7 @@
  *
  * @ingroup themeable
  */
+$lang = $node->language;
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -101,12 +102,6 @@
             }
          ?>
 
-         <div class="img-tag">
-            <a href="/taxonomy/term/<?php print $term_tid; ?>">
-                <?php print render($image_field); ?>
-            </a>
-         </div>
-
         <?php print render($title_prefix); ?>
         <div class="node-title">
             <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
@@ -114,24 +109,81 @@
         <?php print render($title_suffix); ?>
 
         <div class="event-summary">
+            <h3>
+              <?php
+              if ($lang == 'uk') {
+                print '<label>' . "Зведенна інформація" . ' / </label>';
+              }
+              if ($lang == 'en') {
+                print '<label>' . "Summary" . ' / </label>';
+              }
+              if ($lang == 'ru') {
+                print '<label>' . "Сводка" . ' / </label>';
+              }
+              ?>
+            </h3>
             <div class="event-date">
+
                 <?php
-                    print '<label>' . t("When") . '</label>';
+                   if ($lang == 'uk') {
+                      print '<label>' . "Коли" . ' / </label>';
+                   }
+                   if ($lang == 'en') {
+                      print '<label>' . "When" . ' / </label>';
+                   }
+                    if ($lang == 'ru') {
+                      print '<label>' . "Когда" . ' / </label>';
+                    }
+
                     print render($content['field_date']);
                 ?>
             </div>
             <div class="event-place">
                 <?php
-                    print '<label>' . t("Where") . '</label>';
-                    print render($content['field_where']);
+                if ($lang == 'uk') {
+                  print '<label>' . "Де" . ' / </label>';
+                }
+                if ($lang == 'en') {
+                  print '<label>' . "Where" . ' / </label>';
+                }
+                if ($lang == 'ru') {
+                  print '<label>' . "Где" . ' / </label>';
+                }
+
+                    if( isset($content['field_where'])) {
+                        print render($content['field_where']);
+                    } else {
+                        print t("Artzavod Platforma");
+                    }
                 ?>
             </div>
             <div class="event-object">
                 <?php
-                    print '<label>' . t("what") . '</label>';
-                    print render($content['field_what']);
+                if ($lang == 'uk') {
+                  print '<label>' . "Що" . ' / </label>';
+                }
+                if ($lang == 'en') {
+                  print '<label>' . "What" . ' / </label>';
+                }
+                if ($lang == 'ru') {
+                  print '<label>' . "Что" . ' / </label>';
+                }
+
+                    if( isset($content['field_what'])) {
+                        print render($content['field_what']);
+                    } else {
+                        print $title;
+                    }
                 ?>
             </div>
+            <div class="event-ticket">
+                <?php
+                if( isset($content['field_link'])) {
+                    print render($content['field_link']);
+                }
+                ?>
+            </div>
+            <?php print render($content['field_fb_event']); ?>
         </div>
 
         <?php
@@ -139,15 +191,28 @@
             print render($content['field_vimeo']);
             print render($content['body']);
             print render($content['field_galery']);
-            print render($content['field_fb_event']);
-    
         ?>
 
-        <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
-    </div>
+        <?php
+            $title = $node->$title;
+        ?>
 
-    <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> 
-    <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script> 
+        <div class="addthis_toolbox addthis_32x32_style">
+            <a class="addthis_button_facebook addthis_button"></a>
+            <a class="addthis_button_twitter addthis_button"></a>
+            <a class="addthis_button_google_plusone_share addthis_button"></a>
+            <a class="addthis_button_linkedin addthis_button"></a>
+            <a class="addthis_button_pocket addthis_button"></a>
+            <a class="addthis_button_evernote addthis_button"></a>
+            <a class="addthis_button_instapaper addthis_button"></a>
+            <a class="addthis_button_email addthis_button"></a>
+        </div>
+        <div class="img-tag">
+            <a href="/taxonomy/term/<?php print $term_tid; ?>">
+                <?php print render($image_field); ?>
+            </a>
+        </div>
+    </div>
 
     <?php print render($content['links']); ?>
 

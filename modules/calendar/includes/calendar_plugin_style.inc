@@ -441,11 +441,16 @@ class calendar_plugin_style extends views_plugin_style {
               'items' => $this->items,
               'selected' => $in_month ? count($multiday_buckets[$wday]) + count($singleday_buckets[$wday]) : FALSE,
             );
+            if (count($singleday_buckets[$wday]) == 0) {
+              $empty_class = "date-box no-entry";
+            } else {
+              $empty_class = "date-box";
+            }
             $item = array(
               'entry' => theme('calendar_datebox', $variables),
               'colspan' => 1,
               'rowspan' => 1,
-              'class' => 'date-box',
+              'class' => $empty_class,
               'date' => $curday_date,
               'id' => $this->view->name . '-' . $curday_date . '-date-box',
               'header_id' => $translated_days[$wday],

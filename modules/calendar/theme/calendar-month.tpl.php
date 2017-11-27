@@ -34,6 +34,7 @@
     <?php 
       foreach ((array) $rows as $row) {
         print $row['data'];
+        //dsm($row);
       } ?>
   </tbody>
 </table>

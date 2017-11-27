@@ -127,7 +127,21 @@
    print render($content['field_galery']);
    
    ?>
-   <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
+
+      <?php
+      $title = $node->$title;
+      ?>
+
+      <div class="addthis_toolbox addthis_32x32_style">
+          <a class="addthis_button_facebook addthis_button"></a>
+          <a class="addthis_button_twitter addthis_button"></a>
+          <a class="addthis_button_google_plusone_share addthis_button"></a>
+          <a class="addthis_button_linkedin addthis_button"></a>
+          <a class="addthis_button_pocket addthis_button"></a>
+          <a class="addthis_button_evernote addthis_button"></a>
+          <a class="addthis_button_instapaper addthis_button"></a>
+          <a class="addthis_button_email addthis_button"></a>
+      </div>
 
   
   
@@ -136,9 +150,7 @@
 
   <?php print render($content['links']); ?>
   
-    <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-  
+   
     
     
   
