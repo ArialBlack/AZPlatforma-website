@@ -1,6 +1,7 @@
 #video-background {
   position: relative;
   overflow: hidden;
+  height: 100vh;
 
   video {
     position: absolute;
@@ -9,6 +10,8 @@
     transform: translate(-50%,-50%);
   }
 }
+
+
 
 .front {
   .paragraphs-item-landing-header {
@@ -108,7 +111,7 @@
 
   .view-news-4-front {
     > .view-content {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
 
       @media (min-width: @screen-md-min) {
         margin-bottom: 100px;
@@ -199,10 +202,12 @@
         position: relative;
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 30px;
 
         @media (min-width: @screen-md-min) {
           padding-left: 40px;
           padding-right: 40px;
+          margin-bottom: 0;
         }
       }
 
@@ -233,6 +238,15 @@
           .button(@azp-red);
         }
       }
+    }
+  }
+}
+
+.touch {
+  .front {
+    .paragraphs-item-landing-header {
+      background: url(../images/front.jpg) no-repeat center center !important;
+      background-size: cover;
     }
   }
 }

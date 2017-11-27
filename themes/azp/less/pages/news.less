@@ -121,6 +121,12 @@
                 }
               }
 
+              .text-block {
+                @media (max-width: @screen-sm-max) {
+                  margin-bottom: 30px;
+                }
+              }
+
               .text-container-content {
                 position: relative;
 
@@ -194,9 +200,11 @@ body.scrolled {
     }
   }
 
-  a.hover-text {
-    position: relative;
-    color: white;
+  @media (min-width: @screen-md-min) {
+    a.hover-text {
+      position: relative;
+      color: white;
+    }
 
     .text-block {
       position: absolute;

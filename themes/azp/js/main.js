@@ -145,6 +145,7 @@ function sizeMeUp() {
     var vid_h_orig;
     
 function bg() {
+    jQuery(".no-touch body.front #video-background" ).height(jQuery(window).height());
     jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4" type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm" type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv" type="video/webm" /></video>');
     vid_w_orig = parseInt(jQuery('video').attr('width'));
     vid_h_orig = parseInt(jQuery(' video').attr('height'));
@@ -159,7 +160,12 @@ function resizeToCover() {
     jQuery('#video-background').height($wh);
 
     jQuery('.paragraphs-item-landing-header').height($wh);
-    jQuery('#azpLocation .azp-location').height($wh);
+
+    if($wh < 756) {
+        jQuery('#azpLocation .azp-location').height($wh * 1.2);
+    } else {
+        jQuery('#azpLocation .azp-location').height($wh);
+    }
 
     if(jQuery(window).width() < 767) {
         jQuery('.view-display-id-block_2 .views-field-img').height($wh + jQuery('.news .header-container').height() + 110);
@@ -250,29 +256,63 @@ jQuery(document).ready(function($) {
     calendarCategoriesDots();
     touchCarousel();
 
-    jQuery("img[usemap]").mapify({
-        popOver: {
-            content: function(zone){
-                return "<strong>"+zone.attr("data-title")+"</strong>";
-            },
-            delay: 0.7,
-            margin: "15px",
-            height: "130px",
-            width: "260px"
-        },
-        onAreaHighlight: function(){
-            console.log("onAreaHighlight callback");
-        },
-        onMapClear: function(){
-            console.log("onMapClear callback");
+    $(
+        '.paragraphs-item-42 > .content > .field-type-entityreference  > .field-items, ' +
+        '.paragraphs-item-7 > .content > .field-type-entityreference  > .field-items, ' +
+        '.paragraphs-item-67 > .content > .field-type-entityreference  > .field-items, ' +
+        '.paragraphs-item-32 > .content > .field-type-entityreference  > .field-items, ' +
+        '.paragraphs-item-52 > .content > .field-type-entityreference  > .field-items, ' +
+        '.paragraphs-item-73 > .content > .field-type-entityreference  > .field-items').addClass('owl-carousel').owlCarousel({
+            loop:true,
+            //center:true,
+            margin:10,
+            responsiveClass:true,
+            navText: [
+                '<i class="ion-chevron-left"></i>',
+                '<i class="ion-chevron-right"></i>'
+            ],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                992:{
+                    items:2,
+                    nav:true
+                },
+                1200:{
+                    items:3,
+                    nav:true
+                }
+            }
         }
-    });
+    );
+
+    if(jQuery('html.no-touch').length > 0) {
+        jQuery("img[usemap]").mapify({
+            popOver: {
+                content: function(zone){
+                    return "<strong>"+zone.attr("data-title")+"</strong>";
+                },
+                delay: 0.7,
+                margin: "15px",
+                height: "130px",
+                width: "260px"
+            },
+            onAreaHighlight: function(){
+                console.log("onAreaHighlight callback");
+            },
+            onMapClear: function(){
+                console.log("onMapClear callback");
+            }
+        });
+    } else {
+        jQuery("img[usemap]").mapify();
+    }
 
     jQuery("#dynamicClassChange").click(function() {
         jQuery(this).attr("data-hover-class","hover-green");
     });
-
-
 
     var onMapMouseleaveHandler = function (event) {
     var that = jQuery(this);

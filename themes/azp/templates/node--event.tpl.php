@@ -79,6 +79,7 @@
  *
  * @ingroup themeable
  */
+$lang = $node->language;
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -108,16 +109,47 @@
         <?php print render($title_suffix); ?>
 
         <div class="event-summary">
-            <h3><?php print t("Summary");?></h3>
+            <h3>
+              <?php
+              if ($lang == 'uk') {
+                print '<label>' . "Зведенна інформація" . ' / </label>';
+              }
+              if ($lang == 'en') {
+                print '<label>' . "Summary" . ' / </label>';
+              }
+              if ($lang == 'ru') {
+                print '<label>' . "Сводка" . ' / </label>';
+              }
+              ?>
+            </h3>
             <div class="event-date">
+
                 <?php
-                    print '<label>' . t("When") . ' / </label>';
+                   if ($lang == 'uk') {
+                      print '<label>' . "Коли" . ' / </label>';
+                   }
+                   if ($lang == 'en') {
+                      print '<label>' . "When" . ' / </label>';
+                   }
+                    if ($lang == 'ru') {
+                      print '<label>' . "Когда" . ' / </label>';
+                    }
+
                     print render($content['field_date']);
                 ?>
             </div>
             <div class="event-place">
                 <?php
-                    print '<label>' . t("Where") . ' / </label>';
+                if ($lang == 'uk') {
+                  print '<label>' . "Де" . ' / </label>';
+                }
+                if ($lang == 'en') {
+                  print '<label>' . "Where" . ' / </label>';
+                }
+                if ($lang == 'ru') {
+                  print '<label>' . "Где" . ' / </label>';
+                }
+
                     if( isset($content['field_where'])) {
                         print render($content['field_where']);
                     } else {
@@ -127,7 +159,16 @@
             </div>
             <div class="event-object">
                 <?php
-                    print '<label>' . t("what") . ' / </label>';
+                if ($lang == 'uk') {
+                  print '<label>' . "Що" . ' / </label>';
+                }
+                if ($lang == 'en') {
+                  print '<label>' . "What" . ' / </label>';
+                }
+                if ($lang == 'ru') {
+                  print '<label>' . "Что" . ' / </label>';
+                }
+
                     if( isset($content['field_what'])) {
                         print render($content['field_what']);
                     } else {

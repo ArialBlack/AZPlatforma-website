@@ -189,7 +189,7 @@ function jquery_ajax_load_callback() {
     $languages = $languages[1];
     if ( array_key_exists($args[0], $languages) ) {
       $language = $args[0];
-      array_shift($args[0]);
+      array_shift($args);
     }
     else {
       $language = NULL;

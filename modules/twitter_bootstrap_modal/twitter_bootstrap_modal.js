@@ -13,6 +13,7 @@ Drupal.behaviors.twitter_bootstrap_modal = {
     // Puede ser más de un valor, hay que usar foreach()
     $(TBtrigger).once(function() {
       var html_string = $(this).attr( 'href' );
+      console.log(Drupal.settings.pathPrefix);
       // Hay que validar si la ruta trae la URL del sitio
       $(this).attr( 'href' , '/jquery_ajax_load/get' + html_string );
       $(this).attr( 'data-target' , '#jquery_ajax_load');

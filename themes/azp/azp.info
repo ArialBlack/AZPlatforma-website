@@ -27,6 +27,7 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] = assets/owl.carousel.css
 stylesheets[all][] = css/style.css
 
 
@@ -68,6 +69,7 @@ scripts[] ='js/jquery.touchSwipe.min.js'
 ;scripts[] ='js/video.js'
 ;scripts[] ='js/bigvideo.js'
 scripts[] = 'js/mapy.js'
+scripts[] = 'js/owl.carousel.js'
 scripts[] = 'js/main.js'
 
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.

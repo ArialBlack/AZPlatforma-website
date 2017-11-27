@@ -13,8 +13,6 @@
   }
 }
 
-
-
 .paragraphs-item-p-teaser {
   > .content {
     .XLcontainer;
@@ -86,20 +84,96 @@
     .XLcontainer;
   }
 
-  @media (min-width: @screen-lg-min) {
-    > .content > .field-type-entityreference > .field-items {
-      display: flex;
+  .owl-stage {
+    display: flex;
+   // flex-wrap: wrap;
+  }
+
+  .owl-item{
+    display: flex;
+    flex: 1 0 auto;
+    //height: auto !important;
+
+    .node {
+      height: 100%;
     }
 
-    > .content > .field-type-entityreference > .field-items > .field-item {
-      .make-sm-column(4);
+    > .field-item {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+
+      h2,
+      .field-name-field-title,
+      .field-type-text-long {
+        padding: 0 20px;
+      }
+
+      .field-name-field-image {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: @screen-md-min) {
+          width: 70%;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: stretch;
+        height: 100%;
+
+        @media (min-width: @screen-md-min) {
+          flex-wrap: wrap;
+        }
+      }
     }
   }
 
-  .node {
-    padding: 30px;
-
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 30px;
   }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: @azp-red 2px solid;
+    border-radius: 100%;
+    margin: auto !important;
+
+    i {
+      color: @azp-red;
+      margin-left: 7px;
+      margin-top: -1px;
+      display: block;
+    }
+  }
+
+  .owl-carousel .owl-prev {
+    left: 0;
+  }
+
+  .owl-carousel .owl-next {
+    right: 0;
+
+    i {
+      margin-left: 9px;
+    }
+  }
+
+  .owl-carousel .owl-dots {
+    display: none !important;
+  }
+
 }
 
 .paragraphs-item-landing-header {
@@ -246,6 +320,60 @@ body.scrolled {
   }
 }
 
+.i18n-uk {
+  .front-top-event-block{
+    &:before {
+      content: 'Найближчі події';
+      .pst();
+    }
+  }
+
+  .front-top-news-block {
+    &:before {
+      content: 'Новини';
+      .container();
+      .XLcontainer();
+      .pst();
+    }
+  }
+
+  &.about,
+  &.contacts {
+    .paragraphs-item-raw-code.paragraphs-item-72 {
+      &:before {
+        content: 'Екосистема';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-67,
+    .paragraphs-item-paragraphs-pack-node-list.paragraphs-item-73 {
+      &:before {
+        content: 'Контакти та команда';
+        .pst();
+        .container();
+        .XLcontainer();
+      }
+    }
+
+    .paragraphs-item-views-block.paragraphs-item-68,
+    .paragraphs-item-views-block.paragraphs-item-74 {
+      overflow: hidden;
+
+      &:before {
+        content: 'Партнери';
+        .pst();
+        .container();
+        .XLcontainer();
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
 .not-front.about,
 .not-front.contacts {
 
@@ -266,32 +394,33 @@ body.scrolled {
         top: 0;
         right: 0;
         background: url('../images/team-top-overlay.png') no-repeat center 90px;
-        background-size: contain;
+        background-size: cover;
         display: block;
         z-index: -1;
         visibility: visible;
       }
 
       .field-name-field-image {
-        margin-bottom:  40px;
-
-        img {
-          //width: 50%; //round
-        }
+        margin-bottom:  15px;
       }
 
       h2 {
         font-size: 24px;
         line-height: 36px;
         .title();
-        margin-bottom: 20px;
-        min-height: 72px;
+        margin-bottom: 10px;
+        min-height: 36px;
+        margin-top: 10px;
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
       }
 
       .field-name-field-title {
         font-style: italic;
         color: @fade-title;
-        margin-bottom:  40px;
+        margin-bottom:  15px;
       }
 
       .field-type-text-long {
@@ -299,6 +428,11 @@ body.scrolled {
         line-height: 24px;
         .letter-spacing(25, 16);
         color: @title;
+
+        @media (max-width: @screen-sm-max) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }
@@ -326,7 +460,8 @@ body.scrolled {
 
 .not-front.contacts {
   .paragraphs-item-raw-code.paragraphs-item-56,
-  .paragraphs-item-raw-code.paragraphs-item-57 {
+  .paragraphs-item-raw-code.paragraphs-item-57,
+  .paragraphs-item-raw-code.paragraphs-item-66 {
     margin-top: 100px;
   }
 }

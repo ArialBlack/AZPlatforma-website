@@ -59,6 +59,18 @@ body.scrolled {
   transform: translateY(-50%);
   z-index: 1;
 
+  @media (max-width: @screen-sm-max) {
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+
+      strong {
+        display: block;
+      }
+    }
+  }
+
   .c {
     position: relative;
     color: white;

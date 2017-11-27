@@ -90,7 +90,8 @@
         }).bind("click.mapify", function(a) {
             if (a.originalEvent !== d && i) return !1
         }).bind("touchstart.mapify", function() {
-            b.zones.removeClass("mapify-clickable"), b.svgMap.find("polygon:eq(" + a(this).index() + ")")[0].classList.contains("mapify-hover") ? a(this).addClass("mapify-clickable") : i && b.options.instantClickOnMobile ? (console.log("Triggering instantClickOnMobile after touchstart"), a(this).addClass("mapify-clickable")) : a(this).addClass("mapify-hilightable")
+            b.zones.removeClass("mapify-clickable"),
+                b.svgMap.find("polygon:eq(" + a(this).index() + ")")[0].classList.contains("mapify-hover") ? a(this).addClass("mapify-clickable") : i && b.options.instantClickOnMobile ? (console.log("Triggering instantClickOnMobile after touchstart"), a(this).addClass("mapify-clickable")) : a(this).addClass("mapify-hilightable")
         }).bind("touchmove.mapify", function() {
             b.zones.removeClass("mapify-clickable mapify-hilightable")
         }).bind("mouseenter.mapify focus.mapify touchend.mapify", function(c) {
