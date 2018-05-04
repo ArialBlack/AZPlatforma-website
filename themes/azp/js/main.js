@@ -2,6 +2,16 @@
 Bootstrap fix for WinPhone 8 and IE10 
 =============================================== */
 
+(function( $ ) {
+	$(document).ready(function() {
+		$("a.azp-button").click(function(e) {
+			$('#modalPlace-map').modal();
+		});
+	});
+})(jQuery);
+
+
+
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   	var msViewportStyle = document.createElement("style")
   	msViewportStyle.appendChild(
@@ -427,12 +437,3 @@ jQuery( document ).ajaxStop(function() {
         addthis.toolbox(".addthis_toolbox");
     }
 });
-
-
-
-
-
-
-
-
- 
