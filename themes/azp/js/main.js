@@ -156,7 +156,7 @@ function sizeMeUp() {
     
 function bg() {
     jQuery(".no-touch body.front #video-background" ).height(jQuery(window).height());
-    jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4" type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm" type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv" type="video/webm" /></video>');
+    jQuery(".no-touch body.front #video-background" ).append('<video autoplay preload loop muted width="1920" height="1080" poster="/sites/all/themes/azp/images/front.jpg"><source src="/sites/all/themes/azp/video/video.mp4" type="video/mp4" /><source src="/sites/all/themes/azp/video/video.webm" type="video/webm" /><source src="/sites/all/themes/azp/video/video.ogv" type="video/webm" /></video>');
     vid_w_orig = parseInt(jQuery('video').attr('width'));
     vid_h_orig = parseInt(jQuery(' video').attr('height'));
 
