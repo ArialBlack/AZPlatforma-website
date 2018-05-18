@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+
+
+function azp_block_info() {
+  $blocks = array();
+
+  $blocks['azp_events_block'] = array(
+    'info' => t('AZP event block'),
+  );
+
+  $blocks['azp_eco_block'] = array(
+    'info' => t('Eco Block'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function azp_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    /*case 'azp_events_block':
+      $block['subject'] = '';
+      $block['content'] = _azp_events_block();
+      break;*/
+
+    case 'azp_eco_block':
+      $block['subject'] = '';
+      $block['content'] = _azp_eco_block();
+      break;
+  }
+
+  return $block;
+}
+
+/*function _azp_events_block() {
+    global $language ;
+    $lang = $language->language;
+
+    $parameters = drupal_get_query_parameters();
+    if(isset($parameters['month'])) {
+        $p = $parameters['month'].'-01';
+        $udate = date('Y-m',strtotime($p));
+    } else {
+        $udate = date('Y-m');
+    }
+
+    return $udate;
+}*/
+
+function _azp_eco_block() {
+  $content = '<ul id="eco_tree">';
+  $_eco_tree = taxonomy_get_tree(5,0,1);
+  $eco_tree = i18n_taxonomy_localize_terms($_eco_tree);
+  $modals = '';
+
+  foreach ($eco_tree as $root) {
+    $term = taxonomy_term_load($root->tid);
+
+    $_term_childrens = taxonomy_get_tree(5,$root->tid,1);
+    $term_childrens = i18n_taxonomy_localize_terms($_term_childrens);
+    $sub_nodes_links = '<div class="hover_labels">';
+
+    foreach ($term_childrens as $child) {
+      $nodes = taxonomy_select_nodes($child->tid, $pager = FALSE, $limit = 100);
+      $node = node_load($nodes[0]);
+      $sub_nodes_links = $sub_nodes_links . '<a href="#" data-toggle="modal" data-target="#modalEco-' . $node->nid . '">' . $node->title . '</a>';
+
+      $modals = $modals . '<div class="myModal normal modal fade" id="modalEco-' . $node->nid . '"' . ' tabindex="-1" role="dialog" aria-labelledby="modalEcoLabel">';
+      $modals = $modals . '<div class="modal-dialog container" role="document">';
+      $modals = $modals . '<div class="modal-content">';
+      $modals = $modals . '<div class="modal-header">';
+      $modals = $modals . '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>';
+      $modals = $modals . '<h4 class="modal-title" id="modalEco-' . $node->nid . '"' . '>' . $node->title . '</h4>';
+      $modals = $modals . '</div>';
+      $modals = $modals . '<div class="modal-body">';
+      $modals = $modals . '<div class="place">';
+      $modals = $modals . '<h3>' . $node->title . '</h3>';
+      $prepared_node = node_view($node, 'teaser');
+      $rendered_teaser = render($prepared_node);
+      $modals = $modals . $rendered_teaser;
+      $modals = $modals . '</div></div></div></div></div>';
+    }
+
+    $sub_nodes_links = $sub_nodes_links . '</div>';
+
+    $image_url = image_style_url('events', $term->field_image['und'][0]['uri']);
+    $content = $content . '<li><div class="sub-tree-container"><img src="' . $image_url . '" /><span class="def_label">' . $root->name . '</span>' . $sub_nodes_links . '</div></li>';
+  }
+
+  $content = $content . '</ul>' . $modals;
+
+  return $content;
+}
+
+
+
