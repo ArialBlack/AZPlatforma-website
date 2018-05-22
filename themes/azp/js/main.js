@@ -5,6 +5,7 @@ Bootstrap fix for WinPhone 8 and IE10
 (function( $ ) {
 	$(document).ready(function() {
 		$("a.azp-button").click(function(e) {
+		    e.preventDefault();
 			$('#modalPlace-map').modal();
 		});
 	});
